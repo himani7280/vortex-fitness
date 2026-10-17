@@ -56,10 +56,10 @@ const Testimonials = () => {
             </span>
             <div className="h-[2px] w-12 bg-[#f05a22]"></div>
           </div>
-          <h2 className="text-4xl md:text-[50px] font-black text-[#1a1a1a] font-heading tracking-tight mb-2">
+          <h2 className="font-heading text-3xl md:text-4xl lg:text-[40px] font-extrabold text-[#1a1a1a] leading-tight mb-2 text-center">
             {testimonialsPage.heading1}<span className="text-[#f05a22]">{testimonialsPage.heading2}</span>
           </h2>
-          <p className="text-gray-500 text-[16px] max-w-2xl font-medium">
+          <p className="text-gray-500 text-[15px] md:text-[15.5px] leading-relaxed max-w-2xl mx-auto text-center font-normal">
             {testimonialsPage.description}
           </p>
         </div>

@@ -14,13 +14,13 @@ const AboutUsDetails: React.FC<AboutUsDetailsProps> = ({ className = '' }) => {
   return (
     <section 
       aria-label="About VortexFit Details"
-      className={`w-full py-10 sm:py-14 md:py-16 lg:py-20 bg-white overflow-hidden ${className}`}
+      className={`w-full pt-4 sm:pt-6 md:pt-7 lg:pt-8 pb-5 sm:pb-6 md:pb-7 lg:pb-8 bg-white overflow-hidden ${className}`}
     >
-      <div className="w-full max-w-[1400px] mx-auto px-4 md:px-6 lg:px-6 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 xl:gap-16 items-center">
+      <div className="w-full max-w-[1400px] mx-auto px-4 md:px-6 lg:px-6 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 xl:gap-12 items-center">
 
-        {/* Left Side: Images */}
+        {/* Left Side: Images (Aligned flush with Header Left Edge) */}
         <div className="w-full flex justify-center lg:justify-start">
-          <div className="relative w-[280px] sm:w-[330px] md:w-[370px] lg:w-[390px] xl:w-[420px] -translate-x-3 sm:-translate-x-4 lg:translate-x-0 lg:ml-5 mb-8 sm:mb-10 lg:mb-0 isolate">
+          <div className="relative w-[280px] sm:w-[330px] md:w-[360px] lg:w-[380px] xl:w-[400px] -translate-x-3 sm:-translate-x-4 lg:translate-x-0 mb-8 sm:mb-10 lg:mb-0 isolate">
 
             {/* Background orange block (Right) */}
             <div className="absolute top-[3%] -right-3 sm:-right-5 w-[40%] h-[95%] bg-[#f05a22] rounded-[1.5rem] sm:rounded-[2rem] -z-10"></div>
@@ -59,7 +59,7 @@ const AboutUsDetails: React.FC<AboutUsDetailsProps> = ({ className = '' }) => {
             </div>
 
             {/* Main Image */}
-            <div className="relative w-full aspect-[3/4] rounded-[1.25rem] sm:rounded-[1.5rem] overflow-hidden shadow-xl z-10 bg-gray-200">
+            <div className="relative w-full aspect-[4/5] rounded-[1.25rem] sm:rounded-[1.5rem] overflow-hidden shadow-xl z-10 bg-gray-200">
               <Image
                 src={about.images.main}
                 alt="About VortexFit Main"
@@ -94,33 +94,22 @@ const AboutUsDetails: React.FC<AboutUsDetailsProps> = ({ className = '' }) => {
           </div>
 
           {/* Main Heading */}
-          <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-[40px] xl:text-[42px] font-extrabold text-black leading-tight sm:leading-[1.1] mb-4 sm:mb-6">
+          <h2 className="font-heading text-3xl md:text-4xl lg:text-[40px] font-extrabold text-black leading-tight mb-4 sm:mb-5">
             {about.heading1}{' '}
             <span className="text-[#f05a22]">{about.heading2}</span>
           </h2>
 
-          {/* Description Paragraphs */}
-          <div className="flex flex-col gap-4 sm:gap-5 w-full">
-            <p className="text-gray-600 text-sm sm:text-base leading-relaxed font-medium">
-              <span className="font-bold text-gray-900">{details.intro.highlight}</span> {details.intro.text}
+          {/* Description Paragraphs (Shortened) */}
+          <div className="flex flex-col gap-3.5 sm:gap-4 w-full">
+            <p className="text-gray-600 text-[14.5px] sm:text-[15px] md:text-[15.5px] leading-relaxed font-normal">
+              <span className="font-bold text-gray-900">Welcome to VortexFit,</span> your ultimate destination for achieving your fitness goals. We understand the importance of leading a healthy lifestyle and provide a top-notch facility with modern equipment to support your fitness journey.
             </p>
-            {details.paragraphs.map((paragraph: string, idx: number) => {
-
-              const HIGHLIGHT = "Welcome to VortexFit,";
-              const startsWithHighlight = paragraph.startsWith(HIGHLIGHT);
-              return (
-                <p key={idx} className="text-gray-600 text-sm sm:text-base leading-relaxed font-medium">
-                  {startsWithHighlight ? (
-                    <>
-                      <span className="font-bold text-gray-900">{HIGHLIGHT}</span>
-                      {paragraph.slice(HIGHLIGHT.length)}
-                    </>
-                  ) : (
-                    paragraph
-                  )}
-                </p>
-              );
-            })}
+            <p className="text-gray-600 text-[14.5px] sm:text-[15px] md:text-[15.5px] leading-relaxed font-normal">
+              <span className="font-bold text-gray-900">Welcome to VortexFit,</span> where certified trainers craft personalized workout routines tailored to your unique body, focusing on proper technique and sustainable progress.
+            </p>
+            <p className="text-gray-600 text-[14.5px] sm:text-[15px] md:text-[15.5px] leading-relaxed font-normal">
+              <span className="font-bold text-gray-900">Welcome to VortexFit,</span> a motivating community dedicated to your long-term wellness. We guide you every step of the way with expert advice, nutrition support, and constant motivation.
+            </p>
           </div>
         </div>
 

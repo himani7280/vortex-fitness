@@ -81,13 +81,13 @@ const CTA = () => {
           </div>
 
           {/* Headline */}
-          <h2 className="gsap-cta-item text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-bold leading-tight sm:leading-[0.95] mb-3 sm:mb-4 text-white font-heading sm:whitespace-nowrap">
+          <h2 className="gsap-cta-item font-heading text-3xl md:text-4xl lg:text-[40px] font-extrabold leading-tight mb-3 sm:mb-4 text-white">
             {cta.heading1} <br className="hidden sm:block" />
             <span className="text-[#f95d22]">{cta.heading2}</span>
           </h2>
 
           {/* Paragraph */}
-          <p className="gsap-cta-item text-gray-300 text-sm sm:text-base md:text-lg mb-6 sm:mb-8 max-w-[500px] font-sans leading-relaxed sm:leading-snug">
+          <p className="gsap-cta-item text-gray-200 text-[15px] md:text-[15.5px] mb-6 sm:mb-8 max-w-[500px] font-normal leading-relaxed">
             {cta.description}
           </p>
 

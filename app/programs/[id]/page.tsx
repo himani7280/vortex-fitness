@@ -60,16 +60,13 @@ async function ProgramDetailContent({ params }: { params: Promise<{ id: string }
     iconNode: typeof h.icon === 'string' ? getHighlightIcon(h.icon) : <Target className="w-6 h-6" />
   }));
 
-  const titleWord = program.title.split(' ')[0].toUpperCase();
-  const restOfTitle = program.title.split(' ').slice(1).join(' ').toUpperCase();
-
-
-  const heroVariant = siteData.sections?.Hero?.variants?.FitnessProgramDetailHero1;
-  const bannerTitle = heroVariant?.title || "Program Detail";
+  const titleWords = program.title.trim().split(' ');
+  const firstWords = titleWords.length > 1 ? titleWords.slice(0, -1).join(' ') : program.title;
+  const lastWord = titleWords.length > 1 ? titleWords[titleWords.length - 1] : '';
 
   return (
     <div className="w-full flex flex-col min-h-screen bg-white">
-      <PageHeader title={bannerTitle} breadcrumb={`Programs / ${program.title}`} />
+      <PageHeader title={program.title} breadcrumb={`Programs / ${program.title}`} />
 
       <div className="max-w-[1400px] mx-auto w-full px-4 md:px-6 lg:px-6 py-6 sm:py-10 md:py-12 lg:py-16">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
@@ -77,7 +74,7 @@ async function ProgramDetailContent({ params }: { params: Promise<{ id: string }
           {/* Main Content Area */}
           <div className="lg:w-2/3 flex flex-col">
             {/* Main Image */}
-            <div className="w-full h-[240px] sm:h-[340px] md:h-[420px] lg:h-[450px] relative rounded-xl overflow-hidden mb-6 sm:mb-10 shadow-xl">
+            <div className="w-full h-[240px] sm:h-[340px] md:h-[420px] lg:h-[450px] relative rounded-xl overflow-hidden mb-6 sm:mb-8 shadow-xl">
               <Image
                 src={program.image}
                 alt={program.title}
@@ -88,17 +85,19 @@ async function ProgramDetailContent({ params }: { params: Promise<{ id: string }
             </div>
 
             {/* Title Section */}
-            <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
-              <span className="text-[#ea580c] font-bold uppercase tracking-wider text-xs sm:text-sm">{program.title}</span>
+            <div className="flex items-center gap-3 sm:gap-4 mb-2.5 sm:mb-3">
+              <span className="text-[#ea580c] font-bold uppercase tracking-wider text-xs sm:text-[13px]">
+                {programDetailVariant?.badge || 'PROGRAM DETAILS'}
+              </span>
               <div className="h-[2px] w-8 sm:w-12 bg-[#ea580c]"></div>
             </div>
 
-            <h2 className="text-2xl sm:text-3xl lg:text-[36px] xl:text-[40px] font-extrabold font-heading text-black leading-tight tracking-tight mb-4 sm:mb-5">
-              CHAMPION {titleWord} <span className="text-[#ea580c]">{restOfTitle || 'TRAINING'}</span>
+            <h2 className="font-heading text-3xl md:text-4xl lg:text-[40px] font-extrabold text-black leading-tight tracking-tight mb-4 sm:mb-5">
+              {firstWords} {lastWord && <span className="text-[#ea580c]">{lastWord}</span>}
             </h2>
 
             {/* Description */}
-            <p className="text-gray-600 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base md:text-[17px]">
+            <p className="text-gray-600 text-[15px] md:text-[15.5px] mb-4 sm:mb-5 leading-relaxed font-normal">
               {paragraphs[0]}
             </p>
 
@@ -114,11 +113,11 @@ async function ProgramDetailContent({ params }: { params: Promise<{ id: string }
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4">
               {highlights.map((highlight: any, idx: number) => (
-                <div key={idx} className="border border-gray-100 rounded-xl p-4 text-center hover:shadow-lg transition-shadow duration-300 flex flex-col items-center">
-                  <div className="w-12 h-12 rounded-full bg-orange-50 flex items-center justify-center text-[#ea580c] mb-3">
+                <div key={idx} className="group border border-gray-100 hover:border-[#ea580c] rounded-xl p-4 text-center hover:shadow-lg transition-all duration-300 flex flex-col items-center cursor-pointer">
+                  <div className="w-12 h-12 rounded-full bg-orange-50 group-hover:bg-[#ea580c] text-[#ea580c] group-hover:text-white flex items-center justify-center mb-3 transition-all duration-300">
                     {highlight.iconNode}
                   </div>
-                  <h4 className="font-bold text-black mb-1 text-base">{highlight.title}</h4>
+                  <h4 className="font-bold text-black group-hover:text-[#ea580c] mb-1 text-base transition-colors">{highlight.title}</h4>
                   <p className="text-[13px] text-gray-500 leading-snug">{highlight.desc}</p>
                 </div>
               ))}

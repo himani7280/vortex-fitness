@@ -492,6 +492,7 @@
             "heading2": "Achieve Your Goals.",
             "description": "Welcome to VortexFit, your ultimate destination for achieving your fitness goals. We understand the importance of leading a healthy lifestyle and provide a top-notch fitness facility to support you in your fitness journey.",
             "paragraph1": "Welcome to VortexFit, your ultimate destination for achieving your fitness goals. We understand the importance of leading a healthy lifestyle and provide a top-notch fitness facility to support you in your fitness journey.",
+            "paragraph2": "Whether you are aiming to build lean muscle, increase endurance, or improve your daily health, our certified personal coaches guide you with customized workout routines and constant motivation.",
             "feature": {
               "text": "Gyms play a vital role in promoting an active and healthy lifestyle. They provide a supportive and motivating environment for individuals to engage in regular physical activity."
             },
@@ -1478,9 +1479,9 @@
             "description": "Our certified trainers are passionate, experienced and dedicated to helping you achieve your fitness goals with the right guidance and support.",
             "team": [
               {
-                "id": 1,
-                "name": "Mike Johnson",
-                "role": "STRENGTH & CONDITIONING",
+                "id": "1",
+                "name": "Alex Carter",
+                "role": "HEAD STRENGTH & CONDITIONING COACH",
                 "image": "/trainer-1.jpg",
                 "socials": {
                   "facebook": "https://www.facebook.com",
@@ -1490,9 +1491,9 @@
                 }
               },
               {
-                "id": 2,
+                "id": "2",
                 "name": "Amelia Harper",
-                "role": "PERSONAL TRAINER",
+                "role": "LEAD PERSONAL TRAINER & RECOMP COACH",
                 "image": "/trainer-2.jpg",
                 "socials": {
                   "facebook": "https://www.facebook.com",
@@ -1502,9 +1503,9 @@
                 }
               },
               {
-                "id": 3,
+                "id": "3",
                 "name": "Oliver Samuel",
-                "role": "FITNESS COACH",
+                "role": "CROSSFIT & FUNCTIONAL ENDURANCE COACH",
                 "image": "/trainer-3.jpg",
                 "socials": {
                   "facebook": "https://www.facebook.com",
@@ -1514,9 +1515,9 @@
                 }
               },
               {
-                "id": 4,
+                "id": "4",
                 "name": "George Thomas",
-                "role": "NUTRITION SPECIALIST",
+                "role": "CHIEF SPORTS NUTRITION & WELLNESS SPECIALIST",
                 "image": "/trainer-4.jpg",
                 "socials": {
                   "facebook": "https://www.facebook.com",
@@ -1541,14 +1542,14 @@
               {
                 "id": "1",
                 "name": "Alex Carter",
-                "role": "STRENGTH & CONDITIONING COACH",
-                "image": "/images/about_programs_man.jpg",
+                "role": "HEAD STRENGTH & CONDITIONING COACH",
+                "image": "/trainer-1.jpg",
                 "experience": "8+ Years",
-                "clients": "500+",
-                "specializationsTitle": "Strength, HIIT, Body Transformation",
-                "description": "Alex Carter is a certified fitness trainer with over 8 years of experience in strength training, functional fitness and overall wellness. He is passionate about helping individuals achieve their fitness goals through personalized training programs and continuous motivation.",
-                "about": "Alex believes that fitness is not just about building a strong body, but also about creating a healthier, happier and more confident life. His training approach focuses on proper technique, individual attention and sustainable results. Whether you are a beginner or an advanced fitness enthusiast, Alex designs programs that are effective, challenging and tailored to your goals.",
-                "quote": "Fitness is not a destination, it's a lifestyle. Let's build a stronger, healthier you together.",
+                "clients": "650+",
+                "specializationsTitle": "Strength, HIIT, Functional Training",
+                "description": "Alex Carter is an elite strength and conditioning specialist with over 8 years of experience building powerful, athletic physiques. He specializes in progressive overload, functional movement patterns, and mental discipline.",
+                "about": "Alex believes that strength is the foundation of all athletic performance and longevity. His training philosophy integrates biomechanics, injury prevention, and periodized strength blocks to help both beginners and experienced lifters shatter personal records sustainably.",
+                "quote": "True strength isn't just about lifting heavy; it's about showing up with relentless discipline every single day.",
                 "socials": {
                   "facebook": "https://www.facebook.com",
                   "instagram": "https://www.instagram.com",
@@ -1557,23 +1558,23 @@
                 },
                 "specializations": [
                   {
-                    "title": "Strength Training",
-                    "desc": "Build muscle, increase strength and improve overall performance.",
+                    "title": "Hypertrophy & Strength",
+                    "desc": "Compound lifts, muscle hypertrophy, and barbell mechanics.",
                     "icon": "dumbbell"
                   },
                   {
-                    "title": "Functional Fitness",
-                    "desc": "Improve agility, balance and everyday movement skills.",
+                    "title": "Functional Movement",
+                    "desc": "Kinetic chain optimization, joint mobility, and injury resilience.",
                     "icon": "running"
                   },
                   {
-                    "title": "HIIT Training",
-                    "desc": "Burn calories and enhance cardiovascular endurance.",
+                    "title": "Metabolic HIIT",
+                    "desc": "High-intensity interval training for explosive cardio and fat loss.",
                     "icon": "heart"
                   },
                   {
-                    "title": "Body Transformation",
-                    "desc": "Customized programs for weight loss and muscle gain.",
+                    "title": "Athlete Conditioning",
+                    "desc": "Speed, agility, and sport-specific physical preparation.",
                     "icon": "biceps"
                   }
                 ]
@@ -1581,14 +1582,14 @@
               {
                 "id": "2",
                 "name": "Amelia Harper",
-                "role": "PERSONAL TRAINER",
+                "role": "LEAD PERSONAL TRAINER & RECOMP COACH",
                 "image": "/trainer-2.jpg",
                 "experience": "6+ Years",
-                "clients": "300+",
-                "specializationsTitle": "Weight Loss, Flexibility, Yoga",
-                "description": "Amelia is dedicated to helping her clients transform their lives through mindful movement and tailored nutritional advice. She specializes in creating balanced routines that promote longevity and well-being.",
-                "about": "Amelia's approach blends high-intensity workouts with recovery protocols. She believes that recovery is just as important as the workout itself. Her holistic approach ensures clients avoid injury while seeing continuous progress.",
-                "quote": "The only bad workout is the one that didn't happen. Move your body and clear your mind.",
+                "clients": "480+",
+                "specializationsTitle": "Body Recomposition, Core & Posture, HIIT",
+                "description": "Amelia Harper specializes in total body transformations, core development, and metabolic conditioning. Her personalized programming has helped hundreds of clients build lean muscle and develop lasting lifestyle habits.",
+                "about": "Amelia combines science-based workout planning with supportive, energetic coaching. She emphasizes form precision, progressive core stability, and habit tracking, ensuring clients stay engaged, injury-free, and motivated throughout their journey.",
+                "quote": "Transformation begins in your mindset. Small, consistent daily victories compound into extraordinary results.",
                 "socials": {
                   "facebook": "https://www.facebook.com",
                   "instagram": "https://www.instagram.com",
@@ -1597,23 +1598,23 @@
                 },
                 "specializations": [
                   {
-                    "title": "Yoga & Flexibility",
-                    "desc": "Enhance mobility, balance and mind-body connection.",
+                    "title": "Body Recomposition",
+                    "desc": "Simultaneous fat loss and lean muscle definition.",
+                    "icon": "heart"
+                  },
+                  {
+                    "title": "Core & Posture",
+                    "desc": "Deep core activation, pelvic stability, and spine alignment.",
+                    "icon": "biceps"
+                  },
+                  {
+                    "title": "Metabolic Burn",
+                    "desc": "Fast-paced circuit training that keeps the metabolism elevated.",
                     "icon": "running"
                   },
                   {
-                    "title": "Weight Loss",
-                    "desc": "Sustainable programs focusing on fat loss and endurance.",
-                    "icon": "heart"
-                  },
-                  {
-                    "title": "Nutrition Guidance",
-                    "desc": "Custom meal plans to support your fitness journey.",
-                    "icon": "heart"
-                  },
-                  {
-                    "title": "Core Strength",
-                    "desc": "Build a solid foundation for better posture and stability.",
+                    "title": "Lifestyle Coaching",
+                    "desc": "Actionable daily habits and sustainable fitness routines.",
                     "icon": "dumbbell"
                   }
                 ]
@@ -1621,14 +1622,14 @@
               {
                 "id": "3",
                 "name": "Oliver Samuel",
-                "role": "FITNESS COACH",
+                "role": "CROSSFIT & FUNCTIONAL ENDURANCE COACH",
                 "image": "/trainer-3.jpg",
-                "experience": "5+ Years",
-                "clients": "400+",
-                "specializationsTitle": "CrossFit, Endurance, Conditioning",
-                "description": "Oliver brings high energy and dynamic routines to every session. With a background in competitive sports, he knows exactly how to push clients safely beyond their limits.",
-                "about": "Oliver focuses on athletic conditioning and explosive power. His workouts are never boring, incorporating a variety of equipment and disciplines to keep the body guessing and growing.",
-                "quote": "Push yourself, because no one else is going to do it for you. Embrace the challenge.",
+                "experience": "7+ Years",
+                "clients": "520+",
+                "specializationsTitle": "CrossFit, Olympic Lifting, Endurance",
+                "description": "Oliver Samuel is a competitive CrossFit athlete and coach who thrives on pushing human physical boundaries. He is known for high-energy group classes, Olympic lifting precision, and cardiovascular endurance programming.",
+                "about": "With a background in collegiate athletics and military conditioning, Oliver brings unrivaled enthusiasm and technical rigor to every session. He focuses on clean movement mechanics, mental toughness, and cardiovascular stamina.",
+                "quote": "Limits are self-imposed boundaries. Push through the burn and discover what you're truly capable of.",
                 "socials": {
                   "facebook": "https://www.facebook.com",
                   "instagram": "https://www.instagram.com",
@@ -1637,38 +1638,38 @@
                 },
                 "specializations": [
                   {
-                    "title": "CrossFit",
-                    "desc": "High-intensity functional movements.",
+                    "title": "Olympic Weightlifting",
+                    "desc": "Master the snatch, clean & jerk with precision bar path.",
                     "icon": "dumbbell"
                   },
                   {
-                    "title": "Endurance",
-                    "desc": "Improve stamina and aerobic capacity.",
+                    "title": "CrossFit WOD Mastery",
+                    "desc": "Work capacity across broad time and modal domains.",
                     "icon": "running"
                   },
                   {
-                    "title": "Sports Conditioning",
-                    "desc": "Train like an athlete to improve performance.",
+                    "title": "Cardiovascular Capacity",
+                    "desc": "Rowing, running, and threshold conditioning.",
+                    "icon": "heart"
+                  },
+                  {
+                    "title": "Kettlebell Flow",
+                    "desc": "Dynamic power development and grip endurance.",
                     "icon": "biceps"
-                  },
-                  {
-                    "title": "Mobility",
-                    "desc": "Increase range of motion and prevent injuries.",
-                    "icon": "running"
                   }
                 ]
               },
               {
                 "id": "4",
                 "name": "George Thomas",
-                "role": "NUTRITION SPECIALIST",
+                "role": "CHIEF SPORTS NUTRITION & WELLNESS SPECIALIST",
                 "image": "/trainer-4.jpg",
-                "experience": "10+ Years",
-                "clients": "800+",
-                "specializationsTitle": "Diet Planning, Macro Tracking, Health",
-                "description": "George is an expert in sports nutrition and dietetics. He has helped hundreds of athletes and everyday individuals optimize their diets for maximum energy and aesthetic results.",
-                "about": "George believes that abs are made in the kitchen. He breaks down complex nutritional science into actionable, easy-to-follow meal plans that fit into busy lifestyles without sacrificing flavor.",
-                "quote": "Fuel your body right, and it will reward you with strength and vitality.",
+                "experience": "9+ Years",
+                "clients": "720+",
+                "specializationsTitle": "Macro Nutrition, Metabolic Health, Recovery",
+                "description": "George Thomas bridges the critical gap between intense physical training and optimal nutritional fueling. He designs targeted nutritional protocols, micronutrient strategies, and metabolic recovery plans for peak athletic performance.",
+                "about": "George holds a Master's degree in Exercise Science and Sports Nutrition. He has guided professional athletes, bodybuilders, and everyday fitness lovers toward healthier relationships with food, optimal gut health, and peak daily energy levels.",
+                "quote": "You cannot out-train a poor diet. Fuel your body with intention, and your physique will reflect your dedication.",
                 "socials": {
                   "facebook": "https://www.facebook.com",
                   "instagram": "https://www.instagram.com",
@@ -1677,24 +1678,184 @@
                 },
                 "specializations": [
                   {
-                    "title": "Meal Planning",
-                    "desc": "Customized diets tailored to your goals.",
+                    "title": "Personalized Meal Plans",
+                    "desc": "Macro-calculated nutrition tailored to your specific metabolic rate.",
+                    "icon": "utensils"
+                  },
+                  {
+                    "title": "Body Fat Reduction",
+                    "desc": "Sustainable caloric deficit strategies without muscle loss.",
                     "icon": "heart"
                   },
                   {
-                    "title": "Macro Coaching",
-                    "desc": "Learn to track and balance your macronutrients.",
+                    "title": "Nutrient Timing",
+                    "desc": "Pre and post-workout nutrition for maximum protein synthesis.",
+                    "icon": "apple"
+                  },
+                  {
+                    "title": "Supplement Guidance",
+                    "desc": "Evidence-based ergogenic aids and recovery essentials.",
+                    "icon": "biceps"
+                  }
+                ]
+              },
+              {
+                "id": "5",
+                "name": "Sophia Reynolds",
+                "role": "WOMEN'S PHYSIQUE & GLUTE SPECIALIST",
+                "image": "/trainer-5.jpg",
+                "experience": "7+ Years",
+                "clients": "590+",
+                "specializationsTitle": "Female Hypertrophy, Glute Building, Toning",
+                "description": "Sophia Reynolds is renowned for empowering women through progressive resistance training. Her specialized programming emphasizes posterior chain mechanics, waist-to-hip ratio sculpting, and functional pelvic strength.",
+                "about": "Sophia helps women conquer gym anxiety and build curvy, strong, athletic bodies without extreme cardio or restrictive diets. She teaches lifting confidence, progressive overload, and intelligent recovery designed specifically for female physiology.",
+                "quote": "Strong is beautiful. Pick up the weights, own your strength, and step into your power with confidence.",
+                "socials": {
+                  "facebook": "https://www.facebook.com",
+                  "instagram": "https://www.instagram.com",
+                  "linkedin": "https://www.linkedin.com",
+                  "youtube": "https://www.youtube.com"
+                },
+                "specializations": [
+                  {
+                    "title": "Glute Hypertrophy",
+                    "desc": "Biomechanically optimized hip thrusts, squats, and lunges.",
                     "icon": "biceps"
                   },
                   {
-                    "title": "Supplementation",
-                    "desc": "Expert advice on vitamins and sports supplements.",
+                    "title": "Full-Body Toning",
+                    "desc": "High-rep resistance circuits for sculpted shoulders and toned legs.",
+                    "icon": "dumbbell"
+                  },
+                  {
+                    "title": "Core Sculpting",
+                    "desc": "Anti-rotation and pelvic floor stability for a tightened waistline.",
+                    "icon": "running"
+                  },
+                  {
+                    "title": "Postural Balance",
+                    "desc": "Reverse forward head posture and anterior pelvic tilt.",
+                    "icon": "heart"
+                  }
+                ]
+              },
+              {
+                "id": "6",
+                "name": "Marcus Vance",
+                "role": "BOXING & COMBAT CONDITIONING COACH",
+                "image": "/trainer-6.jpg",
+                "experience": "8+ Years",
+                "clients": "460+",
+                "specializationsTitle": "Boxing Technique, Fight Cardio, Reflexes",
+                "description": "Marcus Vance is a former golden-gloves contender who translates the electrifying intensity of ring training into high-octane fitness sessions. His workouts build lightning speed, explosive rotational power, and unbreakable cardio.",
+                "about": "Marcus combines heavy bag work, mitt drills, footwork patterns, and plyometric jump rope conditioning. His sessions are renowned for burning up to 900 calories while teaching genuine martial arts self-defense techniques.",
+                "quote": "In boxing and in life, it’s not about how hard you hit, it’s about having the stamina to keep fighting forward.",
+                "socials": {
+                  "facebook": "https://www.facebook.com",
+                  "instagram": "https://www.instagram.com",
+                  "linkedin": "https://www.linkedin.com",
+                  "youtube": "https://www.youtube.com"
+                },
+                "specializations": [
+                  {
+                    "title": "Boxing Fundamentals",
+                    "desc": "Footwork, punch combinations, head movement, and defense.",
+                    "icon": "biceps"
+                  },
+                  {
+                    "title": "Rotational Power",
+                    "desc": "Torso twist mechanics that generate devastating kinetic force.",
+                    "icon": "dumbbell"
+                  },
+                  {
+                    "title": "Heavy Bag Drills",
+                    "desc": "Relentless round-based intervals for supreme cardiovascular stamina.",
                     "icon": "heart"
                   },
                   {
-                    "title": "Lifestyle Coaching",
-                    "desc": "Build healthy habits that last a lifetime.",
+                    "title": "Agility & Hand Speed",
+                    "desc": "Speed bag, double-end bag, and reaction training.",
                     "icon": "running"
+                  }
+                ]
+              },
+              {
+                "id": "7",
+                "name": "Elena Rostova",
+                "role": "YOGA, MOBILITY & RECOVERY SPECIALIST",
+                "image": "/trainer-7.jpg",
+                "experience": "10+ Years",
+                "clients": "850+",
+                "specializationsTitle": "Vinyasa Yoga, Deep Mobility, Breathwork",
+                "description": "Elena Rostova brings an integrative approach to movement, combining dynamic Vinyasa flow, deep fascial release, and restorative breathwork to unlock pain-free joint mobility and inner serenity.",
+                "about": "Elena has trained Olympic track athletes, heavy powerlifters, and busy corporate executives. She believes that muscle strength without joint mobility leads to chronic injury. Her restorative practices restore range of motion, improve circulation, and calm the central nervous system.",
+                "quote": "Flexibility of body leads to flexibility of mind. Breathe deeply, ground your posture, and move with grace.",
+                "socials": {
+                  "facebook": "https://www.facebook.com",
+                  "instagram": "https://www.instagram.com",
+                  "linkedin": "https://www.linkedin.com",
+                  "youtube": "https://www.youtube.com"
+                },
+                "specializations": [
+                  {
+                    "title": "Dynamic Vinyasa Flow",
+                    "desc": "Synchronized breath-to-movement sequences for stamina and grace.",
+                    "icon": "running"
+                  },
+                  {
+                    "title": "Deep Hip & Shoulder Mobility",
+                    "desc": "Restore natural ball-and-socket range of motion and reduce impingement.",
+                    "icon": "heart"
+                  },
+                  {
+                    "title": "Fascial Decompression",
+                    "desc": "Active recovery techniques that accelerate muscle repair between lifts.",
+                    "icon": "biceps"
+                  },
+                  {
+                    "title": "Pranayama Breathwork",
+                    "desc": "Nervous system down-regulation to eliminate cortisol and improve sleep.",
+                    "icon": "dumbbell"
+                  }
+                ]
+              },
+              {
+                "id": "8",
+                "name": "David Miller",
+                "role": "POWERLIFTING & FUNCTIONAL HYPERTROPHY COACH",
+                "image": "/trainer-8.jpg",
+                "experience": "6+ Years",
+                "clients": "410+",
+                "specializationsTitle": "Powerlifting, Kettlebell Power, Max Strength",
+                "description": "David Miller is an IPF-certified powerlifting coach and kettlebell master. He specializes in breaking through training plateaus, dialing in competition-standard technique on the big three lifts, and building bulletproof joints.",
+                "about": "David works with athletes aiming to maximize their strength-to-weight ratio. Using RPE-based training, velocity tracking, and targeted accessory movements, David ensures every client builds raw strength safely and consistently.",
+                "quote": "Consistency over intensity. When technique is dialed in and discipline is high, PRs become inevitable.",
+                "socials": {
+                  "facebook": "https://www.facebook.com",
+                  "instagram": "https://www.instagram.com",
+                  "linkedin": "https://www.linkedin.com",
+                  "youtube": "https://www.youtube.com"
+                },
+                "specializations": [
+                  {
+                    "title": "Powerlifting Big 3",
+                    "desc": "Flawless squat, bench press, and deadlift biomechanics.",
+                    "icon": "dumbbell"
+                  },
+                  {
+                    "title": "Kettlebell Ballistics",
+                    "desc": "Hardstyle swings, snatches, and Turkish get-ups for core stability.",
+                    "icon": "biceps"
+                  },
+                  {
+                    "title": "Plateau Breaking",
+                    "desc": "Targeted weak point training with bands, chains, and pauses.",
+                    "icon": "running"
+                  },
+                  {
+                    "title": "Tendon & Joint Prep",
+                    "desc": "High-volume eccentric protocols to protect tendons under maximal load.",
+                    "icon": "heart"
                   }
                 ]
               }
@@ -1710,14 +1871,14 @@
               "1": {
                 "id": "1",
                 "name": "Alex Carter",
-                "role": "STRENGTH & CONDITIONING COACH",
-                "image": "/images/about_programs_man.jpg",
+                "role": "HEAD STRENGTH & CONDITIONING COACH",
+                "image": "/trainer-1.jpg",
                 "experience": "8+ Years",
-                "clients": "500+",
-                "specializationsTitle": "Strength, HIIT, Body Transformation",
-                "description": "Alex Carter is a certified fitness trainer with over 8 years of experience in strength training, functional fitness and overall wellness. He is passionate about helping individuals achieve their fitness goals through personalized training programs and continuous motivation.",
-                "about": "Alex believes that fitness is not just about building a strong body, but also about creating a healthier, happier and more confident life. His training approach focuses on proper technique, individual attention and sustainable results. Whether you are a beginner or an advanced fitness enthusiast, Alex designs programs that are effective, challenging and tailored to your goals.",
-                "quote": "Fitness is not a destination, it's a lifestyle. Let's build a stronger, healthier you together.",
+                "clients": "650+",
+                "specializationsTitle": "Strength, HIIT, Functional Training",
+                "description": "Alex Carter is an elite strength and conditioning specialist with over 8 years of experience building powerful, athletic physiques. He specializes in progressive overload, functional movement patterns, and mental discipline.",
+                "about": "Alex believes that strength is the foundation of all athletic performance and longevity. His training philosophy integrates biomechanics, injury prevention, and periodized strength blocks to help both beginners and experienced lifters shatter personal records sustainably.",
+                "quote": "True strength isn't just about lifting heavy; it's about showing up with relentless discipline every single day.",
                 "socials": {
                   "facebook": "https://www.facebook.com",
                   "instagram": "https://www.instagram.com",
@@ -1726,39 +1887,38 @@
                 },
                 "specializations": [
                   {
-                    "title": "Strength Training",
-                    "desc": "Build muscle, increase strength and improve overall performance.",
+                    "title": "Hypertrophy & Strength",
+                    "desc": "Compound lifts, muscle hypertrophy, and barbell mechanics.",
                     "icon": "dumbbell"
                   },
                   {
-                    "title": "Functional Fitness",
-                    "desc": "Improve agility, balance and everyday movement skills.",
+                    "title": "Functional Movement",
+                    "desc": "Kinetic chain optimization, joint mobility, and injury resilience.",
                     "icon": "running"
                   },
                   {
-                    "title": "HIIT Training",
-                    "desc": "Burn calories and enhance cardiovascular endurance.",
+                    "title": "Metabolic HIIT",
+                    "desc": "High-intensity interval training for explosive cardio and fat loss.",
                     "icon": "heart"
                   },
                   {
-                    "title": "Body Transformation",
-                    "desc": "Customized programs for weight loss and muscle gain.",
+                    "title": "Athlete Conditioning",
+                    "desc": "Speed, agility, and sport-specific physical preparation.",
                     "icon": "biceps"
                   }
-                ],
-                "enquiryLink": "/enquire?trainer=Alex%20Carter"
+                ]
               },
               "2": {
                 "id": "2",
                 "name": "Amelia Harper",
-                "role": "PERSONAL TRAINER",
+                "role": "LEAD PERSONAL TRAINER & RECOMP COACH",
                 "image": "/trainer-2.jpg",
                 "experience": "6+ Years",
-                "clients": "300+",
-                "specializationsTitle": "Weight Loss, Flexibility, Yoga",
-                "description": "Amelia is dedicated to helping her clients transform their lives through mindful movement and tailored nutritional advice. She specializes in creating balanced routines that promote longevity and well-being.",
-                "about": "Amelia's approach blends high-intensity workouts with recovery protocols. She believes that recovery is just as important as the workout itself. Her holistic approach ensures clients avoid injury while seeing continuous progress.",
-                "quote": "The only bad workout is the one that didn't happen. Move your body and clear your mind.",
+                "clients": "480+",
+                "specializationsTitle": "Body Recomposition, Core & Posture, HIIT",
+                "description": "Amelia Harper specializes in total body transformations, core development, and metabolic conditioning. Her personalized programming has helped hundreds of clients build lean muscle and develop lasting lifestyle habits.",
+                "about": "Amelia combines science-based workout planning with supportive, energetic coaching. She emphasizes form precision, progressive core stability, and habit tracking, ensuring clients stay engaged, injury-free, and motivated throughout their journey.",
+                "quote": "Transformation begins in your mindset. Small, consistent daily victories compound into extraordinary results.",
                 "socials": {
                   "facebook": "https://www.facebook.com",
                   "instagram": "https://www.instagram.com",
@@ -1767,39 +1927,38 @@
                 },
                 "specializations": [
                   {
-                    "title": "Yoga & Flexibility",
-                    "desc": "Enhance mobility, balance and mind-body connection.",
+                    "title": "Body Recomposition",
+                    "desc": "Simultaneous fat loss and lean muscle definition.",
+                    "icon": "heart"
+                  },
+                  {
+                    "title": "Core & Posture",
+                    "desc": "Deep core activation, pelvic stability, and spine alignment.",
+                    "icon": "biceps"
+                  },
+                  {
+                    "title": "Metabolic Burn",
+                    "desc": "Fast-paced circuit training that keeps the metabolism elevated.",
                     "icon": "running"
                   },
                   {
-                    "title": "Weight Loss",
-                    "desc": "Sustainable programs focusing on fat loss and endurance.",
-                    "icon": "heart"
-                  },
-                  {
-                    "title": "Nutrition Guidance",
-                    "desc": "Custom meal plans to support your fitness journey.",
-                    "icon": "heart"
-                  },
-                  {
-                    "title": "Core Strength",
-                    "desc": "Build a solid foundation for better posture and stability.",
+                    "title": "Lifestyle Coaching",
+                    "desc": "Actionable daily habits and sustainable fitness routines.",
                     "icon": "dumbbell"
                   }
-                ],
-                "enquiryLink": "/enquire?trainer=Amelia%20Harper"
+                ]
               },
               "3": {
                 "id": "3",
                 "name": "Oliver Samuel",
-                "role": "FITNESS COACH",
+                "role": "CROSSFIT & FUNCTIONAL ENDURANCE COACH",
                 "image": "/trainer-3.jpg",
-                "experience": "5+ Years",
-                "clients": "400+",
-                "specializationsTitle": "CrossFit, Endurance, Conditioning",
-                "description": "Oliver brings high energy and dynamic routines to every session. With a background in competitive sports, he knows exactly how to push clients safely beyond their limits.",
-                "about": "Oliver focuses on athletic conditioning and explosive power. His workouts are never boring, incorporating a variety of equipment and disciplines to keep the body guessing and growing.",
-                "quote": "Push yourself, because no one else is going to do it for you. Embrace the challenge.",
+                "experience": "7+ Years",
+                "clients": "520+",
+                "specializationsTitle": "CrossFit, Olympic Lifting, Endurance",
+                "description": "Oliver Samuel is a competitive CrossFit athlete and coach who thrives on pushing human physical boundaries. He is known for high-energy group classes, Olympic lifting precision, and cardiovascular endurance programming.",
+                "about": "With a background in collegiate athletics and military conditioning, Oliver brings unrivaled enthusiasm and technical rigor to every session. He focuses on clean movement mechanics, mental toughness, and cardiovascular stamina.",
+                "quote": "Limits are self-imposed boundaries. Push through the burn and discover what you're truly capable of.",
                 "socials": {
                   "facebook": "https://www.facebook.com",
                   "instagram": "https://www.instagram.com",
@@ -1808,39 +1967,38 @@
                 },
                 "specializations": [
                   {
-                    "title": "CrossFit",
-                    "desc": "High-intensity functional movements.",
+                    "title": "Olympic Weightlifting",
+                    "desc": "Master the snatch, clean & jerk with precision bar path.",
                     "icon": "dumbbell"
                   },
                   {
-                    "title": "Endurance",
-                    "desc": "Improve stamina and aerobic capacity.",
+                    "title": "CrossFit WOD Mastery",
+                    "desc": "Work capacity across broad time and modal domains.",
                     "icon": "running"
                   },
                   {
-                    "title": "Sports Conditioning",
-                    "desc": "Train like an athlete to improve performance.",
+                    "title": "Cardiovascular Capacity",
+                    "desc": "Rowing, running, and threshold conditioning.",
+                    "icon": "heart"
+                  },
+                  {
+                    "title": "Kettlebell Flow",
+                    "desc": "Dynamic power development and grip endurance.",
                     "icon": "biceps"
-                  },
-                  {
-                    "title": "Mobility",
-                    "desc": "Increase range of motion and prevent injuries.",
-                    "icon": "running"
                   }
-                ],
-                "enquiryLink": "/enquire?trainer=Oliver%20Samuel"
+                ]
               },
               "4": {
                 "id": "4",
                 "name": "George Thomas",
-                "role": "NUTRITION SPECIALIST",
+                "role": "CHIEF SPORTS NUTRITION & WELLNESS SPECIALIST",
                 "image": "/trainer-4.jpg",
-                "experience": "10+ Years",
-                "clients": "800+",
-                "specializationsTitle": "Diet Planning, Macro Tracking, Health",
-                "description": "George is an expert in sports nutrition and dietetics. He has helped hundreds of athletes and everyday individuals optimize their diets for maximum energy and aesthetic results.",
-                "about": "George believes that abs are made in the kitchen. He breaks down complex nutritional science into actionable, easy-to-follow meal plans that fit into busy lifestyles without sacrificing flavor.",
-                "quote": "Fuel your body right, and it will reward you with strength and vitality.",
+                "experience": "9+ Years",
+                "clients": "720+",
+                "specializationsTitle": "Macro Nutrition, Metabolic Health, Recovery",
+                "description": "George Thomas bridges the critical gap between intense physical training and optimal nutritional fueling. He designs targeted nutritional protocols, micronutrient strategies, and metabolic recovery plans for peak athletic performance.",
+                "about": "George holds a Master's degree in Exercise Science and Sports Nutrition. He has guided professional athletes, bodybuilders, and everyday fitness lovers toward healthier relationships with food, optimal gut health, and peak daily energy levels.",
+                "quote": "You cannot out-train a poor diet. Fuel your body with intention, and your physique will reflect your dedication.",
                 "socials": {
                   "facebook": "https://www.facebook.com",
                   "instagram": "https://www.instagram.com",
@@ -1849,41 +2007,200 @@
                 },
                 "specializations": [
                   {
-                    "title": "Meal Planning",
-                    "desc": "Customized diets tailored to your goals.",
+                    "title": "Personalized Meal Plans",
+                    "desc": "Macro-calculated nutrition tailored to your specific metabolic rate.",
+                    "icon": "utensils"
+                  },
+                  {
+                    "title": "Body Fat Reduction",
+                    "desc": "Sustainable caloric deficit strategies without muscle loss.",
                     "icon": "heart"
                   },
                   {
-                    "title": "Macro Coaching",
-                    "desc": "Learn to track and balance your macronutrients.",
+                    "title": "Nutrient Timing",
+                    "desc": "Pre and post-workout nutrition for maximum protein synthesis.",
+                    "icon": "apple"
+                  },
+                  {
+                    "title": "Supplement Guidance",
+                    "desc": "Evidence-based ergogenic aids and recovery essentials.",
+                    "icon": "biceps"
+                  }
+                ]
+              },
+              "5": {
+                "id": "5",
+                "name": "Sophia Reynolds",
+                "role": "WOMEN'S PHYSIQUE & GLUTE SPECIALIST",
+                "image": "/trainer-5.jpg",
+                "experience": "7+ Years",
+                "clients": "590+",
+                "specializationsTitle": "Female Hypertrophy, Glute Building, Toning",
+                "description": "Sophia Reynolds is renowned for empowering women through progressive resistance training. Her specialized programming emphasizes posterior chain mechanics, waist-to-hip ratio sculpting, and functional pelvic strength.",
+                "about": "Sophia helps women conquer gym anxiety and build curvy, strong, athletic bodies without extreme cardio or restrictive diets. She teaches lifting confidence, progressive overload, and intelligent recovery designed specifically for female physiology.",
+                "quote": "Strong is beautiful. Pick up the weights, own your strength, and step into your power with confidence.",
+                "socials": {
+                  "facebook": "https://www.facebook.com",
+                  "instagram": "https://www.instagram.com",
+                  "linkedin": "https://www.linkedin.com",
+                  "youtube": "https://www.youtube.com"
+                },
+                "specializations": [
+                  {
+                    "title": "Glute Hypertrophy",
+                    "desc": "Biomechanically optimized hip thrusts, squats, and lunges.",
                     "icon": "biceps"
                   },
                   {
-                    "title": "Supplementation",
-                    "desc": "Expert advice on vitamins and sports supplements.",
+                    "title": "Full-Body Toning",
+                    "desc": "High-rep resistance circuits for sculpted shoulders and toned legs.",
+                    "icon": "dumbbell"
+                  },
+                  {
+                    "title": "Core Sculpting",
+                    "desc": "Anti-rotation and pelvic floor stability for a tightened waistline.",
+                    "icon": "running"
+                  },
+                  {
+                    "title": "Postural Balance",
+                    "desc": "Reverse forward head posture and anterior pelvic tilt.",
+                    "icon": "heart"
+                  }
+                ]
+              },
+              "6": {
+                "id": "6",
+                "name": "Marcus Vance",
+                "role": "BOXING & COMBAT CONDITIONING COACH",
+                "image": "/trainer-6.jpg",
+                "experience": "8+ Years",
+                "clients": "460+",
+                "specializationsTitle": "Boxing Technique, Fight Cardio, Reflexes",
+                "description": "Marcus Vance is a former golden-gloves contender who translates the electrifying intensity of ring training into high-octane fitness sessions. His workouts build lightning speed, explosive rotational power, and unbreakable cardio.",
+                "about": "Marcus combines heavy bag work, mitt drills, footwork patterns, and plyometric jump rope conditioning. His sessions are renowned for burning up to 900 calories while teaching genuine martial arts self-defense techniques.",
+                "quote": "In boxing and in life, it’s not about how hard you hit, it’s about having the stamina to keep fighting forward.",
+                "socials": {
+                  "facebook": "https://www.facebook.com",
+                  "instagram": "https://www.instagram.com",
+                  "linkedin": "https://www.linkedin.com",
+                  "youtube": "https://www.youtube.com"
+                },
+                "specializations": [
+                  {
+                    "title": "Boxing Fundamentals",
+                    "desc": "Footwork, punch combinations, head movement, and defense.",
+                    "icon": "biceps"
+                  },
+                  {
+                    "title": "Rotational Power",
+                    "desc": "Torso twist mechanics that generate devastating kinetic force.",
+                    "icon": "dumbbell"
+                  },
+                  {
+                    "title": "Heavy Bag Drills",
+                    "desc": "Relentless round-based intervals for supreme cardiovascular stamina.",
                     "icon": "heart"
                   },
                   {
-                    "title": "Lifestyle Coaching",
-                    "desc": "Build healthy habits that last a lifetime.",
+                    "title": "Agility & Hand Speed",
+                    "desc": "Speed bag, double-end bag, and reaction training.",
                     "icon": "running"
                   }
-                ],
-                "enquiryLink": "/enquire?trainer=George%20Thomas"
+                ]
+              },
+              "7": {
+                "id": "7",
+                "name": "Elena Rostova",
+                "role": "YOGA, MOBILITY & RECOVERY SPECIALIST",
+                "image": "/trainer-7.jpg",
+                "experience": "10+ Years",
+                "clients": "850+",
+                "specializationsTitle": "Vinyasa Yoga, Deep Mobility, Breathwork",
+                "description": "Elena Rostova brings an integrative approach to movement, combining dynamic Vinyasa flow, deep fascial release, and restorative breathwork to unlock pain-free joint mobility and inner serenity.",
+                "about": "Elena has trained Olympic track athletes, heavy powerlifters, and busy corporate executives. She believes that muscle strength without joint mobility leads to chronic injury. Her restorative practices restore range of motion, improve circulation, and calm the central nervous system.",
+                "quote": "Flexibility of body leads to flexibility of mind. Breathe deeply, ground your posture, and move with grace.",
+                "socials": {
+                  "facebook": "https://www.facebook.com",
+                  "instagram": "https://www.instagram.com",
+                  "linkedin": "https://www.linkedin.com",
+                  "youtube": "https://www.youtube.com"
+                },
+                "specializations": [
+                  {
+                    "title": "Dynamic Vinyasa Flow",
+                    "desc": "Synchronized breath-to-movement sequences for stamina and grace.",
+                    "icon": "running"
+                  },
+                  {
+                    "title": "Deep Hip & Shoulder Mobility",
+                    "desc": "Restore natural ball-and-socket range of motion and reduce impingement.",
+                    "icon": "heart"
+                  },
+                  {
+                    "title": "Fascial Decompression",
+                    "desc": "Active recovery techniques that accelerate muscle repair between lifts.",
+                    "icon": "biceps"
+                  },
+                  {
+                    "title": "Pranayama Breathwork",
+                    "desc": "Nervous system down-regulation to eliminate cortisol and improve sleep.",
+                    "icon": "dumbbell"
+                  }
+                ]
+              },
+              "8": {
+                "id": "8",
+                "name": "David Miller",
+                "role": "POWERLIFTING & FUNCTIONAL HYPERTROPHY COACH",
+                "image": "/trainer-8.jpg",
+                "experience": "6+ Years",
+                "clients": "410+",
+                "specializationsTitle": "Powerlifting, Kettlebell Power, Max Strength",
+                "description": "David Miller is an IPF-certified powerlifting coach and kettlebell master. He specializes in breaking through training plateaus, dialing in competition-standard technique on the big three lifts, and building bulletproof joints.",
+                "about": "David works with athletes aiming to maximize their strength-to-weight ratio. Using RPE-based training, velocity tracking, and targeted accessory movements, David ensures every client builds raw strength safely and consistently.",
+                "quote": "Consistency over intensity. When technique is dialed in and discipline is high, PRs become inevitable.",
+                "socials": {
+                  "facebook": "https://www.facebook.com",
+                  "instagram": "https://www.instagram.com",
+                  "linkedin": "https://www.linkedin.com",
+                  "youtube": "https://www.youtube.com"
+                },
+                "specializations": [
+                  {
+                    "title": "Powerlifting Big 3",
+                    "desc": "Flawless squat, bench press, and deadlift biomechanics.",
+                    "icon": "dumbbell"
+                  },
+                  {
+                    "title": "Kettlebell Ballistics",
+                    "desc": "Hardstyle swings, snatches, and Turkish get-ups for core stability.",
+                    "icon": "biceps"
+                  },
+                  {
+                    "title": "Plateau Breaking",
+                    "desc": "Targeted weak point training with bands, chains, and pauses.",
+                    "icon": "running"
+                  },
+                  {
+                    "title": "Tendon & Joint Prep",
+                    "desc": "High-volume eccentric protocols to protect tendons under maximal load.",
+                    "icon": "heart"
+                  }
+                ]
               }
             },
             "items": [
               {
                 "id": "1",
                 "name": "Alex Carter",
-                "role": "STRENGTH & CONDITIONING COACH",
-                "image": "/images/about_programs_man.jpg",
+                "role": "HEAD STRENGTH & CONDITIONING COACH",
+                "image": "/trainer-1.jpg",
                 "experience": "8+ Years",
-                "clients": "500+",
-                "specializationsTitle": "Strength, HIIT, Body Transformation",
-                "description": "Alex Carter is a certified fitness trainer with over 8 years of experience in strength training, functional fitness and overall wellness. He is passionate about helping individuals achieve their fitness goals through personalized training programs and continuous motivation.",
-                "about": "Alex believes that fitness is not just about building a strong body, but also about creating a healthier, happier and more confident life. His training approach focuses on proper technique, individual attention and sustainable results. Whether you are a beginner or an advanced fitness enthusiast, Alex designs programs that are effective, challenging and tailored to your goals.",
-                "quote": "Fitness is not a destination, it's a lifestyle. Let's build a stronger, healthier you together.",
+                "clients": "650+",
+                "specializationsTitle": "Strength, HIIT, Functional Training",
+                "description": "Alex Carter is an elite strength and conditioning specialist with over 8 years of experience building powerful, athletic physiques. He specializes in progressive overload, functional movement patterns, and mental discipline.",
+                "about": "Alex believes that strength is the foundation of all athletic performance and longevity. His training philosophy integrates biomechanics, injury prevention, and periodized strength blocks to help both beginners and experienced lifters shatter personal records sustainably.",
+                "quote": "True strength isn't just about lifting heavy; it's about showing up with relentless discipline every single day.",
                 "socials": {
                   "facebook": "https://www.facebook.com",
                   "instagram": "https://www.instagram.com",
@@ -1892,23 +2209,23 @@
                 },
                 "specializations": [
                   {
-                    "title": "Strength Training",
-                    "desc": "Build muscle, increase strength and improve overall performance.",
+                    "title": "Hypertrophy & Strength",
+                    "desc": "Compound lifts, muscle hypertrophy, and barbell mechanics.",
                     "icon": "dumbbell"
                   },
                   {
-                    "title": "Functional Fitness",
-                    "desc": "Improve agility, balance and everyday movement skills.",
+                    "title": "Functional Movement",
+                    "desc": "Kinetic chain optimization, joint mobility, and injury resilience.",
                     "icon": "running"
                   },
                   {
-                    "title": "HIIT Training",
-                    "desc": "Burn calories and enhance cardiovascular endurance.",
+                    "title": "Metabolic HIIT",
+                    "desc": "High-intensity interval training for explosive cardio and fat loss.",
                     "icon": "heart"
                   },
                   {
-                    "title": "Body Transformation",
-                    "desc": "Customized programs for weight loss and muscle gain.",
+                    "title": "Athlete Conditioning",
+                    "desc": "Speed, agility, and sport-specific physical preparation.",
                     "icon": "biceps"
                   }
                 ]
@@ -1916,14 +2233,14 @@
               {
                 "id": "2",
                 "name": "Amelia Harper",
-                "role": "PERSONAL TRAINER",
+                "role": "LEAD PERSONAL TRAINER & RECOMP COACH",
                 "image": "/trainer-2.jpg",
                 "experience": "6+ Years",
-                "clients": "300+",
-                "specializationsTitle": "Weight Loss, Flexibility, Yoga",
-                "description": "Amelia is dedicated to helping her clients transform their lives through mindful movement and tailored nutritional advice. She specializes in creating balanced routines that promote longevity and well-being.",
-                "about": "Amelia's approach blends high-intensity workouts with recovery protocols. She believes that recovery is just as important as the workout itself. Her holistic approach ensures clients avoid injury while seeing continuous progress.",
-                "quote": "The only bad workout is the one that didn't happen. Move your body and clear your mind.",
+                "clients": "480+",
+                "specializationsTitle": "Body Recomposition, Core & Posture, HIIT",
+                "description": "Amelia Harper specializes in total body transformations, core development, and metabolic conditioning. Her personalized programming has helped hundreds of clients build lean muscle and develop lasting lifestyle habits.",
+                "about": "Amelia combines science-based workout planning with supportive, energetic coaching. She emphasizes form precision, progressive core stability, and habit tracking, ensuring clients stay engaged, injury-free, and motivated throughout their journey.",
+                "quote": "Transformation begins in your mindset. Small, consistent daily victories compound into extraordinary results.",
                 "socials": {
                   "facebook": "https://www.facebook.com",
                   "instagram": "https://www.instagram.com",
@@ -1932,23 +2249,23 @@
                 },
                 "specializations": [
                   {
-                    "title": "Yoga & Flexibility",
-                    "desc": "Enhance mobility, balance and mind-body connection.",
+                    "title": "Body Recomposition",
+                    "desc": "Simultaneous fat loss and lean muscle definition.",
+                    "icon": "heart"
+                  },
+                  {
+                    "title": "Core & Posture",
+                    "desc": "Deep core activation, pelvic stability, and spine alignment.",
+                    "icon": "biceps"
+                  },
+                  {
+                    "title": "Metabolic Burn",
+                    "desc": "Fast-paced circuit training that keeps the metabolism elevated.",
                     "icon": "running"
                   },
                   {
-                    "title": "Weight Loss",
-                    "desc": "Sustainable programs focusing on fat loss and endurance.",
-                    "icon": "heart"
-                  },
-                  {
-                    "title": "Nutrition Guidance",
-                    "desc": "Custom meal plans to support your fitness journey.",
-                    "icon": "heart"
-                  },
-                  {
-                    "title": "Core Strength",
-                    "desc": "Build a solid foundation for better posture and stability.",
+                    "title": "Lifestyle Coaching",
+                    "desc": "Actionable daily habits and sustainable fitness routines.",
                     "icon": "dumbbell"
                   }
                 ]
@@ -1956,14 +2273,14 @@
               {
                 "id": "3",
                 "name": "Oliver Samuel",
-                "role": "FITNESS COACH",
+                "role": "CROSSFIT & FUNCTIONAL ENDURANCE COACH",
                 "image": "/trainer-3.jpg",
-                "experience": "5+ Years",
-                "clients": "400+",
-                "specializationsTitle": "CrossFit, Endurance, Conditioning",
-                "description": "Oliver brings high energy and dynamic routines to every session. With a background in competitive sports, he knows exactly how to push clients safely beyond their limits.",
-                "about": "Oliver focuses on athletic conditioning and explosive power. His workouts are never boring, incorporating a variety of equipment and disciplines to keep the body guessing and growing.",
-                "quote": "Push yourself, because no one else is going to do it for you. Embrace the challenge.",
+                "experience": "7+ Years",
+                "clients": "520+",
+                "specializationsTitle": "CrossFit, Olympic Lifting, Endurance",
+                "description": "Oliver Samuel is a competitive CrossFit athlete and coach who thrives on pushing human physical boundaries. He is known for high-energy group classes, Olympic lifting precision, and cardiovascular endurance programming.",
+                "about": "With a background in collegiate athletics and military conditioning, Oliver brings unrivaled enthusiasm and technical rigor to every session. He focuses on clean movement mechanics, mental toughness, and cardiovascular stamina.",
+                "quote": "Limits are self-imposed boundaries. Push through the burn and discover what you're truly capable of.",
                 "socials": {
                   "facebook": "https://www.facebook.com",
                   "instagram": "https://www.instagram.com",
@@ -1972,38 +2289,38 @@
                 },
                 "specializations": [
                   {
-                    "title": "CrossFit",
-                    "desc": "High-intensity functional movements.",
+                    "title": "Olympic Weightlifting",
+                    "desc": "Master the snatch, clean & jerk with precision bar path.",
                     "icon": "dumbbell"
                   },
                   {
-                    "title": "Endurance",
-                    "desc": "Improve stamina and aerobic capacity.",
+                    "title": "CrossFit WOD Mastery",
+                    "desc": "Work capacity across broad time and modal domains.",
                     "icon": "running"
                   },
                   {
-                    "title": "Sports Conditioning",
-                    "desc": "Train like an athlete to improve performance.",
+                    "title": "Cardiovascular Capacity",
+                    "desc": "Rowing, running, and threshold conditioning.",
+                    "icon": "heart"
+                  },
+                  {
+                    "title": "Kettlebell Flow",
+                    "desc": "Dynamic power development and grip endurance.",
                     "icon": "biceps"
-                  },
-                  {
-                    "title": "Mobility",
-                    "desc": "Increase range of motion and prevent injuries.",
-                    "icon": "running"
                   }
                 ]
               },
               {
                 "id": "4",
                 "name": "George Thomas",
-                "role": "NUTRITION SPECIALIST",
+                "role": "CHIEF SPORTS NUTRITION & WELLNESS SPECIALIST",
                 "image": "/trainer-4.jpg",
-                "experience": "10+ Years",
-                "clients": "800+",
-                "specializationsTitle": "Diet Planning, Macro Tracking, Health",
-                "description": "George is an expert in sports nutrition and dietetics. He has helped hundreds of athletes and everyday individuals optimize their diets for maximum energy and aesthetic results.",
-                "about": "George believes that abs are made in the kitchen. He breaks down complex nutritional science into actionable, easy-to-follow meal plans that fit into busy lifestyles without sacrificing flavor.",
-                "quote": "Fuel your body right, and it will reward you with strength and vitality.",
+                "experience": "9+ Years",
+                "clients": "720+",
+                "specializationsTitle": "Macro Nutrition, Metabolic Health, Recovery",
+                "description": "George Thomas bridges the critical gap between intense physical training and optimal nutritional fueling. He designs targeted nutritional protocols, micronutrient strategies, and metabolic recovery plans for peak athletic performance.",
+                "about": "George holds a Master's degree in Exercise Science and Sports Nutrition. He has guided professional athletes, bodybuilders, and everyday fitness lovers toward healthier relationships with food, optimal gut health, and peak daily energy levels.",
+                "quote": "You cannot out-train a poor diet. Fuel your body with intention, and your physique will reflect your dedication.",
                 "socials": {
                   "facebook": "https://www.facebook.com",
                   "instagram": "https://www.instagram.com",
@@ -2012,24 +2329,184 @@
                 },
                 "specializations": [
                   {
-                    "title": "Meal Planning",
-                    "desc": "Customized diets tailored to your goals.",
+                    "title": "Personalized Meal Plans",
+                    "desc": "Macro-calculated nutrition tailored to your specific metabolic rate.",
+                    "icon": "utensils"
+                  },
+                  {
+                    "title": "Body Fat Reduction",
+                    "desc": "Sustainable caloric deficit strategies without muscle loss.",
                     "icon": "heart"
                   },
                   {
-                    "title": "Macro Coaching",
-                    "desc": "Learn to track and balance your macronutrients.",
+                    "title": "Nutrient Timing",
+                    "desc": "Pre and post-workout nutrition for maximum protein synthesis.",
+                    "icon": "apple"
+                  },
+                  {
+                    "title": "Supplement Guidance",
+                    "desc": "Evidence-based ergogenic aids and recovery essentials.",
+                    "icon": "biceps"
+                  }
+                ]
+              },
+              {
+                "id": "5",
+                "name": "Sophia Reynolds",
+                "role": "WOMEN'S PHYSIQUE & GLUTE SPECIALIST",
+                "image": "/trainer-5.jpg",
+                "experience": "7+ Years",
+                "clients": "590+",
+                "specializationsTitle": "Female Hypertrophy, Glute Building, Toning",
+                "description": "Sophia Reynolds is renowned for empowering women through progressive resistance training. Her specialized programming emphasizes posterior chain mechanics, waist-to-hip ratio sculpting, and functional pelvic strength.",
+                "about": "Sophia helps women conquer gym anxiety and build curvy, strong, athletic bodies without extreme cardio or restrictive diets. She teaches lifting confidence, progressive overload, and intelligent recovery designed specifically for female physiology.",
+                "quote": "Strong is beautiful. Pick up the weights, own your strength, and step into your power with confidence.",
+                "socials": {
+                  "facebook": "https://www.facebook.com",
+                  "instagram": "https://www.instagram.com",
+                  "linkedin": "https://www.linkedin.com",
+                  "youtube": "https://www.youtube.com"
+                },
+                "specializations": [
+                  {
+                    "title": "Glute Hypertrophy",
+                    "desc": "Biomechanically optimized hip thrusts, squats, and lunges.",
                     "icon": "biceps"
                   },
                   {
-                    "title": "Supplementation",
-                    "desc": "Expert advice on vitamins and sports supplements.",
+                    "title": "Full-Body Toning",
+                    "desc": "High-rep resistance circuits for sculpted shoulders and toned legs.",
+                    "icon": "dumbbell"
+                  },
+                  {
+                    "title": "Core Sculpting",
+                    "desc": "Anti-rotation and pelvic floor stability for a tightened waistline.",
+                    "icon": "running"
+                  },
+                  {
+                    "title": "Postural Balance",
+                    "desc": "Reverse forward head posture and anterior pelvic tilt.",
+                    "icon": "heart"
+                  }
+                ]
+              },
+              {
+                "id": "6",
+                "name": "Marcus Vance",
+                "role": "BOXING & COMBAT CONDITIONING COACH",
+                "image": "/trainer-6.jpg",
+                "experience": "8+ Years",
+                "clients": "460+",
+                "specializationsTitle": "Boxing Technique, Fight Cardio, Reflexes",
+                "description": "Marcus Vance is a former golden-gloves contender who translates the electrifying intensity of ring training into high-octane fitness sessions. His workouts build lightning speed, explosive rotational power, and unbreakable cardio.",
+                "about": "Marcus combines heavy bag work, mitt drills, footwork patterns, and plyometric jump rope conditioning. His sessions are renowned for burning up to 900 calories while teaching genuine martial arts self-defense techniques.",
+                "quote": "In boxing and in life, it’s not about how hard you hit, it’s about having the stamina to keep fighting forward.",
+                "socials": {
+                  "facebook": "https://www.facebook.com",
+                  "instagram": "https://www.instagram.com",
+                  "linkedin": "https://www.linkedin.com",
+                  "youtube": "https://www.youtube.com"
+                },
+                "specializations": [
+                  {
+                    "title": "Boxing Fundamentals",
+                    "desc": "Footwork, punch combinations, head movement, and defense.",
+                    "icon": "biceps"
+                  },
+                  {
+                    "title": "Rotational Power",
+                    "desc": "Torso twist mechanics that generate devastating kinetic force.",
+                    "icon": "dumbbell"
+                  },
+                  {
+                    "title": "Heavy Bag Drills",
+                    "desc": "Relentless round-based intervals for supreme cardiovascular stamina.",
                     "icon": "heart"
                   },
                   {
-                    "title": "Lifestyle Coaching",
-                    "desc": "Build healthy habits that last a lifetime.",
+                    "title": "Agility & Hand Speed",
+                    "desc": "Speed bag, double-end bag, and reaction training.",
                     "icon": "running"
+                  }
+                ]
+              },
+              {
+                "id": "7",
+                "name": "Elena Rostova",
+                "role": "YOGA, MOBILITY & RECOVERY SPECIALIST",
+                "image": "/trainer-7.jpg",
+                "experience": "10+ Years",
+                "clients": "850+",
+                "specializationsTitle": "Vinyasa Yoga, Deep Mobility, Breathwork",
+                "description": "Elena Rostova brings an integrative approach to movement, combining dynamic Vinyasa flow, deep fascial release, and restorative breathwork to unlock pain-free joint mobility and inner serenity.",
+                "about": "Elena has trained Olympic track athletes, heavy powerlifters, and busy corporate executives. She believes that muscle strength without joint mobility leads to chronic injury. Her restorative practices restore range of motion, improve circulation, and calm the central nervous system.",
+                "quote": "Flexibility of body leads to flexibility of mind. Breathe deeply, ground your posture, and move with grace.",
+                "socials": {
+                  "facebook": "https://www.facebook.com",
+                  "instagram": "https://www.instagram.com",
+                  "linkedin": "https://www.linkedin.com",
+                  "youtube": "https://www.youtube.com"
+                },
+                "specializations": [
+                  {
+                    "title": "Dynamic Vinyasa Flow",
+                    "desc": "Synchronized breath-to-movement sequences for stamina and grace.",
+                    "icon": "running"
+                  },
+                  {
+                    "title": "Deep Hip & Shoulder Mobility",
+                    "desc": "Restore natural ball-and-socket range of motion and reduce impingement.",
+                    "icon": "heart"
+                  },
+                  {
+                    "title": "Fascial Decompression",
+                    "desc": "Active recovery techniques that accelerate muscle repair between lifts.",
+                    "icon": "biceps"
+                  },
+                  {
+                    "title": "Pranayama Breathwork",
+                    "desc": "Nervous system down-regulation to eliminate cortisol and improve sleep.",
+                    "icon": "dumbbell"
+                  }
+                ]
+              },
+              {
+                "id": "8",
+                "name": "David Miller",
+                "role": "POWERLIFTING & FUNCTIONAL HYPERTROPHY COACH",
+                "image": "/trainer-8.jpg",
+                "experience": "6+ Years",
+                "clients": "410+",
+                "specializationsTitle": "Powerlifting, Kettlebell Power, Max Strength",
+                "description": "David Miller is an IPF-certified powerlifting coach and kettlebell master. He specializes in breaking through training plateaus, dialing in competition-standard technique on the big three lifts, and building bulletproof joints.",
+                "about": "David works with athletes aiming to maximize their strength-to-weight ratio. Using RPE-based training, velocity tracking, and targeted accessory movements, David ensures every client builds raw strength safely and consistently.",
+                "quote": "Consistency over intensity. When technique is dialed in and discipline is high, PRs become inevitable.",
+                "socials": {
+                  "facebook": "https://www.facebook.com",
+                  "instagram": "https://www.instagram.com",
+                  "linkedin": "https://www.linkedin.com",
+                  "youtube": "https://www.youtube.com"
+                },
+                "specializations": [
+                  {
+                    "title": "Powerlifting Big 3",
+                    "desc": "Flawless squat, bench press, and deadlift biomechanics.",
+                    "icon": "dumbbell"
+                  },
+                  {
+                    "title": "Kettlebell Ballistics",
+                    "desc": "Hardstyle swings, snatches, and Turkish get-ups for core stability.",
+                    "icon": "biceps"
+                  },
+                  {
+                    "title": "Plateau Breaking",
+                    "desc": "Targeted weak point training with bands, chains, and pauses.",
+                    "icon": "running"
+                  },
+                  {
+                    "title": "Tendon & Joint Prep",
+                    "desc": "High-volume eccentric protocols to protect tendons under maximal load.",
+                    "icon": "heart"
                   }
                 ]
               }
@@ -2187,19 +2664,19 @@
       "Testimonials": {
         "variants": {
           "FitnessTestimonials1": {
-            "badge": "Our Clients Say",
-            "topText": "Our Clients Say",
+            "badge": "OUR CLIENTS SAY",
+            "topText": "OUR CLIENTS SAY",
             "titleStart": "TESTI",
-            "heading1": "What Our ",
+            "heading1": "TESTI",
             "titleHighlight": "MONIALS",
-            "heading2": "Clients Say",
+            "heading2": "MONIALS",
             "description": "Real stories from real people who have transformed their lives with our training, support and community.",
             "items": [
               {
                 "id": 1,
                 "name": "Emily Johnson",
                 "role": "Entrepreneur",
-                "text": "VortexFit has completely changed my lifestyle. The trainers are knowledgeable, supportive and truly care about your progress. I feel stronger, healthier and more confident than ever before!",
+                "text": "VortexFit has completely changed my lifestyle. The trainers are knowledgeable, supportive and truly care about your progress. The workouts are effective, and the environment is always positive and motivating. I feel stronger, healthier and more confident than ever before!",
                 "image": "/images/testimonial_girl.jpg"
               },
               {

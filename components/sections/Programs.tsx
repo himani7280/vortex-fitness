@@ -218,12 +218,12 @@ const Programs: React.FC<ProgramsProps> = ({ className = '' }) => {
           </div>
 
           {/* Heading */}
-          <h2 className="gsap-header-item font-heading text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-extrabold text-white leading-tight sm:leading-[1.1] mb-2 sm:mb-3 text-center">
+          <h2 className="gsap-header-item font-heading text-3xl md:text-4xl lg:text-[40px] font-extrabold text-white leading-tight mb-2 sm:mb-3 text-center">
             {programs.heading1} <span className="text-[#ea580c]">{programs.heading2}</span>
           </h2>
 
           {/* Description */}
-          <p className="gsap-header-item text-gray-400 text-xs sm:text-sm md:text-base leading-relaxed max-w-2xl mx-auto">
+          <p className="gsap-header-item text-gray-300 text-[15px] md:text-[15.5px] leading-relaxed max-w-2xl mx-auto text-center font-normal">
             {programs.description}
           </p>
         </div>

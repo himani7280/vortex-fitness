@@ -161,11 +161,11 @@ const Blog = ({ isCarousel = false, limit, title, subtitle }: BlogProps) => {
   );
 
   return (
-    <section className="w-full bg-white py-8 md:py-12 font-sans">
+    <section className="w-full bg-white py-8 sm:py-9 md:py-10 lg:py-12 font-sans">
       <div className="max-w-[1400px] mx-auto px-4 md:px-6 lg:px-6">
 
         {/* ── Section Header ── */}
-        <div className="flex flex-col items-center text-center mb-8">
+        <div className="flex flex-col items-center text-center mb-6 sm:mb-7">
           <div className="flex items-center gap-2 mb-1">
             <div className="h-[2px] w-6 sm:w-10 bg-[#ea580c]" />
             <Dumbbell className="w-4 h-4 sm:w-5 sm:h-5 text-[#ea580c] -scale-x-100" />
@@ -175,10 +175,10 @@ const Blog = ({ isCarousel = false, limit, title, subtitle }: BlogProps) => {
             <Dumbbell className="w-4 h-4 sm:w-5 sm:h-5 text-[#ea580c]" />
             <div className="h-[2px] w-6 sm:w-10 bg-[#ea580c]" />
           </div>
-          <h2 className="font-heading text-3xl sm:text-4xl md:text-[48px] font-black text-black leading-[1.05] mb-2 tracking-tight">
+          <h2 className="font-heading text-3xl md:text-4xl lg:text-[40px] font-extrabold text-black leading-tight mb-2 text-center">
             {title ?? defaultTitle}
           </h2>
-          <p className="text-gray-500 text-[14px] md:text-[15px] leading-relaxed max-w-xl">
+          <p className="text-gray-500 text-[15px] md:text-[15.5px] leading-relaxed max-w-2xl mx-auto text-center font-normal">
             {subtitle ?? blog.description}
           </p>
         </div>

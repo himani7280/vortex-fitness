@@ -75,7 +75,7 @@ const WorkProcess: React.FC<WorkProcessProps> = ({ className = '' }) => {
       ref={sectionRef}
       aria-label="Our Work Process"
       
-      className={`relative w-full pt-6 sm:pt-8 md:pt-12 lg:pt-16 pb-6 sm:pb-8 md:pb-10 lg:pb-10 bg-white overflow-hidden ${className}`}
+      className={`relative w-full py-8 sm:py-10 md:py-12 lg:py-14 bg-white overflow-hidden ${className}`}
     >
       <div className="max-w-[1400px] mx-auto px-4 md:px-6 lg:px-6 flex flex-col items-center">
         
@@ -93,12 +93,12 @@ const WorkProcess: React.FC<WorkProcessProps> = ({ className = '' }) => {
           </div>
 
           {/* Main Heading */}
-          <h2 className="gsap-header-item font-heading text-2xl sm:text-3xl md:text-4xl lg:text-[40px] font-extrabold text-black leading-tight sm:leading-[1.1] mb-1.5 sm:mb-2 text-center">
+          <h2 className="gsap-header-item font-heading text-3xl md:text-4xl lg:text-[40px] font-extrabold text-black leading-tight mb-2 text-center">
             {process.heading1} <span className="text-[#ea580c]">{process.heading2}</span>
           </h2>
 
           {/* Description */}
-          <p className="gsap-header-item text-gray-500 text-xs sm:text-sm md:text-[15px] leading-relaxed max-w-2xl mx-auto">
+          <p className="gsap-header-item text-gray-500 text-[15px] md:text-[15.5px] leading-relaxed max-w-2xl mx-auto text-center font-normal">
             {process.description}
           </p>
         </div>

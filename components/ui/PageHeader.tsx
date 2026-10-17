@@ -77,7 +77,7 @@ const PageHeader = ({ title, breadcrumb, breadcrumbItems }: PageHeaderProps) => 
           {/* Orange Dot & Title Container */}
           <div className="flex flex-col">
             <div className="w-2 sm:w-2.5 h-2 sm:h-2.5 rounded-full bg-[#ea580c] ml-12 sm:ml-16 mb-1.5 sm:mb-2"></div>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white font-heading tracking-tight leading-none">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[52px] font-bold text-white font-heading tracking-tight leading-tight">
               {title}
             </h1>
           </div>

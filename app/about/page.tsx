@@ -10,11 +10,9 @@ export default function AboutPage() {
     <div className="w-full flex flex-col min-h-screen bg-white">
       <PageHeader title="About Us" breadcrumb="About Us" />
       <AboutUsDetails />
-      <WorkProcess />
+      <WorkProcess className="!pt-2 sm:!pt-3 md:!pt-4 lg:!pt-6" />
       <WhyChooseUs />
-      <div className="pt-10 lg:pt-16 bg-white">
-        <Trainers />
-      </div>
+      <Trainers className="!pt-7 sm:!pt-8 md:!pt-10 lg:!pt-12" />
     </div>
   );
 }

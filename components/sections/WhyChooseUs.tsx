@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { Dumbbell, Activity, ShieldCheck } from 'lucide-react';
 import siteData from '@/data/siteData';
 
-const iconClass = "w-5 h-5 md:w-6 md:h-6 text-[#ea580c]";
+const iconClass = "w-5 h-5 md:w-6 md:h-6 transition-colors duration-300 stroke-[2]";
 const iconMap: Record<string, React.ReactNode> = {
   dumbbell: <Dumbbell className={iconClass} />,
   activity: <Activity className={iconClass} />,
@@ -15,14 +15,14 @@ const WhyChooseUs = () => {
 
 
   return (
-    <section className="w-full pt-10 pb-16 lg:pt-12 lg:pb-24 bg-[#0a0a0a] overflow-hidden">
-      <div className="w-full max-w-[1400px] mx-auto px-4 md:px-6 lg:px-6 grid grid-cols-1 xl:grid-cols-2 gap-16 xl:gap-12 items-stretch">
+    <section className="w-full py-10 sm:py-12 md:py-14 lg:py-16 bg-[#0a0a0a] overflow-hidden">
+      <div className="w-full max-w-[1400px] mx-auto px-4 md:px-6 lg:px-6 grid grid-cols-1 xl:grid-cols-2 gap-16 xl:gap-12 items-center">
 
         {/* Left Side: Images */}
-        <div className="relative w-full max-w-[550px] xl:max-w-[620px] h-full mx-auto xl:mr-auto xl:ml-[-4%] isolate mt-8 md:mt-0 min-h-[400px]">
+        <div className="relative w-full max-w-[550px] xl:max-w-[620px] h-[380px] sm:h-[420px] md:h-[460px] xl:h-[480px] mx-auto xl:mr-auto xl:ml-[-4%] isolate mt-8 md:mt-0">
 
           {/* Deadlift image (Left, slightly lower) */}
-          <div className="absolute -bottom-[8%] md:-bottom-[10%] left-0 w-[55%] h-[85%] z-10 rounded-xl overflow-hidden shadow-2xl">
+          <div className="absolute bottom-0 left-0 w-[55%] h-[85%] z-10 rounded-xl overflow-hidden shadow-2xl">
             <Image
               src={whyChooseUs.images.left.src}
               fill
@@ -45,7 +45,7 @@ const WhyChooseUs = () => {
         </div>
 
         {/* Right Side: Content */}
-        <div className="flex flex-col xl:pl-8 h-full justify-center py-4">
+        <div className="flex flex-col xl:pl-8 justify-center">
 
           {/* Top Title */}
           <div className="flex items-center gap-4 mb-4">
@@ -56,7 +56,7 @@ const WhyChooseUs = () => {
           </div>
 
           {/* Main Heading */}
-          <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-[40px] xl:text-[42px] font-extrabold text-white leading-tight sm:leading-[1.1] mb-5">
+          <h2 className="font-heading text-3xl md:text-4xl lg:text-[40px] font-extrabold text-white leading-tight mb-5">
             {whyChooseUs.heading1} <br />
             <span className="text-[#ea580c]">{whyChooseUs.heading2}</span>
           </h2>
@@ -67,13 +67,13 @@ const WhyChooseUs = () => {
 
               const isLast = idx === whyChooseUs.features.length - 1;
               return (
-                <div key={feature.title} className={`flex gap-4 items-start ${isLast ? '' : 'pb-4 border-b border-gray-800'}`}>
-                  <div className="flex-shrink-0 w-12 h-12 md:w-14 md:h-14 rounded-full bg-[#161616] flex items-center justify-center border border-gray-800 shadow-inner">
+                <div key={feature.title} className={`flex gap-4 items-start group cursor-pointer ${isLast ? '' : 'pb-4 border-b border-gray-800'}`}>
+                  <div className="flex-shrink-0 w-12 h-12 md:w-14 md:h-14 rounded-full bg-[#161616] text-[#ea580c] group-hover:bg-[#ea580c] group-hover:text-white group-hover:border-[#ea580c] flex items-center justify-center border border-gray-800 shadow-inner transition-all duration-300">
                     {iconMap[feature.icon] ?? iconMap.dumbbell}
                   </div>
                   <div className="flex flex-col pt-0.5">
-                    <h4 className="text-[18px] md:text-[20px] font-bold text-white mb-1">{feature.title}</h4>
-                    <p className="text-gray-400 leading-relaxed text-[14px] md:text-[15px] max-w-[450px]">
+                    <h4 className="text-[18px] md:text-[20px] font-bold text-white group-hover:text-white mb-1 transition-colors">{feature.title}</h4>
+                    <p className="text-gray-400 group-hover:text-white leading-relaxed text-[14px] md:text-[15px] max-w-[450px] transition-colors">
                       {feature.description}
                     </p>
                   </div>

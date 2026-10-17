@@ -28,10 +28,10 @@ export default function TeamPage() {
             <span className="text-[#ea580c] font-bold text-[14px] tracking-[0.1em] uppercase flex items-center justify-center gap-2 mb-2">
               <span className="w-8 h-[2px] bg-[#ea580c]"></span> {teamSection.badge} <span className="w-8 h-[2px] bg-[#ea580c]"></span>
             </span>
-            <h2 className="font-heading text-4xl md:text-5xl font-black text-[#1a1a1a] mb-3">
+            <h2 className="font-heading text-3xl md:text-4xl lg:text-[40px] font-extrabold text-[#1a1a1a] leading-tight mb-2">
               {teamSection.titleStart}<span className="text-[#ea580c]">{teamSection.titleHighlight}</span>
             </h2>
-            <p className="text-gray-500 max-w-2xl mx-auto">
+            <p className="text-gray-500 text-[15px] md:text-[15.5px] leading-relaxed max-w-2xl mx-auto font-normal">
               {teamSection.description}
             </p>
           </div>
@@ -89,9 +89,13 @@ export default function TeamPage() {
                   </a>
                 </div>
 
-                {/* View Profile Link */}
-                <Link href={`/team/${trainer.id}`} className="inline-flex items-center gap-2 text-[#ea580c] font-bold text-[13px] uppercase tracking-wide hover:text-[#1a1a1a] transition-colors mt-auto">
-                  View Profile <ArrowRight className="w-4 h-4" />
+                {/* View Profile Button (Opens Team Detail Page) */}
+                <Link 
+                  href={`/team/${trainer.id}`}
+                  className="w-full mt-auto inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-orange-50 hover:bg-[#ea580c] text-[#ea580c] hover:text-white font-bold text-[12.5px] uppercase tracking-wider transition-all duration-300 active:scale-95 shadow-xs hover:shadow-md cursor-pointer"
+                >
+                  <span>View Profile</span>
+                  <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
             ))}

@@ -47,17 +47,23 @@ const Header = () => {
 
       {/* ── Main Nav Row ── */}
       <div className="w-full bg-white relative z-10 shadow-sm">
-        <div className="max-w-[1400px] mx-auto py-3.5 sm:py-4 md:py-4.5 px-4 md:px-6 lg:px-6 flex justify-between items-center gap-2">
+        <div className="max-w-[1400px] mx-auto py-2 sm:py-2.5 md:py-2.5 px-4 md:px-6 lg:px-6 flex justify-between items-center gap-3">
 
           {/* Logo */}
-          <Link href="/" className="flex-shrink-0 relative z-10 flex items-center" aria-label="VortexFit Home">
+          <Link href="/" className="flex-shrink-0 relative z-10 flex items-center mr-4 lg:mr-8 xl:mr-10" aria-label="VortexFit Home">
             <div className="relative w-[155px] h-[42px] sm:w-[195px] sm:h-[46px] md:w-[215px] md:h-[50px] scale-[1.4] sm:scale-[1.7] md:scale-[1.85] origin-left translate-y-0 -translate-x-0.5 sm:-translate-x-1 pointer-events-none">
-              <Image src="/logo.png" alt="VortexFit Logo" fill className="object-contain object-left" priority />
+              <Image 
+                src="/logo.png" 
+                alt="VortexFit Logo" 
+                fill 
+                className="object-contain object-left" 
+                priority 
+              />
             </div>
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center gap-5 xl:gap-7 text-[14px] xl:text-[15px] font-semibold text-gray-700">
+          <nav className="hidden lg:flex items-center gap-5 xl:gap-7 text-[14px] xl:text-[14.5px] font-semibold text-gray-700">
             {navLinks.map((link) => {
               const isActive = pathname === link.path;
               return (
@@ -78,19 +84,19 @@ const Header = () => {
           {/* CTA + Hamburger */}
           <div className="flex items-center gap-3 flex-shrink-0 relative z-20">
             <Link href={button.link} className="hidden sm:block">
-              <button className="whitespace-nowrap bg-[#e85d21] hover:bg-[#d4501a] text-white font-semibold py-2 px-5 lg:px-4 xl:px-6 rounded shadow-sm transition-colors text-[13px] xl:text-[14px]">
+              <button className="whitespace-nowrap bg-[#e85d21] hover:bg-[#d4501a] text-white font-semibold py-2 px-5 lg:px-4 xl:px-5.5 rounded shadow-sm transition-colors text-[13px] xl:text-[13.5px]">
                 {button.text}
               </button>
             </Link>
 
             <button
               type="button"
-              className="lg:hidden flex items-center justify-center w-10 h-10 rounded-md text-gray-700 hover:bg-orange-50 hover:text-[#f05a22] active:scale-95 transition-all cursor-pointer relative z-30"
+              className="lg:hidden flex items-center justify-center w-9 h-9 rounded-md text-gray-700 hover:bg-orange-50 hover:text-[#f05a22] active:scale-95 transition-all cursor-pointer relative z-30"
               onClick={() => setIsMobileMenuOpen((prev) => !prev)}
               aria-label="Toggle Mobile Menu"
               aria-expanded={isMobileMenuOpen}
             >
-              {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {isMobileMenuOpen ? <X className="w-5.5 h-5.5" /> : <Menu className="w-5.5 h-5.5" />}
             </button>
           </div>
         </div>

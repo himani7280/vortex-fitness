@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { useState, useRef } from "react";
 import Image from "next/image";
-import { Dumbbell, Star, Quote } from "lucide-react";
+import { Dumbbell, Star, ArrowLeft, ArrowRight, Quote } from "lucide-react";
 import siteData from "@/data/siteData";
 
 // GSAP Imports
@@ -16,6 +16,9 @@ gsap.registerPlugin(ScrollTrigger);
 const HomeTestimonial = () => {
   const testimonial = (siteData.sections?.Testimonials?.variants?.FitnessTestimonials1 || siteData.home.testimonial) as any;
   const testimonials = testimonial.items || [];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(false);
 
   // Ref for GSAP scope
   const sectionRef = useRef<HTMLElement>(null);
@@ -31,87 +34,200 @@ const HomeTestimonial = () => {
       defaults: { ease: 'power3.out' }
     });
 
-    // Header stagger
     tl.fromTo('.gsap-header-item',
       { y: 30, opacity: 0 },
       { y: 0, opacity: 1, duration: 0.6, stagger: 0.1 }
     )
-    // Stagger in testimonial cards
-    .fromTo('.gsap-testimonial-card',
-      { y: 30, opacity: 0 },
-      { y: 0, opacity: 1, duration: 0.6, stagger: 0.15 },
+    .fromTo('.gsap-showcase-wrapper',
+      { y: 40, opacity: 0 },
+      { y: 0, opacity: 1, duration: 0.7 },
       "-=0.3"
     );
   }, { scope: sectionRef });
 
+  // Navigation handlers (Manual only - NO auto-carousel)
+  const prevSlide = () => {
+    if (isTransitioning || testimonials.length <= 1) return;
+    setIsTransitioning(true);
+    setCurrentIndex((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1));
+    setTimeout(() => setIsTransitioning(false), 280);
+  };
+
+  const nextSlide = () => {
+    if (isTransitioning || testimonials.length <= 1) return;
+    setIsTransitioning(true);
+    setCurrentIndex((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1));
+    setTimeout(() => setIsTransitioning(false), 280);
+  };
+
+  const goToSlide = (index: number) => {
+    if (isTransitioning || index === currentIndex) return;
+    setIsTransitioning(true);
+    setCurrentIndex(index);
+    setTimeout(() => setIsTransitioning(false), 280);
+  };
+
+  const current = testimonials[currentIndex] || {
+    name: "Emily Johnson",
+    role: "Entrepreneur",
+    text: "VortexFit has completely changed my lifestyle. The trainers are knowledgeable, supportive and truly care about your progress. The workouts are effective, and the environment is always positive and motivating. I feel stronger, healthier and more confident than ever before!",
+    image: "/images/testimonial_girl.jpg"
+  };
+
   return (
     <section 
       ref={sectionRef} 
-      className="w-full bg-white py-10 md:py-16 font-sans overflow-hidden"
+      aria-label="Testimonials"
+      className="w-full bg-white py-8 sm:py-10 md:py-12 lg:py-14 font-sans overflow-hidden"
     >
       <div className="max-w-[1400px] mx-auto px-4 md:px-6 lg:px-6">
 
         {/* ── Section Header ── */}
-        <div className="flex flex-col items-center text-center mb-8 md:mb-12">
-          <div className="gsap-header-item flex items-center gap-2 mb-2">
-            <div className="h-[2px] w-6 sm:w-10 bg-[#ea580c]" />
-            <Dumbbell className="w-4 h-4 sm:w-5 sm:h-5 text-[#ea580c] -rotate-45" />
-            <span className="text-[#ea580c] font-bold tracking-[0.12em] text-[11px] sm:text-[13px] uppercase">
-              {testimonial.topText || testimonial.badge}
+        <div className="flex flex-col items-center text-center mb-6 sm:mb-8 md:mb-10">
+          {/* Top Label */}
+          <div className="gsap-header-item inline-flex items-center justify-center gap-2.5 sm:gap-3.5 mb-2 sm:mb-2.5">
+            <div className="h-[2px] w-8 sm:w-12 md:w-16 bg-[#ea580c]" />
+            <Dumbbell className="w-4 h-4 sm:w-5 sm:h-5 text-[#ea580c] -scale-x-100 shrink-0" />
+            <span className="text-[#ea580c] font-bold tracking-[0.2em] text-xs sm:text-[13px] uppercase whitespace-nowrap">
+              {testimonial.topText || testimonial.badge || "OUR CLIENTS SAY"}
             </span>
-            <Dumbbell className="w-4 h-4 sm:w-5 sm:h-5 text-[#ea580c] rotate-45" />
-            <div className="h-[2px] w-6 sm:w-10 bg-[#ea580c]" />
+            <Dumbbell className="w-4 h-4 sm:w-5 sm:h-5 text-[#ea580c] shrink-0" />
+            <div className="h-[2px] w-8 sm:w-12 md:w-16 bg-[#ea580c]" />
           </div>
 
-          <h2 className="gsap-header-item font-heading text-2xl sm:text-3xl md:text-4xl lg:text-[40px] xl:text-[42px] font-extrabold text-[#1a1a1a] leading-tight sm:leading-[1.1] mb-2 sm:mb-3 text-center">
-            {testimonial.heading1} <span className="text-[#ea580c]">{testimonial.heading2}</span>
+          {/* Main Heading */}
+          <h2 className="gsap-header-item font-heading text-3xl md:text-4xl lg:text-[40px] font-extrabold text-black leading-tight mb-2 sm:mb-2.5 text-center">
+            {testimonial.titleStart || "TESTI"}<span className="text-[#ea580c]">{testimonial.titleHighlight || "MONIALS"}</span>
           </h2>
 
-          <p className="gsap-header-item text-gray-500 text-[14px] md:text-[15px] leading-relaxed max-w-xl">
+          {/* Description */}
+          <p className="gsap-header-item text-gray-500 text-[14.5px] sm:text-[15.5px] leading-relaxed max-w-2xl mx-auto text-center font-normal">
             {testimonial.description}
           </p>
         </div>
 
-        {/* ── Testimonials Grid (Static, No Carousel) ── */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
-          {testimonials.map((item: any, idx: number) => (
+        {/* ── Showcase Carousel Area (Manual Navigation Only) ── */}
+        <div className="gsap-showcase-wrapper relative w-full max-w-[1240px] mx-auto flex items-center justify-between gap-2 sm:gap-4 md:gap-6 lg:gap-8">
+          
+          {/* Left Arrow Button */}
+          <button
+            onClick={prevSlide}
+            aria-label="Previous testimonial"
+            className="w-10 h-10 sm:w-12 sm:h-12 md:w-13 md:h-13 rounded-full bg-[#fdf2ee] hover:bg-[#ea580c] text-[#ea580c] hover:text-white flex items-center justify-center transition-all duration-300 shadow-xs hover:shadow-md shrink-0 active:scale-95 cursor-pointer z-20"
+          >
+            <ArrowLeft className="w-5 h-5 sm:w-5.5 sm:h-5.5 stroke-[2.2]" />
+          </button>
+
+          {/* Center Card */}
+          <div className="flex-1 w-full max-w-[1040px] mx-auto py-2">
             <div 
-              key={item.id || idx}
-              className="gsap-testimonial-card bg-white rounded-2xl p-6 sm:p-7 border border-gray-100 shadow-[0_4px_25px_rgba(0,0,0,0.04)] flex flex-col justify-between hover:shadow-[0_8px_30px_rgba(234,88,12,0.12)] hover:-translate-y-1 transition-all duration-300 relative group"
+              className={`grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 xl:gap-14 items-center transition-all duration-300 ease-out ${
+                isTransitioning ? "opacity-0 translate-y-2 scale-[0.98]" : "opacity-100 translate-y-0 scale-100"
+              }`}
             >
-              <div>
-                {/* Quote Icon & Stars */}
-                <div className="flex items-center justify-between mb-4">
-                  <Quote className="w-8 h-8 text-[#ea580c] fill-current opacity-30 group-hover:opacity-60 transition-opacity" />
-                  <div className="flex gap-1">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 fill-[#ea580c] text-[#ea580c]" />
-                    ))}
+              
+              {/* Left Column: Slanted Parallelogram Image & Orange Stripes (lg:col-span-5) */}
+              <div className="lg:col-span-5 flex justify-center items-center">
+                <div className="relative w-[260px] sm:w-[310px] md:w-[340px] lg:w-[330px] xl:w-[370px] h-[270px] sm:h-[310px] md:h-[340px] lg:h-[330px] xl:h-[360px] isolate my-2">
+                  
+                  {/* Left Orange Accent Stripe */}
+                  <div 
+                    className="absolute -left-3.5 sm:-left-4 md:-left-5 top-1/2 -translate-y-1/2 w-2.5 sm:w-3.5 h-[65%] bg-[#ea580c] -skew-x-[14deg] rounded-sm z-0 shadow-sm"
+                    aria-hidden="true"
+                  />
+                  
+                  {/* Right Orange Accent Stripe */}
+                  <div 
+                    className="absolute -right-3.5 sm:-right-4 md:-right-5 top-1/2 -translate-y-1/2 w-2.5 sm:w-3.5 h-[65%] bg-[#ea580c] -skew-x-[14deg] rounded-sm z-0 shadow-sm"
+                    aria-hidden="true"
+                  />
+
+                  {/* Slanted Image Frame */}
+                  <div className="relative w-full h-full -skew-x-[14deg] overflow-hidden rounded-xl shadow-2xl z-10 bg-gray-200">
+                    <Image
+                      src={current.image}
+                      alt={current.name}
+                      fill
+                      sizes="(max-width: 640px) 280px, (max-width: 1024px) 340px, 370px"
+                      className="object-cover skew-x-[14deg] scale-[1.25]"
+                      priority
+                    />
                   </div>
+
+                </div>
+              </div>
+
+              {/* Right Column: Quotes, Content, Stars, Author, Dots (lg:col-span-7) */}
+              <div className="lg:col-span-7 relative flex flex-col justify-center px-2 sm:px-4 lg:px-0">
+                
+                {/* Background Large Watermark Quote */}
+                <div 
+                  className="absolute top-0 right-2 sm:right-6 text-orange-200/40 pointer-events-none select-none -z-10 leading-none"
+                  aria-hidden="true"
+                >
+                  <Quote className="w-24 h-24 sm:w-32 sm:h-32 text-[#fed7aa]/50 fill-current" />
                 </div>
 
-                {/* Text */}
-                <p className="text-gray-600 text-[14.5px] leading-relaxed italic mb-6">
-                  &ldquo;{item.text}&rdquo;
+                {/* Foreground Double Quote Icon */}
+                <div className="text-[#fdba74] text-5xl sm:text-6xl font-serif font-black leading-none mb-2 select-none">
+                  “
+                </div>
+
+                {/* Testimonial Quote Text */}
+                <p className="text-gray-700 italic text-[15px] sm:text-[16px] md:text-[16.5px] leading-relaxed mb-5 font-normal">
+                  &ldquo;{current.text}&rdquo;
                 </p>
+
+                {/* 5 Orange Stars */}
+                <div className="flex items-center gap-1 mb-3.5">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-4.5 h-4.5 sm:w-5 sm:h-5 fill-[#ea580c] text-[#ea580c]" />
+                  ))}
+                </div>
+
+                {/* Client Name */}
+                <h3 className="font-heading font-extrabold text-xl sm:text-2xl text-black mb-0.5">
+                  {current.name}
+                </h3>
+
+                {/* Client Role */}
+                <p className="text-gray-500 text-[13.5px] sm:text-[14.5px] font-normal mb-3">
+                  {current.role}
+                </p>
+
+                {/* Orange Divider Line */}
+                <div className="w-12 h-[2.5px] bg-[#ea580c] rounded-full mb-2"></div>
+
+                {/* Bottom Right Pagination Dots */}
+                <div className="flex items-center justify-end gap-2.5 mt-2">
+                  {testimonials.map((_: any, idx: number) => (
+                    <button
+                      key={idx}
+                      onClick={() => goToSlide(idx)}
+                      className={`rounded-full transition-all duration-300 cursor-pointer ${
+                        currentIndex === idx
+                          ? "w-3 h-3 bg-[#ea580c]"
+                          : "w-2.5 h-2.5 bg-gray-300 hover:bg-gray-400"
+                      }`}
+                      aria-label={`Go to testimonial ${idx + 1}`}
+                    />
+                  ))}
+                </div>
+
               </div>
 
-              {/* User Info */}
-              <div className="flex items-center gap-3.5 pt-4 border-t border-gray-100">
-                <div className="relative w-12 h-12 rounded-full overflow-hidden shrink-0 border-2 border-[#ea580c] bg-orange-50">
-                  <Image src={item.image} alt={item.name} fill className="object-cover" />
-                </div>
-                <div>
-                  <h4 className="font-heading font-bold text-gray-900 text-[16px] leading-tight">
-                    {item.name}
-                  </h4>
-                  <p className="text-[#ea580c] text-[12px] font-semibold mt-0.5">
-                    {item.role}
-                  </p>
-                </div>
-              </div>
             </div>
-          ))}
+          </div>
+
+          {/* Right Arrow Button */}
+          <button
+            onClick={nextSlide}
+            aria-label="Next testimonial"
+            className="w-10 h-10 sm:w-12 sm:h-12 md:w-13 md:h-13 rounded-full bg-[#fdf2ee] hover:bg-[#ea580c] text-[#ea580c] hover:text-white flex items-center justify-center transition-all duration-300 shadow-xs hover:shadow-md shrink-0 active:scale-95 cursor-pointer z-20"
+          >
+            <ArrowRight className="w-5 h-5 sm:w-5.5 sm:h-5.5 stroke-[2.2]" />
+          </button>
+
         </div>
 
       </div>

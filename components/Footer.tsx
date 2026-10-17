@@ -134,21 +134,27 @@ const Footer = () => {
           <div className="gsap-footer-col flex flex-col">
             <h4 className="text-[18px] font-bold text-white mb-2">{footer.contactTitle}</h4>
             <div className="w-8 h-[2px] bg-[#ea580c] mb-6"></div>
-            <ul className="flex flex-col gap-6">
-              <li className="flex gap-4">
-                <MapPin className="w-5 h-5 text-[#ea580c] shrink-0 mt-1" />
-                <span className="text-gray-400 text-[15px] leading-relaxed">
+            <ul className="flex flex-col gap-5">
+              <li className="flex gap-3.5 items-start group cursor-pointer">
+                <div className="w-8 h-8 rounded-full bg-[#1a1a1a] text-[#ea580c] group-hover:bg-[#ea580c] group-hover:text-white flex items-center justify-center shrink-0 mt-0.5 transition-all duration-300">
+                  <MapPin className="w-4 h-4" />
+                </div>
+                <span className="text-gray-400 group-hover:text-white text-[15px] leading-relaxed transition-colors">
                   {footer.contact.addressLine1}<br />
                   {footer.contact.addressLine2}
                 </span>
               </li>
-              <li className="flex gap-4 items-center">
-                <Phone className="w-5 h-5 text-[#ea580c] shrink-0" />
-                <span className="text-gray-400 text-[15px]">{footer.contact.phone}</span>
+              <li className="flex gap-3.5 items-center group cursor-pointer">
+                <div className="w-8 h-8 rounded-full bg-[#1a1a1a] text-[#ea580c] group-hover:bg-[#ea580c] group-hover:text-white flex items-center justify-center shrink-0 transition-all duration-300">
+                  <Phone className="w-4 h-4" />
+                </div>
+                <span className="text-gray-400 group-hover:text-white text-[15px] transition-colors">{footer.contact.phone}</span>
               </li>
-              <li className="flex gap-4 items-center">
-                <Mail className="w-5 h-5 text-[#ea580c] shrink-0" />
-                <span className="text-gray-400 text-[15px]">{footer.contact.email}</span>
+              <li className="flex gap-3.5 items-center group cursor-pointer">
+                <div className="w-8 h-8 rounded-full bg-[#1a1a1a] text-[#ea580c] group-hover:bg-[#ea580c] group-hover:text-white flex items-center justify-center shrink-0 transition-all duration-300">
+                  <Mail className="w-4 h-4" />
+                </div>
+                <span className="text-gray-400 group-hover:text-white text-[15px] transition-colors">{footer.contact.email}</span>
               </li>
             </ul>
           </div>

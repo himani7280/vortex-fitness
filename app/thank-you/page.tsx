@@ -16,8 +16,8 @@ export default function ThankYouPage() {
   }, []);
 
   return (
-    <div className="w-full flex flex-col min-h-[calc(100vh-200px)] bg-white font-sans">
-      <section className="w-full flex-1 flex items-center justify-center py-16 sm:py-20 md:py-28 bg-[#f8f9fa] relative overflow-hidden">
+    <div className="w-full flex flex-col bg-white font-sans">
+      <section className="w-full flex items-center justify-center py-6 sm:py-8 md:py-10 lg:py-12 bg-[#f8f9fa] relative overflow-hidden">
         {/* Subtle decorative background glow */}
         <div
           className="absolute -top-20 -right-20 w-96 h-96 rounded-full pointer-events-none"
@@ -37,38 +37,38 @@ export default function ThankYouPage() {
           }}
         >
           {/* Icon */}
-          <div className="flex justify-center mb-6">
-            <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-gradient-to-br from-[#ea580c] to-[#ff8c42] flex items-center justify-center shadow-[0_8px_32px_rgba(234,88,12,0.30)]">
-              <CheckCircle className="text-white w-10 h-10 sm:w-12 sm:h-12" />
+          <div className="flex justify-center mb-4 sm:mb-5">
+            <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-br from-[#ea580c] to-[#ff8c42] flex items-center justify-center shadow-[0_8px_32px_rgba(234,88,12,0.25)]">
+              <CheckCircle className="text-white w-8 h-8 sm:w-10 sm:h-10" />
             </div>
           </div>
 
           {/* Heading */}
-          <div className="mb-4">
-            <span className="font-bold text-[12px] sm:text-[13px] tracking-[0.15em] text-[#ea580c] uppercase inline-flex items-center justify-center gap-2 mb-2 sm:mb-3">
+          <div className="mb-3 sm:mb-4">
+            <span className="font-bold text-[12px] sm:text-[13px] tracking-[0.15em] text-[#ea580c] uppercase inline-flex items-center justify-center gap-2 mb-1.5 sm:mb-2">
               {thankYou.badge}
               <span className="inline-block w-6 h-[2px] bg-[#ea580c]" />
             </span>
-            <h1 className="font-heading font-extrabold leading-tight sm:leading-[1.1] text-[#1a1a1a] text-2xl sm:text-3xl md:text-4xl lg:text-[40px] xl:text-[42px]">
+            <h1 className="font-heading font-extrabold leading-tight text-[#1a1a1a] text-2xl sm:text-3xl md:text-4xl lg:text-[40px]">
               {thankYou.titleStart} <span className="text-[#ea580c]">{thankYou.titleHighlight}</span>
             </h1>
           </div>
 
           {/* Divider */}
-          <div className="w-14 h-[3px] bg-gradient-to-r from-[#ea580c] to-[#ff8c42] rounded-full mx-auto mb-6" />
+          <div className="w-12 h-[3px] bg-gradient-to-r from-[#ea580c] to-[#ff8c42] rounded-full mx-auto mb-4 sm:mb-5" />
 
           {/* Message */}
-          <p className="text-[#444444] text-[16px] sm:text-[17px] leading-relaxed mb-3 max-w-[500px] mx-auto font-medium">
+          <p className="text-[#444444] text-[15px] sm:text-[16px] leading-relaxed mb-2 max-w-[500px] mx-auto font-medium">
             {thankYou.message}
           </p>
-          <p className="text-[#777777] text-[14px] leading-relaxed mb-8 sm:mb-10 max-w-[440px] mx-auto">
+          <p className="text-[#777777] text-[13.5px] sm:text-[14px] leading-relaxed mb-6 sm:mb-8 max-w-[440px] mx-auto">
             {thankYou.subMessage}
           </p>
 
           {/* CTA Button */}
           <Link
             href={thankYou.buttonLink}
-            className="inline-flex items-center gap-2.5 bg-[#ea580c] hover:bg-[#d4501a] text-white font-bold py-3.5 px-8 sm:px-10 rounded-[8px] transition-colors text-[14px] uppercase tracking-wide shadow-[0_4px_20px_rgba(234,88,12,0.30)] hover:shadow-lg active:scale-95"
+            className="inline-flex items-center gap-2 bg-[#ea580c] hover:bg-[#d4501a] text-white font-bold py-3 px-8 rounded-[8px] transition-colors text-[13.5px] uppercase tracking-wide shadow-[0_4px_20px_rgba(234,88,12,0.25)] hover:shadow-lg active:scale-95"
           >
             <Home className="w-4 h-4" />
             {thankYou.buttonText}

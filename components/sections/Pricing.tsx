@@ -70,10 +70,10 @@ const Pricing: React.FC<PricingProps> = ({ className = '' }) => {
             </span>
             <div className="h-[2px] w-12 bg-[#f05a22]"></div>
           </div>
-          <h2 className="gsap-header-item text-4xl md:text-[50px] font-black text-white font-heading tracking-tight mb-2">
+          <h2 className="gsap-header-item font-heading text-3xl md:text-4xl lg:text-[40px] font-extrabold text-white leading-tight mb-2 text-center">
             {pricing.heading1}<span className="text-[#f05a22]">{pricing.heading2}</span>
           </h2>
-          <p className="gsap-header-item text-gray-400 text-[16px] max-w-2xl font-medium">
+          <p className="gsap-header-item text-gray-300 text-[15px] md:text-[15.5px] leading-relaxed max-w-2xl mx-auto text-center font-normal">
             {pricing.description}
           </p>
         </div>
