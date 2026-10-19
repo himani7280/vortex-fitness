@@ -10,10 +10,7 @@ interface StatCounterProps {
 
 export default function StatCounter({ value, duration = 1600, className = '' }: StatCounterProps) {
   const str = String(value ?? '');
-  // Match the primary number and any prefix/suffix
-  // e.g. "8+ Years" -> prefix="", num=8, suffix="+ Years"
-  // e.g. "500+" -> prefix="", num=500, suffix="+"
-  // e.g. "10+" -> prefix="", num=10, suffix="+"
+
   const match = str.match(/^([^\d]*)(\d+)(.*)$/);
 
   const prefix = match ? match[1] : '';

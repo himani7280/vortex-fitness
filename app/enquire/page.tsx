@@ -20,7 +20,7 @@ export default function EnquirePage() {
     <div className="w-full flex flex-col min-h-screen bg-white font-sans">
       <PageHeader title={enquire.badge === 'GET IN TOUCH' ? 'Enquire Now' : enquire.badge} breadcrumb="Enquire Now" />
 
-      <section className="w-full py-8 md:py-12 bg-[#f8f9fa]">
+      <section className="w-full py-10 sm:py-12 md:py-14 lg:py-16 bg-[#f8f9fa]">
         <div className="max-w-[1400px] mx-auto px-4 md:px-6 lg:px-6">
           <div className="flex flex-col lg:flex-row items-stretch">
             
@@ -30,7 +30,7 @@ export default function EnquirePage() {
                 <span className="text-[#ea580c] font-bold text-[13px] tracking-[0.1em] uppercase flex items-center gap-2 mb-2">
                   {enquire.badge} <span className="w-6 h-[2px] bg-[#ea580c]"></span>
                 </span>
-                <h2 className="font-heading text-4xl lg:text-[48px] font-black text-[#1a1a1a] leading-[1]">
+                <h2 className="font-heading text-3xl md:text-4xl lg:text-[40px] font-extrabold text-[#1a1a1a] leading-tight">
                   {enquire.titleStart} <br />
                   <span className="text-[#ea580c]">{enquire.titleHighlight}</span>
                 </h2>
@@ -41,13 +41,13 @@ export default function EnquirePage() {
 
               <div className="flex flex-col gap-4">
                 {enquire.benefits.map((benefit: any, idx: number) => (
-                  <div key={idx} className="flex gap-4">
-                    <div className="w-[54px] h-[54px] rounded-[8px] bg-[#fff3ed] flex items-center justify-center shrink-0">
-                      {iconMap[benefit.icon] || <Users className="w-[26px] h-[26px] text-[#ea580c]" />}
+                  <div key={idx} className="flex gap-4 group cursor-pointer hover:translate-x-1.5 transition-all duration-300">
+                    <div className="w-[54px] h-[54px] rounded-[10px] bg-[#fff3ed] group-hover:bg-[#ea580c] text-[#ea580c] group-hover:text-white flex items-center justify-center shrink-0 transition-all duration-300 shadow-xs group-hover:shadow-[0_4px_14px_rgba(234,88,12,0.35)] group-hover:scale-105">
+                      {iconMap[benefit.icon] || <Users className="w-[26px] h-[26px]" />}
                     </div>
                     <div>
-                      <h4 className="text-[16px] font-bold text-[#1a1a1a] mb-0.5">{benefit.title}</h4>
-                      <p className="text-[#666666] text-[13px] leading-[1.4]">{benefit.description}</p>
+                      <h4 className="text-[16px] font-bold text-[#1a1a1a] group-hover:text-[#ea580c] mb-0.5 transition-colors">{benefit.title}</h4>
+                      <p className="text-[#666666] group-hover:text-gray-800 text-[13px] leading-[1.4] transition-colors">{benefit.description}</p>
                     </div>
                   </div>
                 ))}
@@ -55,12 +55,12 @@ export default function EnquirePage() {
             </div>
 
             {/* Middle Column - Image */}
-            <div className="w-full lg:w-[31%] relative min-h-[500px] lg:min-h-full rounded-[10px] overflow-hidden mt-6 lg:mt-0">
+            <div className="w-full lg:w-[31%] relative min-h-[500px] lg:min-h-full rounded-[10px] overflow-hidden mt-6 lg:mt-0 group/img cursor-pointer">
               <Image
                 src={enquire.image}
                 alt="Fitness Woman"
                 fill
-                className="object-cover"
+                className="object-cover transition-transform duration-700 ease-out group-hover/img:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
               <div 
@@ -76,7 +76,7 @@ export default function EnquirePage() {
             {/* Right Column - Form */}
             <div className="w-full lg:w-[40%] py-6 px-6 lg:py-8 lg:px-8 bg-white shadow-2xl rounded-[10px] flex flex-col justify-center mt-6 lg:mt-0 lg:ml-3">
               <div className="mb-6">
-                <h2 className="font-heading text-3xl lg:text-[36px] font-black text-[#1a1a1a] mb-2">
+                <h2 className="font-heading text-3xl md:text-4xl lg:text-[40px] font-extrabold text-[#1a1a1a] leading-tight mb-2">
                   {form.titleStart || 'Enquiry'} <span className="text-[#ea580c]">{form.titleHighlight || 'Form'}</span>
                 </h2>
                 <div className="w-10 h-[3px] bg-[#ea580c]"></div>
@@ -171,10 +171,10 @@ export default function EnquirePage() {
 
                 <button 
                   type="submit" 
-                  className="w-full mt-1 bg-[#ea580c] hover:bg-[#d4501a] text-white font-bold py-3 px-8 rounded-[6px] transition-colors flex items-center justify-center gap-2 uppercase tracking-wide text-[13px]"
+                  className="w-full mt-1 bg-[#ea580c] hover:bg-[#d4501a] text-white font-bold py-3.5 px-8 rounded-[8px] hover:shadow-[0_10px_25px_rgba(234,88,12,0.35)] hover:-translate-y-0.5 active:scale-95 transition-all duration-300 flex items-center justify-center gap-2 uppercase tracking-wide text-[13px] group cursor-pointer"
                 >
-                  {form.submitButtonText || "SUBMIT ENQUIRY"}
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                  <span>{form.submitButtonText || "SUBMIT ENQUIRY"}</span>
+                  <svg className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                 </button>
                 
                 <p className="text-center text-[11px] text-gray-400 mt-1">

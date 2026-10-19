@@ -17,8 +17,8 @@ export default function Home() {
       <Hero />
       <About />
       <Programs />
-      <WorkProcess />
-      <Trainers />
+      <WorkProcess className="pb-4 sm:pb-5 md:pb-6 lg:pb-6" />
+      <Trainers className="pt-0 sm:pt-0 md:pt-1 lg:pt-2" />
       <CTA />
       <HomeTestimonial />
       <Pricing />

@@ -78,7 +78,7 @@ const HomeTestimonial = () => {
     <section 
       ref={sectionRef} 
       aria-label="Testimonials"
-      className="w-full bg-white py-8 sm:py-10 md:py-12 lg:py-14 font-sans overflow-hidden"
+      className="w-full bg-white py-10 sm:py-12 md:py-14 lg:py-16 font-sans overflow-hidden"
     >
       <div className="max-w-[1400px] mx-auto px-4 md:px-6 lg:px-6">
 
@@ -169,7 +169,7 @@ const HomeTestimonial = () => {
                 </div>
 
                 {/* Foreground Double Quote Icon */}
-                <div className="text-[#fdba74] text-5xl sm:text-6xl font-serif font-black leading-none mb-2 select-none">
+                <div className="text-[#fdba74] text-5xl sm:text-6xl font-black leading-none mb-2 select-none">
                   “
                 </div>
 

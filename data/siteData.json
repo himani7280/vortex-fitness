@@ -531,13 +531,19 @@
         "variants": {
           "FitnessAboutPage1": {
             "badge": "MORE ABOUT US",
+            "topText": "MORE ABOUT US",
+            "heading1": "Unlock Your Full Potential,",
+            "heading2": "Achieve Your Goals.",
+            "titleStart": "Unlock Your Full Potential,",
+            "titleHighlight": "Achieve Your Goals.",
             "intro": {
               "highlight": "Welcome to VortexFit,",
               "text": "your ultimate destination for achieving your fitness goals. We understand the importance of leading a healthy lifestyle and provide a top-notch fitness facility to support you in your fitness journey."
             },
             "paragraphs": [
-              "Welcome to VortexFit, your ultimate destination for achieving your fitness goals. We understand the importance of leading a healthy lifestyle and provide a top-notch fitness facility to support you in your fitness journey.",
-              "Welcome to VortexFit, your ultimate destination for achieving your fitness goals. We understand the importance of leading a healthy lifestyle and provide a top-notch fitness facility to support you in your fitness journey."
+              "Welcome to VortexFit, your ultimate destination for achieving your fitness goals. We understand the importance of leading a healthy lifestyle and provide a top-notch facility with modern equipment to support your fitness journey.",
+              "Welcome to VortexFit, where certified trainers craft personalized workout routines tailored to your unique body, focusing on proper technique and sustainable progress.",
+              "Welcome to VortexFit, a motivating community dedicated to your long-term wellness. We guide you every step of the way with expert advice, nutrition support, and constant motivation."
             ],
             "images": {
               "main": "/about-main.jpg",

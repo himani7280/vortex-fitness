@@ -20,18 +20,20 @@ export default function ContactPage() {
     <div className="w-full flex flex-col min-h-screen bg-white font-sans">
       <PageHeader title="Contact Us" breadcrumb="Contact Us" />
       
-      <section className="w-full pt-6 md:pt-8 pb-10 md:pb-12 bg-white">
+      <section className="w-full py-10 sm:py-12 md:py-14 lg:py-16 bg-white">
         <div className="max-w-[1400px] mx-auto px-4 md:px-6 lg:px-6">
           
           {/* Top Info Boxes */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-3.5 mb-6">
             {/* Location Box */}
-            <div className="bg-[#f8f9fa] hover:bg-white rounded-lg py-3 px-4.5 flex items-center gap-3.5 border border-gray-100 hover:border-[#ea580c] shadow-xs hover:shadow-md transition-all duration-300 group cursor-pointer">
-              <div className="w-10 h-10 bg-orange-100 text-[#ea580c] group-hover:bg-[#ea580c] group-hover:text-white rounded-full flex items-center justify-center shrink-0 transition-all duration-300">
+            <div className="bg-[#f8f9fa] hover:bg-white rounded-lg py-3 px-4.5 flex items-center gap-3.5 border border-gray-100 hover:border-[#ea580c] shadow-xs hover:shadow-[0_10px_25px_rgba(234,88,12,0.15)] hover:-translate-y-1.5 transition-all duration-300 group cursor-pointer">
+              <div className="w-10 h-10 bg-orange-100 text-[#ea580c] group-hover:bg-[#ea580c] group-hover:text-white group-hover:scale-110 group-hover:shadow-[0_4px_12px_rgba(234,88,12,0.35)] rounded-full flex items-center justify-center shrink-0 transition-all duration-300">
                 <MapPin className="w-4.5 h-4.5" />
               </div>
               <div>
-                <h4 className="font-bold text-[14.5px] text-[#1a1a1a] group-hover:text-[#ea580c] mb-0.5 transition-colors">Our Location</h4>
+                <h4 className="font-bold text-[14.5px] text-[#1a1a1a] group-hover:text-[#ea580c] mb-0.5 transition-colors">
+                  {contactLocation?.boxes?.location?.title || "Our Location"}
+                </h4>
                 <p className="text-[#666666] text-[12.5px] leading-[1.35]">
                   {addressLine1}<br />{addressLine2}
                 </p>
@@ -39,12 +41,14 @@ export default function ContactPage() {
             </div>
 
             {/* Call Us Box */}
-            <div className="bg-[#f8f9fa] hover:bg-white rounded-lg py-3 px-4.5 flex items-center gap-3.5 border border-gray-100 hover:border-[#ea580c] shadow-xs hover:shadow-md transition-all duration-300 group cursor-pointer">
-              <div className="w-10 h-10 bg-orange-100 text-[#ea580c] group-hover:bg-[#ea580c] group-hover:text-white rounded-full flex items-center justify-center shrink-0 transition-all duration-300">
+            <div className="bg-[#f8f9fa] hover:bg-white rounded-lg py-3 px-4.5 flex items-center gap-3.5 border border-gray-100 hover:border-[#ea580c] shadow-xs hover:shadow-[0_10px_25px_rgba(234,88,12,0.15)] hover:-translate-y-1.5 transition-all duration-300 group cursor-pointer">
+              <div className="w-10 h-10 bg-orange-100 text-[#ea580c] group-hover:bg-[#ea580c] group-hover:text-white group-hover:scale-110 group-hover:shadow-[0_4px_12px_rgba(234,88,12,0.35)] rounded-full flex items-center justify-center shrink-0 transition-all duration-300">
                 <Phone className="w-4.5 h-4.5" />
               </div>
               <div>
-                <h4 className="font-bold text-[14.5px] text-[#1a1a1a] group-hover:text-[#ea580c] mb-0.5 transition-colors">Call Us</h4>
+                <h4 className="font-bold text-[14.5px] text-[#1a1a1a] group-hover:text-[#ea580c] mb-0.5 transition-colors">
+                  {contactLocation?.boxes?.call?.title || "Call Us"}
+                </h4>
                 <p className="text-[#666666] text-[12.5px] leading-[1.35]">
                   {phone}
                 </p>
@@ -52,12 +56,14 @@ export default function ContactPage() {
             </div>
 
             {/* Email Us Box */}
-            <div className="bg-[#f8f9fa] hover:bg-white rounded-lg py-3 px-4.5 flex items-center gap-3.5 border border-gray-100 hover:border-[#ea580c] shadow-xs hover:shadow-md transition-all duration-300 group cursor-pointer">
-              <div className="w-10 h-10 bg-orange-100 text-[#ea580c] group-hover:bg-[#ea580c] group-hover:text-white rounded-full flex items-center justify-center shrink-0 transition-all duration-300">
+            <div className="bg-[#f8f9fa] hover:bg-white rounded-lg py-3 px-4.5 flex items-center gap-3.5 border border-gray-100 hover:border-[#ea580c] shadow-xs hover:shadow-[0_10px_25px_rgba(234,88,12,0.15)] hover:-translate-y-1.5 transition-all duration-300 group cursor-pointer">
+              <div className="w-10 h-10 bg-orange-100 text-[#ea580c] group-hover:bg-[#ea580c] group-hover:text-white group-hover:scale-110 group-hover:shadow-[0_4px_12px_rgba(234,88,12,0.35)] rounded-full flex items-center justify-center shrink-0 transition-all duration-300">
                 <Mail className="w-4.5 h-4.5" />
               </div>
               <div>
-                <h4 className="font-bold text-[14.5px] text-[#1a1a1a] group-hover:text-[#ea580c] mb-0.5 transition-colors">Email Us</h4>
+                <h4 className="font-bold text-[14.5px] text-[#1a1a1a] group-hover:text-[#ea580c] mb-0.5 transition-colors">
+                  {contactLocation?.boxes?.email?.title || "Email Us"}
+                </h4>
                 <p className="text-[#666666] text-[12.5px] leading-[1.35]">
                   {email}
                 </p>
@@ -71,7 +77,7 @@ export default function ContactPage() {
             {/* Left: Form */}
             <div className="w-full lg:w-1/2 py-5 px-5 sm:py-6 sm:px-7 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.05)] rounded-[10px] border border-gray-100 flex flex-col justify-center">
               <div className="mb-4">
-                <h2 className="font-heading text-2xl lg:text-[28px] font-black text-[#1a1a1a] mb-1.5">
+                <h2 className="font-heading text-3xl md:text-4xl lg:text-[40px] font-extrabold text-[#1a1a1a] leading-tight mb-2">
                   {contactForm.titleStart || 'Send Us a'} <span className="text-[#ea580c]">{contactForm.titleHighlight || 'Message'}</span>
                 </h2>
                 <div className="w-10 h-[3px] bg-[#ea580c]"></div>
@@ -86,7 +92,7 @@ export default function ContactPage() {
                     </div>
                     <input 
                       type="text" 
-                      placeholder="Full Name *" 
+                      placeholder={contactForm.namePlaceholder || "Full Name *"} 
                       className="w-full pl-9.5 pr-3 py-2.5 rounded-[6px] border border-gray-200 focus:outline-none focus:border-[#ea580c] transition-colors text-[13px] placeholder:text-gray-400"
                       required
                     />
@@ -97,7 +103,7 @@ export default function ContactPage() {
                     </div>
                     <input 
                       type="tel" 
-                      placeholder="Phone Number *" 
+                      placeholder={contactForm.phonePlaceholder || "Phone Number *"} 
                       className="w-full pl-9.5 pr-3 py-2.5 rounded-[6px] border border-gray-200 focus:outline-none focus:border-[#ea580c] transition-colors text-[13px] placeholder:text-gray-400"
                       required
                     />
@@ -111,7 +117,7 @@ export default function ContactPage() {
                     </div>
                     <input 
                       type="email" 
-                      placeholder="Email Address *" 
+                      placeholder={contactForm.emailPlaceholder || "Email Address *"} 
                       className="w-full pl-9.5 pr-3 py-2.5 rounded-[6px] border border-gray-200 focus:outline-none focus:border-[#ea580c] transition-colors text-[13px] placeholder:text-gray-400"
                       required
                     />
@@ -143,7 +149,7 @@ export default function ContactPage() {
                     <MessageSquare className="h-4 w-4 text-gray-400" />
                   </div>
                   <textarea 
-                    placeholder="Your Message *" 
+                    placeholder={contactForm.messagePlaceholder || "Your Message *"} 
                     rows={3}
                     className="w-full pl-9.5 pr-3 py-2.5 rounded-[6px] border border-gray-200 focus:outline-none focus:border-[#ea580c] transition-colors text-[13px] placeholder:text-gray-400 resize-none"
                     required
@@ -152,10 +158,10 @@ export default function ContactPage() {
 
                 <button 
                   type="submit" 
-                  className="w-fit bg-[#ea580c] hover:bg-[#d4501a] text-white font-bold py-2.5 px-7 rounded-[6px] transition-colors flex items-center justify-center gap-2 uppercase tracking-wide text-[13px] cursor-pointer mt-0.5"
+                  className="w-fit bg-[#ea580c] hover:bg-[#d4501a] text-white font-bold py-2.5 px-7 rounded-[6px] hover:shadow-[0_8px_20px_rgba(234,88,12,0.35)] hover:-translate-y-0.5 active:scale-95 transition-all duration-300 flex items-center justify-center gap-2 uppercase tracking-wide text-[13px] cursor-pointer mt-0.5 group"
                 >
-                  {contactForm.submitText || "SUBMIT MESSAGE"}
-                  <ArrowRight className="w-3.5 h-3.5" />
+                  <span>{contactForm.submitText || "SUBMIT MESSAGE"}</span>
+                  <ArrowRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" />
                 </button>
 
               </RedirectForm>

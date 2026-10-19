@@ -40,7 +40,7 @@ const Gallery = () => {
   };
 
   return (
-    <section className="w-full bg-white pt-10 pb-4 md:pt-14 md:pb-6 font-sans">
+    <section className="w-full bg-white py-10 sm:py-12 md:py-14 lg:py-16 font-sans">
       <div className="max-w-[1400px] mx-auto px-4 md:px-6 lg:px-6">
         {/* Header */}
         <div className="flex flex-col items-center text-center mb-4">
@@ -60,25 +60,25 @@ const Gallery = () => {
         </div>
 
         {/* Gallery Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1 md:gap-2 mb-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-3 mb-6">
           {displayedImages.map((img: any, idx: number) => (
 
             <div
               key={img.id}
-              className="relative group cursor-pointer rounded-xl overflow-hidden aspect-[4/3] bg-gray-100"
+              className="relative group cursor-pointer rounded-xl overflow-hidden aspect-[4/3] bg-gray-100 shadow-xs hover:shadow-xl hover:-translate-y-1 transition-all duration-500 ease-out"
               onClick={() => openLightbox(idx)}
             >
               <Image
                 src={img.src}
                 alt={img.alt}
                 fill
-                className="object-cover transition-transform duration-500 group-hover:scale-110"
+                className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"
               />
               {/* Overlay on hover */}
-              <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
 
               {/* Magnifying Glass Icon (Bottom Right) */}
-              <div className="absolute bottom-4 right-4 w-10 h-10 bg-black/80 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0">
+              <div className="absolute bottom-4 right-4 w-10 h-10 bg-[#ea580c] text-white rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300 translate-y-3 group-hover:translate-y-0 shadow-lg shadow-orange-500/30">
                 <Search className="w-4 h-4 text-white" strokeWidth={2.5} />
               </div>
             </div>
@@ -90,7 +90,7 @@ const Gallery = () => {
           <div className="flex justify-center">
             <button
               onClick={() => setShowAll(true)}
-              className="bg-white border-2 border-[#ea580c] text-[#ea580c] hover:bg-[#ea580c] hover:text-white font-bold py-3.5 px-10 rounded shadow-sm transition-all text-[15px] uppercase tracking-wider"
+              className="bg-white border-2 border-[#ea580c] text-[#ea580c] hover:bg-[#ea580c] hover:text-white font-bold py-3.5 px-10 rounded-lg shadow-sm hover:shadow-[0_8px_25px_rgba(234,88,12,0.35)] hover:-translate-y-0.5 active:scale-95 transition-all duration-300 text-[15px] uppercase tracking-wider cursor-pointer"
             >
               {gallery.buttonText}
             </button>

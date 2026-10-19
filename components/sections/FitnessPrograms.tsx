@@ -19,7 +19,7 @@ const FitnessPrograms = () => {
   const images = fitnessPrograms.images || siteData.programsPage.fitnessPrograms.images;
 
   return (
-    <section className="w-full py-8 sm:py-10 md:py-12 lg:py-16 bg-white overflow-hidden relative">
+    <section className="w-full py-10 sm:py-12 md:py-14 lg:py-16 bg-white overflow-hidden relative">
       <div className="w-full max-w-[1400px] mx-auto px-4 md:px-6 lg:px-6 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 xl:gap-14 items-center relative z-10">
 
         {/* Left Side: Content */}
@@ -33,7 +33,7 @@ const FitnessPrograms = () => {
           </div>
 
           {/* Heading */}
-          <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-[38px] xl:text-[42px] font-extrabold text-black leading-tight sm:leading-[1.15] mb-3 sm:mb-4">
+          <h2 className="font-heading text-3xl md:text-4xl lg:text-[40px] font-extrabold text-black leading-tight mb-3 sm:mb-4">
             {fitnessPrograms.titleStart || fitnessPrograms.headingLine1 || 'Fitness Programs'}{' '}
             <br className="hidden sm:block" />
             {fitnessPrograms.titlePrefix || fitnessPrograms.headingLine2Prefix || 'For a '}
@@ -51,9 +51,9 @@ const FitnessPrograms = () => {
             {features.map((feature: any, idx: number) => (
               <div 
                 key={idx} 
-                className="bg-white border border-gray-100 shadow-[0_4px_20px_rgba(0,0,0,0.03)] rounded-xl p-2.5 sm:p-3 xl:p-3.5 flex items-center gap-3 hover:shadow-[0_4px_25px_rgba(0,0,0,0.08)] transition-all hover:-translate-y-0.5 group cursor-pointer hover:border-[#ea580c] h-full"
+                className="bg-white border border-gray-100 shadow-[0_4px_20px_rgba(0,0,0,0.03)] rounded-xl p-2.5 sm:p-3 xl:p-3.5 flex items-center gap-3 hover:shadow-[0_8px_25px_rgba(234,88,12,0.14)] transition-all duration-300 hover:-translate-y-1 group cursor-pointer hover:border-[#ea580c] h-full"
               >
-                <div className="flex-shrink-0 w-10 h-10 sm:w-11 sm:h-11 rounded-lg bg-orange-50 text-[#ea580c] group-hover:bg-[#ea580c] group-hover:text-white flex items-center justify-center transition-all duration-300">
+                <div className="flex-shrink-0 w-10 h-10 sm:w-11 sm:h-11 rounded-lg bg-orange-50 text-[#ea580c] group-hover:bg-[#ea580c] group-hover:text-white group-hover:scale-110 group-hover:shadow-[0_4px_12px_rgba(234,88,12,0.35)] flex items-center justify-center transition-all duration-300">
                   {iconMap[feature.icon] ?? iconMap.dumbbell}
                 </div>
                 <div className="flex flex-col justify-center min-w-0 flex-1">

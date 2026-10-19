@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Poppins, Open_Sans } from "next/font/google";
 import { Suspense } from "react";
 import "./globals.css";
 import Header from "../components/Header";
@@ -12,6 +12,13 @@ const poppins = Poppins({
   display: 'swap',
 });
 
+const openSans = Open_Sans({
+  weight: ['300', '400', '500', '600', '700', '800'],
+  subsets: ['latin'],
+  variable: '--font-open-sans',
+  display: 'swap',
+});
+
 export const metadata: Metadata = {
   title: "Vortex Fitness",
   description: "Your Fitness Journey, Step by Step",
@@ -21,7 +28,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${poppins.variable} h-full antialiased`}
+      className={`${poppins.variable} ${openSans.variable} h-full antialiased`}
     >
       <body className="font-sans min-h-full flex flex-col font-['Poppins',sans-serif]">
         <Suspense fallback={<div className="h-[56px] md:h-[90px] w-full bg-white shadow-sm" />}>

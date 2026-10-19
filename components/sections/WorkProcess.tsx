@@ -60,7 +60,7 @@ const WorkProcess: React.FC<WorkProcessProps> = ({ className = '' }) => {
     .fromTo('.gsap-step',
       { y: 40, opacity: 0, scale: 0.95 },
       { y: 0, opacity: 1, scale: 1, duration: 0.6, stagger: 0.15 },
-      "-=0.4" // Overlap for speed
+      "-=0.4" 
     )
     // 3. Connectors (Arrows/Lines) fade in
     .fromTo('.gsap-connector',
@@ -70,12 +70,14 @@ const WorkProcess: React.FC<WorkProcessProps> = ({ className = '' }) => {
     );
   }, { scope: sectionRef });
 
+  const hasCustomPt = className.includes('pt-');
+  const hasCustomPb = className.includes('pb-');
+
   return (
     <section 
       ref={sectionRef}
       aria-label="Our Work Process"
-      
-      className={`relative w-full py-8 sm:py-10 md:py-12 lg:py-14 bg-white overflow-hidden ${className}`}
+      className={`relative w-full ${hasCustomPt ? '' : 'pt-10 sm:pt-12 md:pt-14 lg:pt-16'} ${hasCustomPb ? '' : 'pb-10 sm:pb-12 md:pb-14 lg:pb-16'} bg-white overflow-hidden ${className}`}
     >
       <div className="max-w-[1400px] mx-auto px-4 md:px-6 lg:px-6 flex flex-col items-center">
         
@@ -108,7 +110,7 @@ const WorkProcess: React.FC<WorkProcessProps> = ({ className = '' }) => {
           {process.steps.map((step: any, index: number) => (
             <React.Fragment key={step.id}>
               <div 
-                className="gsap-step relative flex flex-col items-center text-center group cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ea580c] rounded-2xl p-0 transition-transform duration-300"
+                className="gsap-step relative flex flex-col items-center text-center group cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ea580c] rounded-2xl p-0 transition-all duration-300 hover:-translate-y-2"
                 tabIndex={0}
               >
                 {/* Image Circle Wrapper */}
@@ -127,7 +129,7 @@ const WorkProcess: React.FC<WorkProcessProps> = ({ className = '' }) => {
                   />
 
                   {/* Main Image Container */}
-                  <div className="w-full h-full rounded-full overflow-hidden relative shadow-lg group-hover:shadow-xl group-hover:shadow-[#ea580c]/15 transition-all duration-500">
+                  <div className="w-full h-full rounded-full overflow-hidden relative shadow-lg group-hover:shadow-xl group-hover:shadow-[#ea580c]/20 transition-all duration-500">
                     <Image
                       src={step.image}
                       alt={step.title}
@@ -140,12 +142,12 @@ const WorkProcess: React.FC<WorkProcessProps> = ({ className = '' }) => {
                   </div>
 
                   {/* Step Number Badge */}
-                  <div className="absolute top-1.5 left-1.5 sm:top-2 sm:left-2 lg:top-1.5 lg:left-1.5 xl:top-3 xl:left-3 w-10 h-10 sm:w-11 sm:h-11 lg:w-10 lg:h-10 xl:w-12 xl:h-12 bg-[#ea580c] rounded-full flex items-center justify-center text-white text-sm sm:text-base lg:text-sm xl:text-lg font-black shadow-lg border-[3px] sm:border-[4px] border-white z-10 group-hover:scale-110 group-hover:bg-[#0a0a0a] transition-all duration-300">
+                  <div className="absolute top-1.5 left-1.5 sm:top-2 sm:left-2 lg:top-1.5 lg:left-1.5 xl:top-3 xl:left-3 w-10 h-10 sm:w-11 sm:h-11 lg:w-10 lg:h-10 xl:w-12 xl:h-12 bg-[#ea580c] rounded-full flex items-center justify-center text-white text-sm sm:text-base lg:text-sm xl:text-lg font-black shadow-lg border-[3px] sm:border-[4px] border-white z-10 group-hover:scale-115 group-hover:bg-[#0a0a0a] group-hover:shadow-[0_4px_16px_rgba(234,88,12,0.4)] transition-all duration-300">
                     {step.id}
                   </div>
 
                   {/* Bottom Icon Badge */}
-                  <div className="absolute -bottom-3.5 sm:-bottom-4 lg:-bottom-3.5 xl:-bottom-4 left-1/2 -translate-x-1/2 w-11 h-11 sm:w-12 sm:h-12 lg:w-11 lg:h-11 xl:w-14 xl:h-14 bg-[#ea580c] rounded-full flex items-center justify-center text-white shadow-lg border-[3px] sm:border-[4px] border-white z-10 group-hover:scale-110 group-hover:-translate-y-1.5 transition-all duration-300">
+                  <div className="absolute -bottom-3.5 sm:-bottom-4 lg:-bottom-3.5 xl:-bottom-4 left-1/2 -translate-x-1/2 w-11 h-11 sm:w-12 sm:h-12 lg:w-11 lg:h-11 xl:w-14 xl:h-14 bg-[#ea580c] rounded-full flex items-center justify-center text-white shadow-lg border-[3px] sm:border-[4px] border-white z-10 group-hover:scale-115 group-hover:-translate-y-2 group-hover:shadow-[0_6px_20px_rgba(234,88,12,0.45)] transition-all duration-300">
                     {renderIcon(step.icon)}
                   </div>
 

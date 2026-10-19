@@ -25,14 +25,14 @@ export default function BlogCategories() {
                 e.preventDefault();
                 setActiveIdx(index);
               }}
-              className={`flex items-center justify-between p-[14px] px-6 transition-all duration-300 w-full text-left group ${isActive ? 'bg-[#ea580c] text-white mx-3 my-1 rounded-md' : 'bg-white text-gray-500 hover:text-black border-b border-gray-100 mx-3'
+              className={`flex items-center justify-between p-[14px] px-6 transition-all duration-300 w-full text-left group cursor-pointer ${isActive ? 'bg-[#ea580c] text-white mx-3 my-1 rounded-md shadow-xs' : 'bg-white text-gray-500 hover:text-[#ea580c] hover:translate-x-1.5 border-b border-gray-100 mx-3'
                 }`}
             >
               <span className="font-medium text-[15px]">
                 {category.name}
               </span>
               <div className={`flex items-center gap-2 ${isActive ? 'text-white' : 'text-gray-400 group-hover:text-[#ea580c]'}`}>
-                <ChevronRight className="w-4 h-4" />
+                <ChevronRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
               </div>
             </button>
           );

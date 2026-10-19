@@ -2,37 +2,12 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { Calendar, User, ChevronRight } from 'lucide-react';
+import { Calendar, User } from 'lucide-react';
 import { FaQuoteLeft } from 'react-icons/fa';
 import PageHeader from '../../../components/ui/PageHeader';
-import siteData, { blogPosts, recentPosts } from '@/data/siteData';
-
-
-
+import siteData, { blogPosts, recentPosts, blogDetailVariant, BlogPostDetail, BlogContentBlock } from '@/data/siteData';
 
 const renderTitle = (title: string) => {
-  if (title === "How to Stay Motivated in Your Fitness Journey") {
-    return <>How to Stay Motivated in Your <br /><span className="text-[#ea580c]">Fitness Journey</span></>;
-  }
-  if (title === "The Role of Nutrition in Building Muscle") {
-    return <>The Role of Nutrition in <br /><span className="text-[#ea580c]">Building Muscle</span></>;
-  }
-  if (title === "Best Warm-Up Exercises Before Your Workout") {
-    return <>Best Warm-Up Exercises <br /><span className="text-[#ea580c]">Before Your Workout</span></>;
-  }
-  if (title === "5 Effective Cardio Workouts for Faster Results") {
-    return <>5 Effective Cardio Workouts <br /><span className="text-[#ea580c]">for Faster Results</span></>;
-  }
-  if (title === "Strength Training vs Cardio: Which is Better?") {
-    return <>Strength Training vs Cardio: <br /><span className="text-[#ea580c]">Which is Better?</span></>;
-  }
-  if (title === "The Mental Benefits of Regular Exercise") {
-    return <>The Mental Benefits of <br /><span className="text-[#ea580c]">Regular Exercise</span></>;
-  }
-  if (title === "How to Build a Sustainable Fitness Habit") {
-    return <>How to Build a Sustainable <br /><span className="text-[#ea580c]">Fitness Habit</span></>;
-  }
-
   const words = title.split(' ');
   if (words.length > 2) {
     const half = Math.floor(words.length / 2);
@@ -44,16 +19,15 @@ const renderTitle = (title: string) => {
 };
 
 export async function generateStaticParams() {
-  return blogPosts.map((post) => ({
-    id: post.id.toString(),
-  }));
+  const keys = blogDetailVariant?.blogs 
+    ? Object.keys(blogDetailVariant.blogs) 
+    : blogPosts.map((p) => p.id.toString());
+  return keys.map((id) => ({ id }));
 }
 
 export default async function BlogPostPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
-  const blogDetailVariant = siteData.sections?.BlogDetail?.variants?.FitnessBlogDetail1;
-  const post = (blogDetailVariant?.blogs as any)?.[id] || blogPosts.find((p) => p.id === parseInt(id));
-
+  const post: BlogPostDetail | undefined = blogDetailVariant?.blogs?.[id] || blogPosts.find((p) => p.id === parseInt(id));
 
   if (!post) {
     notFound();
@@ -61,12 +35,16 @@ export default async function BlogPostPage({ params }: { params: Promise<{ id: s
 
   const heroVariant = siteData.sections?.Hero?.variants?.FitnessBlogDetailHero1;
   const bannerTitle = heroVariant?.title || "Blog Detail";
+  const displayedRecentPosts = blogDetailVariant?.recentPosts && blogDetailVariant.recentPosts.length > 0 
+    ? blogDetailVariant.recentPosts 
+    : recentPosts;
+  const recentArticlesTitle = blogDetailVariant?.recentPostsTitle || `${siteData.home.recentArticles.heading1}${siteData.home.recentArticles.heading2}` || "Recent Articles";
 
   return (
     <div className="w-full flex flex-col min-h-screen bg-white font-sans">
       <PageHeader title={bannerTitle} breadcrumb={`Blogs / ${post.title}`} />
 
-      <section className="w-full py-12 md:py-16">
+      <section className="w-full py-10 sm:py-12 md:py-14 lg:py-16">
         <div className="max-w-[1400px] mx-auto px-4 md:px-6 lg:px-6">
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-[50px]">
 
@@ -78,14 +56,13 @@ export default async function BlogPostPage({ params }: { params: Promise<{ id: s
                   src={post.image}
                   alt={post.title}
                   fill
+                  sizes="(max-width: 1024px) 100vw, 65vw"
                   className="object-cover"
+                  priority
                 />
               </div>
 
-              {/* Title */}
-              <div className="mt-6"></div>
-
-              <h1 className="font-heading text-3xl md:text-4xl lg:text-[42px] font-black text-[#1a1a1a] leading-[1.2] mb-5 tracking-tight">
+              <h1 className="font-heading text-3xl md:text-4xl lg:text-[40px] font-extrabold text-[#1a1a1a] leading-tight mb-5 tracking-tight">
                 {renderTitle(post.title)}
               </h1>
 
@@ -104,7 +81,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ id: s
 
               {/* Content Sections */}
               <div className="flex flex-col">
-                {post.content.map((block: any, index: number) => {
+                {post.content.map((block: BlogContentBlock, index: number) => {
                   if (block.type === 'paragraph') {
                     return (
                       <p key={index} className={`leading-[1.8] text-[16px] text-[#666666] ${index === 0 ? 'mt-3 mb-8' : 'mb-1'}`}>
@@ -129,7 +106,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ id: s
                         <FaQuoteLeft className="w-10 h-10 text-[#ea580c] shrink-0 mt-1" />
                         <div className="flex flex-col justify-center">
                           <p className="text-[17px] md:text-[18px] font-medium text-[#1a1a1a] italic m-0 leading-relaxed">
-                            {lines.map((line: any, i: number) => (
+                            {lines.map((line: string, i: number) => (
                               <React.Fragment key={i}>
                                 {line}
                                 {i < lines.length - 1 && <br />}
@@ -138,7 +115,6 @@ export default async function BlogPostPage({ params }: { params: Promise<{ id: s
                           </p>
                         </div>
                       </blockquote>
-
                     );
                   }
                   return null;
@@ -148,23 +124,23 @@ export default async function BlogPostPage({ params }: { params: Promise<{ id: s
 
             {/* Sidebar */}
             <div className="lg:w-[35%] flex flex-col gap-10 sticky top-24 h-fit">
-
               {/* Recent Posts Widget */}
-              <div className="bg-[#f8f9fa] rounded-[10px] p-8">
+              <div className="bg-[#f8f9fa] hover:bg-white border border-gray-100/80 hover:border-orange-200/80 transition-all duration-300 rounded-[12px] p-8 shadow-xs hover:shadow-[0_10px_30px_rgba(0,0,0,0.06)]">
                 <h4 className="text-[22px] font-black text-[#1a1a1a] mb-2">
-                  Recent Articles
+                  {recentArticlesTitle}
                 </h4>
                 <div className="h-[2px] w-10 bg-[#ea580c] mb-8"></div>
 
                 <div className="flex flex-col space-y-6">
-                  {recentPosts.map((recentPost) => (
-                    <Link key={recentPost.id} href={`/blogs/${recentPost.id}`} className="flex gap-5 group">
-                      <div className="relative w-[100px] h-[80px] shrink-0 rounded-[8px] overflow-hidden">
+                  {displayedRecentPosts.map((recentPost) => (
+                    <Link key={recentPost.id} href={`/blogs/${recentPost.id}`} className="flex gap-5 group hover:translate-x-1.5 transition-all duration-300 cursor-pointer">
+                      <div className="relative w-[100px] h-[80px] shrink-0 rounded-[8px] overflow-hidden shadow-xs">
                         <Image
                           src={recentPost.image}
                           alt={recentPost.title}
                           fill
-                          className="object-cover group-hover:scale-105 transition-transform duration-300"
+                          sizes="100px"
+                          className="object-cover group-hover:scale-110 transition-transform duration-500 ease-out"
                         />
                       </div>
                       <div className="flex flex-col justify-center">

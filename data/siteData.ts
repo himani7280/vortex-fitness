@@ -1,7 +1,7 @@
 import siteDataJson from './siteData.json';
 
 /* ==========================================================================
-   TYPES & INTERFACES FOR ALL COMPONENTS
+   TYPES & INTERFACES FOR ALL COMPONENTS (STRICT TYPESCRIPT)
    ========================================================================== */
 
 export interface SocialLinks {
@@ -32,6 +32,14 @@ export interface TeamMember {
   specializations: Specialization[];
 }
 
+export interface TeamMemberProfile extends TeamMember {}
+
+export interface TeamProfileVariant {
+  badge?: string;
+  members?: Record<string, TeamMemberProfile>;
+  items?: TeamMemberProfile[];
+}
+
 export interface BlogContentBlock {
   type: 'paragraph' | 'heading' | 'quote' | string;
   text: string;
@@ -47,6 +55,18 @@ export interface BlogPost {
   title: string;
   description: string;
   content: BlogContentBlock[];
+  slug?: string;
+  heroImage?: string;
+}
+
+export interface BlogPostDetail extends BlogPost {}
+
+export interface BlogDetailVariant {
+  recentPostsTitle?: string;
+  recentPosts?: RecentPost[];
+  categories?: BlogCategory[];
+  blogs?: Record<string, BlogPostDetail>;
+  items?: BlogPostDetail[];
 }
 
 export interface BlogCategory {
@@ -67,12 +87,60 @@ export interface BannerSlide {
   alt: string;
 }
 
+export interface ProgramHighlight {
+  title: string;
+  desc: string;
+  icon: string;
+}
+
 export interface ProgramCard {
   id: number;
   title: string;
-  category: string;
+  category?: string;
   description: string;
   image: string;
+  icon?: string;
+}
+
+export interface ProgramDetailItem {
+  id: number;
+  slug?: string;
+  title: string;
+  description: string;
+  image: string;
+  heroImage?: string;
+  paragraphs: string[];
+  highlights: ProgramHighlight[];
+  phone?: string;
+  helpTitle?: string;
+  helpSubtitle?: string;
+  helpDescription?: string;
+  helpButtonText?: string;
+  helpButtonLink?: string;
+}
+
+export interface ProgramDetailVariant {
+  badge?: string;
+  programs?: Record<string, ProgramDetailItem>;
+  cards?: ProgramCard[];
+}
+
+export interface AboutPageVariant {
+  badge?: string;
+  topText?: string;
+  heading1?: string;
+  heading2?: string;
+  titleStart?: string;
+  titleHighlight?: string;
+  intro?: {
+    highlight: string;
+    text: string;
+  };
+  paragraphs?: string[];
+  images?: {
+    main: string;
+    small: string;
+  };
 }
 
 export interface HeaderData {
@@ -201,10 +269,12 @@ export const templateComponents = Fitness.templateComponents;
 export const heroVariant = sections.Hero.variants.FitnessHomeHero1;
 export const programsVariant = sections.Programs.variants.FitnessPrograms1;
 export const programsPageVariant = sections.ProgramsPage.variants.FitnessProgramsPage1;
-export const programDetailVariant = sections.ProgramDetail.variants.FitnessProgramDetail1;
+export const programDetailVariant: ProgramDetailVariant = sections.ProgramDetail.variants.FitnessProgramDetail1 as unknown as ProgramDetailVariant;
 export const trainersVariant = sections.Trainers.variants.FitnessTrainers1;
 export const teamVariant = sections.Team.variants.FitnessTeam1;
-export const teamProfileVariant = sections.TeamProfile.variants.FitnessTeamProfile1;
+export const teamProfileVariant: TeamProfileVariant = sections.TeamProfile.variants.FitnessTeamProfile1 as unknown as TeamProfileVariant;
+export const blogDetailVariant: BlogDetailVariant = sections.BlogDetail.variants.FitnessBlogDetail1 as unknown as BlogDetailVariant;
+export const aboutPageVariant: AboutPageVariant = sections.AboutPage.variants.FitnessAboutPage1 as unknown as AboutPageVariant;
 export const enquireVariant = sections.EnquiryForm.variants.FitnessEnquiryForm1;
 export const thankYouVariant = sections.ThankYou.variants.FitnessThankYou1;
 export const headerVariant = sections.SiteChrome.variants.FitnessHeader1;
@@ -219,7 +289,7 @@ export const categories: BlogCategory[] = [
   { name: "Nutrition", count: 2 },
   { name: "Lifestyle", count: 2 },
 ];
-export const recentPosts: RecentPost[] = blogPosts.slice(0, 6).map((post: any) => ({
+export const recentPosts: RecentPost[] = blogPosts.slice(0, 6).map((post) => ({
   id: post.id,
   title: post.title,
   date: post.date,
@@ -280,5 +350,3 @@ export const siteData = {
 
 export type SiteData = typeof siteData;
 export default siteData;
-
-

@@ -46,7 +46,7 @@ const CTA = () => {
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} className="relative w-full py-12 sm:py-14 md:py-16 flex items-center bg-[#111111] overflow-hidden">
+    <section ref={sectionRef} className="relative w-full py-10 sm:py-12 md:py-14 lg:py-16 flex items-center bg-[#111111] overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0 w-full h-full overflow-hidden">
         <Image
@@ -93,9 +93,12 @@ const CTA = () => {
 
           {/* Call to Action Button */}
           <div className="gsap-cta-item">
-            <Link href={cta.button.link} className="w-full sm:w-auto justify-center bg-[#f95d22] hover:bg-[#d84b16] text-white px-6 py-3.5 sm:px-8 sm:py-4 rounded-md font-semibold text-sm sm:text-base inline-flex items-center gap-2 transition-colors duration-300">
-              {cta.button.text}
-              <ArrowRight className="w-5 h-5" />
+            <Link 
+              href={cta.button.link} 
+              className="group w-full sm:w-auto justify-center bg-[#f95d22] hover:bg-[#d84b16] text-white px-6 py-3.5 sm:px-8 sm:py-4 rounded-md font-semibold text-sm sm:text-base inline-flex items-center gap-2 hover:shadow-[0_10px_25px_rgba(249,93,34,0.45)] hover:-translate-y-1 active:scale-95 transition-all duration-300 cursor-pointer"
+            >
+              <span>{cta.button.text}</span>
+              <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1.5" />
             </Link>
           </div>
         </div>

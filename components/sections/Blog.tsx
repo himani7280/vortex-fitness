@@ -121,16 +121,17 @@ const Blog = ({ isCarousel = false, limit, title, subtitle }: BlogProps) => {
 
   /* ── Blog Card ───────────────────────────────────────────────── */
   const BlogCard = ({ post }: { post: (typeof blogPosts)[0] }) => (
-    <div className="flex flex-col bg-white rounded-[12px] shadow-[0_8px_30px_rgb(0,0,0,0.07)] border border-gray-100 h-full group hover:-translate-y-1.5 transition-transform duration-300">
+    <div className="group flex flex-col bg-white rounded-[16px] shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-gray-100 h-full hover:border-orange-300 hover:shadow-[0_20px_45px_-12px_rgba(234,88,12,0.22)] hover:-translate-y-2.5 transition-all duration-500 ease-out overflow-hidden">
       {/* Image */}
-      <div className="relative w-full aspect-[16/10] rounded-t-[12px] overflow-hidden">
+      <div className="relative w-full aspect-[16/10] overflow-hidden">
         <Image
           src={post.image}
           alt={post.title}
           fill
-          className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
+          className="object-cover object-center group-hover:scale-110 transition-transform duration-700 ease-out"
         />
-        <div className="absolute bottom-3 left-4 bg-[#ea580c] text-white px-3 py-1 rounded-full flex items-center gap-1.5 shadow-md">
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+        <div className="absolute bottom-3 left-4 bg-[#ea580c] text-white px-3 py-1 rounded-full flex items-center gap-1.5 shadow-md group-hover:shadow-[0_4px_14px_rgba(234,88,12,0.45)] transition-all duration-300">
           <Calendar className="w-3 h-3" />
           <span className="text-[11px] font-bold tracking-wide">{post.date}</span>
         </div>
@@ -141,7 +142,7 @@ const Blog = ({ isCarousel = false, limit, title, subtitle }: BlogProps) => {
         <span className="text-[#ea580c] text-[11px] font-bold tracking-widest uppercase mb-1.5">
           {post.category}
         </span>
-        <h3 className="text-[16px] sm:text-[17px] font-black text-[#1a1a1a] leading-snug mb-2 line-clamp-2">
+        <h3 className="font-heading text-[16px] sm:text-[17px] font-black text-[#1a1a1a] leading-snug mb-2 line-clamp-2 group-hover:text-[#ea580c] transition-colors duration-300">
           {post.title}
         </h3>
         <p className="text-gray-500 text-[13px] leading-relaxed mb-4 flex-grow line-clamp-3">
@@ -152,7 +153,7 @@ const Blog = ({ isCarousel = false, limit, title, subtitle }: BlogProps) => {
           <span className="text-[#1a1a1a] font-bold text-[13px] group-hover/link:text-[#ea580c] transition-colors">
             {blog.readMoreText}
           </span>
-          <div className="w-7 h-7 rounded-full bg-[#ea580c] flex items-center justify-center text-white group-hover/link:bg-[#d94e1a] transition-colors">
+          <div className="w-7 h-7 rounded-full bg-[#ea580c] flex items-center justify-center text-white group-hover/link:bg-[#d94e1a] group-hover/link:translate-x-1 transition-all duration-300 shadow-xs">
             <ArrowRight className="w-3.5 h-3.5" />
           </div>
         </Link>
@@ -161,7 +162,7 @@ const Blog = ({ isCarousel = false, limit, title, subtitle }: BlogProps) => {
   );
 
   return (
-    <section className="w-full bg-white py-8 sm:py-9 md:py-10 lg:py-12 font-sans">
+    <section className="w-full bg-white py-10 sm:py-12 md:py-14 lg:py-16 font-sans">
       <div className="max-w-[1400px] mx-auto px-4 md:px-6 lg:px-6">
 
         {/* ── Section Header ── */}

@@ -17,7 +17,7 @@ export default function ThankYouPage() {
 
   return (
     <div className="w-full flex flex-col bg-white font-sans">
-      <section className="w-full flex items-center justify-center py-6 sm:py-8 md:py-10 lg:py-12 bg-[#f8f9fa] relative overflow-hidden">
+      <section className="w-full flex items-center justify-center py-10 sm:py-12 md:py-14 lg:py-16 bg-[#f8f9fa] relative overflow-hidden">
         {/* Subtle decorative background glow */}
         <div
           className="absolute -top-20 -right-20 w-96 h-96 rounded-full pointer-events-none"
@@ -49,7 +49,7 @@ export default function ThankYouPage() {
               {thankYou.badge}
               <span className="inline-block w-6 h-[2px] bg-[#ea580c]" />
             </span>
-            <h1 className="font-heading font-extrabold leading-tight text-[#1a1a1a] text-2xl sm:text-3xl md:text-4xl lg:text-[40px]">
+            <h1 className="font-heading font-extrabold leading-tight text-[#1a1a1a] text-3xl md:text-4xl lg:text-[40px]">
               {thankYou.titleStart} <span className="text-[#ea580c]">{thankYou.titleHighlight}</span>
             </h1>
           </div>
@@ -68,10 +68,10 @@ export default function ThankYouPage() {
           {/* CTA Button */}
           <Link
             href={thankYou.buttonLink}
-            className="inline-flex items-center gap-2 bg-[#ea580c] hover:bg-[#d4501a] text-white font-bold py-3 px-8 rounded-[8px] transition-colors text-[13.5px] uppercase tracking-wide shadow-[0_4px_20px_rgba(234,88,12,0.25)] hover:shadow-lg active:scale-95"
+            className="group inline-flex items-center gap-2 bg-[#ea580c] hover:bg-[#d4501a] text-white font-bold py-3.5 px-9 rounded-[8px] hover:shadow-[0_10px_25px_rgba(234,88,12,0.4)] hover:-translate-y-0.5 active:scale-95 transition-all duration-300 text-[13.5px] uppercase tracking-wide shadow-[0_4px_20px_rgba(234,88,12,0.25)] cursor-pointer"
           >
-            <Home className="w-4 h-4" />
-            {thankYou.buttonText}
+            <Home className="w-4 h-4 transition-transform duration-300 group-hover:scale-110" />
+            <span>{thankYou.buttonText}</span>
           </Link>
         </div>
       </section>

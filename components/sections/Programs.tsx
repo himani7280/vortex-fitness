@@ -187,7 +187,7 @@ const Programs: React.FC<ProgramsProps> = ({ className = '' }) => {
     <section
       ref={sectionRef}
       aria-label="Our Programs"
-      className={`relative w-full py-8 sm:py-10 md:py-12 lg:py-16 overflow-hidden ${className}`}
+      className={`relative w-full py-10 sm:py-12 md:py-14 lg:py-16 overflow-hidden ${className}`}
     >
       {/* Background Image & Overlay */}
       <div

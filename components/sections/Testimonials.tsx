@@ -44,7 +44,7 @@ const Testimonials = () => {
   );
 
   return (
-    <section className="w-full bg-white py-8 md:py-12 font-sans">
+    <section className="w-full bg-white py-10 sm:py-12 md:py-14 lg:py-16 font-sans">
       <div className="max-w-[1400px] mx-auto px-4 md:px-6 lg:px-6 relative">
         {/* Header */}
         <div className="flex flex-col items-center text-center mb-6">
@@ -69,7 +69,7 @@ const Testimonials = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-2 min-h-[300px]">
             {visibleTestimonials.map((testimonial: any) => (
 
-              <div key={testimonial.id} className="bg-white border border-gray-100 rounded-[20px] p-8 shadow-[0_4px_20px_rgba(0,0,0,0.03)] flex flex-col justify-between">
+              <div key={testimonial.id} className="group bg-white border border-gray-100 rounded-[20px] p-8 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_16px_36px_rgba(234,88,12,0.14)] hover:border-orange-200 hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between cursor-pointer">
                 <div>
                   <div className="flex gap-4 mb-5">
                     {/* Orange Quote */}
@@ -78,7 +78,7 @@ const Testimonials = () => {
                         <path d="M6 14.5C6 16.9853 7.98528 19 10.4706 19C12.9559 19 14.9412 16.9853 14.9412 14.5C14.9412 12.0147 12.9559 10 10.4706 10H9.5C9.5 7.5 11.5 6.5 13 6.5V3.5C9 3.5 6 6.5 6 10.5V14.5ZM16 14.5C16 16.9853 17.9853 19 20.4706 19C22.9559 19 24.9412 16.9853 24.9412 14.5C24.9412 12.0147 22.9559 10 20.4706 10H19.5C19.5 7.5 21.5 6.5 23 6.5V3.5C19 3.5 16 6.5 16 10.5V14.5Z" />
                       </svg>
                     </div>
-                    <p className="text-gray-500 text-[14.5px] font-medium leading-relaxed">
+                    <p className="text-gray-500 text-[14.5px] font-medium leading-relaxed group-hover:text-gray-700 transition-colors">
                       "{testimonial.text}"
                     </p>
                   </div>
@@ -92,13 +92,13 @@ const Testimonials = () => {
 
                 {/* Avatar & Info */}
                 <div className="flex items-center gap-4">
-                  <div className="w-[65px] h-[65px] rounded-full overflow-hidden relative bg-orange-50 flex-shrink-0">
+                  <div className="w-[65px] h-[65px] rounded-full overflow-hidden relative bg-orange-50 flex-shrink-0 group-hover:scale-108 transition-transform duration-500 shadow-sm">
                     <Image src={testimonial.image} alt={testimonial.name} fill className="object-cover" />
                   </div>
                   <div className="flex items-center gap-3">
-                    <div className="w-5 h-[2px] bg-[#ea580c]"></div>
+                    <div className="w-5 h-[2px] bg-[#ea580c] group-hover:w-8 transition-all duration-300"></div>
                     <div className="flex flex-col">
-                      <h4 className="font-bold text-[#1a1a1a] text-[16px]">{testimonial.name}</h4>
+                      <h4 className="font-bold text-[#1a1a1a] text-[16px] group-hover:text-[#ea580c] transition-colors">{testimonial.name}</h4>
                       <p className="text-gray-400 text-[13px]">{testimonial.role}</p>
                     </div>
                   </div>
@@ -111,14 +111,14 @@ const Testimonials = () => {
           <div className="flex items-center justify-center gap-4 mt-6">
             <button
               onClick={prevSlide}
-              className="w-12 h-12 rounded-full border border-gray-200 bg-white text-gray-500 flex items-center justify-center hover:bg-[#ea580c] hover:text-white hover:border-[#ea580c] transition-all shadow-sm"
+              className="w-12 h-12 rounded-full border border-gray-200 bg-white text-gray-500 flex items-center justify-center hover:bg-[#ea580c] hover:text-white hover:border-[#ea580c] hover:shadow-[0_4px_16px_rgba(234,88,12,0.3)] active:scale-95 transition-all shadow-sm cursor-pointer"
             >
               <ArrowLeft className="w-5 h-5" />
             </button>
 
             <button
               onClick={nextSlide}
-              className="w-12 h-12 rounded-full border border-gray-200 bg-white text-gray-500 flex items-center justify-center hover:bg-[#ea580c] hover:text-white hover:border-[#ea580c] transition-all shadow-sm"
+              className="w-12 h-12 rounded-full border border-gray-200 bg-white text-gray-500 flex items-center justify-center hover:bg-[#ea580c] hover:text-white hover:border-[#ea580c] hover:shadow-[0_4px_16px_rgba(234,88,12,0.3)] active:scale-95 transition-all shadow-sm cursor-pointer"
             >
               <ArrowRight className="w-5 h-5" />
             </button>

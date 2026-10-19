@@ -30,7 +30,7 @@ const Pricing: React.FC<PricingProps> = ({ className = '' }) => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: sectionRef.current,
-        start: 'top 75%', // Jab section 75% screen par aaye
+        start: 'top 75%', 
         toggleActions: 'play none none none',
       },
       defaults: { ease: 'power3.out' }
@@ -57,7 +57,7 @@ const Pricing: React.FC<PricingProps> = ({ className = '' }) => {
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} className={`w-full bg-[#0a0a0a] py-16 font-sans relative ${className}`}>
+    <section ref={sectionRef} className={`w-full bg-[#0a0a0a] py-10 sm:py-12 md:py-14 lg:py-16 font-sans relative ${className}`}>
       <div className="max-w-[1400px] mx-auto px-4 md:px-6 lg:px-6">
         
         {/* Section Header */}
@@ -84,18 +84,18 @@ const Pricing: React.FC<PricingProps> = ({ className = '' }) => {
 
             <div 
               key={index} 
-              className="gsap-pricing-card group relative flex flex-col px-6 md:px-8 py-6 md:py-7 rounded-[20px] bg-[#0a0a0a] border border-[#2a2a2a] transition-all duration-300 hover:border-[#f05a22] hover:shadow-[0_0_30px_rgba(240,90,34,0.15)] lg:hover:-translate-y-4"
+              className="gsap-pricing-card group relative flex flex-col px-6 md:px-8 py-6 md:py-7 rounded-[20px] bg-[#0d0d0d] border border-[#2a2a2a] transition-all duration-500 hover:border-[#f05a22] hover:shadow-[0_15px_45px_rgba(240,90,34,0.22)] lg:hover:-translate-y-3 cursor-pointer"
             >
               {/* Most Popular Badge */}
               {plan.isPopular && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#f05a22] text-white text-[12px] font-bold uppercase tracking-wider py-1 px-5 rounded-full whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-10">
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#f05a22] text-white text-[12px] font-bold uppercase tracking-wider py-1 px-5 rounded-full whitespace-nowrap shadow-md shadow-[#f05a22]/30 transition-all duration-300 z-10">
                   {pricing.popularBadge}
                 </div>
               )}
 
               {/* Title & Desc */}
               <div className="mb-3">
-                <h3 className="text-[22px] font-black tracking-tight text-white uppercase mb-1">
+                <h3 className="text-[22px] font-black tracking-tight text-white uppercase mb-1 group-hover:text-[#f05a22] transition-colors duration-300">
                   {plan.name} <span className="text-[#f05a22]">{pricing.planSuffix}</span>
                 </h3>
                 <p className="text-[#9ca3af] text-[13.5px] leading-snug min-h-[40px]">
@@ -110,7 +110,7 @@ const Pricing: React.FC<PricingProps> = ({ className = '' }) => {
               </div>
 
               {/* Divider */}
-              <div className="w-full h-[1px] bg-[#2a2a2a] mb-4"></div>
+              <div className="w-full h-[1px] bg-[#2a2a2a] mb-4 group-hover:bg-[#f05a22]/40 transition-colors duration-300"></div>
 
               {/* Features */}
               <ul className="flex flex-col gap-2.5 mb-5 flex-grow">
@@ -126,9 +126,10 @@ const Pricing: React.FC<PricingProps> = ({ className = '' }) => {
               {/* Button */}
               <Link href={`/enquire?plan=${encodeURIComponent(plan.name)}`} className="mt-auto">
                 <button 
-                  className="w-full py-3 rounded-xl font-bold flex items-center justify-center gap-2 transition-all bg-transparent text-white border border-[#f05a22] group-hover:bg-[#f05a22] cursor-pointer"
+                  className="w-full py-3 rounded-xl font-bold flex items-center justify-center gap-2 transition-all duration-300 bg-transparent text-white border border-[#f05a22] group-hover:bg-[#f05a22] group-hover:shadow-[0_4px_20px_rgba(240,90,34,0.4)] active:scale-95 cursor-pointer"
                 >
-                  {pricing.button.text} <ArrowRight className="w-5 h-5" />
+                  <span>{pricing.button.text}</span>
+                  <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1.5" />
                 </button>
               </Link>
             </div>

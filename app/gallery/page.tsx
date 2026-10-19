@@ -1,6 +1,7 @@
 import React from 'react';
 import PageHeader from '../../components/ui/PageHeader';
 import Gallery from '../../components/sections/Gallery';
+import siteData from '@/data/siteData';
 
 export const metadata = {
   title: 'Gallery - Vortex Fitness',
@@ -8,9 +9,12 @@ export const metadata = {
 };
 
 export default function GalleryPage() {
+  const heroVariant = siteData.sections?.Hero?.variants?.FitnessGalleryHero1;
+  const title = heroVariant?.title || "Gallery";
+
   return (
     <div className="w-full flex flex-col min-h-screen bg-white">
-      <PageHeader title="Gallery" breadcrumb="Gallery" />
+      <PageHeader title={title} breadcrumb="Gallery" />
       <Gallery />
     </div>
   );
