@@ -7,7 +7,7 @@ import Trainers from '../../components/sections/Trainers';
 import siteData from '@/data/siteData';
 
 export default function AboutPage() {
-  const heroVariant = siteData.sections?.Hero?.variants?.FitnessAboutHero1;
+  const heroVariant = siteData.heroes.about;
   const title = heroVariant?.title || "About Us";
 
   return (

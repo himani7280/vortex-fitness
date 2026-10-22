@@ -11,7 +11,7 @@ const iconMap: Record<string, React.ReactNode> = {
 };
 
 const WhyChooseUs = () => {
-  const whyChooseUs = (siteData.sections?.WhyChooseUs?.variants?.FitnessWhyChooseUs1 || siteData.about.whyChooseUs) as any;
+  const whyChooseUs = (siteData.whyChooseUs || siteData.about.whyChooseUs) as any;
 
 
   return (

@@ -13,8 +13,8 @@ const AboutUsDetails: React.FC<AboutUsDetailsProps> = ({ className = '' }) => {
   const badgeText = details?.badge || details?.topText || homeAbout?.badge || "MORE ABOUT US";
   const heading1 = details?.heading1 || details?.titleStart || homeAbout?.heading1 || "Unlock Your Full Potential,";
   const heading2 = details?.heading2 || details?.titleHighlight || homeAbout?.heading2 || "Achieve Your Goals.";
-  const mainImage = details?.images?.main || homeAbout?.images?.main || "/about-main.jpg";
-  const smallImage = details?.images?.small || homeAbout?.images?.small || "/about-small.jpg";
+  const mainImage = details?.images?.main || homeAbout?.images?.main || "/about-main.webp";
+  const smallImage = details?.images?.small || homeAbout?.images?.small || "/about-small.webp";
 
   const paragraphs = details?.paragraphs && details.paragraphs.length > 0
     ? details.paragraphs

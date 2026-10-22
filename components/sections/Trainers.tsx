@@ -20,7 +20,7 @@ interface TrainersProps {
 }
 
 const Trainers: React.FC<TrainersProps> = ({ className = '' }) => {
-  const trainers = siteData.sections?.Trainers?.variants?.FitnessTrainers1 || siteData.home.trainers;
+  const trainers = siteData.trainers || siteData.home.trainers;
   
   // Ensure names, titles, and IDs match the team page
   const trainersList = (trainers.team && trainers.team.length > 0)

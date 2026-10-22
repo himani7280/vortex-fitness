@@ -19,7 +19,7 @@ interface AboutProps {
 }
 
 const About: React.FC<AboutProps> = ({ className = '' }) => {
-  const about = (siteData.sections?.About?.variants?.FitnessAbout1 || siteData.home.about) as any;
+  const about = (siteData.about || siteData.home.about) as any;
 
 
   // Section reference for GSAP scope

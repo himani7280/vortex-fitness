@@ -9,7 +9,7 @@ export const metadata = {
 };
 
 export default function PricingPage() {
-  const heroVariant = siteData.sections?.Hero?.variants?.FitnessPricingHero1;
+  const heroVariant = siteData.heroes.pricing;
   const title = heroVariant?.title || "Pricing";
 
   return (

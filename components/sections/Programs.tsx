@@ -29,7 +29,7 @@ interface ProgramsProps {
 const GAP = 20;
 
 const Programs: React.FC<ProgramsProps> = ({ className = '' }) => {
-  const programs = siteData.sections?.Programs?.variants?.FitnessPrograms1 || siteData.home.programs;
+  const programs = siteData.programs || siteData.home.programs;
   const originalCards = programs.cards;
   const cardsCount = originalCards.length;
 

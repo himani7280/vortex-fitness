@@ -5,20 +5,23 @@ import siteData from '@/data/siteData';
 import { MapPin, Phone, Mail, User, Phone as PhoneIcon, Dumbbell, MessageSquare, ArrowRight } from 'lucide-react';
 
 export default function ContactPage() {
-  const contactLocation = siteData.sections?.ContactLocation?.variants?.FitnessLocation1;
+  const contactLocation = siteData.contactLocation;
   const location = contactLocation?.address || siteData.header.topBar.location;
   const phone = contactLocation?.phone || siteData.header.topBar.phone;
   const email = contactLocation?.email || siteData.contact.email;
-  const contactForm = siteData.sections?.ContactForm?.variants?.FitnessContactForm1 || siteData.contact.form;
+  const contactForm = siteData.contactForm;
 
   const addressParts = location.split(', ');
   const addressLine1 = addressParts[0] + (addressParts.length > 1 ? ',' : '');
   const addressLine2 = addressParts.slice(1).join(', ');
 
 
+  const heroVariant = siteData.heroes.contact;
+  const title = heroVariant?.title || "Contact Us";
+
   return (
     <div className="w-full flex flex-col min-h-screen bg-white font-sans">
-      <PageHeader title="Contact Us" breadcrumb="Contact Us" />
+      <PageHeader title={title} breadcrumb="Contact Us" />
       
       <section className="w-full py-10 sm:py-12 md:py-14 lg:py-16 bg-white">
         <div className="max-w-[1400px] mx-auto px-4 md:px-6 lg:px-6">
@@ -49,9 +52,9 @@ export default function ContactPage() {
                 <h4 className="font-bold text-[14.5px] text-[#1a1a1a] group-hover:text-[#ea580c] mb-0.5 transition-colors">
                   {contactLocation?.boxes?.call?.title || "Call Us"}
                 </h4>
-                <p className="text-[#666666] text-[12.5px] leading-[1.35]">
+                <a href={`tel:${phone}`} className="text-[#666666] hover:text-[#ea580c] text-[12.5px] leading-[1.35] transition-colors">
                   {phone}
-                </p>
+                </a>
               </div>
             </div>
 
@@ -64,9 +67,9 @@ export default function ContactPage() {
                 <h4 className="font-bold text-[14.5px] text-[#1a1a1a] group-hover:text-[#ea580c] mb-0.5 transition-colors">
                   {contactLocation?.boxes?.email?.title || "Email Us"}
                 </h4>
-                <p className="text-[#666666] text-[12.5px] leading-[1.35]">
+                <a href={`mailto:${email}`} className="text-[#666666] hover:text-[#ea580c] text-[12.5px] leading-[1.35] transition-colors">
                   {email}
-                </p>
+                </a>
               </div>
             </div>
           </div>

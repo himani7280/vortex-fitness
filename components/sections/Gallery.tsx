@@ -6,7 +6,7 @@ import { Search, X, ChevronLeft, ChevronRight } from 'lucide-react';
 import siteData from '@/data/siteData';
 
 const Gallery = () => {
-  const gallery = (siteData.sections?.Gallery?.variants?.FitnessGallery1 || siteData.gallery) as any;
+  const gallery = (siteData.gallery || siteData.home.gallery) as any;
   const galleryImages = gallery.images;
 
   const [showAll, setShowAll] = useState(false);

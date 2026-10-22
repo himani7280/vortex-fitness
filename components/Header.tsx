@@ -11,7 +11,7 @@ import siteData from "@/data/siteData";
 const Header = () => {
   const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const headerData = siteData.sections?.SiteChrome?.variants?.FitnessHeader1 || siteData.header;
+  const headerData = siteData.header;
   const { topBar, navLinks, button } = headerData;
 
   return (
@@ -37,10 +37,10 @@ const Header = () => {
               </Link>
             </div>
             <div className="h-3.5 w-px bg-neutral-700" />
-            <div className="flex items-center gap-2">
-              <Phone className="w-[13px] h-[13px] text-[#f05a22] fill-current" />
-              <span className="text-white font-semibold tracking-wide">{topBar.phone}</span>
-            </div>
+            <a href={`tel:${topBar.phone}`} className="flex items-center gap-2 group cursor-pointer" aria-label={`Call us at ${topBar.phone}`}>
+              <Phone className="w-[13px] h-[13px] text-[#f05a22] group-hover:scale-110 transition-transform fill-current" />
+              <span className="text-white group-hover:text-[#f05a22] font-semibold tracking-wide transition-colors">{topBar.phone}</span>
+            </a>
           </div>
         </div>
       </div>
@@ -53,7 +53,7 @@ const Header = () => {
           <Link href="/" className="flex-shrink-0 relative z-10 flex items-center mr-4 lg:mr-8 xl:mr-10" aria-label="VortexFit Home">
             <div className="relative w-[155px] h-[42px] sm:w-[195px] sm:h-[46px] md:w-[215px] md:h-[50px] scale-[1.4] sm:scale-[1.7] md:scale-[1.85] origin-left translate-y-0 -translate-x-0.5 sm:-translate-x-1 pointer-events-none">
               <Image 
-                src="/logo.png" 
+                src="/logo.webp" 
                 alt="VortexFit Logo" 
                 fill 
                 className="object-contain object-left" 
@@ -129,6 +129,16 @@ const Header = () => {
             );
           })}
         </nav>
+
+        {/* Mobile Phone Number from JSON */}
+        {topBar?.phone && (
+          <div className="px-5 py-2.5 border-b border-gray-100 bg-gray-50/50 flex items-center gap-2.5">
+            <Phone className="w-3.5 h-3.5 text-[#f05a22]" />
+            <a href={`tel:${topBar.phone}`} className="text-[13px] font-semibold text-gray-800 hover:text-[#f05a22] transition-colors">
+              {topBar.phone}
+            </a>
+          </div>
+        )}
 
         {/* Footer row: CTA + socials */}
         <div className="flex items-center justify-between px-5 py-3 bg-gray-50 gap-3">

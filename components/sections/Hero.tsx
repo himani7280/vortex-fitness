@@ -5,14 +5,14 @@ import Image from 'next/image';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import siteData, { heroVariant } from '@/data/siteData';
 
-const heroData = siteData.sections?.Hero?.variants?.FitnessHomeHero1 || heroVariant || siteData.home.hero;
+const heroData = siteData.homeHero || siteData.home.hero || heroVariant;
 
 const bannerSlides = heroData.bannerSlides && heroData.bannerSlides.length > 0
   ? heroData.bannerSlides
   : [
-      { id: 1, image: '/images/banner_1.jpg', alt: 'Vortex Fitness Banner 1' },
-      { id: 2, image: '/images/banner_2.jpg', alt: 'Vortex Fitness Banner 2' },
-      { id: 3, image: '/images/banner_3.jpg', alt: 'Vortex Fitness Banner 3' }
+      { id: 1, image: '/images/banner_1.webp', alt: 'Vortex Fitness Banner 1' },
+      { id: 2, image: '/images/banner_2.webp', alt: 'Vortex Fitness Banner 2' },
+      { id: 3, image: '/images/banner_3.webp', alt: 'Vortex Fitness Banner 3' }
     ];
 
 const SLIDE_DURATION = 4500; // 4.5 seconds per slide

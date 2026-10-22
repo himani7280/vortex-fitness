@@ -15,7 +15,7 @@ interface BlogProps {
 const GAP = 24; 
 
 const Blog = ({ isCarousel = false, limit, title, subtitle }: BlogProps) => {
-  const blog = (siteData.sections?.Blog?.variants?.FitnessBlog1 || siteData.home.blog) as any;
+  const blog = (siteData.blog || siteData.home.blog) as any;
   const displayPosts = limit ? blogPosts.slice(0, limit) : blogPosts;
 
   const totalCards = displayPosts.length;

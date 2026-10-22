@@ -265,7 +265,19 @@ export const Fitness = siteDataJson.Fitness;
 export const sections = Fitness.sections;
 export const templateComponents = Fitness.templateComponents;
 
-// Direct variant exports for standard template usage
+/**
+ * Helper to resolve section variants by page and key from templateComponents
+ */
+export function getPageComponent<T = any>(page: string, key: string): T {
+  const pageDef = (templateComponents as any)?.['template-1']?.pages?.[page];
+  const item = pageDef?.components?.find((c: any) => c.key === key);
+  if (item && (sections as any)?.[item.key]?.variants?.[item.component]) {
+    return (sections as any)[item.key].variants[item.component];
+  }
+  return (sections as any)?.[key]?.variants?.[Object.keys((sections as any)?.[key]?.variants || {})[0]];
+}
+
+// Direct variant exports for standard template usage (matching investment pattern)
 export const heroVariant = sections.Hero.variants.FitnessHomeHero1;
 export const programsVariant = sections.Programs.variants.FitnessPrograms1;
 export const programsPageVariant = sections.ProgramsPage.variants.FitnessProgramsPage1;
@@ -299,9 +311,86 @@ export const recentPosts: RecentPost[] = blogPosts.slice(0, 6).map((post) => ({
 export const siteData = {
   Fitness,
   sections,
-  templateComponents,
-  header: sections.SiteChrome.variants.FitnessHeader1,
-  footer: sections.SiteChrome.variants.FitnessFooter1,
+  templateComponents: Fitness.templateComponents,
+  getPageComponent,
+
+  // Clean Section Keys (like investmentContent)
+  heroes: {
+    about: sections.Hero.variants.FitnessAboutHero1,
+    contact: sections.Hero.variants.FitnessContactHero1,
+    blog: sections.Hero.variants.FitnessBlogHero1,
+    blogDetail: sections.Hero.variants.FitnessBlogDetailHero1,
+    programs: sections.Hero.variants.FitnessProgramsHero1,
+    team: sections.Hero.variants.FitnessTeamHero1,
+    teamDetails: sections.Hero.variants.FitnessTeamDetailsHero1,
+    pricing: sections.Hero.variants.FitnessPricingHero1,
+    gallery: sections.Hero.variants.FitnessGalleryHero1,
+  },
+  homeHero: sections.Hero.variants.FitnessHomeHero1,
+  hero: sections.Hero.variants.FitnessHomeHero1,
+  about: {
+    ...sections.About.variants.FitnessAbout1,
+    hero: sections.Hero.variants.FitnessAboutHero1,
+    details: sections.AboutPage.variants.FitnessAboutPage1,
+    whyChooseUs: sections.WhyChooseUs.variants.FitnessWhyChooseUs1,
+  },
+  aboutPage: sections.AboutPage.variants.FitnessAboutPage1,
+  aboutDetails: sections.AboutPage.variants.FitnessAboutPage1,
+  whyChooseUs: sections.WhyChooseUs.variants.FitnessWhyChooseUs1,
+  programs: sections.Programs.variants.FitnessPrograms1,
+  programsPage: {
+    ...sections.ProgramsPage.variants.FitnessProgramsPage1,
+    hero: sections.Hero.variants.FitnessProgramsHero1,
+    fitnessPrograms: sections.ProgramsPage.variants.FitnessProgramsPage1,
+    viewDetailsText: "View Details",
+  },
+  fitnessPrograms: sections.ProgramsPage.variants.FitnessProgramsPage1,
+  programDetail: sections.ProgramDetail.variants.FitnessProgramDetail1,
+  workProcess: sections.WorkProcess.variants.FitnessWorkProcess1,
+  trainers: sections.Trainers.variants.FitnessTrainers1,
+  team: sections.Team.variants.FitnessTeam1,
+  teamProfile: sections.TeamProfile.variants.FitnessTeamProfile1,
+  cta: sections.CTA.variants.FitnessCTA1,
+  pricing: sections.Pricing.variants.FitnessPricing1,
+  testimonials: sections.Testimonials.variants.FitnessTestimonials1,
+  reviews: sections.Reviews.variants.FitnessReviews1,
+  gallery: sections.Gallery.variants.FitnessGallery1,
+  galleryPage: sections.GalleryPage.variants.FitnessGalleryPage1,
+  blog: sections.Blog.variants.FitnessBlog1,
+  blogPage: sections.BlogPage.variants.FitnessBlogPage1,
+  blogDetail: sections.BlogDetail.variants.FitnessBlogDetail1,
+  siteChrome: {
+    header: {
+      ...sections.SiteChrome.variants.FitnessHeader1,
+      phone: sections.SiteChrome.variants.FitnessHeader1.topBar.phone,
+      phoneHref: `tel:${sections.SiteChrome.variants.FitnessHeader1.topBar.phone}`,
+    },
+    footer: {
+      ...sections.SiteChrome.variants.FitnessFooter1,
+      phone: sections.SiteChrome.variants.FitnessFooter1.contact.phone,
+      phoneHref: `tel:${sections.SiteChrome.variants.FitnessFooter1.contact.phone}`,
+      email: sections.SiteChrome.variants.FitnessFooter1.contact.email,
+      emailHref: `mailto:${sections.SiteChrome.variants.FitnessFooter1.contact.email}`,
+    },
+  },
+  header: {
+    ...sections.SiteChrome.variants.FitnessHeader1,
+    phone: sections.SiteChrome.variants.FitnessHeader1.topBar.phone,
+    phoneHref: `tel:${sections.SiteChrome.variants.FitnessHeader1.topBar.phone}`,
+  },
+  footer: {
+    ...sections.SiteChrome.variants.FitnessFooter1,
+    phone: sections.SiteChrome.variants.FitnessFooter1.contact.phone,
+    phoneHref: `tel:${sections.SiteChrome.variants.FitnessFooter1.contact.phone}`,
+    email: sections.SiteChrome.variants.FitnessFooter1.contact.email,
+    emailHref: `mailto:${sections.SiteChrome.variants.FitnessFooter1.contact.email}`,
+  },
+  contactForm: sections.ContactForm.variants.FitnessContactForm1,
+  contactLocation: sections.ContactLocation.variants.FitnessLocation1,
+  enquire: sections.EnquiryForm.variants.FitnessEnquiryForm1,
+  thankYou: sections.ThankYou.variants.FitnessThankYou1,
+
+  // Backward-compatibility properties
   home: {
     hero: sections.Hero.variants.FitnessHomeHero1,
     about: sections.About.variants.FitnessAbout1,
@@ -322,30 +411,19 @@ export const siteData = {
       description: "Read our latest fitness tips, nutrition guides, and expert advice to stay motivated."
     }
   },
-  about: {
-    hero: sections.Hero.variants.FitnessAboutHero1,
-    details: sections.AboutPage.variants.FitnessAboutPage1,
-    whyChooseUs: sections.WhyChooseUs.variants.FitnessWhyChooseUs1,
-  },
-  programsPage: {
-    hero: sections.Hero.variants.FitnessProgramsHero1,
-    fitnessPrograms: sections.ProgramsPage.variants.FitnessProgramsPage1,
-    viewDetailsText: "View Details"
-  },
-  team: teamData,
-  blogs: blogPosts,
-  blogCategories: categories,
-  gallery: sections.GalleryPage.variants.FitnessGalleryPage1,
-  testimonialsPage: sections.Reviews.variants.FitnessReviews1,
   contact: {
     hero: sections.Hero.variants.FitnessContactHero1,
     form: sections.ContactForm.variants.FitnessContactForm1,
     location: sections.ContactLocation.variants.FitnessLocation1.address,
     phone: sections.ContactLocation.variants.FitnessLocation1.phone,
     email: sections.ContactLocation.variants.FitnessLocation1.email,
+    phoneHref: `tel:${sections.ContactLocation.variants.FitnessLocation1.phone}`,
+    contactLocation: sections.ContactLocation.variants.FitnessLocation1,
   },
-  enquire: sections.EnquiryForm.variants.FitnessEnquiryForm1,
-  thankYou: sections.ThankYou.variants.FitnessThankYou1,
+  testimonialsPage: sections.Reviews.variants.FitnessReviews1,
+  teamData,
+  blogs: blogPosts,
+  blogCategories: categories,
 };
 
 export type SiteData = typeof siteData;

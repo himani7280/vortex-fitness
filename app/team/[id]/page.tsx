@@ -66,7 +66,7 @@ export default async function TeamDetailPage({ params }: { params: Promise<{ id:
     return <Dumbbell className={iconClass} />;
   };
 
-  const heroVariant = siteData.sections?.Hero?.variants?.FitnessTeamDetailsHero1;
+  const heroVariant = siteData.heroes.teamDetails;
   const bannerTitle = heroVariant?.title || "Team Detail";
 
   return (

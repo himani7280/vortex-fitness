@@ -7,7 +7,7 @@ import siteData, { thankYouVariant } from "@/data/siteData";
 
 export default function ThankYouPage() {
   const [visible, setVisible] = useState(false);
-  const thankYou = siteData.sections?.ThankYou?.variants?.FitnessThankYou1 || thankYouVariant || siteData.thankYou;
+  const thankYou = siteData.thankYou || thankYouVariant;
 
 
   useEffect(() => {

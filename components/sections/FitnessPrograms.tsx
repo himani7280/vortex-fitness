@@ -14,7 +14,7 @@ const iconMap: Record<string, React.ReactNode> = {
 };
 
 const FitnessPrograms = () => {
-  const fitnessPrograms = (siteData.sections?.ProgramsPage?.variants?.FitnessProgramsPage1 || siteData.programsPage.fitnessPrograms) as any;
+  const fitnessPrograms = (siteData.fitnessPrograms || siteData.programsPage.fitnessPrograms) as any;
   const features = fitnessPrograms.features || siteData.programsPage.fitnessPrograms.features;
   const images = fitnessPrograms.images || siteData.programsPage.fitnessPrograms.images;
 

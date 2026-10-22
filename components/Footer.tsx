@@ -16,7 +16,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const Footer = () => {
-  const footer = siteData.sections?.SiteChrome?.variants?.FitnessFooter1 || siteData.footer;
+  const footer = siteData.footer;
 
   
   // Ref for GSAP Scope
@@ -72,7 +72,7 @@ const Footer = () => {
             <Link href="/" className="inline-block mb-6 md:mb-8" aria-label="VortexFit Home">
               <div className="relative w-[155px] h-[42px] sm:w-[195px] sm:h-[46px] md:w-[215px] md:h-[50px] scale-[1.4] sm:scale-[1.7] md:scale-[1.85] origin-left translate-y-0 -translate-x-0.5 sm:-translate-x-1 pointer-events-none">
                 <Image
-                  src={footer.logo || "/logo.png"}
+                  src={footer.logo || "/logo.webp"}
                   alt="VortexFit Logo"
                   fill
                   className="object-contain object-left"
@@ -148,13 +148,17 @@ const Footer = () => {
                 <div className="w-8 h-8 rounded-full bg-[#1a1a1a] text-[#ea580c] group-hover:bg-[#ea580c] group-hover:text-white flex items-center justify-center shrink-0 transition-all duration-300">
                   <Phone className="w-4 h-4" />
                 </div>
-                <span className="text-gray-400 group-hover:text-white text-[15px] transition-colors">{footer.contact.phone}</span>
+                <a href={`tel:${footer.contact.phone}`} className="text-gray-400 group-hover:text-white text-[15px] transition-colors">
+                  {footer.contact.phone}
+                </a>
               </li>
               <li className="flex gap-3.5 items-center group cursor-pointer">
                 <div className="w-8 h-8 rounded-full bg-[#1a1a1a] text-[#ea580c] group-hover:bg-[#ea580c] group-hover:text-white flex items-center justify-center shrink-0 transition-all duration-300">
                   <Mail className="w-4 h-4" />
                 </div>
-                <span className="text-gray-400 group-hover:text-white text-[15px] transition-colors">{footer.contact.email}</span>
+                <a href={`mailto:${footer.contact.email}`} className="text-gray-400 group-hover:text-white text-[15px] transition-colors">
+                  {footer.contact.email}
+                </a>
               </li>
             </ul>
           </div>

@@ -6,7 +6,7 @@ import { ArrowLeft, ArrowRight, Star, Dumbbell } from 'lucide-react';
 import siteData from '@/data/siteData';
 
 const Testimonials = () => {
-  const testimonialsPage = (siteData.sections?.Reviews?.variants?.FitnessReviews1 || siteData.testimonialsPage) as any;
+  const testimonialsPage = (siteData.reviews || siteData.testimonialsPage) as any;
   const testimonialsData = testimonialsPage.items;
 
   const [currentIndex, setCurrentIndex] = useState(0);

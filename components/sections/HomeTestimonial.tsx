@@ -14,7 +14,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const HomeTestimonial = () => {
-  const testimonial = (siteData.sections?.Testimonials?.variants?.FitnessTestimonials1 || siteData.home.testimonial) as any;
+  const testimonial = (siteData.testimonials || siteData.home.testimonial) as any;
   const testimonials = testimonial.items || [];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -71,7 +71,7 @@ const HomeTestimonial = () => {
     name: "Emily Johnson",
     role: "Entrepreneur",
     text: "VortexFit has completely changed my lifestyle. The trainers are knowledgeable, supportive and truly care about your progress. The workouts are effective, and the environment is always positive and motivating. I feel stronger, healthier and more confident than ever before!",
-    image: "/images/testimonial_girl.jpg"
+    image: "/images/testimonial_girl.webp"
   };
 
   return (

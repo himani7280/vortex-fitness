@@ -34,7 +34,7 @@ async function ProgramDetailContent({ params }: { params: Promise<{ id: string }
 
   const allPrograms: ProgramCard[] = 
     programDetailVariant?.cards || 
-    siteData.sections?.Programs?.variants?.FitnessPrograms1?.cards || 
+    siteData.programs?.cards || 
     siteData.home.programs.cards;
 
   const getHighlightIcon = (iconName: string) => {
@@ -61,7 +61,7 @@ async function ProgramDetailContent({ params }: { params: Promise<{ id: string }
   const firstWords = titleWords.length > 1 ? titleWords.slice(0, -1).join(' ') : program.title;
   const lastWord = titleWords.length > 1 ? titleWords[titleWords.length - 1] : '';
 
-  const contactPhone = program.phone || siteData.sections?.ContactLocation?.variants?.FitnessLocation1?.phone || siteData.header.topBar.phone;
+  const contactPhone = program.phone || siteData.contact.phone || siteData.header.topBar.phone;
 
   return (
     <div className="w-full flex flex-col min-h-screen bg-white">
@@ -153,7 +153,7 @@ async function ProgramDetailContent({ params }: { params: Promise<{ id: string }
             <div className="bg-[#0b0c10] rounded-xl overflow-hidden relative shadow-xl">
               <div
                 className="absolute inset-0 opacity-100 bg-cover bg-right"
-                style={{ backgroundImage: "url('/images/red-gloves.jpg')" }}
+                style={{ backgroundImage: "url('/images/red-gloves.webp')" }}
               ></div>
               <div className="absolute inset-0 bg-gradient-to-r from-[#0b0c10] via-[#0b0c10]/90 to-transparent"></div>
 
@@ -171,15 +171,15 @@ async function ProgramDetailContent({ params }: { params: Promise<{ id: string }
                   {program.helpDescription || `Get in touch with our team for more details about the ${program.title} program.`}
                 </p>
 
-                <div className="flex items-center gap-4 mb-8 w-max">
-                  <div className="w-12 h-12 bg-[#ea580c] rounded-lg flex items-center justify-center shrink-0 shadow-md">
+                <a href={`tel:${contactPhone}`} className="flex items-center gap-4 mb-8 w-max group cursor-pointer" aria-label={`Call us at ${contactPhone}`}>
+                  <div className="w-12 h-12 bg-[#ea580c] group-hover:scale-105 rounded-lg flex items-center justify-center shrink-0 shadow-md transition-transform">
                     <Phone className="w-6 h-6 text-white" strokeWidth={2.5} />
                   </div>
                   <div>
                     <p className="text-white/90 font-medium text-[13px] mb-0.5">Call Us Now</p>
-                    <p className="text-[22px] font-extrabold text-white tracking-wide">{contactPhone}</p>
+                    <p className="text-[22px] font-extrabold text-white tracking-wide group-hover:text-[#ea580c] transition-colors">{contactPhone}</p>
                   </div>
-                </div>
+                </a>
 
                 <Link href={program.helpButtonLink || "/contact"} className="group flex items-center gap-4 py-3 px-6 border border-[#ea580c] rounded-md hover:bg-[#ea580c] hover:shadow-[0_8px_20px_rgba(234,88,12,0.4)] hover:-translate-y-0.5 active:scale-95 transition-all duration-300 w-max">
                   <span className="text-white font-bold text-sm">{program.helpButtonText || "Contact Us"}</span>

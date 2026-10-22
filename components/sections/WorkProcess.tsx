@@ -34,7 +34,7 @@ const renderIcon = (iconName: string) => {
 };
 
 const WorkProcess: React.FC<WorkProcessProps> = ({ className = '' }) => {
-  const process = (siteData.sections?.WorkProcess?.variants?.FitnessWorkProcess1 || siteData.home.process) as any;
+  const process = (siteData.workProcess || siteData.home.process) as any;
 
   
   // Ref for GSAP scope and ScrollTrigger

@@ -22,7 +22,7 @@ const PageHeader = ({ title, breadcrumb, breadcrumbItems }: PageHeaderProps) => 
       {/* Background Image with Overlay */}
       <div 
         className="absolute inset-0 z-0 bg-cover bg-[10%_25%] bg-no-repeat opacity-100"
-        style={{ backgroundImage: 'url(/images/page_header_bg.jpg)' }}
+        style={{ backgroundImage: 'url(/images/page_header_bg.webp)' }}
       ></div>
       <div className="absolute inset-0 bg-gradient-to-r from-black/85 from-0% via-black/50 via-40% to-transparent to-70% z-0"></div>
 

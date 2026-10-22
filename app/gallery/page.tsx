@@ -9,7 +9,7 @@ export const metadata = {
 };
 
 export default function GalleryPage() {
-  const heroVariant = siteData.sections?.Hero?.variants?.FitnessGalleryHero1;
+  const heroVariant = siteData.heroes.gallery;
   const title = heroVariant?.title || "Gallery";
 
   return (

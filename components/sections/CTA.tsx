@@ -15,7 +15,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const CTA = () => {
-  const cta = (siteData.sections?.CTA?.variants?.FitnessCTA1 || siteData.home.cta) as any;
+  const cta = (siteData.cta || siteData.home.cta) as any;
 
   
   // Ref for GSAP Scope

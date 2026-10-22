@@ -18,24 +18,28 @@
                 "component": "FitnessAbout1"
               },
               {
-                "key": "Services",
-                "component": "FitnessServices1"
+                "key": "Programs",
+                "component": "FitnessPrograms1"
               },
               {
-                "key": "HowItWorks",
-                "component": "FitnessHowItWorks1"
+                "key": "WorkProcess",
+                "component": "FitnessWorkProcess1"
               },
               {
-                "key": "Trusted",
-                "component": "FitnessTrusted1"
+                "key": "Trainers",
+                "component": "FitnessTrainers1"
               },
               {
-                "key": "Partners",
-                "component": "FitnessPartners1"
+                "key": "CTA",
+                "component": "FitnessCTA1"
               },
               {
                 "key": "Testimonials",
                 "component": "FitnessTestimonials1"
+              },
+              {
+                "key": "Pricing",
+                "component": "FitnessPricing1"
               },
               {
                 "key": "Blog",
@@ -43,19 +47,27 @@
               }
             ]
           },
-          "services": {
+          "about": {
             "components": [
               {
                 "key": "Hero",
-                "component": "FitnessServicesHero1"
+                "component": "FitnessAboutHero1"
               },
               {
-                "key": "Process",
-                "component": "FitnessProcess1"
+                "key": "AboutPage",
+                "component": "FitnessAboutPage1"
               },
               {
-                "key": "ProcessWork",
-                "component": "FitnessProcessWork1"
+                "key": "WorkProcess",
+                "component": "FitnessWorkProcess1"
+              },
+              {
+                "key": "WhyChooseUs",
+                "component": "FitnessWhyChooseUs1"
+              },
+              {
+                "key": "Trainers",
+                "component": "FitnessTrainers1"
               }
             ]
           },
@@ -68,6 +80,10 @@
               {
                 "key": "ProgramsPage",
                 "component": "FitnessProgramsPage1"
+              },
+              {
+                "key": "Programs",
+                "component": "FitnessPrograms1"
               }
             ]
           },
@@ -75,7 +91,7 @@
             "components": [
               {
                 "key": "Hero",
-                "component": "FitnessProgramDetailHero1"
+                "component": "FitnessProgramsHero1"
               },
               {
                 "key": "ProgramDetail",
@@ -83,43 +99,51 @@
               }
             ]
           },
-          "about": {
+          "team": {
             "components": [
               {
                 "key": "Hero",
-                "component": "FitnessAboutHero1"
+                "component": "FitnessTeamHero1"
               },
               {
-                "key": "About",
-                "component": "FitnessAboutPage1"
-              },
-              {
-                "key": "Values",
-                "component": "FitnessMissionVision1"
+                "key": "Team",
+                "component": "FitnessTeam1"
               }
             ]
           },
-          "awards": {
+          "teamDetail": {
             "components": [
               {
                 "key": "Hero",
-                "component": "FitnessAwardsHero1"
+                "component": "FitnessTeamDetailsHero1"
               },
               {
-                "key": "Achievements",
-                "component": "FitnessAwards1"
+                "key": "TeamProfile",
+                "component": "FitnessTeamProfile1"
               }
             ]
           },
-          "blog": {
+          "gallery": {
             "components": [
               {
                 "key": "Hero",
-                "component": "FitnessBlogHero1"
+                "component": "FitnessGalleryHero1"
               },
               {
-                "key": "BlogPage",
-                "component": "FitnessBlogPage1"
+                "key": "Gallery",
+                "component": "FitnessGallery1"
+              }
+            ]
+          },
+          "pricing": {
+            "components": [
+              {
+                "key": "Hero",
+                "component": "FitnessPricingHero1"
+              },
+              {
+                "key": "Pricing",
+                "component": "FitnessPricing1"
               }
             ]
           },
@@ -154,96 +178,12 @@
                 "component": "FitnessContactHero1"
               },
               {
+                "key": "ContactLocation",
+                "component": "FitnessLocation1"
+              },
+              {
                 "key": "ContactForm",
                 "component": "FitnessContactForm1"
-              },
-              {
-                "key": "Location",
-                "component": "FitnessLocation1"
-              }
-            ]
-          },
-          "faq": {
-            "components": [
-              {
-                "key": "Hero",
-                "component": "FitnessFaqHero1"
-              },
-              {
-                "key": "Faq",
-                "component": "FitnessFaq1"
-              }
-            ]
-          },
-          "ourTeam": {
-            "components": [
-              {
-                "key": "Hero",
-                "component": "FitnessOurTeamHero1"
-              },
-              {
-                "key": "Team",
-                "component": "FitnessTeam1"
-              }
-            ]
-          },
-          "team": {
-            "components": [
-              {
-                "key": "Hero",
-                "component": "FitnessOurTeamHero1"
-              },
-              {
-                "key": "Team",
-                "component": "FitnessTeam1"
-              }
-            ]
-          },
-          "teamDetail": {
-            "components": [
-              {
-                "key": "Hero",
-                "component": "FitnessTeamDetailsHero1"
-              },
-              {
-                "key": "TeamProfile",
-                "component": "FitnessTeamProfile1"
-              }
-            ]
-          },
-          "testimonials": {
-            "components": [
-              {
-                "key": "Hero",
-                "component": "FitnessTestimonialsHero1"
-              },
-              {
-                "key": "Reviews",
-                "component": "FitnessReviews1"
-              }
-            ]
-          },
-          "privacyPolicy": {
-            "components": [
-              {
-                "key": "Hero",
-                "component": "FitnessPrivacyHero1"
-              },
-              {
-                "key": "Policy",
-                "component": "FitnessPrivacyPolicy1"
-              }
-            ]
-          },
-          "consultation": {
-            "components": [
-              {
-                "key": "Hero",
-                "component": "FitnessConsultationHero1"
-              },
-              {
-                "key": "Consultation",
-                "component": "FitnessConsultation1"
               }
             ]
           },
@@ -251,7 +191,7 @@
             "components": [
               {
                 "key": "Hero",
-                "component": "FitnessEnquireHero1"
+                "component": "FitnessContactHero1"
               },
               {
                 "key": "EnquiryForm",
@@ -263,7 +203,7 @@
             "components": [
               {
                 "key": "Hero",
-                "component": "FitnessThankYouHero1"
+                "component": "FitnessHomeHero1"
               },
               {
                 "key": "ThankYou",
@@ -271,27 +211,15 @@
               }
             ]
           },
-          "pricing": {
+          "testimonials": {
             "components": [
               {
                 "key": "Hero",
-                "component": "FitnessPricingHero1"
+                "component": "FitnessAboutHero1"
               },
               {
-                "key": "Pricing",
-                "component": "FitnessPricing1"
-              }
-            ]
-          },
-          "gallery": {
-            "components": [
-              {
-                "key": "Hero",
-                "component": "FitnessGalleryHero1"
-              },
-              {
-                "key": "Gallery",
-                "component": "FitnessGallery1"
+                "key": "Reviews",
+                "component": "FitnessReviews1"
               }
             ]
           }
@@ -303,7 +231,7 @@
         "variants": {
           "FitnessHomeHero1": {
             "title": "Home",
-            "image": "/images/banner_1.jpg",
+            "image": "/images/banner_1.webp",
             "badge": "DISCIPLINE TODAY",
             "topText": "DISCIPLINE TODAY",
             "titleStart": "Stronger",
@@ -315,169 +243,65 @@
             "primaryLink": "/pricing",
             "secondaryButton": "Watch Video",
             "secondaryLink": "/video",
-            "backgroundImage": "/images/hero_v4.png",
+            "backgroundImage": "/images/hero_v4.webp",
             "bannerSlides": [
               {
                 "id": 1,
-                "image": "/images/banner_1.jpg",
+                "image": "/images/banner_1.webp",
                 "alt": "Vortex Fitness Training Banner 1"
               },
               {
                 "id": 2,
-                "image": "/images/banner_2.jpg",
+                "image": "/images/banner_2.webp",
                 "alt": "Vortex Fitness Gym Equipment Banner 2"
               },
               {
                 "id": 3,
-                "image": "/images/banner_3.jpg",
+                "image": "/images/banner_3.webp",
                 "alt": "Vortex Fitness Workout Studio Banner 3"
               }
             ],
             "bannerImages": [
-              "/images/banner_1.jpg",
-              "/images/banner_2.jpg",
-              "/images/banner_3.jpg"
+              "/images/banner_1.webp",
+              "/images/banner_2.webp",
+              "/images/banner_3.webp"
             ]
           },
           "FitnessAboutHero1": {
             "title": "About Us",
-            "image": "/images/banner_1.jpg"
+            "image": "/images/banner_1.webp"
           },
           "FitnessContactHero1": {
             "title": "Contact Us",
-            "image": "/images/banner_2.jpg"
+            "image": "/images/banner_2.webp"
           },
           "FitnessBlogHero1": {
             "title": "Blogs",
-            "image": "/images/banner_3.jpg"
-          },
-          "FitnessBlogsHero1": {
-            "title": "Blogs",
-            "image": "/images/banner_3.jpg"
+            "image": "/images/banner_3.webp"
           },
           "FitnessBlogDetailHero1": {
             "title": "Blog Detail",
-            "image": "/images/banner_3.jpg"
-          },
-          "FitnessServicesHero1": {
-            "title": "Our Services",
-            "image": "/images/banner_2.jpg"
+            "image": "/images/banner_3.webp"
           },
           "FitnessProgramsHero1": {
             "title": "Our Programs",
-            "image": "/images/banner_2.jpg"
-          },
-          "FitnessProcessHero1": {
-            "title": "Training Process",
-            "image": "/images/banner_1.jpg"
-          },
-          "FitnessServiceDetailHero1": {
-            "title": "Service Detail",
-            "image": "/images/banner_2.jpg"
-          },
-          "FitnessProgramDetailHero1": {
-            "title": "Program Detail",
-            "image": "/images/banner_2.jpg"
-          },
-          "FitnessMissionVisionHero1": {
-            "title": "Mission & Vision",
-            "image": "/images/banner_2.jpg"
-          },
-          "FitnessWhyChooseUsHero1": {
-            "title": "Why Choose Us",
-            "image": "/images/banner_1.jpg"
-          },
-          "FitnessOurTeamHero1": {
-            "title": "Our Team",
-            "image": "/images/banner_3.jpg"
+            "image": "/images/banner_2.webp"
           },
           "FitnessTeamHero1": {
             "title": "Our Team",
-            "image": "/images/banner_3.jpg"
+            "image": "/images/banner_3.webp"
           },
           "FitnessTeamDetailsHero1": {
             "title": "Team Detail",
-            "image": "/images/banner_3.jpg"
-          },
-          "FitnessPartnersHero1": {
-            "title": "Our Partners",
-            "image": "/images/banner_2.jpg"
-          },
-          "FitnessTestimonialsHero1": {
-            "title": "Testimonials",
-            "image": "/images/banner_1.jpg"
+            "image": "/images/banner_3.webp"
           },
           "FitnessPricingHero1": {
             "title": "Pricing Plans",
-            "image": "/images/banner_1.jpg"
+            "image": "/images/banner_1.webp"
           },
           "FitnessGalleryHero1": {
             "title": "Our Gallery",
-            "image": "/images/banner_2.jpg"
-          },
-          "FitnessFaqHero1": {
-            "title": "FAQ",
-            "image": "/images/banner_1.jpg"
-          },
-          "FitnessAwardsHero1": {
-            "title": "Awards & Achievements",
-            "image": "/images/banner_3.jpg"
-          },
-          "FitnessPrivacyHero1": {
-            "title": "Privacy & Policy",
-            "image": "/images/banner_2.jpg"
-          },
-          "FitnessThankYouHero1": {
-            "title": "Thank You",
-            "image": "/images/banner_1.jpg"
-          },
-          "FitnessEnquireHero1": {
-            "title": "Enquire Now",
-            "image": "/images/banner_3.jpg"
-          },
-          "FitnessConsultationHero1": {
-            "title": "Book Consultation",
-            "image": "/images/banner_3.jpg"
-          }
-        }
-      },
-      "HomeHero": {
-        "variants": {
-          "FitnessHomeHero1": {
-            "badge": "DISCIPLINE TODAY",
-            "topText": "DISCIPLINE TODAY",
-            "titleStart": "Stronger",
-            "headingLine1": "Stronger",
-            "titleHighlight": "Tomorrow",
-            "headingLine2": "Tomorrow",
-            "description": "Train with purpose, stay consistent and unlock a healthier, stronger, and more confident you.",
-            "primaryButton": "Start Your Journey",
-            "primaryLink": "/pricing",
-            "secondaryButton": "Watch Video",
-            "secondaryLink": "/video",
-            "backgroundImage": "/images/hero_v4.png",
-            "bannerSlides": [
-              {
-                "id": 1,
-                "image": "/images/banner_1.jpg",
-                "alt": "Vortex Fitness Training Banner 1"
-              },
-              {
-                "id": 2,
-                "image": "/images/banner_2.jpg",
-                "alt": "Vortex Fitness Gym Equipment Banner 2"
-              },
-              {
-                "id": 3,
-                "image": "/images/banner_3.jpg",
-                "alt": "Vortex Fitness Workout Studio Banner 3"
-              }
-            ],
-            "bannerImages": [
-              "/images/banner_1.jpg",
-              "/images/banner_2.jpg",
-              "/images/banner_3.jpg"
-            ]
+            "image": "/images/banner_2.webp"
           }
         }
       },
@@ -497,11 +321,11 @@
               "text": "Gyms play a vital role in promoting an active and healthy lifestyle. They provide a supportive and motivating environment for individuals to engage in regular physical activity."
             },
             "featureText": "Gyms play a vital role in promoting an active and healthy lifestyle. They provide a supportive and motivating environment for individuals to engage in regular physical activity.",
-            "image": "/about-main.jpg",
+            "image": "/about-main.webp",
             "imageAlt": "About VortexFit Main",
             "images": {
-              "main": "/about-main.jpg",
-              "small": "/about-small.jpg"
+              "main": "/about-main.webp",
+              "small": "/about-small.webp"
             },
             "button": {
               "text": "Read More",
@@ -521,8 +345,8 @@
               "Welcome to VortexFit, your ultimate destination for achieving your fitness goals. We understand the importance of leading a healthy lifestyle and provide a top-notch fitness facility to support you in your fitness journey."
             ],
             "images": {
-              "main": "/about-main.jpg",
-              "small": "/about-small.jpg"
+              "main": "/about-main.webp",
+              "small": "/about-small.webp"
             }
           }
         }
@@ -546,8 +370,8 @@
               "Welcome to VortexFit, a motivating community dedicated to your long-term wellness. We guide you every step of the way with expert advice, nutrition support, and constant motivation."
             ],
             "images": {
-              "main": "/about-main.jpg",
-              "small": "/about-small.jpg"
+              "main": "/about-main.webp",
+              "small": "/about-small.webp"
             }
           }
         }
@@ -563,11 +387,11 @@
             "heading2": "Confidence",
             "images": {
               "left": {
-                "src": "/images/about_why_deadlift.jpg",
+                "src": "/images/about_why_deadlift.webp",
                 "alt": "Deadlift Training"
               },
               "right": {
-                "src": "/images/about_why_curls.jpg",
+                "src": "/images/about_why_curls.webp",
                 "alt": "Curls Training"
               }
             },
@@ -601,69 +425,69 @@
             "titleHighlight": "Classes & Sessions",
             "heading2": "Classes & Sessions",
             "description": "Explore a variety of fitness programs designed for every goal and fitness level.\nJoin the sessions that keep you stronger, healthier and more confident.",
-            "backgroundImage": "/programs-bg.jpg",
+            "backgroundImage": "/programs-bg.webp",
             "cards": [
               {
                 "id": 1,
                 "title": "Gym Fitness Class",
                 "description": "Dynamic sessions to improve fitness, burn calories and boost overall health.",
-                "image": "/images/fitness_class.jpg",
+                "image": "/images/fitness_class.webp",
                 "icon": "running"
               },
               {
                 "id": 2,
                 "title": "Power Lifting Class",
                 "description": "Build raw strength and master compound movements safely.",
-                "image": "/images/strength_training.jpg",
+                "image": "/images/strength_training.webp",
                 "icon": "dumbbell"
               },
               {
                 "id": 3,
                 "title": "Body Building",
                 "description": "Focus on muscle hypertrophy and aesthetic physique development.",
-                "image": "/images/body_building.jpg",
+                "image": "/images/body_building.webp",
                 "icon": "users"
               },
               {
                 "id": 4,
                 "title": "Boxing Class",
                 "description": "Learn self-defense, improve coordination and build mental toughness.",
-                "image": "/images/boxer-training.jpg",
+                "image": "/images/boxer-training.webp",
                 "icon": "boxing"
               },
               {
                 "id": 5,
                 "title": "Meditation Class",
                 "description": "Find mental clarity and reduce stress through guided meditation.",
-                "image": "/images/meditation_class.jpg",
+                "image": "/images/meditation_class.webp",
                 "icon": "yoga"
               },
               {
                 "id": 6,
                 "title": "HIIT Training",
                 "description": "High-intensity interval training for maximum calorie burn.",
-                "image": "/images/group_classes.jpg",
+                "image": "/images/group_classes.webp",
                 "icon": "running"
               },
               {
                 "id": 7,
                 "title": "Cardio Training",
                 "description": "Improve your cardiovascular health and endurance.",
-                "image": "/images/cardio_training.jpg",
+                "image": "/images/cardio_training.webp",
                 "icon": "running"
               },
               {
                 "id": 8,
                 "title": "Yoga & Flexibility",
                 "description": "Enhance flexibility, balance, and mind-body connection.",
-                "image": "/images/yoga_flex.jpg",
+                "image": "/images/yoga_flex.webp",
                 "icon": "yoga"
               },
               {
                 "id": 9,
                 "title": "Weight Loss Program",
                 "description": "A comprehensive plan combining training and nutrition advice.",
-                "image": "/images/weight_loss.jpg",
+                "image": "/images/weight_loss.webp",
                 "icon": "dumbbell"
               }
             ]
@@ -710,11 +534,11 @@
             ],
             "images": {
               "main": {
-                "src": "/images/about_programs_man.jpg",
+                "src": "/images/about_programs_man.webp",
                 "alt": "Muscle Man"
               },
               "secondary": {
-                "src": "/images/about_programs_woman.jpg",
+                "src": "/images/about_programs_woman.webp",
                 "alt": "Woman Deadlift"
               }
             },
@@ -723,63 +547,63 @@
                 "id": 1,
                 "title": "Gym Fitness Class",
                 "description": "Dynamic sessions to improve fitness, burn calories and boost overall health.",
-                "image": "/images/fitness_class.jpg",
+                "image": "/images/fitness_class.webp",
                 "icon": "running"
               },
               {
                 "id": 2,
                 "title": "Power Lifting Class",
                 "description": "Build raw strength and master compound movements safely.",
-                "image": "/images/strength_training.jpg",
+                "image": "/images/strength_training.webp",
                 "icon": "dumbbell"
               },
               {
                 "id": 3,
                 "title": "Body Building",
                 "description": "Focus on muscle hypertrophy and aesthetic physique development.",
-                "image": "/images/body_building.jpg",
+                "image": "/images/body_building.webp",
                 "icon": "users"
               },
               {
                 "id": 4,
                 "title": "Boxing Class",
                 "description": "Learn self-defense, improve coordination and build mental toughness.",
-                "image": "/images/boxer-training.jpg",
+                "image": "/images/boxer-training.webp",
                 "icon": "boxing"
               },
               {
                 "id": 5,
                 "title": "Meditation Class",
                 "description": "Find mental clarity and reduce stress through guided meditation.",
-                "image": "/images/meditation_class.jpg",
+                "image": "/images/meditation_class.webp",
                 "icon": "yoga"
               },
               {
                 "id": 6,
                 "title": "HIIT Training",
                 "description": "High-intensity interval training for maximum calorie burn.",
-                "image": "/images/group_classes.jpg",
+                "image": "/images/group_classes.webp",
                 "icon": "running"
               },
               {
                 "id": 7,
                 "title": "Cardio Training",
                 "description": "Improve your cardiovascular health and endurance.",
-                "image": "/images/cardio_training.jpg",
+                "image": "/images/cardio_training.webp",
                 "icon": "running"
               },
               {
                 "id": 8,
                 "title": "Yoga & Flexibility",
                 "description": "Enhance flexibility, balance, and mind-body connection.",
-                "image": "/images/yoga_flex.jpg",
+                "image": "/images/yoga_flex.webp",
                 "icon": "yoga"
               },
               {
                 "id": 9,
                 "title": "Weight Loss Program",
                 "description": "A comprehensive plan combining training and nutrition advice.",
-                "image": "/images/weight_loss.jpg",
+                "image": "/images/weight_loss.webp",
                 "icon": "dumbbell"
               }
             ]
@@ -830,11 +654,11 @@
             ],
             "images": {
               "main": {
-                "src": "/images/about_programs_man.jpg",
+                "src": "/images/about_programs_man.webp",
                 "alt": "Muscle Man"
               },
               "secondary": {
-                "src": "/images/about_programs_woman.jpg",
+                "src": "/images/about_programs_woman.webp",
                 "alt": "Woman Deadlift"
               }
             },
@@ -843,63 +667,63 @@
                 "id": 1,
                 "title": "Gym Fitness Class",
                 "description": "Dynamic sessions to improve fitness, burn calories and boost overall health.",
-                "image": "/images/fitness_class.jpg",
+                "image": "/images/fitness_class.webp",
                 "icon": "running"
               },
               {
                 "id": 2,
                 "title": "Power Lifting Class",
                 "description": "Build raw strength and master compound movements safely.",
-                "image": "/images/strength_training.jpg",
+                "image": "/images/strength_training.webp",
                 "icon": "dumbbell"
               },
               {
                 "id": 3,
                 "title": "Body Building",
                 "description": "Focus on muscle hypertrophy and aesthetic physique development.",
-                "image": "/images/body_building.jpg",
+                "image": "/images/body_building.webp",
                 "icon": "users"
               },
               {
                 "id": 4,
                 "title": "Boxing Class",
                 "description": "Learn self-defense, improve coordination and build mental toughness.",
-                "image": "/images/boxer-training.jpg",
+                "image": "/images/boxer-training.webp",
                 "icon": "boxing"
               },
               {
                 "id": 5,
                 "title": "Meditation Class",
                 "description": "Find mental clarity and reduce stress through guided meditation.",
-                "image": "/images/meditation_class.jpg",
+                "image": "/images/meditation_class.webp",
                 "icon": "yoga"
               },
               {
                 "id": 6,
                 "title": "HIIT Training",
                 "description": "High-intensity interval training for maximum calorie burn.",
-                "image": "/images/group_classes.jpg",
+                "image": "/images/group_classes.webp",
                 "icon": "running"
               },
               {
                 "id": 7,
                 "title": "Cardio Training",
                 "description": "Improve your cardiovascular health and endurance.",
-                "image": "/images/cardio_training.jpg",
+                "image": "/images/cardio_training.webp",
                 "icon": "running"
               },
               {
                 "id": 8,
                 "title": "Yoga & Flexibility",
                 "description": "Enhance flexibility, balance, and mind-body connection.",
-                "image": "/images/yoga_flex.jpg",
+                "image": "/images/yoga_flex.webp",
                 "icon": "yoga"
               },
               {
                 "id": 9,
                 "title": "Weight Loss Program",
                 "description": "A comprehensive plan combining training and nutrition advice.",
-                "image": "/images/weight_loss.jpg",
+                "image": "/images/weight_loss.webp",
                 "icon": "dumbbell"
               }
             ]
@@ -916,8 +740,8 @@
                 "slug": "1",
                 "title": "Gym Fitness Class",
                 "description": "Dynamic sessions to improve fitness, burn calories and boost overall health.",
-                "image": "/images/fitness_class.jpg",
-                "heroImage": "/images/page_header_bg.jpg",
+                "image": "/images/fitness_class.webp",
+                "heroImage": "/images/page_header_bg.webp",
                 "paragraphs": [
                   "Our Gym Fitness Class program is designed to help you build strength, endurance, speed, and confidence through structured, result-driven training. Whether you are a beginner or looking to improve your technique, our expert coaches provide the right guidance.",
                   "This program includes a mix of focused techniques, conditioning drills, and high-intensity workouts to improve overall fitness, coordination, and mental discipline. You will train in a safe, motivating environment."
@@ -966,8 +790,8 @@
                 "slug": "2",
                 "title": "Power Lifting Class",
                 "description": "Build raw strength and master compound movements safely.",
-                "image": "/images/strength_training.jpg",
-                "heroImage": "/images/page_header_bg.jpg",
+                "image": "/images/strength_training.webp",
+                "heroImage": "/images/page_header_bg.webp",
                 "paragraphs": [
                   "Our Power Lifting Class program is designed to help you build strength, endurance, speed, and confidence through structured, result-driven training. Whether you are a beginner or looking to improve your technique, our expert coaches provide the right guidance.",
                   "This program includes a mix of focused techniques, conditioning drills, and high-intensity workouts to improve overall fitness, coordination, and mental discipline. You will train in a safe, motivating environment."
@@ -1016,8 +840,8 @@
                 "slug": "3",
                 "title": "Body Building",
                 "description": "Focus on muscle hypertrophy and aesthetic physique development.",
-                "image": "/images/body_building.jpg",
-                "heroImage": "/images/page_header_bg.jpg",
+                "image": "/images/body_building.webp",
+                "heroImage": "/images/page_header_bg.webp",
                 "paragraphs": [
                   "Our Body Building program is designed to help you build strength, endurance, speed, and confidence through structured, result-driven training. Whether you are a beginner or looking to improve your technique, our expert coaches provide the right guidance.",
                   "This program includes a mix of focused techniques, conditioning drills, and high-intensity workouts to improve overall fitness, coordination, and mental discipline. You will train in a safe, motivating environment."
@@ -1066,8 +890,8 @@
                 "slug": "4",
                 "title": "Boxing Class",
                 "description": "Learn self-defense, improve coordination and build mental toughness.",
-                "image": "/images/boxer-training.jpg",
-                "heroImage": "/images/page_header_bg.jpg",
+                "image": "/images/boxer-training.webp",
+                "heroImage": "/images/page_header_bg.webp",
                 "paragraphs": [
                   "Our Boxing Class program is designed to help you build strength, endurance, speed, and confidence through structured, result-driven training. Whether you are a beginner or looking to improve your technique, our expert coaches provide the right guidance.",
                   "This program includes a mix of focused techniques, conditioning drills, and high-intensity workouts to improve overall fitness, coordination, and mental discipline. You will train in a safe, motivating environment."
@@ -1116,8 +940,8 @@
                 "slug": "5",
                 "title": "Meditation Class",
                 "description": "Find mental clarity and reduce stress through guided meditation.",
-                "image": "/images/meditation_class.jpg",
-                "heroImage": "/images/page_header_bg.jpg",
+                "image": "/images/meditation_class.webp",
+                "heroImage": "/images/page_header_bg.webp",
                 "paragraphs": [
                   "Our Meditation Class program is designed to help you build strength, endurance, speed, and confidence through structured, result-driven training. Whether you are a beginner or looking to improve your technique, our expert coaches provide the right guidance.",
                   "This program includes a mix of focused techniques, conditioning drills, and high-intensity workouts to improve overall fitness, coordination, and mental discipline. You will train in a safe, motivating environment."
@@ -1166,8 +990,8 @@
                 "slug": "6",
                 "title": "HIIT Training",
                 "description": "High-intensity interval training for maximum calorie burn.",
-                "image": "/images/group_classes.jpg",
-                "heroImage": "/images/page_header_bg.jpg",
+                "image": "/images/group_classes.webp",
+                "heroImage": "/images/page_header_bg.webp",
                 "paragraphs": [
                   "Our HIIT Training program is designed to help you build strength, endurance, speed, and confidence through structured, result-driven training. Whether you are a beginner or looking to improve your technique, our expert coaches provide the right guidance.",
                   "This program includes a mix of focused techniques, conditioning drills, and high-intensity workouts to improve overall fitness, coordination, and mental discipline. You will train in a safe, motivating environment."
@@ -1216,8 +1040,8 @@
                 "slug": "7",
                 "title": "Cardio Training",
                 "description": "Improve your cardiovascular health and endurance.",
-                "image": "/images/cardio_training.jpg",
-                "heroImage": "/images/page_header_bg.jpg",
+                "image": "/images/cardio_training.webp",
+                "heroImage": "/images/page_header_bg.webp",
                 "paragraphs": [
                   "Our Cardio Training program is designed to help you build strength, endurance, speed, and confidence through structured, result-driven training. Whether you are a beginner or looking to improve your technique, our expert coaches provide the right guidance.",
                   "This program includes a mix of focused techniques, conditioning drills, and high-intensity workouts to improve overall fitness, coordination, and mental discipline. You will train in a safe, motivating environment."
@@ -1266,8 +1090,8 @@
                 "slug": "8",
                 "title": "Yoga & Flexibility",
                 "description": "Enhance flexibility, balance, and mind-body connection.",
-                "image": "/images/yoga_flex.jpg",
-                "heroImage": "/images/page_header_bg.jpg",
+                "image": "/images/yoga_flex.webp",
+                "heroImage": "/images/page_header_bg.webp",
                 "paragraphs": [
                   "Our Yoga & Flexibility program is designed to help you build strength, endurance, speed, and confidence through structured, result-driven training. Whether you are a beginner or looking to improve your technique, our expert coaches provide the right guidance.",
                   "This program includes a mix of focused techniques, conditioning drills, and high-intensity workouts to improve overall fitness, coordination, and mental discipline. You will train in a safe, motivating environment."
@@ -1316,8 +1140,8 @@
                 "slug": "9",
                 "title": "Weight Loss Program",
                 "description": "A comprehensive plan combining training and nutrition advice.",
-                "image": "/images/weight_loss.jpg",
-                "heroImage": "/images/page_header_bg.jpg",
+                "image": "/images/weight_loss.webp",
+                "heroImage": "/images/page_header_bg.webp",
                 "paragraphs": [
                   "Our Weight Loss Program program is designed to help you build strength, endurance, speed, and confidence through structured, result-driven training. Whether you are a beginner or looking to improve your technique, our expert coaches provide the right guidance.",
                   "This program includes a mix of focused techniques, conditioning drills, and high-intensity workouts to improve overall fitness, coordination, and mental discipline. You will train in a safe, motivating environment."
@@ -1367,63 +1191,63 @@
                 "id": 1,
                 "title": "Gym Fitness Class",
                 "description": "Dynamic sessions to improve fitness, burn calories and boost overall health.",
-                "image": "/images/fitness_class.jpg",
+                "image": "/images/fitness_class.webp",
                 "icon": "running"
               },
               {
                 "id": 2,
                 "title": "Power Lifting Class",
                 "description": "Build raw strength and master compound movements safely.",
-                "image": "/images/strength_training.jpg",
+                "image": "/images/strength_training.webp",
                 "icon": "dumbbell"
               },
               {
                 "id": 3,
                 "title": "Body Building",
                 "description": "Focus on muscle hypertrophy and aesthetic physique development.",
-                "image": "/images/body_building.jpg",
+                "image": "/images/body_building.webp",
                 "icon": "users"
               },
               {
                 "id": 4,
                 "title": "Boxing Class",
                 "description": "Learn self-defense, improve coordination and build mental toughness.",
-                "image": "/images/boxer-training.jpg",
+                "image": "/images/boxer-training.webp",
                 "icon": "boxing"
               },
               {
                 "id": 5,
                 "title": "Meditation Class",
                 "description": "Find mental clarity and reduce stress through guided meditation.",
-                "image": "/images/meditation_class.jpg",
+                "image": "/images/meditation_class.webp",
                 "icon": "yoga"
               },
               {
                 "id": 6,
                 "title": "HIIT Training",
                 "description": "High-intensity interval training for maximum calorie burn.",
-                "image": "/images/group_classes.jpg",
+                "image": "/images/group_classes.webp",
                 "icon": "running"
               },
               {
                 "id": 7,
                 "title": "Cardio Training",
                 "description": "Improve your cardiovascular health and endurance.",
-                "image": "/images/cardio_training.jpg",
+                "image": "/images/cardio_training.webp",
                 "icon": "running"
               },
               {
                 "id": 8,
                 "title": "Yoga & Flexibility",
                 "description": "Enhance flexibility, balance, and mind-body connection.",
-                "image": "/images/yoga_flex.jpg",
+                "image": "/images/yoga_flex.webp",
                 "icon": "yoga"
               },
               {
                 "id": 9,
                 "title": "Weight Loss Program",
                 "description": "A comprehensive plan combining training and nutrition advice.",
-                "image": "/images/weight_loss.jpg",
+                "image": "/images/weight_loss.webp",
                 "icon": "dumbbell"
               }
             ]
@@ -1445,28 +1269,28 @@
                 "id": "01",
                 "title": "Consultation",
                 "description": "We understand your fitness goals, assess your current level and discuss your preferences to create the right plan.",
-                "image": "/prog-1.jpg",
+                "image": "/prog-1.webp",
                 "icon": "users"
               },
               {
                 "id": "02",
                 "title": "Personalized Plan",
                 "description": "We design a customized workout plan based on your goals, lifestyle and fitness level.",
-                "image": "/prog-2.jpg",
+                "image": "/prog-2.webp",
                 "icon": "clipboard"
               },
               {
                 "id": "03",
                 "title": "Train & Progress",
                 "description": "Start your training with expert guidance, continuous support and regular progress tracking.",
-                "image": "/prog-3.jpg",
+                "image": "/prog-3.webp",
                 "icon": "dumbbell"
               },
               {
                 "id": "04",
                 "title": "Achieve Your Goals",
                 "description": "Stay consistent, see real results and unlock a healthier, stronger and more confident you.",
-                "image": "/prog-4.jpg",
+                "image": "/prog-4.webp",
                 "icon": "trophy"
               }
             ]
@@ -1488,7 +1312,7 @@
                 "id": "1",
                 "name": "Alex Carter",
                 "role": "HEAD STRENGTH & CONDITIONING COACH",
-                "image": "/trainer-1.jpg",
+                "image": "/trainer-1.webp",
                 "socials": {
                   "facebook": "https://www.facebook.com",
                   "instagram": "https://www.instagram.com",
@@ -1500,7 +1324,7 @@
                 "id": "2",
                 "name": "Amelia Harper",
                 "role": "LEAD PERSONAL TRAINER & RECOMP COACH",
-                "image": "/trainer-2.jpg",
+                "image": "/trainer-2.webp",
                 "socials": {
                   "facebook": "https://www.facebook.com",
                   "instagram": "https://www.instagram.com",
@@ -1512,7 +1336,7 @@
                 "id": "3",
                 "name": "Oliver Samuel",
                 "role": "CROSSFIT & FUNCTIONAL ENDURANCE COACH",
-                "image": "/trainer-3.jpg",
+                "image": "/trainer-3.webp",
                 "socials": {
                   "facebook": "https://www.facebook.com",
                   "instagram": "https://www.instagram.com",
@@ -1524,7 +1348,7 @@
                 "id": "4",
                 "name": "George Thomas",
                 "role": "CHIEF SPORTS NUTRITION & WELLNESS SPECIALIST",
-                "image": "/trainer-4.jpg",
+                "image": "/trainer-4.webp",
                 "socials": {
                   "facebook": "https://www.facebook.com",
                   "instagram": "https://www.instagram.com",
@@ -1549,7 +1373,7 @@
                 "id": "1",
                 "name": "Alex Carter",
                 "role": "HEAD STRENGTH & CONDITIONING COACH",
-                "image": "/trainer-1.jpg",
+                "image": "/trainer-1.webp",
                 "experience": "8+ Years",
                 "clients": "650+",
                 "specializationsTitle": "Strength, HIIT, Functional Training",
@@ -1589,7 +1413,7 @@
                 "id": "2",
                 "name": "Amelia Harper",
                 "role": "LEAD PERSONAL TRAINER & RECOMP COACH",
-                "image": "/trainer-2.jpg",
+                "image": "/trainer-2.webp",
                 "experience": "6+ Years",
                 "clients": "480+",
                 "specializationsTitle": "Body Recomposition, Core & Posture, HIIT",
@@ -1629,7 +1453,7 @@
                 "id": "3",
                 "name": "Oliver Samuel",
                 "role": "CROSSFIT & FUNCTIONAL ENDURANCE COACH",
-                "image": "/trainer-3.jpg",
+                "image": "/trainer-3.webp",
                 "experience": "7+ Years",
                 "clients": "520+",
                 "specializationsTitle": "CrossFit, Olympic Lifting, Endurance",
@@ -1669,7 +1493,7 @@
                 "id": "4",
                 "name": "George Thomas",
                 "role": "CHIEF SPORTS NUTRITION & WELLNESS SPECIALIST",
-                "image": "/trainer-4.jpg",
+                "image": "/trainer-4.webp",
                 "experience": "9+ Years",
                 "clients": "720+",
                 "specializationsTitle": "Macro Nutrition, Metabolic Health, Recovery",
@@ -1709,7 +1533,7 @@
                 "id": "5",
                 "name": "Sophia Reynolds",
                 "role": "WOMEN'S PHYSIQUE & GLUTE SPECIALIST",
-                "image": "/trainer-5.jpg",
+                "image": "/trainer-5.webp",
                 "experience": "7+ Years",
                 "clients": "590+",
                 "specializationsTitle": "Female Hypertrophy, Glute Building, Toning",
@@ -1749,7 +1573,7 @@
                 "id": "6",
                 "name": "Marcus Vance",
                 "role": "BOXING & COMBAT CONDITIONING COACH",
-                "image": "/trainer-6.jpg",
+                "image": "/trainer-6.webp",
                 "experience": "8+ Years",
                 "clients": "460+",
                 "specializationsTitle": "Boxing Technique, Fight Cardio, Reflexes",
@@ -1789,7 +1613,7 @@
                 "id": "7",
                 "name": "Elena Rostova",
                 "role": "YOGA, MOBILITY & RECOVERY SPECIALIST",
-                "image": "/trainer-7.jpg",
+                "image": "/trainer-7.webp",
                 "experience": "10+ Years",
                 "clients": "850+",
                 "specializationsTitle": "Vinyasa Yoga, Deep Mobility, Breathwork",
@@ -1829,7 +1653,7 @@
                 "id": "8",
                 "name": "David Miller",
                 "role": "POWERLIFTING & FUNCTIONAL HYPERTROPHY COACH",
-                "image": "/trainer-8.jpg",
+                "image": "/trainer-8.webp",
                 "experience": "6+ Years",
                 "clients": "410+",
                 "specializationsTitle": "Powerlifting, Kettlebell Power, Max Strength",
@@ -1878,7 +1702,7 @@
                 "id": "1",
                 "name": "Alex Carter",
                 "role": "HEAD STRENGTH & CONDITIONING COACH",
-                "image": "/trainer-1.jpg",
+                "image": "/trainer-1.webp",
                 "experience": "8+ Years",
                 "clients": "650+",
                 "specializationsTitle": "Strength, HIIT, Functional Training",
@@ -1918,7 +1742,7 @@
                 "id": "2",
                 "name": "Amelia Harper",
                 "role": "LEAD PERSONAL TRAINER & RECOMP COACH",
-                "image": "/trainer-2.jpg",
+                "image": "/trainer-2.webp",
                 "experience": "6+ Years",
                 "clients": "480+",
                 "specializationsTitle": "Body Recomposition, Core & Posture, HIIT",
@@ -1958,7 +1782,7 @@
                 "id": "3",
                 "name": "Oliver Samuel",
                 "role": "CROSSFIT & FUNCTIONAL ENDURANCE COACH",
-                "image": "/trainer-3.jpg",
+                "image": "/trainer-3.webp",
                 "experience": "7+ Years",
                 "clients": "520+",
                 "specializationsTitle": "CrossFit, Olympic Lifting, Endurance",
@@ -1998,7 +1822,7 @@
                 "id": "4",
                 "name": "George Thomas",
                 "role": "CHIEF SPORTS NUTRITION & WELLNESS SPECIALIST",
-                "image": "/trainer-4.jpg",
+                "image": "/trainer-4.webp",
                 "experience": "9+ Years",
                 "clients": "720+",
                 "specializationsTitle": "Macro Nutrition, Metabolic Health, Recovery",
@@ -2038,7 +1862,7 @@
                 "id": "5",
                 "name": "Sophia Reynolds",
                 "role": "WOMEN'S PHYSIQUE & GLUTE SPECIALIST",
-                "image": "/trainer-5.jpg",
+                "image": "/trainer-5.webp",
                 "experience": "7+ Years",
                 "clients": "590+",
                 "specializationsTitle": "Female Hypertrophy, Glute Building, Toning",
@@ -2078,7 +1902,7 @@
                 "id": "6",
                 "name": "Marcus Vance",
                 "role": "BOXING & COMBAT CONDITIONING COACH",
-                "image": "/trainer-6.jpg",
+                "image": "/trainer-6.webp",
                 "experience": "8+ Years",
                 "clients": "460+",
                 "specializationsTitle": "Boxing Technique, Fight Cardio, Reflexes",
@@ -2118,7 +1942,7 @@
                 "id": "7",
                 "name": "Elena Rostova",
                 "role": "YOGA, MOBILITY & RECOVERY SPECIALIST",
-                "image": "/trainer-7.jpg",
+                "image": "/trainer-7.webp",
                 "experience": "10+ Years",
                 "clients": "850+",
                 "specializationsTitle": "Vinyasa Yoga, Deep Mobility, Breathwork",
@@ -2158,7 +1982,7 @@
                 "id": "8",
                 "name": "David Miller",
                 "role": "POWERLIFTING & FUNCTIONAL HYPERTROPHY COACH",
-                "image": "/trainer-8.jpg",
+                "image": "/trainer-8.webp",
                 "experience": "6+ Years",
                 "clients": "410+",
                 "specializationsTitle": "Powerlifting, Kettlebell Power, Max Strength",
@@ -2200,7 +2024,7 @@
                 "id": "1",
                 "name": "Alex Carter",
                 "role": "HEAD STRENGTH & CONDITIONING COACH",
-                "image": "/trainer-1.jpg",
+                "image": "/trainer-1.webp",
                 "experience": "8+ Years",
                 "clients": "650+",
                 "specializationsTitle": "Strength, HIIT, Functional Training",
@@ -2240,7 +2064,7 @@
                 "id": "2",
                 "name": "Amelia Harper",
                 "role": "LEAD PERSONAL TRAINER & RECOMP COACH",
-                "image": "/trainer-2.jpg",
+                "image": "/trainer-2.webp",
                 "experience": "6+ Years",
                 "clients": "480+",
                 "specializationsTitle": "Body Recomposition, Core & Posture, HIIT",
@@ -2280,7 +2104,7 @@
                 "id": "3",
                 "name": "Oliver Samuel",
                 "role": "CROSSFIT & FUNCTIONAL ENDURANCE COACH",
-                "image": "/trainer-3.jpg",
+                "image": "/trainer-3.webp",
                 "experience": "7+ Years",
                 "clients": "520+",
                 "specializationsTitle": "CrossFit, Olympic Lifting, Endurance",
@@ -2320,7 +2144,7 @@
                 "id": "4",
                 "name": "George Thomas",
                 "role": "CHIEF SPORTS NUTRITION & WELLNESS SPECIALIST",
-                "image": "/trainer-4.jpg",
+                "image": "/trainer-4.webp",
                 "experience": "9+ Years",
                 "clients": "720+",
                 "specializationsTitle": "Macro Nutrition, Metabolic Health, Recovery",
@@ -2360,7 +2184,7 @@
                 "id": "5",
                 "name": "Sophia Reynolds",
                 "role": "WOMEN'S PHYSIQUE & GLUTE SPECIALIST",
-                "image": "/trainer-5.jpg",
+                "image": "/trainer-5.webp",
                 "experience": "7+ Years",
                 "clients": "590+",
                 "specializationsTitle": "Female Hypertrophy, Glute Building, Toning",
@@ -2400,7 +2224,7 @@
                 "id": "6",
                 "name": "Marcus Vance",
                 "role": "BOXING & COMBAT CONDITIONING COACH",
-                "image": "/trainer-6.jpg",
+                "image": "/trainer-6.webp",
                 "experience": "8+ Years",
                 "clients": "460+",
                 "specializationsTitle": "Boxing Technique, Fight Cardio, Reflexes",
@@ -2440,7 +2264,7 @@
                 "id": "7",
                 "name": "Elena Rostova",
                 "role": "YOGA, MOBILITY & RECOVERY SPECIALIST",
-                "image": "/trainer-7.jpg",
+                "image": "/trainer-7.webp",
                 "experience": "10+ Years",
                 "clients": "850+",
                 "specializationsTitle": "Vinyasa Yoga, Deep Mobility, Breathwork",
@@ -2480,7 +2304,7 @@
                 "id": "8",
                 "name": "David Miller",
                 "role": "POWERLIFTING & FUNCTIONAL HYPERTROPHY COACH",
-                "image": "/trainer-8.jpg",
+                "image": "/trainer-8.webp",
                 "experience": "6+ Years",
                 "clients": "410+",
                 "specializationsTitle": "Powerlifting, Kettlebell Power, Max Strength",
@@ -2534,7 +2358,7 @@
               "text": "Contact Us",
               "link": "/contact"
             },
-            "backgroundImage": "/images/hero_female_final.jpg",
+            "backgroundImage": "/images/hero_female_final.webp",
             "imageAlt": "Woman using battle ropes"
           }
         }
@@ -2542,70 +2366,6 @@
       "Pricing": {
         "variants": {
           "FitnessPricing1": {
-            "badge": "Pricing Plans",
-            "topText": "Pricing Plans",
-            "titleStart": "Choose Your ",
-            "heading1": "Choose Your ",
-            "titleHighlight": "Perfect Plan",
-            "heading2": "Perfect Plan",
-            "description": "Flexible membership plans designed to support your fitness goals and lifestyle.",
-            "currency": "$",
-            "period": "/ Month",
-            "planSuffix": "Plan",
-            "popularBadge": "Most Popular",
-            "button": {
-              "text": "Get Started",
-              "link": "/enquire"
-            },
-            "plans": [
-              {
-                "name": "BASIC",
-                "desc": "Perfect for beginners who are starting their fitness journey.",
-                "price": "29",
-                "features": [
-                  "Gym Access (Standard Hours)",
-                  "Basic Fitness Guidance",
-                  "Access to Cardio & Strength Area",
-                  "Locker Room Access",
-                  "Free Fitness Assessment"
-                ],
-                "isPopular": false
-              },
-              {
-                "name": "STANDARD",
-                "desc": "Great for regular gym-goers who want consistent progress.",
-                "price": "49",
-                "features": [
-                  "Full Gym Access",
-                  "Personalized Workout Plan",
-                  "Access to Group Classes",
-                  "Locker Room & Shower",
-                  "Progress Tracking",
-                  "1 Personal Training Session/Month"
-                ],
-                "isPopular": true
-              },
-              {
-                "name": "PREMIUM",
-                "desc": "For those who want complete support and maximum results.",
-                "price": "79",
-                "features": [
-                  "All Standard Plan Features",
-                  "Personal Training (2 Sessions/Month)",
-                  "Access to All Group Classes",
-                  "Nutrition Guidance",
-                  "Body Composition Analysis",
-                  "Priority Class Booking"
-                ],
-                "isPopular": false
-              }
-            ]
-          }
-        }
-      },
-      "PricingPage": {
-        "variants": {
-          "FitnessPricingPage1": {
             "badge": "Pricing Plans",
             "topText": "Pricing Plans",
             "titleStart": "Choose Your ",
@@ -2683,21 +2443,21 @@
                 "name": "Emily Johnson",
                 "role": "Entrepreneur",
                 "text": "VortexFit has completely changed my lifestyle. The trainers are knowledgeable, supportive and truly care about your progress. The workouts are effective, and the environment is always positive and motivating. I feel stronger, healthier and more confident than ever before!",
-                "image": "/images/testimonial_girl.jpg"
+                "image": "/images/testimonial_girl.webp"
               },
               {
                 "id": 2,
                 "name": "David Smith",
                 "role": "Software Engineer",
                 "text": "The best gym experience I've ever had. The community here is fantastic and the facilities are top-notch. I've achieved goals I never thought possible.",
-                "image": "/images/about_programs_man.jpg"
+                "image": "/images/about_programs_man.webp"
               },
               {
                 "id": 3,
                 "name": "Priya Sharma",
                 "role": "Fitness Enthusiast",
                 "text": "Joining VortexFit has been one of the best decisions I have made. The personalized guidance and supportive environment made achieving my fitness goals so much easier!",
-                "image": "/images/about_programs_woman.jpg"
+                "image": "/images/about_programs_woman.webp"
               }
             ]
           }
@@ -2719,63 +2479,63 @@
                 "name": "Priya Sharma",
                 "role": "Weight Loss Program",
                 "text": "The trainers here are extremely professional and motivating. I've not only lost weight but also gained so much confidence. Highly recommend this gym!",
-                "image": "/images/avatar_w1.jpg"
+                "image": "/images/avatar_w1.webp"
               },
               {
                 "id": 2,
                 "name": "Rahul Mehta",
                 "role": "Strength Training",
                 "text": "Amazing experience! The personalized training and diet guidance made a huge difference in my strength and energy levels. Best fitness decision I've made.",
-                "image": "/images/avatar_m1.jpg"
+                "image": "/images/avatar_m1.webp"
               },
               {
                 "id": 3,
                 "name": "Sneha Kapoor",
                 "role": "HIIT Training",
                 "text": "Great environment, supportive trainers and well-maintained facilities. The HIIT classes are challenging and super effective. I feel stronger and healthier than ever!",
-                "image": "/images/avatar_w2.jpg"
+                "image": "/images/avatar_w2.webp"
               },
               {
                 "id": 4,
                 "name": "Arjun Verma",
                 "role": "Boxing Class",
                 "text": "I joined for the boxing class and it has been an incredible journey. The coaches are knowledgeable and push you to be your best. Absolutely love the energy here!",
-                "image": "/images/avatar_m2.jpg"
+                "image": "/images/avatar_m2.webp"
               },
               {
                 "id": 5,
                 "name": "Neha Singh",
                 "role": "Yoga & Flexibility",
                 "text": "The yoga and flexibility sessions have helped me reduce stress and improve my overall well-being. The trainers are patient and truly care about your progress.",
-                "image": "/images/avatar_w3.jpg"
+                "image": "/images/avatar_w3.webp"
               },
               {
                 "id": 6,
                 "name": "Karan Malhotra",
                 "role": "Body Building",
                 "text": "I've been training here for 6 months and the results are amazing. The team is friendly, knowledgeable and always motivates me to stay consistent.",
-                "image": "/images/avatar_m3.jpg"
+                "image": "/images/avatar_m3.webp"
               },
               {
                 "id": 7,
                 "name": "Megha Patel",
                 "role": "Weight Loss Program",
                 "text": "The weight loss program here really works! I lost 12 kg in 4 months with the right workouts and guidance. The trainers are always there to support you.",
-                "image": "/images/avatar_w4.jpg"
+                "image": "/images/avatar_w4.webp"
               },
               {
                 "id": 8,
                 "name": "Vikram Rao",
                 "role": "Strength Training",
                 "text": "Excellent facilities and a positive atmosphere. The strength training program has helped me build muscle and improve my stamina. Highly recommended!",
-                "image": "/images/avatar_m4.jpg"
+                "image": "/images/avatar_m4.webp"
               },
               {
                 "id": 9,
                 "name": "Aditi Jain",
                 "role": "Cardio Training",
                 "text": "The trainers focus on proper technique and personalized plans. I've seen great results in my fitness and overall health. This gym really cares about its members.",
-                "image": "/images/avatar_w5.jpg"
+                "image": "/images/avatar_w5.webp"
               }
             ]
           }
@@ -2796,62 +2556,62 @@
             "images": [
               {
                 "id": 1,
-                "src": "/images/gallery/g1.jpg",
+                "src": "/images/gallery/g1.webp",
                 "alt": "Weight Loss Training"
               },
               {
                 "id": 2,
-                "src": "/images/gallery/g2.jpg",
+                "src": "/images/gallery/g2.webp",
                 "alt": "Meditation Class"
               },
               {
                 "id": 3,
-                "src": "/images/gallery/g3.jpg",
+                "src": "/images/gallery/g3.webp",
                 "alt": "Bodybuilding"
               },
               {
                 "id": 4,
-                "src": "/images/gallery/g4.jpg",
+                "src": "/images/gallery/g4.webp",
                 "alt": "Mens Program"
               },
               {
                 "id": 5,
-                "src": "/images/gallery/g5.jpg",
+                "src": "/images/gallery/g5.webp",
                 "alt": "Program Image"
               },
               {
                 "id": 6,
-                "src": "/images/gallery/g6.jpg",
+                "src": "/images/gallery/g6.webp",
                 "alt": "Cardio Training"
               },
               {
                 "id": 7,
-                "src": "/images/gallery/g7.jpg",
+                "src": "/images/gallery/g7.webp",
                 "alt": "Bicep Curls"
               },
               {
                 "id": 8,
-                "src": "/images/gallery/g8.jpg",
+                "src": "/images/gallery/g8.webp",
                 "alt": "Process Image"
               },
               {
                 "id": 9,
-                "src": "/images/gallery/g9.jpg",
+                "src": "/images/gallery/g9.webp",
                 "alt": "Fitness Class"
               },
               {
                 "id": 10,
-                "src": "/images/gallery/g10.jpg",
+                "src": "/images/gallery/g10.webp",
                 "alt": "Group Classes"
               },
               {
                 "id": 11,
-                "src": "/images/gallery/g11.jpg",
+                "src": "/images/gallery/g11.webp",
                 "alt": "Kettlebell Power"
               },
               {
                 "id": 12,
-                "src": "/images/gallery/g12.jpg",
+                "src": "/images/gallery/g12.webp",
                 "alt": "Boxing Gloves"
               }
             ]
@@ -2873,62 +2633,62 @@
             "images": [
               {
                 "id": 1,
-                "src": "/images/gallery/g1.jpg",
+                "src": "/images/gallery/g1.webp",
                 "alt": "Weight Loss Training"
               },
               {
                 "id": 2,
-                "src": "/images/gallery/g2.jpg",
+                "src": "/images/gallery/g2.webp",
                 "alt": "Meditation Class"
               },
               {
                 "id": 3,
-                "src": "/images/gallery/g3.jpg",
+                "src": "/images/gallery/g3.webp",
                 "alt": "Bodybuilding"
               },
               {
                 "id": 4,
-                "src": "/images/gallery/g4.jpg",
+                "src": "/images/gallery/g4.webp",
                 "alt": "Mens Program"
               },
               {
                 "id": 5,
-                "src": "/images/gallery/g5.jpg",
+                "src": "/images/gallery/g5.webp",
                 "alt": "Program Image"
               },
               {
                 "id": 6,
-                "src": "/images/gallery/g6.jpg",
+                "src": "/images/gallery/g6.webp",
                 "alt": "Cardio Training"
               },
               {
                 "id": 7,
-                "src": "/images/gallery/g7.jpg",
+                "src": "/images/gallery/g7.webp",
                 "alt": "Bicep Curls"
               },
               {
                 "id": 8,
-                "src": "/images/gallery/g8.jpg",
+                "src": "/images/gallery/g8.webp",
                 "alt": "Process Image"
               },
               {
                 "id": 9,
-                "src": "/images/gallery/g9.jpg",
+                "src": "/images/gallery/g9.webp",
                 "alt": "Fitness Class"
               },
               {
                 "id": 10,
-                "src": "/images/gallery/g10.jpg",
+                "src": "/images/gallery/g10.webp",
                 "alt": "Group Classes"
               },
               {
                 "id": 11,
-                "src": "/images/gallery/g11.jpg",
+                "src": "/images/gallery/g11.webp",
                 "alt": "Kettlebell Power"
               },
               {
                 "id": 12,
-                "src": "/images/gallery/g12.jpg",
+                "src": "/images/gallery/g12.webp",
                 "alt": "Boxing Gloves"
               }
             ]
@@ -2950,7 +2710,7 @@
             "items": [
               {
                 "id": 1,
-                "image": "/images/blog_1.jpg",
+                "image": "/images/blog_1.webp",
                 "date": "August 25, 2026",
                 "category": "FITNESS TIPS",
                 "author": "Admin",
@@ -3010,7 +2770,7 @@
               },
               {
                 "id": 2,
-                "image": "/images/blog_2.jpg",
+                "image": "/images/blog_2.webp",
                 "date": "August 20, 2026",
                 "category": "NUTRITION",
                 "author": "Admin",
@@ -3070,7 +2830,7 @@
               },
               {
                 "id": 3,
-                "image": "/images/blog_3.jpg",
+                "image": "/images/blog_3.webp",
                 "date": "August 15, 2026",
                 "category": "TRAINING",
                 "author": "Admin",
@@ -3175,43 +2935,43 @@
                 "id": 1,
                 "title": "How to Stay Motivated in Your Fitness Journey",
                 "date": "August 25, 2026",
-                "image": "/images/blog_1.jpg"
+                "image": "/images/blog_1.webp"
               },
               {
                 "id": 2,
                 "title": "The Role of Nutrition in Building Muscle",
                 "date": "August 20, 2026",
-                "image": "/images/blog_2.jpg"
+                "image": "/images/blog_2.webp"
               },
               {
                 "id": 3,
                 "title": "Best Warm-Up Exercises Before Your Workout",
                 "date": "August 15, 2026",
-                "image": "/images/blog_3.jpg"
+                "image": "/images/blog_3.webp"
               },
               {
                 "id": 4,
                 "title": "5 Effective Cardio Workouts for Faster Results",
                 "date": "August 10, 2026",
-                "image": "/images/cardio_training.jpg"
+                "image": "/images/cardio_training.webp"
               },
               {
                 "id": 5,
                 "title": "Strength Training vs Cardio: Which is Better?",
                 "date": "August 05, 2026",
-                "image": "/images/strength_training.jpg"
+                "image": "/images/strength_training.webp"
               },
               {
                 "id": 6,
                 "title": "The Mental Benefits of Regular Exercise",
                 "date": "July 28, 2026",
-                "image": "/images/meditation_class.jpg"
+                "image": "/images/meditation_class.webp"
               }
             ],
             "items": [
               {
                 "id": 1,
-                "image": "/images/blog_1.jpg",
+                "image": "/images/blog_1.webp",
                 "date": "August 25, 2026",
                 "category": "FITNESS TIPS",
                 "author": "Admin",
@@ -3271,7 +3031,7 @@
               },
               {
                 "id": 2,
-                "image": "/images/blog_2.jpg",
+                "image": "/images/blog_2.webp",
                 "date": "August 20, 2026",
                 "category": "NUTRITION",
                 "author": "Admin",
@@ -3331,7 +3091,7 @@
               },
               {
                 "id": 3,
-                "image": "/images/blog_3.jpg",
+                "image": "/images/blog_3.webp",
                 "date": "August 15, 2026",
                 "category": "TRAINING",
                 "author": "Admin",
@@ -3391,7 +3151,7 @@
               },
               {
                 "id": 4,
-                "image": "/images/cardio_training.jpg",
+                "image": "/images/cardio_training.webp",
                 "date": "August 10, 2026",
                 "category": "WEIGHT LOSS",
                 "author": "Admin",
@@ -3451,7 +3211,7 @@
               },
               {
                 "id": 5,
-                "image": "/images/strength_training.jpg",
+                "image": "/images/strength_training.webp",
                 "date": "August 05, 2026",
                 "category": "MUSCLE BUILDING",
                 "author": "Admin",
@@ -3511,7 +3271,7 @@
               },
               {
                 "id": 6,
-                "image": "/images/meditation_class.jpg",
+                "image": "/images/meditation_class.webp",
                 "date": "July 28, 2026",
                 "category": "MENTAL HEALTH",
                 "author": "Admin",
@@ -3571,7 +3331,7 @@
               },
               {
                 "id": 7,
-                "image": "/images/blog_1.jpg",
+                "image": "/images/blog_1.webp",
                 "date": "July 20, 2026",
                 "category": "LIFESTYLE",
                 "author": "Admin",
@@ -3641,37 +3401,37 @@
                 "id": 1,
                 "title": "How to Stay Motivated in Your Fitness Journey",
                 "date": "August 25, 2026",
-                "image": "/images/blog_1.jpg"
+                "image": "/images/blog_1.webp"
               },
               {
                 "id": 2,
                 "title": "The Role of Nutrition in Building Muscle",
                 "date": "August 20, 2026",
-                "image": "/images/blog_2.jpg"
+                "image": "/images/blog_2.webp"
               },
               {
                 "id": 3,
                 "title": "Best Warm-Up Exercises Before Your Workout",
                 "date": "August 15, 2026",
-                "image": "/images/blog_3.jpg"
+                "image": "/images/blog_3.webp"
               },
               {
                 "id": 4,
                 "title": "5 Effective Cardio Workouts for Faster Results",
                 "date": "August 10, 2026",
-                "image": "/images/cardio_training.jpg"
+                "image": "/images/cardio_training.webp"
               },
               {
                 "id": 5,
                 "title": "Strength Training vs Cardio: Which is Better?",
                 "date": "August 05, 2026",
-                "image": "/images/strength_training.jpg"
+                "image": "/images/strength_training.webp"
               },
               {
                 "id": 6,
                 "title": "The Mental Benefits of Regular Exercise",
                 "date": "July 28, 2026",
-                "image": "/images/meditation_class.jpg"
+                "image": "/images/meditation_class.webp"
               }
             ],
             "categories": [
@@ -3707,7 +3467,7 @@
             "blogs": {
               "1": {
                 "id": 1,
-                "image": "/images/blog_1.jpg",
+                "image": "/images/blog_1.webp",
                 "date": "August 25, 2026",
                 "category": "FITNESS TIPS",
                 "author": "Admin",
@@ -3765,11 +3525,11 @@
                   }
                 ],
                 "slug": "1",
-                "heroImage": "/images/page_header_bg.jpg"
+                "heroImage": "/images/page_header_bg.webp"
               },
               "2": {
                 "id": 2,
-                "image": "/images/blog_2.jpg",
+                "image": "/images/blog_2.webp",
                 "date": "August 20, 2026",
                 "category": "NUTRITION",
                 "author": "Admin",
@@ -3827,11 +3587,11 @@
                   }
                 ],
                 "slug": "2",
-                "heroImage": "/images/page_header_bg.jpg"
+                "heroImage": "/images/page_header_bg.webp"
               },
               "3": {
                 "id": 3,
-                "image": "/images/blog_3.jpg",
+                "image": "/images/blog_3.webp",
                 "date": "August 15, 2026",
                 "category": "TRAINING",
                 "author": "Admin",
@@ -3889,11 +3649,11 @@
                   }
                 ],
                 "slug": "3",
-                "heroImage": "/images/page_header_bg.jpg"
+                "heroImage": "/images/page_header_bg.webp"
               },
               "4": {
                 "id": 4,
-                "image": "/images/cardio_training.jpg",
+                "image": "/images/cardio_training.webp",
                 "date": "August 10, 2026",
                 "category": "WEIGHT LOSS",
                 "author": "Admin",
@@ -3951,11 +3711,11 @@
                   }
                 ],
                 "slug": "4",
-                "heroImage": "/images/page_header_bg.jpg"
+                "heroImage": "/images/page_header_bg.webp"
               },
               "5": {
                 "id": 5,
-                "image": "/images/strength_training.jpg",
+                "image": "/images/strength_training.webp",
                 "date": "August 05, 2026",
                 "category": "MUSCLE BUILDING",
                 "author": "Admin",
@@ -4013,11 +3773,11 @@
                   }
                 ],
                 "slug": "5",
-                "heroImage": "/images/page_header_bg.jpg"
+                "heroImage": "/images/page_header_bg.webp"
               },
               "6": {
                 "id": 6,
-                "image": "/images/meditation_class.jpg",
+                "image": "/images/meditation_class.webp",
                 "date": "July 28, 2026",
                 "category": "MENTAL HEALTH",
                 "author": "Admin",
@@ -4075,11 +3835,11 @@
                   }
                 ],
                 "slug": "6",
-                "heroImage": "/images/page_header_bg.jpg"
+                "heroImage": "/images/page_header_bg.webp"
               },
               "7": {
                 "id": 7,
-                "image": "/images/blog_1.jpg",
+                "image": "/images/blog_1.webp",
                 "date": "July 20, 2026",
                 "category": "LIFESTYLE",
                 "author": "Admin",
@@ -4137,7 +3897,7 @@
                   }
                 ],
                 "slug": "7",
-                "heroImage": "/images/page_header_bg.jpg"
+                "heroImage": "/images/page_header_bg.webp"
               }
             }
           }
@@ -4191,7 +3951,7 @@
             }
           },
           "FitnessFooter1": {
-            "logo": "/logo-white.png",
+            "logo": "/logo-white.webp",
             "description": "At VortexFit, we believe in a stronger, healthier and more confident you. Join our community and experience expert training, modern facilities and a lifestyle that keeps you moving forward.",
             "socialLinks": {
               "facebook": "https://facebook.com",
@@ -4290,7 +4050,7 @@
             "titleStart": "Transform Your Body",
             "titleHighlight": "With Expert Training",
             "description": "Take the first step towards a healthier, stronger you. Contact us today to schedule your complimentary fitness consultation and gym tour.",
-            "image": "/images/enquire_woman.jpg",
+            "image": "/images/enquire_woman.webp",
             "imageCallout": "GET UP TO 25% OFF YOUR FIRST MEMBERSHIP",
             "submitText": "SUBMIT ENQUIRY",
             "benefits": [
@@ -4363,2239 +4123,6 @@
             "subMessage": "In the meantime, feel free to explore our training programs or connect with us on social media.",
             "buttonText": "Back to Home",
             "buttonLink": "/"
-          }
-        }
-      },
-      "Services": {
-        "variants": {
-          "FitnessServices1": {
-            "badge": "OUR PROGRAMS",
-            "topText": "OUR PROGRAMS",
-            "titleStart": "Tailored Training Programs For Your",
-            "heading1": "Upcoming",
-            "titleHighlight": "Peak Fitness",
-            "heading2": "Classes & Sessions",
-            "description": "At Vortex Fitness, we deliver expert-led workout programs designed to build strength, endurance, and lifelong agility.",
-            "backgroundImage": "/programs-bg.jpg",
-            "cards": [
-              {
-                "id": 1,
-                "title": "Gym Fitness Class",
-                "description": "Dynamic sessions to improve fitness, burn calories and boost overall health.",
-                "image": "/images/fitness_class.jpg",
-                "icon": "running"
-              },
-              {
-                "id": 2,
-                "title": "Power Lifting Class",
-                "description": "Build raw strength and master compound movements safely.",
-                "image": "/images/strength_training.jpg",
-                "icon": "dumbbell"
-              },
-              {
-                "id": 3,
-                "title": "Body Building",
-                "description": "Focus on muscle hypertrophy and aesthetic physique development.",
-                "image": "/images/body_building.jpg",
-                "icon": "users"
-              },
-              {
-                "id": 4,
-                "title": "Boxing Class",
-                "description": "Learn self-defense, improve coordination and build mental toughness.",
-                "image": "/images/boxer-training.jpg",
-                "icon": "boxing"
-              },
-              {
-                "id": 5,
-                "title": "Meditation Class",
-                "description": "Find mental clarity and reduce stress through guided meditation.",
-                "image": "/images/meditation_class.jpg",
-                "icon": "yoga"
-              },
-              {
-                "id": 6,
-                "title": "HIIT Training",
-                "description": "High-intensity interval training for maximum calorie burn.",
-                "image": "/images/group_classes.jpg",
-                "icon": "running"
-              },
-              {
-                "id": 7,
-                "title": "Cardio Training",
-                "description": "Improve your cardiovascular health and endurance.",
-                "image": "/images/cardio_training.jpg",
-                "icon": "running"
-              },
-              {
-                "id": 8,
-                "title": "Yoga & Flexibility",
-                "description": "Enhance flexibility, balance, and mind-body connection.",
-                "image": "/images/yoga_flex.jpg",
-                "icon": "yoga"
-              },
-              {
-                "id": 9,
-                "title": "Weight Loss Program",
-                "description": "A comprehensive plan combining training and nutrition advice.",
-                "image": "/images/weight_loss.jpg",
-                "icon": "dumbbell"
-              }
-            ]
-          }
-        }
-      },
-      "HowItWorks": {
-        "variants": {
-          "FitnessHowItWorks1": {
-            "badge": "HOW IT WORKS",
-            "titleStart": "Connect, Train & Achieve",
-            "titleHighlight": "Limitless Potential",
-            "description": "Our simple 4-step workout process helps you reach your fitness goals with the right strategy, expert coaches, and structured progression.",
-            "steps": [
-              {
-                "number": "01",
-                "image": "/images/training_step1.jpg",
-                "title": "Initial Assessment",
-                "description": "We evaluate your current fitness level, mobility, body composition, and personal targets."
-              },
-              {
-                "number": "02",
-                "image": "/images/training_step2.jpg",
-                "title": "Custom Workout Plan",
-                "description": "Our certified coaches design a tailored routine and nutritional blueprint designed for results."
-              },
-              {
-                "number": "03",
-                "image": "/images/training_step3.jpg",
-                "title": "Guided Training",
-                "description": "Train under expert guidance with proper form, progressive overload, and continuous encouragement."
-              },
-              {
-                "number": "04",
-                "image": "/images/training_step4.jpg",
-                "title": "Track & Celebrate",
-                "description": "We measure your milestones, optimize your routine, and celebrate every breakthrough."
-              }
-            ]
-          }
-        }
-      },
-      "Trusted": {
-        "variants": {
-          "FitnessTrusted1": {
-            "image": "/images/aboutus.jpg",
-            "badge": "OUR IMPACT IN NUMBERS",
-            "titleStart": "Trusted Today,",
-            "titleHighlight": "Building A Healthier Tomorrow",
-            "description": "Our numbers reflect the dedication of our athletes, the expertise of our trainers, and our commitment to fitness excellence.",
-            "stats": [
-              {
-                "icon": "Users",
-                "number": "500+",
-                "label": "Active Members"
-              },
-              {
-                "icon": "Dumbbell",
-                "number": "1,200+",
-                "label": "Transformations"
-              },
-              {
-                "icon": "Trophy",
-                "number": "10+",
-                "label": "Years Experience"
-              },
-              {
-                "icon": "Heart",
-                "number": "98%",
-                "label": "Member Satisfaction"
-              }
-            ]
-          }
-        }
-      },
-      "ConsultationContent": {
-        "variants": {
-          "FitnessConsultation1": {
-            "badge": "SCHEDULE YOUR SESSION",
-            "titleStart": "Start Your",
-            "titleHighlight": "Fitness Journey",
-            "description": "Take the first step towards a healthier, stronger you. Contact us today to schedule your complimentary fitness consultation and gym tour.",
-            "image": "/images/enquire_woman.jpg",
-            "imageCallout": "GET UP TO 25% OFF YOUR FIRST MEMBERSHIP",
-            "submitText": "Book My Free Consultation",
-            "benefits": [
-              {
-                "icon": "Users",
-                "title": "Certified Trainers",
-                "description": "Work with experienced fitness professionals dedicated to your success."
-              },
-              {
-                "icon": "Calendar",
-                "title": "Flexible Scheduling",
-                "description": "Choose session times that fit seamlessly into your lifestyle."
-              },
-              {
-                "icon": "Dumbbell",
-                "title": "Tailored Workouts",
-                "description": "Custom exercise routines designed around your fitness level and goals."
-              },
-              {
-                "icon": "Headset",
-                "title": "Continuous Support",
-                "description": "Ongoing guidance, motivation, and accountability every step of the way."
-              }
-            ],
-            "form": {
-              "badge": "ENQUIRY",
-              "titleStart": "Enquiry",
-              "titleHighlight": "Form",
-              "fullNamePlaceholder": "Full Name *",
-              "phonePlaceholder": "Phone Number *",
-              "emailPlaceholder": "Email Address *",
-              "programPlaceholder": "Select Program Interested In *",
-              "programOptions": [
-                {
-                  "value": "gym",
-                  "label": "Gym Fitness Class"
-                },
-                {
-                  "value": "powerlifting",
-                  "label": "Power Lifting Class"
-                },
-                {
-                  "value": "bodybuilding",
-                  "label": "Body Building"
-                },
-                {
-                  "value": "boxing",
-                  "label": "Boxing Class"
-                },
-                {
-                  "value": "yoga",
-                  "label": "Yoga & Flexibility"
-                }
-              ],
-              "messagePlaceholder": "Your Message *",
-              "consentText": "I agree to be contacted by the VortexFit team.",
-              "submitButtonText": "SUBMIT ENQUIRY",
-              "responseTimeNotice": "We typically respond within 24 hours."
-            },
-            "processBadge": "WHAT TO EXPECT",
-            "processTitleStart": "A Simple",
-            "processTitleHighlight": "4-Step Process",
-            "steps": [
-              {
-                "number": "01.",
-                "title": "Book a Slot",
-                "description": "Choose a convenient date and time that fits your schedule."
-              },
-              {
-                "number": "02.",
-                "title": "Discuss Goals",
-                "description": "Share your fitness targets and any previous workout history."
-              },
-              {
-                "number": "03.",
-                "title": "Get Expert Plan",
-                "description": "Receive personalized guidance and tailored workout tips."
-              },
-              {
-                "number": "04.",
-                "title": "Begin Training",
-                "description": "Take confident steps toward a stronger, fitter you."
-              }
-            ]
-          }
-        }
-      },
-      "TeamProfileContent": {
-        "variants": {
-          "FitnessTeamProfile1": {
-            "badge": "TRAINER PROFILE",
-            "members": {
-              "1": {
-                "id": "1",
-                "name": "Alex Carter",
-                "role": "STRENGTH & CONDITIONING COACH",
-                "image": "/images/about_programs_man.jpg",
-                "experience": "8+ Years",
-                "clients": "500+",
-                "specializationsTitle": "Strength, HIIT, Body Transformation",
-                "description": "Alex Carter is a certified fitness trainer with over 8 years of experience in strength training, functional fitness and overall wellness. He is passionate about helping individuals achieve their fitness goals through personalized training programs and continuous motivation.",
-                "about": "Alex believes that fitness is not just about building a strong body, but also about creating a healthier, happier and more confident life. His training approach focuses on proper technique, individual attention and sustainable results. Whether you are a beginner or an advanced fitness enthusiast, Alex designs programs that are effective, challenging and tailored to your goals.",
-                "quote": "Fitness is not a destination, it's a lifestyle. Let's build a stronger, healthier you together.",
-                "socials": {
-                  "facebook": "https://www.facebook.com",
-                  "instagram": "https://www.instagram.com",
-                  "linkedin": "https://www.linkedin.com",
-                  "youtube": "https://www.youtube.com"
-                },
-                "specializations": [
-                  {
-                    "title": "Strength Training",
-                    "desc": "Build muscle, increase strength and improve overall performance.",
-                    "icon": "dumbbell"
-                  },
-                  {
-                    "title": "Functional Fitness",
-                    "desc": "Improve agility, balance and everyday movement skills.",
-                    "icon": "running"
-                  },
-                  {
-                    "title": "HIIT Training",
-                    "desc": "Burn calories and enhance cardiovascular endurance.",
-                    "icon": "heart"
-                  },
-                  {
-                    "title": "Body Transformation",
-                    "desc": "Customized programs for weight loss and muscle gain.",
-                    "icon": "biceps"
-                  }
-                ],
-                "enquiryLink": "/enquire?trainer=Alex%20Carter"
-              },
-              "2": {
-                "id": "2",
-                "name": "Amelia Harper",
-                "role": "PERSONAL TRAINER",
-                "image": "/trainer-2.jpg",
-                "experience": "6+ Years",
-                "clients": "300+",
-                "specializationsTitle": "Weight Loss, Flexibility, Yoga",
-                "description": "Amelia is dedicated to helping her clients transform their lives through mindful movement and tailored nutritional advice. She specializes in creating balanced routines that promote longevity and well-being.",
-                "about": "Amelia's approach blends high-intensity workouts with recovery protocols. She believes that recovery is just as important as the workout itself. Her holistic approach ensures clients avoid injury while seeing continuous progress.",
-                "quote": "The only bad workout is the one that didn't happen. Move your body and clear your mind.",
-                "socials": {
-                  "facebook": "https://www.facebook.com",
-                  "instagram": "https://www.instagram.com",
-                  "linkedin": "https://www.linkedin.com",
-                  "youtube": "https://www.youtube.com"
-                },
-                "specializations": [
-                  {
-                    "title": "Yoga & Flexibility",
-                    "desc": "Enhance mobility, balance and mind-body connection.",
-                    "icon": "running"
-                  },
-                  {
-                    "title": "Weight Loss",
-                    "desc": "Sustainable programs focusing on fat loss and endurance.",
-                    "icon": "heart"
-                  },
-                  {
-                    "title": "Nutrition Guidance",
-                    "desc": "Custom meal plans to support your fitness journey.",
-                    "icon": "heart"
-                  },
-                  {
-                    "title": "Core Strength",
-                    "desc": "Build a solid foundation for better posture and stability.",
-                    "icon": "dumbbell"
-                  }
-                ],
-                "enquiryLink": "/enquire?trainer=Amelia%20Harper"
-              },
-              "3": {
-                "id": "3",
-                "name": "Oliver Samuel",
-                "role": "FITNESS COACH",
-                "image": "/trainer-3.jpg",
-                "experience": "5+ Years",
-                "clients": "400+",
-                "specializationsTitle": "CrossFit, Endurance, Conditioning",
-                "description": "Oliver brings high energy and dynamic routines to every session. With a background in competitive sports, he knows exactly how to push clients safely beyond their limits.",
-                "about": "Oliver focuses on athletic conditioning and explosive power. His workouts are never boring, incorporating a variety of equipment and disciplines to keep the body guessing and growing.",
-                "quote": "Push yourself, because no one else is going to do it for you. Embrace the challenge.",
-                "socials": {
-                  "facebook": "https://www.facebook.com",
-                  "instagram": "https://www.instagram.com",
-                  "linkedin": "https://www.linkedin.com",
-                  "youtube": "https://www.youtube.com"
-                },
-                "specializations": [
-                  {
-                    "title": "CrossFit",
-                    "desc": "High-intensity functional movements.",
-                    "icon": "dumbbell"
-                  },
-                  {
-                    "title": "Endurance",
-                    "desc": "Improve stamina and aerobic capacity.",
-                    "icon": "running"
-                  },
-                  {
-                    "title": "Sports Conditioning",
-                    "desc": "Train like an athlete to improve performance.",
-                    "icon": "biceps"
-                  },
-                  {
-                    "title": "Mobility",
-                    "desc": "Increase range of motion and prevent injuries.",
-                    "icon": "running"
-                  }
-                ],
-                "enquiryLink": "/enquire?trainer=Oliver%20Samuel"
-              },
-              "4": {
-                "id": "4",
-                "name": "George Thomas",
-                "role": "NUTRITION SPECIALIST",
-                "image": "/trainer-4.jpg",
-                "experience": "10+ Years",
-                "clients": "800+",
-                "specializationsTitle": "Diet Planning, Macro Tracking, Health",
-                "description": "George is an expert in sports nutrition and dietetics. He has helped hundreds of athletes and everyday individuals optimize their diets for maximum energy and aesthetic results.",
-                "about": "George believes that abs are made in the kitchen. He breaks down complex nutritional science into actionable, easy-to-follow meal plans that fit into busy lifestyles without sacrificing flavor.",
-                "quote": "Fuel your body right, and it will reward you with strength and vitality.",
-                "socials": {
-                  "facebook": "https://www.facebook.com",
-                  "instagram": "https://www.instagram.com",
-                  "linkedin": "https://www.linkedin.com",
-                  "youtube": "https://www.youtube.com"
-                },
-                "specializations": [
-                  {
-                    "title": "Meal Planning",
-                    "desc": "Customized diets tailored to your goals.",
-                    "icon": "heart"
-                  },
-                  {
-                    "title": "Macro Coaching",
-                    "desc": "Learn to track and balance your macronutrients.",
-                    "icon": "biceps"
-                  },
-                  {
-                    "title": "Supplementation",
-                    "desc": "Expert advice on vitamins and sports supplements.",
-                    "icon": "heart"
-                  },
-                  {
-                    "title": "Lifestyle Coaching",
-                    "desc": "Build healthy habits that last a lifetime.",
-                    "icon": "running"
-                  }
-                ],
-                "enquiryLink": "/enquire?trainer=George%20Thomas"
-              }
-            },
-            "items": [
-              {
-                "id": "1",
-                "name": "Alex Carter",
-                "role": "STRENGTH & CONDITIONING COACH",
-                "image": "/images/about_programs_man.jpg",
-                "experience": "8+ Years",
-                "clients": "500+",
-                "specializationsTitle": "Strength, HIIT, Body Transformation",
-                "description": "Alex Carter is a certified fitness trainer with over 8 years of experience in strength training, functional fitness and overall wellness. He is passionate about helping individuals achieve their fitness goals through personalized training programs and continuous motivation.",
-                "about": "Alex believes that fitness is not just about building a strong body, but also about creating a healthier, happier and more confident life. His training approach focuses on proper technique, individual attention and sustainable results. Whether you are a beginner or an advanced fitness enthusiast, Alex designs programs that are effective, challenging and tailored to your goals.",
-                "quote": "Fitness is not a destination, it's a lifestyle. Let's build a stronger, healthier you together.",
-                "socials": {
-                  "facebook": "https://www.facebook.com",
-                  "instagram": "https://www.instagram.com",
-                  "linkedin": "https://www.linkedin.com",
-                  "youtube": "https://www.youtube.com"
-                },
-                "specializations": [
-                  {
-                    "title": "Strength Training",
-                    "desc": "Build muscle, increase strength and improve overall performance.",
-                    "icon": "dumbbell"
-                  },
-                  {
-                    "title": "Functional Fitness",
-                    "desc": "Improve agility, balance and everyday movement skills.",
-                    "icon": "running"
-                  },
-                  {
-                    "title": "HIIT Training",
-                    "desc": "Burn calories and enhance cardiovascular endurance.",
-                    "icon": "heart"
-                  },
-                  {
-                    "title": "Body Transformation",
-                    "desc": "Customized programs for weight loss and muscle gain.",
-                    "icon": "biceps"
-                  }
-                ]
-              },
-              {
-                "id": "2",
-                "name": "Amelia Harper",
-                "role": "PERSONAL TRAINER",
-                "image": "/trainer-2.jpg",
-                "experience": "6+ Years",
-                "clients": "300+",
-                "specializationsTitle": "Weight Loss, Flexibility, Yoga",
-                "description": "Amelia is dedicated to helping her clients transform their lives through mindful movement and tailored nutritional advice. She specializes in creating balanced routines that promote longevity and well-being.",
-                "about": "Amelia's approach blends high-intensity workouts with recovery protocols. She believes that recovery is just as important as the workout itself. Her holistic approach ensures clients avoid injury while seeing continuous progress.",
-                "quote": "The only bad workout is the one that didn't happen. Move your body and clear your mind.",
-                "socials": {
-                  "facebook": "https://www.facebook.com",
-                  "instagram": "https://www.instagram.com",
-                  "linkedin": "https://www.linkedin.com",
-                  "youtube": "https://www.youtube.com"
-                },
-                "specializations": [
-                  {
-                    "title": "Yoga & Flexibility",
-                    "desc": "Enhance mobility, balance and mind-body connection.",
-                    "icon": "running"
-                  },
-                  {
-                    "title": "Weight Loss",
-                    "desc": "Sustainable programs focusing on fat loss and endurance.",
-                    "icon": "heart"
-                  },
-                  {
-                    "title": "Nutrition Guidance",
-                    "desc": "Custom meal plans to support your fitness journey.",
-                    "icon": "heart"
-                  },
-                  {
-                    "title": "Core Strength",
-                    "desc": "Build a solid foundation for better posture and stability.",
-                    "icon": "dumbbell"
-                  }
-                ]
-              },
-              {
-                "id": "3",
-                "name": "Oliver Samuel",
-                "role": "FITNESS COACH",
-                "image": "/trainer-3.jpg",
-                "experience": "5+ Years",
-                "clients": "400+",
-                "specializationsTitle": "CrossFit, Endurance, Conditioning",
-                "description": "Oliver brings high energy and dynamic routines to every session. With a background in competitive sports, he knows exactly how to push clients safely beyond their limits.",
-                "about": "Oliver focuses on athletic conditioning and explosive power. His workouts are never boring, incorporating a variety of equipment and disciplines to keep the body guessing and growing.",
-                "quote": "Push yourself, because no one else is going to do it for you. Embrace the challenge.",
-                "socials": {
-                  "facebook": "https://www.facebook.com",
-                  "instagram": "https://www.instagram.com",
-                  "linkedin": "https://www.linkedin.com",
-                  "youtube": "https://www.youtube.com"
-                },
-                "specializations": [
-                  {
-                    "title": "CrossFit",
-                    "desc": "High-intensity functional movements.",
-                    "icon": "dumbbell"
-                  },
-                  {
-                    "title": "Endurance",
-                    "desc": "Improve stamina and aerobic capacity.",
-                    "icon": "running"
-                  },
-                  {
-                    "title": "Sports Conditioning",
-                    "desc": "Train like an athlete to improve performance.",
-                    "icon": "biceps"
-                  },
-                  {
-                    "title": "Mobility",
-                    "desc": "Increase range of motion and prevent injuries.",
-                    "icon": "running"
-                  }
-                ]
-              },
-              {
-                "id": "4",
-                "name": "George Thomas",
-                "role": "NUTRITION SPECIALIST",
-                "image": "/trainer-4.jpg",
-                "experience": "10+ Years",
-                "clients": "800+",
-                "specializationsTitle": "Diet Planning, Macro Tracking, Health",
-                "description": "George is an expert in sports nutrition and dietetics. He has helped hundreds of athletes and everyday individuals optimize their diets for maximum energy and aesthetic results.",
-                "about": "George believes that abs are made in the kitchen. He breaks down complex nutritional science into actionable, easy-to-follow meal plans that fit into busy lifestyles without sacrificing flavor.",
-                "quote": "Fuel your body right, and it will reward you with strength and vitality.",
-                "socials": {
-                  "facebook": "https://www.facebook.com",
-                  "instagram": "https://www.instagram.com",
-                  "linkedin": "https://www.linkedin.com",
-                  "youtube": "https://www.youtube.com"
-                },
-                "specializations": [
-                  {
-                    "title": "Meal Planning",
-                    "desc": "Customized diets tailored to your goals.",
-                    "icon": "heart"
-                  },
-                  {
-                    "title": "Macro Coaching",
-                    "desc": "Learn to track and balance your macronutrients.",
-                    "icon": "biceps"
-                  },
-                  {
-                    "title": "Supplementation",
-                    "desc": "Expert advice on vitamins and sports supplements.",
-                    "icon": "heart"
-                  },
-                  {
-                    "title": "Lifestyle Coaching",
-                    "desc": "Build healthy habits that last a lifetime.",
-                    "icon": "running"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      },
-      "ServiceDetailContent": {
-        "variants": {
-          "FitnessServiceDetail1": {
-            "badge": "PROGRAM DETAILS",
-            "programs": {
-              "1": {
-                "id": 1,
-                "slug": "1",
-                "title": "Gym Fitness Class",
-                "description": "Dynamic sessions to improve fitness, burn calories and boost overall health.",
-                "image": "/images/fitness_class.jpg",
-                "heroImage": "/images/page_header_bg.jpg",
-                "paragraphs": [
-                  "Our Gym Fitness Class program is designed to help you build strength, endurance, speed, and confidence through structured, result-driven training. Whether you are a beginner or looking to improve your technique, our expert coaches provide the right guidance.",
-                  "This program includes a mix of focused techniques, conditioning drills, and high-intensity workouts to improve overall fitness, coordination, and mental discipline. You will train in a safe, motivating environment."
-                ],
-                "highlights": [
-                  {
-                    "title": "Gym Techniques",
-                    "desc": "Learn proper techniques, combinations, and defensive moves.",
-                    "icon": "Target"
-                  },
-                  {
-                    "title": "Improved Endurance",
-                    "desc": "Increase stamina and cardiovascular fitness with high-intensity drills.",
-                    "icon": "Activity"
-                  },
-                  {
-                    "title": "Full Body Workout",
-                    "desc": "Engage multiple muscle groups for strength, power, and agility.",
-                    "icon": "Zap"
-                  },
-                  {
-                    "title": "Better Coordination",
-                    "desc": "Enhance hand-eye coordination, reflexes and footwork.",
-                    "icon": "Target"
-                  },
-                  {
-                    "title": "Mental Discipline",
-                    "desc": "Build focus, confidence and resilience both inside and outside the gym.",
-                    "icon": "Activity"
-                  },
-                  {
-                    "title": "Weight Management",
-                    "desc": "Burn calories, reduce stress and maintain a healthier lifestyle.",
-                    "icon": "Zap"
-                  }
-                ],
-                "phone": "+1 00000 00000",
-                "helpTitle": "Have Questions?",
-                "helpSubtitle": "LET'S TALK",
-                "helpDescription": "Get in touch with our team for more details about the Gym Fitness Class program.",
-                "helpButtonText": "Contact Us",
-                "helpButtonLink": "/contact"
-              },
-              "2": {
-                "id": 2,
-                "slug": "2",
-                "title": "Power Lifting Class",
-                "description": "Build raw strength and master compound movements safely.",
-                "image": "/images/strength_training.jpg",
-                "heroImage": "/images/page_header_bg.jpg",
-                "paragraphs": [
-                  "Our Power Lifting Class program is designed to help you build strength, endurance, speed, and confidence through structured, result-driven training. Whether you are a beginner or looking to improve your technique, our expert coaches provide the right guidance.",
-                  "This program includes a mix of focused techniques, conditioning drills, and high-intensity workouts to improve overall fitness, coordination, and mental discipline. You will train in a safe, motivating environment."
-                ],
-                "highlights": [
-                  {
-                    "title": "Power Techniques",
-                    "desc": "Learn proper techniques, combinations, and defensive moves.",
-                    "icon": "Target"
-                  },
-                  {
-                    "title": "Improved Endurance",
-                    "desc": "Increase stamina and cardiovascular fitness with high-intensity drills.",
-                    "icon": "Activity"
-                  },
-                  {
-                    "title": "Full Body Workout",
-                    "desc": "Engage multiple muscle groups for strength, power, and agility.",
-                    "icon": "Zap"
-                  },
-                  {
-                    "title": "Better Coordination",
-                    "desc": "Enhance hand-eye coordination, reflexes and footwork.",
-                    "icon": "Target"
-                  },
-                  {
-                    "title": "Mental Discipline",
-                    "desc": "Build focus, confidence and resilience both inside and outside the gym.",
-                    "icon": "Activity"
-                  },
-                  {
-                    "title": "Weight Management",
-                    "desc": "Burn calories, reduce stress and maintain a healthier lifestyle.",
-                    "icon": "Zap"
-                  }
-                ],
-                "phone": "+1 00000 00000",
-                "helpTitle": "Have Questions?",
-                "helpSubtitle": "LET'S TALK",
-                "helpDescription": "Get in touch with our team for more details about the Power Lifting Class program.",
-                "helpButtonText": "Contact Us",
-                "helpButtonLink": "/contact"
-              },
-              "3": {
-                "id": 3,
-                "slug": "3",
-                "title": "Body Building",
-                "description": "Focus on muscle hypertrophy and aesthetic physique development.",
-                "image": "/images/body_building.jpg",
-                "heroImage": "/images/page_header_bg.jpg",
-                "paragraphs": [
-                  "Our Body Building program is designed to help you build strength, endurance, speed, and confidence through structured, result-driven training. Whether you are a beginner or looking to improve your technique, our expert coaches provide the right guidance.",
-                  "This program includes a mix of focused techniques, conditioning drills, and high-intensity workouts to improve overall fitness, coordination, and mental discipline. You will train in a safe, motivating environment."
-                ],
-                "highlights": [
-                  {
-                    "title": "Body Techniques",
-                    "desc": "Learn proper techniques, combinations, and defensive moves.",
-                    "icon": "Target"
-                  },
-                  {
-                    "title": "Improved Endurance",
-                    "desc": "Increase stamina and cardiovascular fitness with high-intensity drills.",
-                    "icon": "Activity"
-                  },
-                  {
-                    "title": "Full Body Workout",
-                    "desc": "Engage multiple muscle groups for strength, power, and agility.",
-                    "icon": "Zap"
-                  },
-                  {
-                    "title": "Better Coordination",
-                    "desc": "Enhance hand-eye coordination, reflexes and footwork.",
-                    "icon": "Target"
-                  },
-                  {
-                    "title": "Mental Discipline",
-                    "desc": "Build focus, confidence and resilience both inside and outside the gym.",
-                    "icon": "Activity"
-                  },
-                  {
-                    "title": "Weight Management",
-                    "desc": "Burn calories, reduce stress and maintain a healthier lifestyle.",
-                    "icon": "Zap"
-                  }
-                ],
-                "phone": "+1 00000 00000",
-                "helpTitle": "Have Questions?",
-                "helpSubtitle": "LET'S TALK",
-                "helpDescription": "Get in touch with our team for more details about the Body Building program.",
-                "helpButtonText": "Contact Us",
-                "helpButtonLink": "/contact"
-              },
-              "4": {
-                "id": 4,
-                "slug": "4",
-                "title": "Boxing Class",
-                "description": "Learn self-defense, improve coordination and build mental toughness.",
-                "image": "/images/boxer-training.jpg",
-                "heroImage": "/images/page_header_bg.jpg",
-                "paragraphs": [
-                  "Our Boxing Class program is designed to help you build strength, endurance, speed, and confidence through structured, result-driven training. Whether you are a beginner or looking to improve your technique, our expert coaches provide the right guidance.",
-                  "This program includes a mix of focused techniques, conditioning drills, and high-intensity workouts to improve overall fitness, coordination, and mental discipline. You will train in a safe, motivating environment."
-                ],
-                "highlights": [
-                  {
-                    "title": "Boxing Techniques",
-                    "desc": "Learn proper techniques, combinations, and defensive moves.",
-                    "icon": "Target"
-                  },
-                  {
-                    "title": "Improved Endurance",
-                    "desc": "Increase stamina and cardiovascular fitness with high-intensity drills.",
-                    "icon": "Activity"
-                  },
-                  {
-                    "title": "Full Body Workout",
-                    "desc": "Engage multiple muscle groups for strength, power, and agility.",
-                    "icon": "Zap"
-                  },
-                  {
-                    "title": "Better Coordination",
-                    "desc": "Enhance hand-eye coordination, reflexes and footwork.",
-                    "icon": "Target"
-                  },
-                  {
-                    "title": "Mental Discipline",
-                    "desc": "Build focus, confidence and resilience both inside and outside the gym.",
-                    "icon": "Activity"
-                  },
-                  {
-                    "title": "Weight Management",
-                    "desc": "Burn calories, reduce stress and maintain a healthier lifestyle.",
-                    "icon": "Zap"
-                  }
-                ],
-                "phone": "+1 00000 00000",
-                "helpTitle": "Have Questions?",
-                "helpSubtitle": "LET'S TALK",
-                "helpDescription": "Get in touch with our team for more details about the Boxing Class program.",
-                "helpButtonText": "Contact Us",
-                "helpButtonLink": "/contact"
-              },
-              "5": {
-                "id": 5,
-                "slug": "5",
-                "title": "Meditation Class",
-                "description": "Find mental clarity and reduce stress through guided meditation.",
-                "image": "/images/meditation_class.jpg",
-                "heroImage": "/images/page_header_bg.jpg",
-                "paragraphs": [
-                  "Our Meditation Class program is designed to help you build strength, endurance, speed, and confidence through structured, result-driven training. Whether you are a beginner or looking to improve your technique, our expert coaches provide the right guidance.",
-                  "This program includes a mix of focused techniques, conditioning drills, and high-intensity workouts to improve overall fitness, coordination, and mental discipline. You will train in a safe, motivating environment."
-                ],
-                "highlights": [
-                  {
-                    "title": "Meditation Techniques",
-                    "desc": "Learn proper techniques, combinations, and defensive moves.",
-                    "icon": "Target"
-                  },
-                  {
-                    "title": "Improved Endurance",
-                    "desc": "Increase stamina and cardiovascular fitness with high-intensity drills.",
-                    "icon": "Activity"
-                  },
-                  {
-                    "title": "Full Body Workout",
-                    "desc": "Engage multiple muscle groups for strength, power, and agility.",
-                    "icon": "Zap"
-                  },
-                  {
-                    "title": "Better Coordination",
-                    "desc": "Enhance hand-eye coordination, reflexes and footwork.",
-                    "icon": "Target"
-                  },
-                  {
-                    "title": "Mental Discipline",
-                    "desc": "Build focus, confidence and resilience both inside and outside the gym.",
-                    "icon": "Activity"
-                  },
-                  {
-                    "title": "Weight Management",
-                    "desc": "Burn calories, reduce stress and maintain a healthier lifestyle.",
-                    "icon": "Zap"
-                  }
-                ],
-                "phone": "+1 00000 00000",
-                "helpTitle": "Have Questions?",
-                "helpSubtitle": "LET'S TALK",
-                "helpDescription": "Get in touch with our team for more details about the Meditation Class program.",
-                "helpButtonText": "Contact Us",
-                "helpButtonLink": "/contact"
-              },
-              "6": {
-                "id": 6,
-                "slug": "6",
-                "title": "HIIT Training",
-                "description": "High-intensity interval training for maximum calorie burn.",
-                "image": "/images/group_classes.jpg",
-                "heroImage": "/images/page_header_bg.jpg",
-                "paragraphs": [
-                  "Our HIIT Training program is designed to help you build strength, endurance, speed, and confidence through structured, result-driven training. Whether you are a beginner or looking to improve your technique, our expert coaches provide the right guidance.",
-                  "This program includes a mix of focused techniques, conditioning drills, and high-intensity workouts to improve overall fitness, coordination, and mental discipline. You will train in a safe, motivating environment."
-                ],
-                "highlights": [
-                  {
-                    "title": "HIIT Techniques",
-                    "desc": "Learn proper techniques, combinations, and defensive moves.",
-                    "icon": "Target"
-                  },
-                  {
-                    "title": "Improved Endurance",
-                    "desc": "Increase stamina and cardiovascular fitness with high-intensity drills.",
-                    "icon": "Activity"
-                  },
-                  {
-                    "title": "Full Body Workout",
-                    "desc": "Engage multiple muscle groups for strength, power, and agility.",
-                    "icon": "Zap"
-                  },
-                  {
-                    "title": "Better Coordination",
-                    "desc": "Enhance hand-eye coordination, reflexes and footwork.",
-                    "icon": "Target"
-                  },
-                  {
-                    "title": "Mental Discipline",
-                    "desc": "Build focus, confidence and resilience both inside and outside the gym.",
-                    "icon": "Activity"
-                  },
-                  {
-                    "title": "Weight Management",
-                    "desc": "Burn calories, reduce stress and maintain a healthier lifestyle.",
-                    "icon": "Zap"
-                  }
-                ],
-                "phone": "+1 00000 00000",
-                "helpTitle": "Have Questions?",
-                "helpSubtitle": "LET'S TALK",
-                "helpDescription": "Get in touch with our team for more details about the HIIT Training program.",
-                "helpButtonText": "Contact Us",
-                "helpButtonLink": "/contact"
-              },
-              "7": {
-                "id": 7,
-                "slug": "7",
-                "title": "Cardio Training",
-                "description": "Improve your cardiovascular health and endurance.",
-                "image": "/images/cardio_training.jpg",
-                "heroImage": "/images/page_header_bg.jpg",
-                "paragraphs": [
-                  "Our Cardio Training program is designed to help you build strength, endurance, speed, and confidence through structured, result-driven training. Whether you are a beginner or looking to improve your technique, our expert coaches provide the right guidance.",
-                  "This program includes a mix of focused techniques, conditioning drills, and high-intensity workouts to improve overall fitness, coordination, and mental discipline. You will train in a safe, motivating environment."
-                ],
-                "highlights": [
-                  {
-                    "title": "Cardio Techniques",
-                    "desc": "Learn proper techniques, combinations, and defensive moves.",
-                    "icon": "Target"
-                  },
-                  {
-                    "title": "Improved Endurance",
-                    "desc": "Increase stamina and cardiovascular fitness with high-intensity drills.",
-                    "icon": "Activity"
-                  },
-                  {
-                    "title": "Full Body Workout",
-                    "desc": "Engage multiple muscle groups for strength, power, and agility.",
-                    "icon": "Zap"
-                  },
-                  {
-                    "title": "Better Coordination",
-                    "desc": "Enhance hand-eye coordination, reflexes and footwork.",
-                    "icon": "Target"
-                  },
-                  {
-                    "title": "Mental Discipline",
-                    "desc": "Build focus, confidence and resilience both inside and outside the gym.",
-                    "icon": "Activity"
-                  },
-                  {
-                    "title": "Weight Management",
-                    "desc": "Burn calories, reduce stress and maintain a healthier lifestyle.",
-                    "icon": "Zap"
-                  }
-                ],
-                "phone": "+1 00000 00000",
-                "helpTitle": "Have Questions?",
-                "helpSubtitle": "LET'S TALK",
-                "helpDescription": "Get in touch with our team for more details about the Cardio Training program.",
-                "helpButtonText": "Contact Us",
-                "helpButtonLink": "/contact"
-              },
-              "8": {
-                "id": 8,
-                "slug": "8",
-                "title": "Yoga & Flexibility",
-                "description": "Enhance flexibility, balance, and mind-body connection.",
-                "image": "/images/yoga_flex.jpg",
-                "heroImage": "/images/page_header_bg.jpg",
-                "paragraphs": [
-                  "Our Yoga & Flexibility program is designed to help you build strength, endurance, speed, and confidence through structured, result-driven training. Whether you are a beginner or looking to improve your technique, our expert coaches provide the right guidance.",
-                  "This program includes a mix of focused techniques, conditioning drills, and high-intensity workouts to improve overall fitness, coordination, and mental discipline. You will train in a safe, motivating environment."
-                ],
-                "highlights": [
-                  {
-                    "title": "Yoga Techniques",
-                    "desc": "Learn proper techniques, combinations, and defensive moves.",
-                    "icon": "Target"
-                  },
-                  {
-                    "title": "Improved Endurance",
-                    "desc": "Increase stamina and cardiovascular fitness with high-intensity drills.",
-                    "icon": "Activity"
-                  },
-                  {
-                    "title": "Full Body Workout",
-                    "desc": "Engage multiple muscle groups for strength, power, and agility.",
-                    "icon": "Zap"
-                  },
-                  {
-                    "title": "Better Coordination",
-                    "desc": "Enhance hand-eye coordination, reflexes and footwork.",
-                    "icon": "Target"
-                  },
-                  {
-                    "title": "Mental Discipline",
-                    "desc": "Build focus, confidence and resilience both inside and outside the gym.",
-                    "icon": "Activity"
-                  },
-                  {
-                    "title": "Weight Management",
-                    "desc": "Burn calories, reduce stress and maintain a healthier lifestyle.",
-                    "icon": "Zap"
-                  }
-                ],
-                "phone": "+1 00000 00000",
-                "helpTitle": "Have Questions?",
-                "helpSubtitle": "LET'S TALK",
-                "helpDescription": "Get in touch with our team for more details about the Yoga & Flexibility program.",
-                "helpButtonText": "Contact Us",
-                "helpButtonLink": "/contact"
-              },
-              "9": {
-                "id": 9,
-                "slug": "9",
-                "title": "Weight Loss Program",
-                "description": "A comprehensive plan combining training and nutrition advice.",
-                "image": "/images/weight_loss.jpg",
-                "heroImage": "/images/page_header_bg.jpg",
-                "paragraphs": [
-                  "Our Weight Loss Program program is designed to help you build strength, endurance, speed, and confidence through structured, result-driven training. Whether you are a beginner or looking to improve your technique, our expert coaches provide the right guidance.",
-                  "This program includes a mix of focused techniques, conditioning drills, and high-intensity workouts to improve overall fitness, coordination, and mental discipline. You will train in a safe, motivating environment."
-                ],
-                "highlights": [
-                  {
-                    "title": "Weight Techniques",
-                    "desc": "Learn proper techniques, combinations, and defensive moves.",
-                    "icon": "Target"
-                  },
-                  {
-                    "title": "Improved Endurance",
-                    "desc": "Increase stamina and cardiovascular fitness with high-intensity drills.",
-                    "icon": "Activity"
-                  },
-                  {
-                    "title": "Full Body Workout",
-                    "desc": "Engage multiple muscle groups for strength, power, and agility.",
-                    "icon": "Zap"
-                  },
-                  {
-                    "title": "Better Coordination",
-                    "desc": "Enhance hand-eye coordination, reflexes and footwork.",
-                    "icon": "Target"
-                  },
-                  {
-                    "title": "Mental Discipline",
-                    "desc": "Build focus, confidence and resilience both inside and outside the gym.",
-                    "icon": "Activity"
-                  },
-                  {
-                    "title": "Weight Management",
-                    "desc": "Burn calories, reduce stress and maintain a healthier lifestyle.",
-                    "icon": "Zap"
-                  }
-                ],
-                "phone": "+1 00000 00000",
-                "helpTitle": "Have Questions?",
-                "helpSubtitle": "LET'S TALK",
-                "helpDescription": "Get in touch with our team for more details about the Weight Loss Program program.",
-                "helpButtonText": "Contact Us",
-                "helpButtonLink": "/contact"
-              }
-            },
-            "cards": [
-              {
-                "id": 1,
-                "title": "Gym Fitness Class",
-                "description": "Dynamic sessions to improve fitness, burn calories and boost overall health.",
-                "image": "/images/fitness_class.jpg",
-                "icon": "running"
-              },
-              {
-                "id": 2,
-                "title": "Power Lifting Class",
-                "description": "Build raw strength and master compound movements safely.",
-                "image": "/images/strength_training.jpg",
-                "icon": "dumbbell"
-              },
-              {
-                "id": 3,
-                "title": "Body Building",
-                "description": "Focus on muscle hypertrophy and aesthetic physique development.",
-                "image": "/images/body_building.jpg",
-                "icon": "users"
-              },
-              {
-                "id": 4,
-                "title": "Boxing Class",
-                "description": "Learn self-defense, improve coordination and build mental toughness.",
-                "image": "/images/boxer-training.jpg",
-                "icon": "boxing"
-              },
-              {
-                "id": 5,
-                "title": "Meditation Class",
-                "description": "Find mental clarity and reduce stress through guided meditation.",
-                "image": "/images/meditation_class.jpg",
-                "icon": "yoga"
-              },
-              {
-                "id": 6,
-                "title": "HIIT Training",
-                "description": "High-intensity interval training for maximum calorie burn.",
-                "image": "/images/group_classes.jpg",
-                "icon": "running"
-              },
-              {
-                "id": 7,
-                "title": "Cardio Training",
-                "description": "Improve your cardiovascular health and endurance.",
-                "image": "/images/cardio_training.jpg",
-                "icon": "running"
-              },
-              {
-                "id": 8,
-                "title": "Yoga & Flexibility",
-                "description": "Enhance flexibility, balance, and mind-body connection.",
-                "image": "/images/yoga_flex.jpg",
-                "icon": "yoga"
-              },
-              {
-                "id": 9,
-                "title": "Weight Loss Program",
-                "description": "A comprehensive plan combining training and nutrition advice.",
-                "image": "/images/weight_loss.jpg",
-                "icon": "dumbbell"
-              }
-            ]
-          }
-        }
-      },
-      "BlogDetailContent": {
-        "variants": {
-          "FitnessBlogDetail1": {
-            "recentPosts": [
-              {
-                "id": 1,
-                "title": "How to Stay Motivated in Your Fitness Journey",
-                "date": "August 25, 2026",
-                "image": "/images/blog_1.jpg"
-              },
-              {
-                "id": 2,
-                "title": "The Role of Nutrition in Building Muscle",
-                "date": "August 20, 2026",
-                "image": "/images/blog_2.jpg"
-              },
-              {
-                "id": 3,
-                "title": "Best Warm-Up Exercises Before Your Workout",
-                "date": "August 15, 2026",
-                "image": "/images/blog_3.jpg"
-              },
-              {
-                "id": 4,
-                "title": "5 Effective Cardio Workouts for Faster Results",
-                "date": "August 10, 2026",
-                "image": "/images/cardio_training.jpg"
-              },
-              {
-                "id": 5,
-                "title": "Strength Training vs Cardio: Which is Better?",
-                "date": "August 05, 2026",
-                "image": "/images/strength_training.jpg"
-              },
-              {
-                "id": 6,
-                "title": "The Mental Benefits of Regular Exercise",
-                "date": "July 28, 2026",
-                "image": "/images/meditation_class.jpg"
-              }
-            ],
-            "categories": [
-              {
-                "name": "Beginner Guides",
-                "count": 12
-              },
-              {
-                "name": "Workout Tips",
-                "count": 18
-              },
-              {
-                "name": "Nutrition & Diet",
-                "count": 10
-              },
-              {
-                "name": "Weight Loss",
-                "count": 14
-              },
-              {
-                "name": "Muscle Building",
-                "count": 16
-              },
-              {
-                "name": "Mental Health",
-                "count": 8
-              },
-              {
-                "name": "Lifestyle",
-                "count": 11
-              }
-            ],
-            "blogs": {
-              "1": {
-                "id": 1,
-                "image": "/images/blog_1.jpg",
-                "date": "August 25, 2026",
-                "category": "FITNESS TIPS",
-                "author": "Admin",
-                "comments": 0,
-                "title": "How to Stay Motivated in Your Fitness Journey",
-                "description": "Start your fitness journey with these essential strength training tips to build confidence and long-term results.",
-                "content": [
-                  {
-                    "type": "paragraph",
-                    "text": "Staying motivated in your fitness journey can be challenging, especially when life gets busy or results take time. However, with the right mindset, plan and support, you can keep your momentum and achieve your health and fitness goals. In this blog, we'll explore practical tips to help you stay motivated and consistent."
-                  },
-                  {
-                    "type": "heading",
-                    "text": "1. Set Clear and Realistic Goals"
-                  },
-                  {
-                    "type": "paragraph",
-                    "text": "Having a clear goal gives you direction and purpose. Instead of vague goals like “get fit”, set specific and realistic targets such as losing 5 kg, running a 5K, or building strength. Break your goals into smaller milestones to track progress and stay motivated."
-                  },
-                  {
-                    "type": "quote",
-                    "text": "“A goal without a plan is just a wish.\nMake it specific, track your progress and celebrate small wins.”"
-                  },
-                  {
-                    "type": "heading",
-                    "text": "2. Create a Consistent Routine"
-                  },
-                  {
-                    "type": "paragraph",
-                    "text": "Consistency is the key to long-term success. Find a workout schedule that fits your lifestyle and stick to it. Whether it's early morning or after work, a fixed routine helps you stay accountable and makes fitness a habit."
-                  },
-                  {
-                    "type": "heading",
-                    "text": "3. Find the Right Support"
-                  },
-                  {
-                    "type": "paragraph",
-                    "text": "Surround yourself with positive people who encourage you. This could be a personal trainer, workout partner or a fitness community. The right support system keeps you motivated and makes the journey more enjoyable."
-                  },
-                  {
-                    "type": "heading",
-                    "text": "4. Track Your Progress"
-                  },
-                  {
-                    "type": "paragraph",
-                    "text": "Keep track of your workouts, measurements and achievements. Seeing your progress, no matter how small, boosts your confidence and motivates you to keep going."
-                  },
-                  {
-                    "type": "heading",
-                    "text": "5. Keep It Enjoyable"
-                  },
-                  {
-                    "type": "paragraph",
-                    "text": "Choose activities you enjoy, such as strength training, cardio, yoga or group classes. When you enjoy your workouts, it feels less like a chore and more like a rewarding part of your day."
-                  }
-                ],
-                "slug": "1",
-                "heroImage": "/images/page_header_bg.jpg"
-              },
-              "2": {
-                "id": 2,
-                "image": "/images/blog_2.jpg",
-                "date": "August 20, 2026",
-                "category": "NUTRITION",
-                "author": "Admin",
-                "comments": 2,
-                "title": "The Role of Nutrition in Building Muscle",
-                "description": "Discover simple and effective nutrition tips that can boost your energy, improve performance and support muscle growth.",
-                "content": [
-                  {
-                    "type": "paragraph",
-                    "text": "Nutrition plays a critical role in how well you perform during workouts and how quickly you recover. Fueling your body with the right nutrients ensures that you have the energy needed to push through tough sessions and build lean muscle. Here are some essential nutrition tips to fuel your fitness goals."
-                  },
-                  {
-                    "type": "heading",
-                    "text": "1. Prioritize Protein"
-                  },
-                  {
-                    "type": "paragraph",
-                    "text": "Protein is the building block of muscle. Ensure you're consuming enough high-quality protein from sources like chicken, fish, eggs, beans, and tofu to support recovery and growth. Aim to include protein in every meal."
-                  },
-                  {
-                    "type": "quote",
-                    "text": "“You can't out-train a bad diet.\nNutrition is 80% of your results and consistency is key.”"
-                  },
-                  {
-                    "type": "heading",
-                    "text": "2. Don't Fear Carbs"
-                  },
-                  {
-                    "type": "paragraph",
-                    "text": "Carbohydrates are your body's primary energy source. Opt for complex carbs like oats, sweet potatoes, and brown rice to provide sustained energy for your workouts. Timing your carbs around your workouts can also improve performance."
-                  },
-                  {
-                    "type": "heading",
-                    "text": "3. Stay Hydrated"
-                  },
-                  {
-                    "type": "paragraph",
-                    "text": "Water regulates your body temperature and lubricates your joints. Dehydration can lead to fatigue and muscle cramps. Aim to drink plenty of water throughout the day, especially before, during, and after your workouts."
-                  },
-                  {
-                    "type": "heading",
-                    "text": "4. Don't Skip Healthy Fats"
-                  },
-                  {
-                    "type": "paragraph",
-                    "text": "Fats are essential for hormone production and nutrient absorption. Include sources of healthy fats like avocados, nuts, seeds, and olive oil in your diet to support overall health and keep you satiated."
-                  },
-                  {
-                    "type": "heading",
-                    "text": "5. Plan Your Meals"
-                  },
-                  {
-                    "type": "paragraph",
-                    "text": "Meal planning helps you stay on track with your nutrition goals and prevents impulsive, unhealthy eating choices. Take time each week to prepare your meals and ensure you have healthy snacks readily available."
-                  }
-                ],
-                "slug": "2",
-                "heroImage": "/images/page_header_bg.jpg"
-              },
-              "3": {
-                "id": 3,
-                "image": "/images/blog_3.jpg",
-                "date": "August 15, 2026",
-                "category": "TRAINING",
-                "author": "Admin",
-                "comments": 5,
-                "title": "Best Warm-Up Exercises Before Your Workout",
-                "description": "Learn how flexibility training can improve your performance, prevent injuries and keep you moving better every day.",
-                "content": [
-                  {
-                    "type": "paragraph",
-                    "text": "Flexibility is often overlooked in fitness routines, with many people prioritizing strength and cardio. However, maintaining good flexibility is essential for overall health, performance, and injury prevention. Incorporating stretching into your routine can yield significant benefits."
-                  },
-                  {
-                    "type": "heading",
-                    "text": "1. Improved Range of Motion"
-                  },
-                  {
-                    "type": "paragraph",
-                    "text": "Stretching helps improve the range of motion in your joints, allowing you to perform exercises with better form and efficiency. A full range of motion engages more muscle fibers and leads to better results."
-                  },
-                  {
-                    "type": "quote",
-                    "text": "“Flexibility is the key to longevity in fitness.\nKeep your body moving freely to prevent stiffness.”"
-                  },
-                  {
-                    "type": "heading",
-                    "text": "2. Injury Prevention"
-                  },
-                  {
-                    "type": "paragraph",
-                    "text": "Tight muscles are more prone to strains and tears. Regular flexibility training keeps your muscles supple and reduces the risk of injuries during physical activities."
-                  },
-                  {
-                    "type": "heading",
-                    "text": "3. Better Posture"
-                  },
-                  {
-                    "type": "paragraph",
-                    "text": "Muscular imbalances can lead to poor posture. Stretching tight muscles, especially in the chest, shoulders, and hips, can help correct your posture and alleviate back pain."
-                  },
-                  {
-                    "type": "heading",
-                    "text": "4. Enhanced Recovery"
-                  },
-                  {
-                    "type": "paragraph",
-                    "text": "Stretching increases blood flow to your muscles, delivering essential nutrients and removing waste products. This can speed up recovery after intense workouts and reduce muscle soreness."
-                  },
-                  {
-                    "type": "heading",
-                    "text": "5. Stress Relief"
-                  },
-                  {
-                    "type": "paragraph",
-                    "text": "Stretching and flexibility exercises, such as yoga, can have a calming effect on your mind and body. Taking time to stretch can help reduce stress and promote relaxation."
-                  }
-                ],
-                "slug": "3",
-                "heroImage": "/images/page_header_bg.jpg"
-              },
-              "4": {
-                "id": 4,
-                "image": "/images/cardio_training.jpg",
-                "date": "August 10, 2026",
-                "category": "WEIGHT LOSS",
-                "author": "Admin",
-                "comments": 3,
-                "title": "5 Effective Cardio Workouts for Faster Results",
-                "description": "Burn more calories and improve your cardiovascular health with these high-intensity cardio routines.",
-                "content": [
-                  {
-                    "type": "paragraph",
-                    "text": "Cardio is an essential part of any weight loss journey. While strength training builds muscle, cardio is highly effective at burning calories and improving heart health."
-                  },
-                  {
-                    "type": "heading",
-                    "text": "1. High-Intensity Interval Training (HIIT)"
-                  },
-                  {
-                    "type": "paragraph",
-                    "text": "HIIT involves short bursts of intense exercise alternated with low-intensity recovery periods. It is incredibly time-efficient and helps burn a maximum amount of calories."
-                  },
-                  {
-                    "type": "heading",
-                    "text": "2. Running or Jogging"
-                  },
-                  {
-                    "type": "paragraph",
-                    "text": "A classic and effective way to burn fat. Whether on a treadmill or outdoors, running engages your lower body and significantly raises your heart rate."
-                  },
-                  {
-                    "type": "quote",
-                    "text": "“Cardio is not just about burning fat.\nIt's about training your heart and lungs to work efficiently.”"
-                  },
-                  {
-                    "type": "heading",
-                    "text": "3. Jump Rope"
-                  },
-                  {
-                    "type": "paragraph",
-                    "text": "Jumping rope is a full-body workout that burns more calories per minute than swimming or rowing. Plus, it improves coordination and agility."
-                  },
-                  {
-                    "type": "heading",
-                    "text": "4. Cycling"
-                  },
-                  {
-                    "type": "paragraph",
-                    "text": "Indoor or outdoor cycling is a great low-impact cardio workout. It builds leg strength while being gentle on the joints."
-                  },
-                  {
-                    "type": "heading",
-                    "text": "5. Rowing"
-                  },
-                  {
-                    "type": "paragraph",
-                    "text": "Rowing is one of the few cardio exercises that work the entire body. It is fantastic for building upper body and core endurance."
-                  }
-                ],
-                "slug": "4",
-                "heroImage": "/images/page_header_bg.jpg"
-              },
-              "5": {
-                "id": 5,
-                "image": "/images/strength_training.jpg",
-                "date": "August 05, 2026",
-                "category": "MUSCLE BUILDING",
-                "author": "Admin",
-                "comments": 8,
-                "title": "Strength Training vs Cardio: Which is Better?",
-                "description": "Understand the differences between strength training and cardio, and find out which one aligns with your fitness goals.",
-                "content": [
-                  {
-                    "type": "paragraph",
-                    "text": "The debate between strength training and cardio is as old as the fitness industry itself. To find out which is better for you, it depends entirely on your specific fitness goals."
-                  },
-                  {
-                    "type": "heading",
-                    "text": "1. Understanding Strength Training"
-                  },
-                  {
-                    "type": "paragraph",
-                    "text": "Strength training focuses on building muscle mass and improving muscular endurance. More muscle mass means a higher resting metabolic rate."
-                  },
-                  {
-                    "type": "heading",
-                    "text": "2. The Benefits of Cardio"
-                  },
-                  {
-                    "type": "paragraph",
-                    "text": "Cardio is designed to elevate your heart rate and improve the efficiency of your cardiovascular system. It is excellent for immediate calorie burning."
-                  },
-                  {
-                    "type": "quote",
-                    "text": "“The best workout is the one you actually do.\nCombine both for a balanced, healthy physique.”"
-                  },
-                  {
-                    "type": "heading",
-                    "text": "3. Which Burns More Fat?"
-                  },
-                  {
-                    "type": "paragraph",
-                    "text": "While cardio burns more calories during the session, strength training keeps burning calories long after the workout is over (the EPOC effect)."
-                  },
-                  {
-                    "type": "heading",
-                    "text": "4. Longevity and Health"
-                  },
-                  {
-                    "type": "paragraph",
-                    "text": "Both forms of exercise contribute to a longer, healthier life. Cardio prevents heart disease, while strength training prevents osteoporosis and frailty."
-                  },
-                  {
-                    "type": "heading",
-                    "text": "5. The Hybrid Approach"
-                  },
-                  {
-                    "type": "paragraph",
-                    "text": "For most people, a hybrid approach combining 3 days of strength training and 2 days of cardio is the perfect balance for overall health."
-                  }
-                ],
-                "slug": "5",
-                "heroImage": "/images/page_header_bg.jpg"
-              },
-              "6": {
-                "id": 6,
-                "image": "/images/meditation_class.jpg",
-                "date": "July 28, 2026",
-                "category": "MENTAL HEALTH",
-                "author": "Admin",
-                "comments": 1,
-                "title": "The Mental Benefits of Regular Exercise",
-                "description": "Discover how staying active can drastically improve your mood, reduce anxiety, and sharpen your focus.",
-                "content": [
-                  {
-                    "type": "paragraph",
-                    "text": "While the physical benefits of exercise are obvious, the mental benefits are just as profound. Regular exercise can have a major positive impact on your psychological well-being."
-                  },
-                  {
-                    "type": "heading",
-                    "text": "1. Reduced Anxiety"
-                  },
-                  {
-                    "type": "paragraph",
-                    "text": "Physical activity stimulates the production of endorphins, chemicals in the brain that act as natural painkillers and mood elevators."
-                  },
-                  {
-                    "type": "heading",
-                    "text": "2. Better Sleep"
-                  },
-                  {
-                    "type": "paragraph",
-                    "text": "Exercise can help you fall asleep faster and deepen your sleep. Good sleep is critical for emotional regulation and cognitive function."
-                  },
-                  {
-                    "type": "quote",
-                    "text": "“A healthy outside starts from the inside.\nExercise your mind just as much as your body.”"
-                  },
-                  {
-                    "type": "heading",
-                    "text": "3. Improved Self-Confidence"
-                  },
-                  {
-                    "type": "paragraph",
-                    "text": "Meeting exercise goals or challenges, even small ones, can boost your self-confidence. Getting in shape can also make you feel better about your appearance."
-                  },
-                  {
-                    "type": "heading",
-                    "text": "4. Sharper Memory and Thinking"
-                  },
-                  {
-                    "type": "paragraph",
-                    "text": "The same endorphins that make you feel better also help you concentrate and feel mentally sharp for tasks at hand."
-                  },
-                  {
-                    "type": "heading",
-                    "text": "5. More Energy"
-                  },
-                  {
-                    "type": "paragraph",
-                    "text": "Increasing your heart rate several times a week will give you more get-up-and-go. Start with just a few minutes of exercise per day, and increase it as you feel more energized."
-                  }
-                ],
-                "slug": "6",
-                "heroImage": "/images/page_header_bg.jpg"
-              },
-              "7": {
-                "id": 7,
-                "image": "/images/blog_1.jpg",
-                "date": "July 20, 2026",
-                "category": "LIFESTYLE",
-                "author": "Admin",
-                "comments": 4,
-                "title": "How to Build a Sustainable Fitness Habit",
-                "description": "Learn the psychology behind habit formation and how to make fitness a permanent part of your daily routine.",
-                "content": [
-                  {
-                    "type": "paragraph",
-                    "text": "Building a habit takes time, but with consistency, fitness can become second nature. Motivation fades, but a well-established habit will keep you going."
-                  },
-                  {
-                    "type": "heading",
-                    "text": "1. Start Small"
-                  },
-                  {
-                    "type": "paragraph",
-                    "text": "Don't try to change your entire life overnight. Start with a 15-minute workout three times a week. Once that becomes easy, increase the duration."
-                  },
-                  {
-                    "type": "heading",
-                    "text": "2. Focus on Consistency"
-                  },
-                  {
-                    "type": "paragraph",
-                    "text": "It is better to work out for 20 minutes every day than to do a grueling 2-hour session once a week. Consistency builds neurological pathways."
-                  },
-                  {
-                    "type": "quote",
-                    "text": "“Motivation is what gets you started.\nHabit is what keeps you going.”"
-                  },
-                  {
-                    "type": "heading",
-                    "text": "3. Remove Friction"
-                  },
-                  {
-                    "type": "paragraph",
-                    "text": "Lay out your workout clothes the night before. Choose a gym that is on your way to work. Make it as easy as possible to just start."
-                  },
-                  {
-                    "type": "heading",
-                    "text": "4. Track Your Wins"
-                  },
-                  {
-                    "type": "paragraph",
-                    "text": "Keep a calendar and mark an X on the days you work out. The visual representation of a streak will motivate you not to break it."
-                  },
-                  {
-                    "type": "heading",
-                    "text": "5. Forgive Yourself"
-                  },
-                  {
-                    "type": "paragraph",
-                    "text": "If you miss a day, don't beat yourself up. The rule is simple: never miss twice in a row. Just get back on track the next day."
-                  }
-                ],
-                "slug": "7",
-                "heroImage": "/images/page_header_bg.jpg"
-              }
-            }
-          }
-        }
-      },
-      "SiteChromeContent": {
-        "variants": {
-          "FitnessSiteChrome1": {
-            "logo": "/logo.png",
-            "brandName": "Vortex Fitness",
-            "header": {
-              "topBar": {
-                "location": "123 Fitness Street, New York, NY 10001",
-                "phone": "+1 00000 00000",
-                "socialLinks": {
-                  "facebook": "https://facebook.com",
-                  "instagram": "https://instagram.com",
-                  "youtube": "https://youtube.com"
-                }
-              },
-              "navLinks": [
-                {
-                  "name": "Home",
-                  "path": "/"
-                },
-                {
-                  "name": "About Us",
-                  "path": "/about"
-                },
-                {
-                  "name": "Programs",
-                  "path": "/programs"
-                },
-                {
-                  "name": "Team",
-                  "path": "/team"
-                },
-                {
-                  "name": "Gallery",
-                  "path": "/gallery"
-                },
-                {
-                  "name": "Blogs",
-                  "path": "/blogs"
-                },
-                {
-                  "name": "Contact Us",
-                  "path": "/contact"
-                }
-              ],
-              "button": {
-                "text": "Enquire Now",
-                "link": "/enquire"
-              }
-            },
-            "footer": {
-              "logo": "/logo-white.png",
-              "description": "At VortexFit, we believe in a stronger, healthier and more confident you. Join our community and experience expert training, modern facilities and a lifestyle that keeps you moving forward.",
-              "socialLinks": {
-                "facebook": "https://facebook.com",
-                "instagram": "https://instagram.com",
-                "youtube": "https://www.youtube.com",
-                "linkedin": "https://www.linkedin.com"
-              },
-              "quickLinksTitle": "Quick Links",
-              "quickLinks": [
-                {
-                  "name": "Home",
-                  "path": "/"
-                },
-                {
-                  "name": "About Us",
-                  "path": "/about"
-                },
-                {
-                  "name": "Programs",
-                  "path": "/programs"
-                },
-                {
-                  "name": "Team",
-                  "path": "/team"
-                },
-                {
-                  "name": "Gallery",
-                  "path": "/gallery"
-                },
-                {
-                  "name": "Blog",
-                  "path": "/blogs"
-                },
-                {
-                  "name": "Pricing",
-                  "path": "/pricing"
-                },
-                {
-                  "name": "Contact Us",
-                  "path": "/contact"
-                }
-              ],
-              "programsTitle": "Programs",
-              "contactTitle": "Contact Info",
-              "contact": {
-                "addressLine1": "123 Fitness Street,",
-                "addressLine2": "New York, NY 10001",
-                "phone": "+1 00000 00000",
-                "email": "info@xyz.com"
-              },
-              "copyright": "© 2026 VortexFit. All Rights Reserved. Powered by Lestow"
-            }
-          }
-        }
-      },
-      "ContactFormContent": {
-        "variants": {
-          "FitnessContactForm1": {
-            "badge": "SEND US A MESSAGE",
-            "titleStart": "Let's Start a",
-            "titleHighlight": "Conversation",
-            "description": "Fill out the form below and our team will get back to you shortly.",
-            "namePlaceholder": "Full Name *",
-            "emailPlaceholder": "Email Address *",
-            "phonePlaceholder": "Phone Number *",
-            "subjectPlaceholder": "Subject *",
-            "messagePlaceholder": "Tell us how we can help you...",
-            "submitText": "Send Message"
-          }
-        }
-      },
-      "Partners": {
-        "variants": {
-          "FitnessPartners1": {
-            "badge": "OUR PARTNERS",
-            "titleStart": "Partnered With",
-            "titleHighlight": "Leading Fitness Brands",
-            "description": "We collaborate with the world's best sports, nutrition, and equipment brands to deliver an unmatched training experience.",
-            "items": [
-              {
-                "id": 1,
-                "name": "Nike Training",
-                "image": "/images/banner_1.jpg"
-              },
-              {
-                "id": 2,
-                "name": "Under Armour",
-                "image": "/images/banner_2.jpg"
-              },
-              {
-                "id": 3,
-                "name": "Gymshark",
-                "image": "/images/banner_3.jpg"
-              },
-              {
-                "id": 4,
-                "name": "Technogym",
-                "image": "/images/banner_1.jpg"
-              },
-              {
-                "id": 5,
-                "name": "Eleiko",
-                "image": "/images/banner_2.jpg"
-              },
-              {
-                "id": 6,
-                "name": "Optimum Nutrition",
-                "image": "/images/banner_3.jpg"
-              }
-            ]
-          }
-        }
-      },
-      "Faq": {
-        "variants": {
-          "FitnessFaq1": {
-            "badge": "FAQS",
-            "titleStart": "Your Questions,",
-            "titleHighlight": "Our Answers",
-            "description": "Find answers to the most common questions about our gym memberships, personal training, and facilities.",
-            "faqs": [
-              {
-                "id": 1,
-                "number": "01",
-                "question": "What are your operating hours?",
-                "answer": "We are open Monday to Friday from 5:00 AM to 11:00 PM, and Saturday & Sunday from 6:00 AM to 9:00 PM."
-              },
-              {
-                "id": 2,
-                "number": "02",
-                "question": "Do you offer a free trial?",
-                "answer": "Yes, we offer a complimentary 1-day pass for all new visitors so you can experience our facility and classes firsthand."
-              },
-              {
-                "id": 3,
-                "number": "03",
-                "question": "Are personal trainers included with membership?",
-                "answer": "All new memberships include an initial fitness assessment and 1 free orientation session. Ongoing 1-on-1 personal training packages are available at competitive rates."
-              },
-              {
-                "id": 4,
-                "number": "04",
-                "question": "Can I freeze my membership if I travel?",
-                "answer": "Yes! Memberships can be paused for up to 60 days per calendar year with 7 days advance notice."
-              }
-            ]
-          }
-        }
-      },
-      "Awards": {
-        "variants": {
-          "FitnessAwards1": {
-            "featureBadge": "Our Achievements",
-            "titleStart": "Recognized For",
-            "titleHighlight": "Excellence In Fitness",
-            "intro": "Over the years, Vortex Fitness has been honored by leading health and fitness associations for our state-of-the-art facilities, certified coaching, and outstanding member transformations.",
-            "awards": [
-              {
-                "id": 1,
-                "title": "Best Fitness Center 2024",
-                "year": "2024",
-                "organization": "National Health & Fitness Awards"
-              },
-              {
-                "id": 2,
-                "title": "Excellence in Personal Training",
-                "year": "2023",
-                "organization": "Athletic Coaching Summit"
-              },
-              {
-                "id": 3,
-                "title": "Top Member Satisfaction",
-                "year": "2023",
-                "organization": "Wellness Consumer Choice"
-              }
-            ]
-          }
-        }
-      },
-      "PrivacyPolicy": {
-        "variants": {
-          "FitnessPrivacyPolicy1": {
-            "badge": "Our Privacy Policy",
-            "titleStart": "Your Privacy",
-            "titleHighlight": "Matters",
-            "description": "At Vortex Fitness, we respect your privacy and are committed to protecting the personal information you share with us.",
-            "policies": [
-              {
-                "id": "01",
-                "title": "Information We Collect",
-                "content": "We collect information you provide directly to us when signing up, booking sessions, or contacting our team."
-              },
-              {
-                "id": "02",
-                "title": "How We Use Information",
-                "content": "Your details are used solely to deliver membership services, manage class schedules, and communicate updates."
-              },
-              {
-                "id": "03",
-                "title": "Data Security",
-                "content": "We maintain strict administrative and technical safeguards to secure your personal data against unauthorized access."
-              }
-            ]
-          }
-        }
-      },
-      "Values": {
-        "variants": {
-          "FitnessValues1": {
-            "badge": "OUR VALUES",
-            "headingStart": "Our Mission",
-            "headingHighlight": "&",
-            "headingEnd": "Vision",
-            "description": "Dedicated to elevating human potential, building athletic resilience, and inspiring lifelong fitness.",
-            "mission": {
-              "label": "OUR MISSION",
-              "titleStart": "To Transform Lives Through",
-              "titleHighlight": "Discipline & Strength",
-              "titleEnd": "Every Day",
-              "description": "To empower individuals of all backgrounds with world-class fitness coaching, progressive strength programming, and an unshakeable community mindset.",
-              "image": "/images/training_step1.jpg",
-              "features": [
-                {
-                  "icon": "Users",
-                  "label": "Athlete First"
-                },
-                {
-                  "icon": "Dumbbell",
-                  "label": "Proven Technique"
-                },
-                {
-                  "icon": "Trophy",
-                  "label": "Real Results"
-                }
-              ]
-            },
-            "vision": {
-              "label": "OUR VISION",
-              "titleStart": "To Be the Premier High-Performance",
-              "titleHighlight": "Fitness Community",
-              "description": "To lead the fitness industry in coaching excellence, sustainable wellness, and cutting-edge functional athletic development.",
-              "image": "/images/training_step2.jpg",
-              "features": [
-                {
-                  "icon": "Target",
-                  "label": "Peak Performance"
-                },
-                {
-                  "icon": "Activity",
-                  "label": "Longevity"
-                },
-                {
-                  "icon": "Heart",
-                  "label": "Empowerment"
-                }
-              ]
-            }
-          },
-          "FitnessMissionVision1": {
-            "badge": "OUR VALUES",
-            "headingStart": "Our Mission",
-            "headingHighlight": "&",
-            "headingEnd": "Vision",
-            "description": "Dedicated to elevating human potential, building athletic resilience, and inspiring lifelong fitness.",
-            "mission": {
-              "label": "OUR MISSION",
-              "titleStart": "To Transform Lives Through",
-              "titleHighlight": "Discipline & Strength",
-              "titleEnd": "Every Day",
-              "description": "To empower individuals of all backgrounds with world-class fitness coaching, progressive strength programming, and an unshakeable community mindset.",
-              "image": "/images/training_step1.jpg",
-              "features": [
-                {
-                  "icon": "Users",
-                  "label": "Athlete First"
-                },
-                {
-                  "icon": "Dumbbell",
-                  "label": "Proven Technique"
-                },
-                {
-                  "icon": "Trophy",
-                  "label": "Real Results"
-                }
-              ]
-            },
-            "vision": {
-              "label": "OUR VISION",
-              "titleStart": "To Be the Premier High-Performance",
-              "titleHighlight": "Fitness Community",
-              "description": "To lead the fitness industry in coaching excellence, sustainable wellness, and cutting-edge functional athletic development.",
-              "image": "/images/training_step2.jpg",
-              "features": [
-                {
-                  "icon": "Target",
-                  "label": "Peak Performance"
-                },
-                {
-                  "icon": "Activity",
-                  "label": "Longevity"
-                },
-                {
-                  "icon": "Heart",
-                  "label": "Empowerment"
-                }
-              ]
-            }
-          }
-        }
-      },
-      "Process": {
-        "variants": {
-          "FitnessProcess1": {
-            "badge": "Our Work Process",
-            "topText": "Our Work Process",
-            "titleStart": "Your Fitness Journey,",
-            "heading1": "Your Fitness Journey,",
-            "titleHighlight": "Step by Step",
-            "heading2": "Step by Step",
-            "description": "We follow a simple and effective process to help you reach your fitness goals\nwith the right guidance, support and training.",
-            "steps": [
-              {
-                "id": "01",
-                "title": "Consultation",
-                "description": "We understand your fitness goals, assess your current level and discuss your preferences to create the right plan.",
-                "image": "/prog-1.jpg",
-                "icon": "users"
-              },
-              {
-                "id": "02",
-                "title": "Personalized Plan",
-                "description": "We design a customized workout plan based on your goals, lifestyle and fitness level.",
-                "image": "/prog-2.jpg",
-                "icon": "clipboard"
-              },
-              {
-                "id": "03",
-                "title": "Train & Progress",
-                "description": "Start your training with expert guidance, continuous support and regular progress tracking.",
-                "image": "/prog-3.jpg",
-                "icon": "dumbbell"
-              },
-              {
-                "id": "04",
-                "title": "Achieve Your Goals",
-                "description": "Stay consistent, see real results and unlock a healthier, stronger and more confident you.",
-                "image": "/prog-4.jpg",
-                "icon": "trophy"
-              }
-            ]
-          }
-        }
-      },
-      "ProcessWork": {
-        "variants": {
-          "FitnessProcessWork1": {
-            "badge": "Our Work Process",
-            "topText": "Our Work Process",
-            "titleStart": "Your Fitness Journey,",
-            "heading1": "Your Fitness Journey,",
-            "titleHighlight": "Step by Step",
-            "heading2": "Step by Step",
-            "description": "We follow a simple and effective process to help you reach your fitness goals\nwith the right guidance, support and training.",
-            "steps": [
-              {
-                "id": "01",
-                "title": "Consultation",
-                "description": "We understand your fitness goals, assess your current level and discuss your preferences to create the right plan.",
-                "image": "/prog-1.jpg",
-                "icon": "users"
-              },
-              {
-                "id": "02",
-                "title": "Personalized Plan",
-                "description": "We design a customized workout plan based on your goals, lifestyle and fitness level.",
-                "image": "/prog-2.jpg",
-                "icon": "clipboard"
-              },
-              {
-                "id": "03",
-                "title": "Train & Progress",
-                "description": "Start your training with expert guidance, continuous support and regular progress tracking.",
-                "image": "/prog-3.jpg",
-                "icon": "dumbbell"
-              },
-              {
-                "id": "04",
-                "title": "Achieve Your Goals",
-                "description": "Stay consistent, see real results and unlock a healthier, stronger and more confident you.",
-                "image": "/prog-4.jpg",
-                "icon": "trophy"
-              }
-            ]
-          }
-        }
-      },
-      "Achievements": {
-        "variants": {
-          "FitnessAwards1": {
-            "featureBadge": "Our Achievements",
-            "titleStart": "Recognized For",
-            "titleHighlight": "Excellence In Fitness",
-            "intro": "Over the years, Vortex Fitness has been honored by leading health and fitness associations for our state-of-the-art facilities, certified coaching, and outstanding member transformations.",
-            "awards": [
-              {
-                "id": 1,
-                "title": "Best Fitness Center 2024",
-                "year": "2024",
-                "organization": "National Health & Fitness Awards"
-              },
-              {
-                "id": 2,
-                "title": "Excellence in Personal Training",
-                "year": "2023",
-                "organization": "Athletic Coaching Summit"
-              },
-              {
-                "id": 3,
-                "title": "Top Member Satisfaction",
-                "year": "2023",
-                "organization": "Wellness Consumer Choice"
-              }
-            ]
-          }
-        }
-      },
-      "Location": {
-        "variants": {
-          "FitnessLocation1": {
-            "address": "123 Fitness Street, New York, NY 10001",
-            "phone": "+1 00000 00000",
-            "email": "info@xyz.com",
-            "hours": "Mon - Sun: 6:00 AM - 10:00 PM",
-            "boxes": {
-              "location": {
-                "title": "Our Location"
-              },
-              "call": {
-                "title": "Call Us"
-              },
-              "email": {
-                "title": "Email Us"
-              }
-            }
-          }
-        }
-      },
-      "Policy": {
-        "variants": {
-          "FitnessPrivacyPolicy1": {
-            "badge": "Our Privacy Policy",
-            "titleStart": "Your Privacy",
-            "titleHighlight": "Matters",
-            "description": "At Vortex Fitness, we respect your privacy and are committed to protecting the personal information you share with us.",
-            "policies": [
-              {
-                "id": "01",
-                "title": "Information We Collect",
-                "content": "We collect information you provide directly to us when signing up, booking sessions, or contacting our team."
-              },
-              {
-                "id": "02",
-                "title": "How We Use Information",
-                "content": "Your details are used solely to deliver membership services, manage class schedules, and communicate updates."
-              },
-              {
-                "id": "03",
-                "title": "Data Security",
-                "content": "We maintain strict administrative and technical safeguards to secure your personal data against unauthorized access."
-              }
-            ]
-          }
-        }
-      },
-      "Consultation": {
-        "variants": {
-          "FitnessConsultation1": {
-            "badge": "SCHEDULE YOUR SESSION",
-            "titleStart": "Start Your",
-            "titleHighlight": "Fitness Journey",
-            "description": "Take the first step towards a healthier, stronger you. Contact us today to schedule your complimentary fitness consultation and gym tour.",
-            "image": "/images/enquire_woman.jpg",
-            "imageCallout": "GET UP TO 25% OFF YOUR FIRST MEMBERSHIP",
-            "submitText": "Book My Free Consultation",
-            "benefits": [
-              {
-                "icon": "Users",
-                "title": "Certified Trainers",
-                "description": "Work with experienced fitness professionals dedicated to your success."
-              },
-              {
-                "icon": "Calendar",
-                "title": "Flexible Scheduling",
-                "description": "Choose session times that fit seamlessly into your lifestyle."
-              },
-              {
-                "icon": "Dumbbell",
-                "title": "Tailored Workouts",
-                "description": "Custom exercise routines designed around your fitness level and goals."
-              },
-              {
-                "icon": "Headset",
-                "title": "Continuous Support",
-                "description": "Ongoing guidance, motivation, and accountability every step of the way."
-              }
-            ],
-            "form": {
-              "badge": "ENQUIRY",
-              "titleStart": "Enquiry",
-              "titleHighlight": "Form",
-              "fullNamePlaceholder": "Full Name *",
-              "phonePlaceholder": "Phone Number *",
-              "emailPlaceholder": "Email Address *",
-              "programPlaceholder": "Select Program Interested In *",
-              "programOptions": [
-                {
-                  "value": "gym",
-                  "label": "Gym Fitness Class"
-                },
-                {
-                  "value": "powerlifting",
-                  "label": "Power Lifting Class"
-                },
-                {
-                  "value": "bodybuilding",
-                  "label": "Body Building"
-                },
-                {
-                  "value": "boxing",
-                  "label": "Boxing Class"
-                },
-                {
-                  "value": "yoga",
-                  "label": "Yoga & Flexibility"
-                }
-              ],
-              "messagePlaceholder": "Your Message *",
-              "consentText": "I agree to be contacted by the VortexFit team.",
-              "submitButtonText": "SUBMIT ENQUIRY",
-              "responseTimeNotice": "We typically respond within 24 hours."
-            },
-            "processBadge": "WHAT TO EXPECT",
-            "processTitleStart": "A Simple",
-            "processTitleHighlight": "4-Step Process",
-            "steps": [
-              {
-                "number": "01.",
-                "title": "Book a Slot",
-                "description": "Choose a convenient date and time that fits your schedule."
-              },
-              {
-                "number": "02.",
-                "title": "Discuss Goals",
-                "description": "Share your fitness targets and any previous workout history."
-              },
-              {
-                "number": "03.",
-                "title": "Get Expert Plan",
-                "description": "Receive personalized guidance and tailored workout tips."
-              },
-              {
-                "number": "04.",
-                "title": "Begin Training",
-                "description": "Take confident steps toward a stronger, fitter you."
-              }
-            ]
           }
         }
       }

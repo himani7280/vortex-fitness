@@ -4,7 +4,7 @@ import Blog from '../../components/sections/Blog';
 import siteData from '@/data/siteData';
 
 export default function BlogsPage() {
-  const heroVariant = siteData.sections?.Hero?.variants?.FitnessBlogHero1;
+  const heroVariant = siteData.heroes.blog;
   const title = heroVariant?.title ? `Our ${heroVariant.title}` : "Our Blogs";
 
   return (

@@ -7,7 +7,7 @@ import { ArrowRight } from 'lucide-react';
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
 
 export default function TeamPage() {
-  const teamSection = siteData.sections?.Team?.variants?.FitnessTeam1 || teamVariant || {
+  const teamSection = siteData.team || teamVariant || {
     badge: 'EXPERT TRAINERS',
     titleStart: 'Meet Our ',
     titleHighlight: 'Amazing Team',
@@ -17,7 +17,7 @@ export default function TeamPage() {
   };
   const trainersList = teamSection.items || teamData;
 
-  const heroVariant = siteData.sections?.Hero?.variants?.FitnessTeamHero1;
+  const heroVariant = siteData.heroes.team;
   const pageTitle = heroVariant?.title || "Our Team";
 
   return (

@@ -6,7 +6,7 @@ import RedirectForm from '../../components/ui/RedirectForm';
 import siteData, { enquireVariant } from '@/data/siteData';
 
 export default function EnquirePage() {
-  const enquire = siteData.sections?.EnquiryForm?.variants?.FitnessEnquiryForm1 || enquireVariant || siteData.enquire;
+  const enquire = siteData.enquire || enquireVariant;
   const form = (enquire as any).form || {};
 
   const iconMap: Record<string, React.ReactNode> = {

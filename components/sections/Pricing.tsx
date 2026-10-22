@@ -18,7 +18,7 @@ interface PricingProps {
 }
 
 const Pricing: React.FC<PricingProps> = ({ className = '' }) => {
-  const pricing = (siteData.sections?.Pricing?.variants?.FitnessPricing1 || siteData.home.pricing) as any;
+  const pricing = (siteData.pricing || siteData.home.pricing) as any;
   const { plans } = pricing;
 
 

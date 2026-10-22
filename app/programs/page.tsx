@@ -5,7 +5,7 @@ import Programs from '../../components/sections/Programs';
 import siteData from '@/data/siteData';
 
 export default function ProgramsPage() {
-  const heroVariant = siteData.sections?.Hero?.variants?.FitnessProgramsHero1;
+  const heroVariant = siteData.heroes.programs;
   const title = heroVariant?.title || "Our Programs";
 
   return (

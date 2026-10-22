@@ -33,7 +33,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ id: s
     notFound();
   }
 
-  const heroVariant = siteData.sections?.Hero?.variants?.FitnessBlogDetailHero1;
+  const heroVariant = siteData.heroes.blogDetail;
   const bannerTitle = heroVariant?.title || "Blog Detail";
   const displayedRecentPosts = blogDetailVariant?.recentPosts && blogDetailVariant.recentPosts.length > 0 
     ? blogDetailVariant.recentPosts 
