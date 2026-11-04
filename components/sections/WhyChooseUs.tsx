@@ -56,7 +56,7 @@ const WhyChooseUs = () => {
           </div>
 
           {/* Main Heading */}
-          <h2 className="font-heading text-3xl md:text-4xl lg:text-[40px] font-extrabold text-white leading-tight mb-5">
+          <h2 className="font-(family-name:--font-heading) text-3xl md:text-4xl lg:text-[40px] font-extrabold text-white leading-tight mb-5">
             {whyChooseUs.heading1} <br />
             <span className="text-[#ea580c]">{whyChooseUs.heading2}</span>
           </h2>

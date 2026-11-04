@@ -26,7 +26,7 @@ const CTA = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: sectionRef.current,
-        start: 'top 80%', 
+        start: 'top 88%', 
         toggleActions: 'play none none none',
       },
       defaults: { ease: 'power3.out' }
@@ -35,12 +35,12 @@ const CTA = () => {
     // 1. Subtle zoom-out effect for the background image
     tl.fromTo('.gsap-bg-image',
       { scale: 1.1 },
-      { scale: 1, duration: 1.5, ease: 'power2.out' }
+      { scale: 1, duration: 0.8, ease: 'power2.out' }
     )
     // 2. Text and Button content stagger slide up
     .fromTo('.gsap-cta-item',
       { y: 40, opacity: 0 },
-      { y: 0, opacity: 1, duration: 0.7, stagger: 0.15 },
+      { y: 0, opacity: 1, duration: 0.45, stagger: 0.08 },
       "-=1.2" 
     );
   }, { scope: sectionRef });
@@ -54,15 +54,12 @@ const CTA = () => {
           alt={cta.imageAlt}
           fill
           sizes="100vw"
-          className="gsap-bg-image object-cover object-[75%_center] md:object-[85%_center] opacity-100 origin-center"
-          style={{
-            imageRendering: '-webkit-optimize-contrast',
-            filter: 'contrast(1.08) saturate(1.05) brightness(1.02)'
-          }}
+          className="gsap-bg-image object-cover object-[75%_center] md:object-[85%_center] opacity-100 origin-center contrast-[1.08] saturate-[1.05] brightness-[1.02]"
+          
         />
       </div>
       
-      {/* Gradient Overlay to seamlessly blend image from left to right */}
+      {/* Gradient overlay */}
       <div className="absolute inset-0 hidden md:block bg-gradient-to-r from-[#111111] from-10% via-[#111111]/80 via-40% to-transparent to-70% z-0 pointer-events-none"></div>
       {/* Mobile overlay for text readability */}
       <div className="absolute inset-0 md:hidden bg-gradient-to-r from-[#111111]/95 via-[#111111]/80 to-[#111111]/50 z-0 pointer-events-none"></div>
@@ -81,7 +78,7 @@ const CTA = () => {
           </div>
 
           {/* Headline */}
-          <h2 className="gsap-cta-item font-heading text-3xl md:text-4xl lg:text-[40px] font-extrabold leading-tight mb-3 sm:mb-4 text-white">
+          <h2 className="gsap-cta-item font-(family-name:--font-heading) text-3xl md:text-4xl lg:text-[40px] font-extrabold leading-tight mb-3 sm:mb-4 text-white">
             {cta.heading1} <br className="hidden sm:block" />
             <span className="text-[#f95d22]">{cta.heading2}</span>
           </h2>

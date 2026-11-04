@@ -21,7 +21,7 @@ export default function TeamPage() {
   const pageTitle = heroVariant?.title || "Our Team";
 
   return (
-    <div className="w-full flex flex-col min-h-screen bg-white font-sans">
+    <div className="w-full flex flex-col min-h-screen bg-white font-(family-name:--font-body)">
       <PageHeader title={pageTitle} breadcrumb="Our Team" />
       
       <section className="w-full py-10 sm:py-12 md:py-14 lg:py-16 bg-white">
@@ -31,7 +31,7 @@ export default function TeamPage() {
             <span className="text-[#ea580c] font-bold text-[14px] tracking-[0.1em] uppercase flex items-center justify-center gap-2 mb-2">
               <span className="w-8 h-[2px] bg-[#ea580c]"></span> {teamSection.badge} <span className="w-8 h-[2px] bg-[#ea580c]"></span>
             </span>
-            <h2 className="font-heading text-3xl md:text-4xl lg:text-[40px] font-extrabold text-[#1a1a1a] leading-tight mb-2">
+            <h2 className="font-(family-name:--font-heading) text-3xl md:text-4xl lg:text-[40px] font-extrabold text-[#1a1a1a] leading-tight mb-2">
               {teamSection.titleStart}<span className="text-[#ea580c]">{teamSection.titleHighlight}</span>
             </h2>
             <p className="text-gray-500 text-[15px] md:text-[15.5px] leading-relaxed max-w-2xl mx-auto font-normal">
@@ -65,7 +65,7 @@ export default function TeamPage() {
 
                 {/* Info */}
                 <Link href={`/team/${trainer.id}`} className="block">
-                  <h3 className="font-heading text-xl font-bold text-gray-900 mb-1 group-hover:text-[#ea580c] transition-colors duration-300 text-center">
+                  <h3 className="font-(family-name:--font-heading) text-xl font-bold text-gray-900 mb-1 group-hover:text-[#ea580c] transition-colors duration-300 text-center">
                     {trainer.name}
                   </h3>
                 </Link>

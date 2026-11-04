@@ -45,17 +45,17 @@ const Programs: React.FC<ProgramsProps> = ({ className = '' }) => {
   const touchStartX = useRef<number | null>(null);
   const touchDeltaX = useRef<number>(0);
 
-  // Append clone cards to allow smooth seamless infinite forward loop
+  // Clone cards
   const canLoop = cardsCount > cardsPerView;
   const slides = canLoop
     ? [...originalCards, ...originalCards.slice(0, cardsPerView)]
     : originalCards;
 
-  // --- Compute cardsPerView & card pixel width on mount & resize ---
+  // Compute card width
   const compute = useCallback(() => {
     if (typeof window === "undefined") return;
     const w = window.innerWidth;
-    // Show 4 cards by default on desktop/laptop (>= 960px or 1024px screens)
+    // Desktop: 4 cards
     const cpv = w < 640 ? 1 : w < 960 ? 2 : 4;
     setCardsPerView(cpv);
     if (containerRef.current) {
@@ -111,7 +111,7 @@ const Programs: React.FC<ProgramsProps> = ({ className = '' }) => {
     setActiveIndex(idx);
   };
 
-  // Seamless snap back when reaching cloned slides at end
+  // Loop reset
   const handleTransitionEnd = (e: React.TransitionEvent<HTMLDivElement>) => {
     if (e.target !== e.currentTarget) return;
     if (activeIndex >= cardsCount) {
@@ -158,7 +158,7 @@ const Programs: React.FC<ProgramsProps> = ({ className = '' }) => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: sectionRef.current,
-        start: 'top 75%',
+        start: 'top 88%',
         toggleActions: 'play none none none',
       },
       defaults: { ease: 'power3.out' }
@@ -166,16 +166,16 @@ const Programs: React.FC<ProgramsProps> = ({ className = '' }) => {
 
     tl.fromTo('.gsap-header-item',
       { y: 30, opacity: 0 },
-      { y: 0, opacity: 1, duration: 0.6, stagger: 0.1 }
+      { y: 0, opacity: 1, duration: 0.4, stagger: 0.06 }
     )
     .fromTo('.gsap-carousel-wrapper',
       { y: 40, opacity: 0 },
-      { y: 0, opacity: 1, duration: 0.8 },
+      { y: 0, opacity: 1, duration: 0.45 },
       "-=0.4"
     )
     .fromTo('.gsap-bottom-nav',
       { y: 20, opacity: 0 },
-      { y: 0, opacity: 1, duration: 0.5 },
+      { y: 0, opacity: 1, duration: 0.35 },
       "-=0.6"
     );
   }, { scope: sectionRef });
@@ -218,7 +218,7 @@ const Programs: React.FC<ProgramsProps> = ({ className = '' }) => {
           </div>
 
           {/* Heading */}
-          <h2 className="gsap-header-item font-heading text-3xl md:text-4xl lg:text-[40px] font-extrabold text-white leading-tight mb-2 sm:mb-3 text-center">
+          <h2 className="gsap-header-item font-(family-name:--font-heading) text-3xl md:text-4xl lg:text-[40px] font-extrabold text-white leading-tight mb-2 sm:mb-3 text-center">
             {programs.heading1} <span className="text-[#ea580c]">{programs.heading2}</span>
           </h2>
 
@@ -293,7 +293,7 @@ const Programs: React.FC<ProgramsProps> = ({ className = '' }) => {
                         {iconMap[card.icon]}
                       </div>
 
-                      <h3 className="font-heading text-lg sm:text-xl font-bold text-white mb-2 group-hover:text-[#ea580c] transition-colors line-clamp-1">
+                      <h3 className="font-(family-name:--font-heading) text-lg sm:text-xl font-bold text-white mb-2 group-hover:text-[#ea580c] transition-colors line-clamp-1">
                         {card.title}
                       </h3>
 

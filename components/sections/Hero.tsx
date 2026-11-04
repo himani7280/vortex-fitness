@@ -16,12 +16,12 @@ const bannerSlides = heroData.bannerSlides && heroData.bannerSlides.length > 0
     ];
 
 const SLIDE_DURATION = 4500; // 4.5 seconds per slide
-const TRANSITION_DURATION = 750; // 750ms silky smooth glide
+const TRANSITION_DURATION = 500; // 750ms silky smooth glide
 
 const Hero = () => {
   const totalSlides = bannerSlides.length;
 
-  // Clone last slide at beginning and first slide at end for seamless infinite looping
+  // Slide clones
   const extendedSlides = useMemo(() => {
     if (totalSlides <= 1) return bannerSlides;
     return [
@@ -43,7 +43,7 @@ const Hero = () => {
   const touchStartXRef = useRef<number | null>(null);
   const touchStartYRef = useRef<number | null>(null);
 
-  // Calculate actual active slide index (0 to totalSlides - 1)
+  // Active index
   const realActiveIndex = totalSlides <= 1
     ? 0
     : currentIndex === 0
@@ -89,12 +89,12 @@ const Hero = () => {
     triggerSlide(targetIndex);
   }, [currentIndex, totalSlides, triggerSlide, resetAutoPlay]);
 
-  // Handle transition end for seamless infinite loop reset
+  // Loop reset
   const handleTransitionEnd = (e: React.TransitionEvent<HTMLDivElement>) => {
     if (e.target !== trackRef.current || totalSlides <= 1) return;
 
     if (currentIndex === extendedSlides.length - 1) {
-      // Reached the end clone (clone of slide 0) -> silently jump to real slide 0 (index 1)
+      // Reset to start
       setIsTransitionEnabled(false);
       setCurrentIndex(1);
       requestAnimationFrame(() => {
@@ -104,7 +104,7 @@ const Hero = () => {
         });
       });
     } else if (currentIndex === 0) {
-      // Reached the start clone (clone of last slide) -> silently jump to real last slide
+      // Reset to end
       setIsTransitionEnabled(false);
       setCurrentIndex(totalSlides);
       requestAnimationFrame(() => {
@@ -129,7 +129,7 @@ const Hero = () => {
     return () => clearInterval(interval);
   }, [isPaused, totalSlides, nextSlide, timerKey]);
 
-  // Pause when browser tab is inactive to avoid background animation desync
+  // Pause on blur
   useEffect(() => {
     const handleVisibility = () => {
       setIsPaused(document.hidden);
@@ -178,6 +178,21 @@ const Hero = () => {
     }
   };
 
+  // Progress bar
+  const progressRef = useCallback(
+    (el: HTMLDivElement | null) => {
+      if (!el) return;
+      el.getAnimations().forEach((animation) => animation.cancel());
+      if (isPaused) return;
+      el.animate([{ transform: 'scaleX(0)' }, { transform: 'scaleX(1)' }], {
+        duration: SLIDE_DURATION,
+        easing: 'linear',
+        fill: 'forwards',
+      });
+    },
+    [isPaused],
+  );
+
   return (
     <section 
       aria-label="Main Banner Carousel"
@@ -189,7 +204,7 @@ const Hero = () => {
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
     >
-      {/* ── Carousel Track (Smooth infinite horizontal sliding) ── */}
+      {/* Carousel track */}
       <div 
         ref={trackRef}
         onTransitionEnd={handleTransitionEnd}
@@ -227,7 +242,7 @@ const Hero = () => {
         })}
       </div>
 
-      {/* ── Navigation Controls: Prev Button ── */}
+      {/* Prev button */}
       <button
         onClick={prevSlide}
         aria-label="Previous banner"
@@ -236,7 +251,7 @@ const Hero = () => {
         <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6" />
       </button>
 
-      {/* ── Navigation Controls: Next Button ── */}
+      {/* Next button */}
       <button
         onClick={nextSlide}
         aria-label="Next banner"
@@ -245,7 +260,7 @@ const Hero = () => {
         <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6" />
       </button>
 
-      {/* ── Slide Indicators / Dots ── */}
+      {/* Slide dots */}
       <div className="absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 z-30 flex items-center gap-2.5 bg-black/50 backdrop-blur-md py-1.5 px-3.5 rounded-full border border-white/15 shadow-lg">
         {bannerSlides.map((slide: any, index: number) => {
           const isActive = index === realActiveIndex;
@@ -264,17 +279,12 @@ const Hero = () => {
         })}
       </div>
 
-      {/* ── Bottom Auto-Play Progress Bar ── */}
+      {/* Progress bar */}
       <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-white/15 z-30 pointer-events-none overflow-hidden">
-        <div 
+        <div
           key={`${realActiveIndex}-${timerKey}`}
-          className="h-full bg-gradient-to-r from-[#ea580c] to-[#f97316] shadow-[0_0_10px_#ea580c] origin-left"
-          style={{
-            transformOrigin: 'left',
-            animation: isPaused ? 'none' : `heroProgressBar ${SLIDE_DURATION}ms linear forwards`,
-            animationPlayState: isPaused ? 'paused' : 'running',
-            width: '100%',
-          }}
+          ref={progressRef}
+          className="h-full w-full origin-left bg-gradient-to-r from-[#ea580c] to-[#f97316] shadow-[0_0_10px_#ea580c]"
         />
       </div>
     </section>

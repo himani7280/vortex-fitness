@@ -26,14 +26,14 @@ const Blog = ({ isCarousel = false, limit, title, subtitle }: BlogProps) => {
   const [cardWidthPx, setCardWidthPx] = useState(0);
   const [animate, setAnimate] = useState(true);
 
-  // Loop only when there are more cards than visible slots
+  // Loop check
   const canLoop = totalCards > cardsPerView;
-  // Clone first few cards at the end so the slider always moves forward
+  // Clone cards
   const slides = canLoop
     ? [...displayPosts, ...displayPosts.slice(0, cardsPerView)]
     : displayPosts;
 
-  // ── Update cardsPerView & card pixel width on resize ─────────────
+  // Responsive width
   const compute = useCallback(() => {
     const w = window.innerWidth;
     const cpv = w < 640 ? 1 : w < 1024 ? 2 : 3;
@@ -56,7 +56,7 @@ const Blog = ({ isCarousel = false, limit, title, subtitle }: BlogProps) => {
     setActiveIndex(0);
   }, [cardsPerView, totalCards]);
 
-  // Re-enable animation on the next frame after a silent jump
+  // Reset animation
   useEffect(() => {
     if (animate) return;
     const raf = requestAnimationFrame(() =>
@@ -65,7 +65,7 @@ const Blog = ({ isCarousel = false, limit, title, subtitle }: BlogProps) => {
     return () => cancelAnimationFrame(raf);
   }, [animate]);
 
-  // ── Navigation ───────────────────────────────────────────────────
+  // Navigation
   const handleNext = () => {
     if (!canLoop) return;
     setActiveIndex((cur) => Math.min(cur + 1, totalCards));
@@ -74,7 +74,7 @@ const Blog = ({ isCarousel = false, limit, title, subtitle }: BlogProps) => {
   const handlePrev = () => {
     if (!canLoop) return;
     if (activeIndex === 0) {
-      // Jump silently to the cloned end, then slide back one card
+      // Prev slide
       setAnimate(false);
       setActiveIndex(totalCards);
       requestAnimationFrame(() =>
@@ -90,7 +90,7 @@ const Blog = ({ isCarousel = false, limit, title, subtitle }: BlogProps) => {
 
   const goTo = (idx: number) => setActiveIndex(idx);
 
-  // When we reach the cloned slides, snap back to the real first slide
+  // Loop reset
   const handleTransitionEnd = (e: React.TransitionEvent<HTMLDivElement>) => {
     if (e.target !== e.currentTarget) return; // ignore card hover transitions
     if (activeIndex >= totalCards) {
@@ -99,7 +99,7 @@ const Blog = ({ isCarousel = false, limit, title, subtitle }: BlogProps) => {
     }
   };
 
-  // ── Auto-play (always forward) ───────────────────────────────────
+  // Auto-play
   useEffect(() => {
     if (!isCarousel || !canLoop) return;
     const id = setInterval(() => {
@@ -119,7 +119,7 @@ const Blog = ({ isCarousel = false, limit, title, subtitle }: BlogProps) => {
     </>
   );
 
-  /* ── Blog Card ───────────────────────────────────────────────── */
+  /* Blog card */
   const BlogCard = ({ post }: { post: (typeof blogPosts)[0] }) => (
     <div className="group flex flex-col bg-white rounded-[16px] shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-gray-100 h-full hover:border-orange-300 hover:shadow-[0_20px_45px_-12px_rgba(234,88,12,0.22)] hover:-translate-y-2.5 transition-all duration-500 ease-out overflow-hidden">
       {/* Image */}
@@ -142,7 +142,7 @@ const Blog = ({ isCarousel = false, limit, title, subtitle }: BlogProps) => {
         <span className="text-[#ea580c] text-[11px] font-bold tracking-widest uppercase mb-1.5">
           {post.category}
         </span>
-        <h3 className="font-heading text-[16px] sm:text-[17px] font-black text-[#1a1a1a] leading-snug mb-2 line-clamp-2 group-hover:text-[#ea580c] transition-colors duration-300">
+        <h3 className="font-(family-name:--font-heading) text-[16px] sm:text-[17px] font-black text-[#1a1a1a] leading-snug mb-2 line-clamp-2 group-hover:text-[#ea580c] transition-colors duration-300">
           {post.title}
         </h3>
         <p className="text-gray-500 text-[13px] leading-relaxed mb-4 flex-grow line-clamp-3">
@@ -162,10 +162,10 @@ const Blog = ({ isCarousel = false, limit, title, subtitle }: BlogProps) => {
   );
 
   return (
-    <section className="w-full bg-white py-10 sm:py-12 md:py-14 lg:py-16 font-sans">
+    <section className="w-full bg-white py-10 sm:py-12 md:py-14 lg:py-16 font-(family-name:--font-body)">
       <div className="max-w-[1400px] mx-auto px-4 md:px-6 lg:px-6">
 
-        {/* ── Section Header ── */}
+        {/* Header */}
         <div className="flex flex-col items-center text-center mb-6 sm:mb-7">
           <div className="flex items-center gap-2 mb-1">
             <div className="h-[2px] w-6 sm:w-10 bg-[#ea580c]" />
@@ -176,7 +176,7 @@ const Blog = ({ isCarousel = false, limit, title, subtitle }: BlogProps) => {
             <Dumbbell className="w-4 h-4 sm:w-5 sm:h-5 text-[#ea580c]" />
             <div className="h-[2px] w-6 sm:w-10 bg-[#ea580c]" />
           </div>
-          <h2 className="font-heading text-3xl md:text-4xl lg:text-[40px] font-extrabold text-black leading-tight mb-2 text-center">
+          <h2 className="font-(family-name:--font-heading) text-3xl md:text-4xl lg:text-[40px] font-extrabold text-black leading-tight mb-2 text-center">
             {title ?? defaultTitle}
           </h2>
           <p className="text-gray-500 text-[15px] md:text-[15.5px] leading-relaxed max-w-2xl mx-auto text-center font-normal">
@@ -184,7 +184,7 @@ const Blog = ({ isCarousel = false, limit, title, subtitle }: BlogProps) => {
           </p>
         </div>
 
-        {/* ── Carousel Mode ── */}
+        {/* Carousel */}
         {isCarousel ? (
           <div>
             {/* Slider track */}
@@ -251,7 +251,7 @@ const Blog = ({ isCarousel = false, limit, title, subtitle }: BlogProps) => {
             </div>
           </div>
         ) : (
-          /* ── Grid Mode ── */
+          /* Grid */
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {displayPosts.map((post, idx) => (
               <BlogCard key={`${post.id}-${idx}`} post={post} />

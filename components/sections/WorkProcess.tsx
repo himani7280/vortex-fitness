@@ -45,7 +45,7 @@ const WorkProcess: React.FC<WorkProcessProps> = ({ className = '' }) => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: sectionRef.current,
-        start: 'top 75%', 
+        start: 'top 88%', 
         toggleActions: 'play none none none',
       },
       defaults: { ease: 'power3.out' }
@@ -54,18 +54,18 @@ const WorkProcess: React.FC<WorkProcessProps> = ({ className = '' }) => {
     // 1. Header elements smoothly slide up
     tl.fromTo('.gsap-header-item',
       { y: 30, opacity: 0 },
-      { y: 0, opacity: 1, duration: 0.6, stagger: 0.1 }
+      { y: 0, opacity: 1, duration: 0.4, stagger: 0.05 }
     )
     // 2. Steps scale and pop up one by one
     .fromTo('.gsap-step',
       { y: 40, opacity: 0, scale: 0.95 },
-      { y: 0, opacity: 1, scale: 1, duration: 0.6, stagger: 0.15 },
+      { y: 0, opacity: 1, scale: 1, duration: 0.4, stagger: 0.08 },
       "-=0.4" 
     )
     // 3. Connectors (Arrows/Lines) fade in
     .fromTo('.gsap-connector',
       { opacity: 0, scale: 0.8 },
-      { opacity: 1, scale: 1, duration: 0.4, stagger: 0.1 },
+      { opacity: 1, scale: 1, duration: 0.4, stagger: 0.05 },
       "-=0.5"
     );
   }, { scope: sectionRef });
@@ -95,7 +95,7 @@ const WorkProcess: React.FC<WorkProcessProps> = ({ className = '' }) => {
           </div>
 
           {/* Main Heading */}
-          <h2 className="gsap-header-item font-heading text-3xl md:text-4xl lg:text-[40px] font-extrabold text-black leading-tight mb-2 text-center">
+          <h2 className="gsap-header-item font-(family-name:--font-heading) text-3xl md:text-4xl lg:text-[40px] font-extrabold text-black leading-tight mb-2 text-center">
             {process.heading1} <span className="text-[#ea580c]">{process.heading2}</span>
           </h2>
 
@@ -151,7 +151,7 @@ const WorkProcess: React.FC<WorkProcessProps> = ({ className = '' }) => {
                     {renderIcon(step.icon)}
                   </div>
 
-                  {/* Desktop Step Flow Connector (Arrows 1->2, 2->3, 3->4) */}
+                  {/* Desktop connector */}
                   {index < process.steps.length - 1 && (
                     <div 
                       className="gsap-connector hidden lg:block absolute top-1/2 -translate-y-1/2 left-[calc(100%+12px)] w-[36px] xl:w-[60px] 2xl:w-[76px] z-0 pointer-events-none"
@@ -169,7 +169,7 @@ const WorkProcess: React.FC<WorkProcessProps> = ({ className = '' }) => {
                     </div>
                   )}
 
-                  {/* Tablet Step Flow Connector (Pairs 1->2 and 3->4) */}
+                  {/* Tablet connector */}
                   {(index === 0 || index === 2) && (
                     <div 
                       className="gsap-connector hidden sm:block lg:hidden absolute top-1/2 -translate-y-1/2 left-[calc(100%+10px)] w-[40px] md:w-[55px] z-0 pointer-events-none"
@@ -189,7 +189,7 @@ const WorkProcess: React.FC<WorkProcessProps> = ({ className = '' }) => {
                 </div>
 
                 {/* Text Content */}
-                <h3 className="font-heading text-lg sm:text-xl lg:text-lg xl:text-xl 2xl:text-2xl font-bold text-black mb-1.5 sm:mb-2 group-hover:text-[#ea580c] transition-colors duration-300">
+                <h3 className="font-(family-name:--font-heading) text-lg sm:text-xl lg:text-lg xl:text-xl 2xl:text-2xl font-bold text-black mb-1.5 sm:mb-2 group-hover:text-[#ea580c] transition-colors duration-300">
                   {step.title}
                 </h3>
                 
@@ -198,7 +198,7 @@ const WorkProcess: React.FC<WorkProcessProps> = ({ className = '' }) => {
                 </p>
               </div>
 
-              {/* Mobile Step Flow Connector (Vertical line between steps) */}
+              {/* Mobile connector */}
               {index < process.steps.length - 1 && (
                 <div className="gsap-connector flex sm:hidden flex-col items-center justify-center my-1 text-[#ea580c]/50" aria-hidden="true">
                   <div className="w-0.5 h-6 border-l-2 border-dashed border-[#ea580c]/40"></div>

@@ -17,7 +17,7 @@ export default function EnquirePage() {
   };
 
   return (
-    <div className="w-full flex flex-col min-h-screen bg-white font-sans">
+    <div className="w-full flex flex-col min-h-screen bg-white font-(family-name:--font-body)">
       <PageHeader title={enquire.badge === 'GET IN TOUCH' ? 'Enquire Now' : enquire.badge} breadcrumb="Enquire Now" />
 
       <section className="w-full py-10 sm:py-12 md:py-14 lg:py-16 bg-[#f8f9fa]">
@@ -30,7 +30,7 @@ export default function EnquirePage() {
                 <span className="text-[#ea580c] font-bold text-[13px] tracking-[0.1em] uppercase flex items-center gap-2 mb-2">
                   {enquire.badge} <span className="w-6 h-[2px] bg-[#ea580c]"></span>
                 </span>
-                <h2 className="font-heading text-3xl md:text-4xl lg:text-[40px] font-extrabold text-[#1a1a1a] leading-tight">
+                <h2 className="font-(family-name:--font-heading) text-3xl md:text-4xl lg:text-[40px] font-extrabold text-[#1a1a1a] leading-tight">
                   {enquire.titleStart} <br />
                   <span className="text-[#ea580c]">{enquire.titleHighlight}</span>
                 </h2>
@@ -63,11 +63,8 @@ export default function EnquirePage() {
                 className="object-cover transition-transform duration-700 ease-out group-hover/img:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-              <div 
-                className="absolute bottom-0 left-0 right-0 p-6 pt-10 bg-black/95"
-                style={{ clipPath: 'polygon(0 20%, 100% 0, 100% 100%, 0 100%)' }}
-              >
-                <h3 className="text-white font-heading font-black text-[20px] leading-[1.2]">
+              <div className="absolute bottom-0 left-0 right-0 p-6 pt-10 bg-black/95 [clip-path:polygon(0_20%,100%_0,100%_100%,0_100%)]">
+                <h3 className="text-white font-(family-name:--font-heading) font-black text-[20px] leading-[1.2]">
                   {enquire.imageCallout}
                 </h3>
               </div>
@@ -76,7 +73,7 @@ export default function EnquirePage() {
             {/* Right Column - Form */}
             <div className="w-full lg:w-[40%] py-6 px-6 lg:py-8 lg:px-8 bg-white shadow-2xl rounded-[10px] flex flex-col justify-center mt-6 lg:mt-0 lg:ml-3">
               <div className="mb-6">
-                <h2 className="font-heading text-3xl md:text-4xl lg:text-[40px] font-extrabold text-[#1a1a1a] leading-tight mb-2">
+                <h2 className="font-(family-name:--font-heading) text-3xl md:text-4xl lg:text-[40px] font-extrabold text-[#1a1a1a] leading-tight mb-2">
                   {form.titleStart || 'Enquiry'} <span className="text-[#ea580c]">{form.titleHighlight || 'Form'}</span>
                 </h2>
                 <div className="w-10 h-[3px] bg-[#ea580c]"></div>

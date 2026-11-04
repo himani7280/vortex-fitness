@@ -30,7 +30,7 @@ const About: React.FC<AboutProps> = ({ className = '' }) => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: containerRef.current,
-        start: 'top 75%',
+        start: 'top 88%',
         toggleActions: 'play none none none',
       },
       defaults: { ease: 'power3.out' }
@@ -39,32 +39,32 @@ const About: React.FC<AboutProps> = ({ className = '' }) => {
     // 1. Left Side Images & Backgrounds (Layered effect)
     tl.fromTo('.gsap-bg-orange',
       { scale: 0.8, opacity: 0 },
-      { scale: 1, opacity: 1, duration: 0.8 }
+      { scale: 1, opacity: 1, duration: 0.45 }
     )
       .fromTo('.gsap-bg-cream',
         { scale: 0.8, opacity: 0 },
-        { scale: 1, opacity: 1, duration: 0.8 },
+        { scale: 1, opacity: 1, duration: 0.45 },
         '-=0.6'
       )
       .fromTo('.gsap-dots',
         { opacity: 0 },
-        { opacity: 1, duration: 1 },
+        { opacity: 1, duration: 0.45 },
         '-=0.5'
       )
       .fromTo('.gsap-img-main',
         { y: 50, opacity: 0 },
-        { y: 0, opacity: 1, duration: 1 },
+        { y: 0, opacity: 1, duration: 0.45 },
         '-=0.7'
       )
       .fromTo('.gsap-img-small',
         { x: 30, opacity: 0 },
-        { x: 0, opacity: 1, duration: 0.8, ease: 'back.out(1.2)' },
+        { x: 0, opacity: 1, duration: 0.45, ease: 'back.out(1.2)' },
         '-=0.6'
       )
       // 2. Right Side Content (Staggered moving up)
       .fromTo('.gsap-text-content',
         { y: 30, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.7, stagger: 0.15 },
+        { y: 0, opacity: 1, duration: 0.4, stagger: 0.05 },
         '-=0.8'
       );
 
@@ -154,7 +154,7 @@ const About: React.FC<AboutProps> = ({ className = '' }) => {
           </div>
 
           {/* Main Heading */}
-          <h2 className="gsap-text-content font-heading text-3xl md:text-4xl lg:text-[40px] font-extrabold text-black leading-tight mb-3 sm:mb-3.5">
+          <h2 className="gsap-text-content font-(family-name:--font-heading) text-3xl md:text-4xl lg:text-[40px] font-extrabold text-black leading-tight mb-3 sm:mb-3.5">
             {about.heading1}{' '}
             <span className="text-[#f05a22]">{about.heading2}</span>
           </h2>

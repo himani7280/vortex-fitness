@@ -41,7 +41,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ id: s
   const recentArticlesTitle = blogDetailVariant?.recentPostsTitle || `${siteData.home.recentArticles.heading1}${siteData.home.recentArticles.heading2}` || "Recent Articles";
 
   return (
-    <div className="w-full flex flex-col min-h-screen bg-white font-sans">
+    <div className="w-full flex flex-col min-h-screen bg-white font-(family-name:--font-body)">
       <PageHeader title={bannerTitle} breadcrumb={`Blogs / ${post.title}`} />
 
       <section className="w-full py-10 sm:py-12 md:py-14 lg:py-16">
@@ -62,7 +62,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ id: s
                 />
               </div>
 
-              <h1 className="font-heading text-3xl md:text-4xl lg:text-[40px] font-extrabold text-[#1a1a1a] leading-tight mb-5 tracking-tight">
+              <h1 className="font-(family-name:--font-heading) text-3xl md:text-4xl lg:text-[40px] font-extrabold text-[#1a1a1a] leading-tight mb-5 tracking-tight">
                 {renderTitle(post.title)}
               </h1>
 

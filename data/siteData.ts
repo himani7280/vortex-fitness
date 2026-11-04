@@ -1,8 +1,6 @@
 import siteDataJson from './siteData.json';
 
-/* ==========================================================================
-   TYPES & INTERFACES FOR ALL COMPONENTS (STRICT TYPESCRIPT)
-   ========================================================================== */
+/* Types */
 
 export interface SocialLinks {
   facebook: string;
@@ -262,6 +260,13 @@ export interface ThankYouData {
 }
 
 export const Fitness = siteDataJson.Fitness;
+export const googleFontsHref = (siteDataJson as any).googleFontsHref || "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap";
+export const fontVars = (siteDataJson as any).fontVars || { "--font-heading": '"Open Sans", sans-serif', "--font-body": '"Poppins", sans-serif' };
+export const fonts = (siteDataJson as any).fonts || Fitness.fonts;
+export const fontFamily = (siteDataJson as any).fontFamily || {
+  heading: `"${fonts.heading.family}", sans-serif`,
+  body: `"${fonts.body.family}", sans-serif`,
+};
 export const sections = Fitness.sections;
 export const templateComponents = Fitness.templateComponents;
 
@@ -277,7 +282,7 @@ export function getPageComponent<T = any>(page: string, key: string): T {
   return (sections as any)?.[key]?.variants?.[Object.keys((sections as any)?.[key]?.variants || {})[0]];
 }
 
-// Direct variant exports for standard template usage (matching investment pattern)
+// Variant exports
 export const heroVariant = sections.Hero.variants.FitnessHomeHero1;
 export const programsVariant = sections.Programs.variants.FitnessPrograms1;
 export const programsPageVariant = sections.ProgramsPage.variants.FitnessProgramsPage1;
@@ -424,6 +429,10 @@ export const siteData = {
   teamData,
   blogs: blogPosts,
   blogCategories: categories,
+  fonts,
+  fontFamily,
+  fontVars,
+  googleFontsHref,
 };
 
 export type SiteData = typeof siteData;

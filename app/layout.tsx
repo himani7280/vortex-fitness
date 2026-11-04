@@ -1,38 +1,33 @@
 import type { Metadata } from "next";
-import { Poppins, Open_Sans } from "next/font/google";
 import { Suspense } from "react";
 import "./globals.css";
-import Header from "../components/Header";
+import Topbar from "../components/Topbar";
+import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-
-const poppins = Poppins({
-  weight: ['300', '400', '500', '600', '700', '800', '900'],
-  subsets: ['latin'],
-  variable: '--font-poppins',
-  display: 'swap',
-});
-
-const openSans = Open_Sans({
-  weight: ['300', '400', '500', '600', '700', '800'],
-  subsets: ['latin'],
-  variable: '--font-open-sans',
-  display: 'swap',
-});
+import siteData from "@/data/siteData";
 
 export const metadata: Metadata = {
   title: "Vortex Fitness",
   description: "Your Fitness Journey, Step by Step",
 };
 
+// Font styles
+const bodyClass = [
+  "flex min-h-full flex-col bg-white text-[#171717] font-(family-name:--font-body) dark:bg-[#0a0a0a] dark:text-[#ededed]",
+  "[&_:where(h1,h2,h3,h4,h5,h6)]:font-(family-name:--font-heading)!",
+  "[:where(&)_:where(input,textarea,select)]:text-[#1a1a1a] [:where(&)_:where(input,textarea,select)]:font-(family-name:--font-body)",
+].join(" ");
+
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html
-      lang="en"
-      className={`${poppins.variable} ${openSans.variable} h-full antialiased`}
-    >
-      <body className="font-sans min-h-full flex flex-col font-['Poppins',sans-serif]">
-        <Suspense fallback={<div className="h-[56px] md:h-[90px] w-full bg-white shadow-sm" />}>
-          <Header />
+    <html lang="en" style={siteData.fontVars as React.CSSProperties} className="h-full antialiased">
+      <head>
+        <link rel="stylesheet" href={siteData.googleFontsHref} />
+      </head>
+      <body className={bodyClass}>
+        <Topbar />
+        <Suspense fallback={<div className="h-[56px] md:h-[60px] w-full bg-white shadow-sm" />}>
+          <Navbar />
         </Suspense>
         <main className="flex-grow">{children}</main>
         <Footer />

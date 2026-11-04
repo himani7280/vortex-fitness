@@ -105,7 +105,7 @@ const AboutUsDetails: React.FC<AboutUsDetailsProps> = ({ className = '' }) => {
           </div>
 
           {/* Main Heading */}
-          <h2 className="font-heading text-3xl md:text-4xl lg:text-[40px] font-extrabold text-black leading-tight mb-4 sm:mb-5">
+          <h2 className="font-(family-name:--font-heading) text-3xl md:text-4xl lg:text-[40px] font-extrabold text-black leading-tight mb-4 sm:mb-5">
             {heading1}{' '}
             <span className="text-[#f05a22]">{heading2}</span>
           </h2>

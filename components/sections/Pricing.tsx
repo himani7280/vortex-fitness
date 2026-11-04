@@ -30,7 +30,7 @@ const Pricing: React.FC<PricingProps> = ({ className = '' }) => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: sectionRef.current,
-        start: 'top 75%', 
+        start: 'top 88%', 
         toggleActions: 'play none none none',
       },
       defaults: { ease: 'power3.out' }
@@ -39,17 +39,17 @@ const Pricing: React.FC<PricingProps> = ({ className = '' }) => {
     // 1. Header animation
     tl.fromTo('.gsap-header-item',
       { y: 30, opacity: 0 },
-      { y: 0, opacity: 1, duration: 0.6, stagger: 0.1 }
+      { y: 0, opacity: 1, duration: 0.4, stagger: 0.06 }
     )
-    // 2. Cards animation with clearProps for Tailwind hover fix
+    // Cards animation
     .fromTo('.gsap-pricing-card',
       { y: 50, opacity: 0, scale: 0.95 },
       { 
         y: 0, 
         opacity: 1, 
         scale: 1, 
-        duration: 0.7, 
-        stagger: 0.15,
+        duration: 0.45, 
+        stagger: 0.08,
         clearProps: 'all' 
       },
       "-=0.4"
@@ -57,7 +57,7 @@ const Pricing: React.FC<PricingProps> = ({ className = '' }) => {
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} className={`w-full bg-[#0a0a0a] py-10 sm:py-12 md:py-14 lg:py-16 font-sans relative ${className}`}>
+    <section ref={sectionRef} className={`w-full bg-[#0a0a0a] py-10 sm:py-12 md:py-14 lg:py-16 font-(family-name:--font-body) relative ${className}`}>
       <div className="max-w-[1400px] mx-auto px-4 md:px-6 lg:px-6">
         
         {/* Section Header */}
@@ -70,7 +70,7 @@ const Pricing: React.FC<PricingProps> = ({ className = '' }) => {
             </span>
             <div className="h-[2px] w-12 bg-[#f05a22]"></div>
           </div>
-          <h2 className="gsap-header-item font-heading text-3xl md:text-4xl lg:text-[40px] font-extrabold text-white leading-tight mb-2 text-center">
+          <h2 className="gsap-header-item font-(family-name:--font-heading) text-3xl md:text-4xl lg:text-[40px] font-extrabold text-white leading-tight mb-2 text-center">
             {pricing.heading1}<span className="text-[#f05a22]">{pricing.heading2}</span>
           </h2>
           <p className="gsap-header-item text-gray-300 text-[15px] md:text-[15.5px] leading-relaxed max-w-2xl mx-auto text-center font-normal">

@@ -35,7 +35,7 @@ const Trainers: React.FC<TrainersProps> = ({ className = '' }) => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: sectionRef.current,
-        start: 'top 75%', 
+        start: 'top 88%', 
         toggleActions: 'play none none none',
       }
     });
@@ -43,24 +43,24 @@ const Trainers: React.FC<TrainersProps> = ({ className = '' }) => {
     // 1. Header items - normal smooth slide up
     tl.fromTo('.gsap-header-item',
       { y: 30, opacity: 0 },
-      { y: 0, opacity: 1, duration: 0.6, stagger: 0.1, ease: 'power3.out' }
+      { y: 0, opacity: 1, duration: 0.4, stagger: 0.05, ease: 'power3.out' }
     )
     // 2. Trainer Cards - Tilted & Scaled reveal
     .fromTo('.gsap-trainer-card',
       { y: 60, opacity: 0, rotation: 4, scale: 0.9 },
-      { y: 0, opacity: 1, rotation: 0, scale: 1, duration: 0.7, stagger: 0.15, ease: 'back.out(1.2)' },
+      { y: 0, opacity: 1, rotation: 0, scale: 1, duration: 0.45, stagger: 0.08, ease: 'back.out(1.2)' },
       "-=0.4"
     )
     // 3. Orange Decorative Box
     .fromTo('.gsap-decor-box',
       { scale: 0, opacity: 0, x: 20, y: 20 },
-      { scale: 1, opacity: 1, x: 0, y: 0, duration: 0.6, stagger: 0.15, ease: 'back.out(2)' },
+      { scale: 1, opacity: 1, x: 0, y: 0, duration: 0.6, stagger: 0.08, ease: 'back.out(2)' },
       "-=0.7"
     )
     // 4. Text Info (Name, Role, Line)
     .fromTo('.gsap-trainer-info',
       { y: 15, opacity: 0 },
-      { y: 0, opacity: 1, duration: 0.5, stagger: 0.1, ease: 'power2.out' },
+      { y: 0, opacity: 1, duration: 0.35, stagger: 0.05, ease: 'power2.out' },
       "-=0.6"
     )
     // 5. Social Icons
@@ -97,7 +97,7 @@ const Trainers: React.FC<TrainersProps> = ({ className = '' }) => {
           </div>
 
           {/* Heading */}
-          <h2 className="gsap-header-item font-heading text-3xl md:text-4xl lg:text-[40px] font-extrabold text-black leading-tight mb-2 text-center">
+          <h2 className="gsap-header-item font-(family-name:--font-heading) text-3xl md:text-4xl lg:text-[40px] font-extrabold text-black leading-tight mb-2 text-center">
             {trainers.heading1} <span className="text-[#ea580c]">{trainers.heading2}</span>
           </h2>
 
@@ -138,7 +138,7 @@ const Trainers: React.FC<TrainersProps> = ({ className = '' }) => {
 
               {/* Info with Link to Team Detail Page */}
               <Link href={`/team/${trainer.id}`} className="block">
-                <h3 className="gsap-trainer-info font-heading text-xl font-bold text-gray-900 mb-1 group-hover:text-[#ea580c] transition-colors duration-300 text-center cursor-pointer">
+                <h3 className="gsap-trainer-info font-(family-name:--font-heading) text-xl font-bold text-gray-900 mb-1 group-hover:text-[#ea580c] transition-colors duration-300 text-center cursor-pointer">
                   {trainer.name}
                 </h3>
               </Link>

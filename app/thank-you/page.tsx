@@ -16,26 +16,14 @@ export default function ThankYouPage() {
   }, []);
 
   return (
-    <div className="w-full flex flex-col bg-white font-sans">
+    <div className="w-full flex flex-col bg-white font-(family-name:--font-body)">
       <section className="w-full flex items-center justify-center py-10 sm:py-12 md:py-14 lg:py-16 bg-[#f8f9fa] relative overflow-hidden">
         {/* Subtle decorative background glow */}
-        <div
-          className="absolute -top-20 -right-20 w-96 h-96 rounded-full pointer-events-none"
-          style={{ background: "radial-gradient(circle, rgba(234,88,12,0.10) 0%, transparent 70%)" }}
-        />
-        <div
-          className="absolute -bottom-20 -left-20 w-80 h-80 rounded-full pointer-events-none"
-          style={{ background: "radial-gradient(circle, rgba(234,88,12,0.07) 0%, transparent 70%)" }}
-        />
+        <div className="absolute -top-20 -right-20 w-96 h-96 rounded-full pointer-events-none bg-[radial-gradient(circle,rgba(234,88,12,0.10)_0%,transparent_70%)]" />
+        <div className="absolute -bottom-20 -left-20 w-80 h-80 rounded-full pointer-events-none bg-[radial-gradient(circle,rgba(234,88,12,0.07)_0%,transparent_70%)]" />
 
-        <div
-          className="max-w-[620px] mx-auto px-4 md:px-8 text-center"
-          style={{
-            opacity: visible ? 1 : 0,
-            transform: visible ? "translateY(0)" : "translateY(24px)",
-            transition: "opacity 0.6s ease, transform 0.6s ease",
-          }}
-        >
+        <div className={`max-w-[620px] mx-auto px-4 md:px-8 text-center transition-all duration-700 ease-out ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
+
           {/* Icon */}
           <div className="flex justify-center mb-4 sm:mb-5">
             <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-br from-[#ea580c] to-[#ff8c42] flex items-center justify-center shadow-[0_8px_32px_rgba(234,88,12,0.25)]">
@@ -49,7 +37,7 @@ export default function ThankYouPage() {
               {thankYou.badge}
               <span className="inline-block w-6 h-[2px] bg-[#ea580c]" />
             </span>
-            <h1 className="font-heading font-extrabold leading-tight text-[#1a1a1a] text-3xl md:text-4xl lg:text-[40px]">
+            <h1 className="font-(family-name:--font-heading) font-extrabold leading-tight text-[#1a1a1a] text-3xl md:text-4xl lg:text-[40px]">
               {thankYou.titleStart} <span className="text-[#ea580c]">{thankYou.titleHighlight}</span>
             </h1>
           </div>

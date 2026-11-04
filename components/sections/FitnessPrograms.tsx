@@ -33,7 +33,7 @@ const FitnessPrograms = () => {
           </div>
 
           {/* Heading */}
-          <h2 className="font-heading text-3xl md:text-4xl lg:text-[40px] font-extrabold text-black leading-tight mb-3 sm:mb-4">
+          <h2 className="font-(family-name:--font-heading) text-3xl md:text-4xl lg:text-[40px] font-extrabold text-black leading-tight mb-3 sm:mb-4">
             {fitnessPrograms.titleStart || fitnessPrograms.headingLine1 || 'Fitness Programs'}{' '}
             <br className="hidden sm:block" />
             {fitnessPrograms.titlePrefix || fitnessPrograms.headingLine2Prefix || 'For a '}
@@ -46,7 +46,7 @@ const FitnessPrograms = () => {
             {fitnessPrograms.description}
           </p>
 
-          {/* Features Grid (2 Columns, perfectly balanced height & symmetrical text flow) */}
+          {/* Features grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3 xl:gap-3.5 w-full">
             {features.map((feature: any, idx: number) => (
               <div 
@@ -69,7 +69,7 @@ const FitnessPrograms = () => {
           </div>
         </div>
 
-        {/* Right Side: Slanted Composition Images (aligned flush to right on desktop, centered on mobile/tablet) */}
+        {/* Images */}
         <div className="w-full flex justify-center lg:justify-end items-center mt-6 lg:mt-0">
           <div className="relative w-full max-w-[310px] sm:max-w-[420px] md:max-w-[460px] lg:max-w-[480px] xl:max-w-[530px] 2xl:max-w-[560px] h-[300px] sm:h-[380px] md:h-[420px] lg:h-[470px] xl:h-[500px] 2xl:h-[520px] flex justify-center items-center">
 

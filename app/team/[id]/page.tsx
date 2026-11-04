@@ -32,7 +32,7 @@ export default async function TeamDetailPage({ params }: { params: Promise<{ id:
   const firstName = nameParts[0];
   const lastName = nameParts.slice(1).join(' ');
 
-  // Helper to get improved and context-relevant icons for specializations
+  // Get icon
   const getSpecializationIcon = (title: string, iconName?: string) => {
     const t = title.toLowerCase();
     const iconClass = "w-6 h-6 stroke-[2]";
@@ -70,7 +70,7 @@ export default async function TeamDetailPage({ params }: { params: Promise<{ id:
   const bannerTitle = heroVariant?.title || "Team Detail";
 
   return (
-    <div className="w-full flex flex-col min-h-screen bg-white font-sans">
+    <div className="w-full flex flex-col min-h-screen bg-white font-(family-name:--font-body)">
       <PageHeader title={bannerTitle} breadcrumb={`Team / ${trainer.name}`} />
 
       {/* Main Details Section */}
@@ -85,15 +85,9 @@ export default async function TeamDetailPage({ params }: { params: Promise<{ id:
               <div className="absolute bottom-[10%] -right-4 lg:-right-6 w-8 h-[25%] bg-[#ea580c] rounded-r-[16px] -z-20"></div>
               
               <div className="w-full relative h-[450px] md:h-[550px] drop-shadow-[0_15px_35px_rgba(0,0,0,0.15)]">
-                <div 
-                  className="absolute top-0 -left-[12px] -right-[16px] -bottom-[12px] bg-[#ea580c] rounded-[24px] z-0"
-                  style={{ clipPath: 'polygon(0% 0%, 96% 0%, 97.5% 1%, 98.5% 3%, 99.5% 6%, 100% 10%, 88% 85%, 87.3% 91%, 86.2% 96%, 84.5% 98.5%, 82% 100%, 0% 100%)' }}
-                ></div>
+                <div className="absolute top-0 -left-[12px] -right-[16px] -bottom-[12px] bg-[#ea580c] rounded-[24px] z-0 [clip-path:polygon(0%_0%,96%_0%,97.5%_1%,98.5%_3%,99.5%_6%,100%_10%,88%_85%,87.3%_91%,86.2%_96%,84.5%_98.5%,82%_100%,0%_100%)]"></div>
 
-                <div 
-                  className="absolute inset-0 rounded-[24px] overflow-hidden z-10 bg-black"
-                  style={{ clipPath: 'polygon(0% 0%, 96% 0%, 97.5% 1%, 98.5% 3%, 99.5% 6%, 100% 10%, 88% 85%, 87.3% 91%, 86.2% 96%, 84.5% 98.5%, 82% 100%, 0% 100%)' }}
-                >
+                <div className="absolute inset-0 rounded-[24px] overflow-hidden z-10 bg-black [clip-path:polygon(0%_0%,96%_0%,97.5%_1%,98.5%_3%,99.5%_6%,100%_10%,88%_85%,87.3%_91%,86.2%_96%,84.5%_98.5%,82%_100%,0%_100%)]">
                   <Image 
                     src={trainer.image} 
                     alt={trainer.name} 
@@ -112,7 +106,7 @@ export default async function TeamDetailPage({ params }: { params: Promise<{ id:
                 {trainer.role} <span className="w-12 h-[2px] bg-[#ea580c]"></span>
               </div>
               
-              <h1 className="font-heading text-3xl md:text-4xl lg:text-[40px] font-extrabold mb-4 uppercase leading-tight">
+              <h1 className="font-(family-name:--font-heading) text-3xl md:text-4xl lg:text-[40px] font-extrabold mb-4 uppercase leading-tight">
                 <span className="text-[#1a1a1a]">{firstName}</span> <span className="text-[#ea580c]">{lastName}</span>
               </h1>
               
@@ -190,7 +184,7 @@ export default async function TeamDetailPage({ params }: { params: Promise<{ id:
           <div className="flex flex-col md:flex-row gap-8 items-start">
             {/* Left: About Text */}
             <div className="w-full md:w-[60%]">
-              <h2 className="font-heading text-3xl md:text-4xl lg:text-[40px] font-extrabold text-[#1a1a1a] flex items-center gap-4 mb-4">
+              <h2 className="font-(family-name:--font-heading) text-3xl md:text-4xl lg:text-[40px] font-extrabold text-[#1a1a1a] flex items-center gap-4 mb-4">
                 About {firstName} <span className="w-12 h-[2px] bg-[#ea580c]"></span>
               </h2>
               <p className="text-gray-500 text-[14px] leading-[1.7]">
@@ -219,7 +213,7 @@ export default async function TeamDetailPage({ params }: { params: Promise<{ id:
       {/* Specializations Section */}
       <section className="w-full pt-4 pb-10 bg-white">
         <div className="w-full max-w-[1400px] mx-auto px-4 md:px-6 lg:px-6">
-          <h2 className="font-heading text-3xl md:text-4xl lg:text-[40px] font-extrabold text-[#1a1a1a] flex items-center gap-4 mb-4">
+          <h2 className="font-(family-name:--font-heading) text-3xl md:text-4xl lg:text-[40px] font-extrabold text-[#1a1a1a] flex items-center gap-4 mb-4">
             Specializations <span className="w-12 h-[2px] bg-[#ea580c]"></span>
           </h2>
 

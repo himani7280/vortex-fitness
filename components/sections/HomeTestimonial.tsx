@@ -28,7 +28,7 @@ const HomeTestimonial = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: sectionRef.current,
-        start: 'top 75%', 
+        start: 'top 88%', 
         toggleActions: 'play none none none',
       },
       defaults: { ease: 'power3.out' }
@@ -36,11 +36,11 @@ const HomeTestimonial = () => {
 
     tl.fromTo('.gsap-header-item',
       { y: 30, opacity: 0 },
-      { y: 0, opacity: 1, duration: 0.6, stagger: 0.1 }
+      { y: 0, opacity: 1, duration: 0.4, stagger: 0.06 }
     )
     .fromTo('.gsap-showcase-wrapper',
       { y: 40, opacity: 0 },
-      { y: 0, opacity: 1, duration: 0.7 },
+      { y: 0, opacity: 1, duration: 0.45 },
       "-=0.3"
     );
   }, { scope: sectionRef });
@@ -78,11 +78,11 @@ const HomeTestimonial = () => {
     <section 
       ref={sectionRef} 
       aria-label="Testimonials"
-      className="w-full bg-white py-10 sm:py-12 md:py-14 lg:py-16 font-sans overflow-hidden"
+      className="w-full bg-white py-10 sm:py-12 md:py-14 lg:py-16 font-(family-name:--font-body) overflow-hidden"
     >
       <div className="max-w-[1400px] mx-auto px-4 md:px-6 lg:px-6">
 
-        {/* ── Section Header ── */}
+        {/* Header */}
         <div className="flex flex-col items-center text-center mb-6 sm:mb-8 md:mb-10">
           {/* Top Label */}
           <div className="gsap-header-item inline-flex items-center justify-center gap-2.5 sm:gap-3.5 mb-2 sm:mb-2.5">
@@ -96,7 +96,7 @@ const HomeTestimonial = () => {
           </div>
 
           {/* Main Heading */}
-          <h2 className="gsap-header-item font-heading text-3xl md:text-4xl lg:text-[40px] font-extrabold text-black leading-tight mb-2 sm:mb-2.5 text-center">
+          <h2 className="gsap-header-item font-(family-name:--font-heading) text-3xl md:text-4xl lg:text-[40px] font-extrabold text-black leading-tight mb-2 sm:mb-2.5 text-center">
             {testimonial.titleStart || "TESTI"}<span className="text-[#ea580c]">{testimonial.titleHighlight || "MONIALS"}</span>
           </h2>
 
@@ -106,7 +106,7 @@ const HomeTestimonial = () => {
           </p>
         </div>
 
-        {/* ── Showcase Carousel Area (Manual Navigation Only) ── */}
+        {/* Showcase */}
         <div className="gsap-showcase-wrapper relative w-full max-w-[1240px] mx-auto flex items-center justify-between gap-2 sm:gap-4 md:gap-6 lg:gap-8">
           
           {/* Left Arrow Button */}
@@ -126,7 +126,7 @@ const HomeTestimonial = () => {
               }`}
             >
               
-              {/* Left Column: Slanted Parallelogram Image & Orange Stripes (lg:col-span-5) */}
+              {/* Image */}
               <div className="lg:col-span-5 flex justify-center items-center">
                 <div className="relative w-[260px] sm:w-[310px] md:w-[340px] lg:w-[330px] xl:w-[370px] h-[270px] sm:h-[310px] md:h-[340px] lg:h-[330px] xl:h-[360px] isolate my-2">
                   
@@ -157,7 +157,7 @@ const HomeTestimonial = () => {
                 </div>
               </div>
 
-              {/* Right Column: Quotes, Content, Stars, Author, Dots (lg:col-span-7) */}
+              {/* Content */}
               <div className="lg:col-span-7 relative flex flex-col justify-center px-2 sm:px-4 lg:px-0">
                 
                 {/* Background Large Watermark Quote */}
@@ -186,7 +186,7 @@ const HomeTestimonial = () => {
                 </div>
 
                 {/* Client Name */}
-                <h3 className="font-heading font-extrabold text-xl sm:text-2xl text-black mb-0.5">
+                <h3 className="font-(family-name:--font-heading) font-extrabold text-xl sm:text-2xl text-black mb-0.5">
                   {current.name}
                 </h3>
 

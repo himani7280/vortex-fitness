@@ -91,7 +91,7 @@ async function ProgramDetailContent({ params }: { params: Promise<{ id: string }
               <div className="h-[2px] w-8 sm:w-12 bg-[#ea580c]"></div>
             </div>
 
-            <h2 className="font-heading text-3xl md:text-4xl lg:text-[40px] font-extrabold text-black leading-tight tracking-tight mb-4 sm:mb-5">
+            <h2 className="font-(family-name:--font-heading) text-3xl md:text-4xl lg:text-[40px] font-extrabold text-black leading-tight tracking-tight mb-4 sm:mb-5">
               {firstWords} {lastWord && <span className="text-[#ea580c]">{lastWord}</span>}
             </h2>
 
@@ -106,7 +106,7 @@ async function ProgramDetailContent({ params }: { params: Promise<{ id: string }
             {highlights.length > 0 && (
               <>
                 <div className="flex items-center gap-3 sm:gap-4 mb-4 mt-2">
-                  <h3 className="text-lg sm:text-xl font-bold font-heading text-black uppercase">PROGRAM HIGHLIGHTS</h3>
+                  <h3 className="text-lg sm:text-xl font-bold font-(family-name:--font-heading) text-black uppercase">PROGRAM HIGHLIGHTS</h3>
                   <div className="h-[2px] w-8 sm:w-12 bg-[#ea580c]"></div>
                 </div>
 
@@ -150,11 +150,8 @@ async function ProgramDetailContent({ params }: { params: Promise<{ id: string }
             </div>
 
             {/* Contact Box */}
-            <div className="bg-[#0b0c10] rounded-xl overflow-hidden relative shadow-xl">
-              <div
-                className="absolute inset-0 opacity-100 bg-cover bg-right"
-                style={{ backgroundImage: "url('/images/red-gloves.webp')" }}
-              ></div>
+            <div className="bg-[#0b0c10] rounded-xl overflow-hidden relative shadow-xl lg:sticky lg:top-24 z-20">
+              <div className="absolute inset-0 opacity-100 bg-cover bg-right bg-[url('/images/red-gloves.webp')]"></div>
               <div className="absolute inset-0 bg-gradient-to-r from-[#0b0c10] via-[#0b0c10]/90 to-transparent"></div>
 
               <div className="relative z-10 p-8 flex flex-col items-start">

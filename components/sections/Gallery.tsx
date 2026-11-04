@@ -40,7 +40,7 @@ const Gallery = () => {
   };
 
   return (
-    <section className="w-full bg-white py-10 sm:py-12 md:py-14 lg:py-16 font-sans">
+    <section className="w-full bg-white py-10 sm:py-12 md:py-14 lg:py-16 font-(family-name:--font-body)">
       <div className="max-w-[1400px] mx-auto px-4 md:px-6 lg:px-6">
         {/* Header */}
         <div className="flex flex-col items-center text-center mb-4">
@@ -51,7 +51,7 @@ const Gallery = () => {
             </span>
             <div className="h-[2px] w-12 bg-[#ea580c]"></div>
           </div>
-          <h2 className="font-heading text-3xl md:text-4xl lg:text-[40px] font-extrabold text-[#1a1a1a] leading-tight mb-2 text-center">
+          <h2 className="font-(family-name:--font-heading) text-3xl md:text-4xl lg:text-[40px] font-extrabold text-[#1a1a1a] leading-tight mb-2 text-center">
             {gallery.heading1}<span className="text-[#ea580c]">{gallery.heading2}</span>
           </h2>
           <p className="text-gray-500 text-[15px] md:text-[15.5px] leading-relaxed max-w-2xl mx-auto text-center font-normal">

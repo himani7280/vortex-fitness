@@ -8,7 +8,7 @@ export default function BlogsPage() {
   const title = heroVariant?.title ? `Our ${heroVariant.title}` : "Our Blogs";
 
   return (
-    <div className="w-full flex flex-col min-h-screen bg-white font-sans">
+    <div className="w-full flex flex-col min-h-screen bg-white font-(family-name:--font-body)">
       <PageHeader title={title} breadcrumb="Blogs" />
       <Blog isCarousel={false} limit={6} />
     </div>

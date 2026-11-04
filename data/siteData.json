@@ -1,5 +1,64 @@
 {
+  "googleFontsHref": "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap",
+  "fontVars": {
+    "--font-heading": "\"Open Sans\", sans-serif",
+    "--font-body": "\"Poppins\", sans-serif"
+  },
+  "fontFamily": {
+    "heading": "Open Sans, sans-serif",
+    "body": "Poppins, sans-serif"
+  },
+  "fonts": {
+    "heading": {
+      "family": "Open Sans",
+      "weights": [
+        "300",
+        "400",
+        "500",
+        "600",
+        "700",
+        "800"
+      ]
+    },
+    "body": {
+      "family": "Poppins",
+      "weights": [
+        "300",
+        "400",
+        "500",
+        "600",
+        "700",
+        "800",
+        "900"
+      ]
+    }
+  },
   "Fitness": {
+    "fonts": {
+      "heading": {
+        "family": "Open Sans",
+        "weights": [
+          "300",
+          "400",
+          "500",
+          "600",
+          "700",
+          "800"
+        ]
+      },
+      "body": {
+        "family": "Poppins",
+        "weights": [
+          "300",
+          "400",
+          "500",
+          "600",
+          "700",
+          "800",
+          "900"
+        ]
+      }
+    },
     "templateComponents": {
       "template-1": {
         "shared": {
@@ -243,7 +302,7 @@
             "primaryLink": "/pricing",
             "secondaryButton": "Watch Video",
             "secondaryLink": "/video",
-            "backgroundImage": "/images/hero_v4.webp",
+            "backgroundImage": "/images/banner_1.webp",
             "bannerSlides": [
               {
                 "id": 1,

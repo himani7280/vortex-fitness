@@ -20,7 +20,7 @@ export default function ContactPage() {
   const title = heroVariant?.title || "Contact Us";
 
   return (
-    <div className="w-full flex flex-col min-h-screen bg-white font-sans">
+    <div className="w-full flex flex-col min-h-screen bg-white font-(family-name:--font-body)">
       <PageHeader title={title} breadcrumb="Contact Us" />
       
       <section className="w-full py-10 sm:py-12 md:py-14 lg:py-16 bg-white">
@@ -80,7 +80,7 @@ export default function ContactPage() {
             {/* Left: Form */}
             <div className="w-full lg:w-1/2 py-5 px-5 sm:py-6 sm:px-7 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.05)] rounded-[10px] border border-gray-100 flex flex-col justify-center">
               <div className="mb-4">
-                <h2 className="font-heading text-3xl md:text-4xl lg:text-[40px] font-extrabold text-[#1a1a1a] leading-tight mb-2">
+                <h2 className="font-(family-name:--font-heading) text-3xl md:text-4xl lg:text-[40px] font-extrabold text-[#1a1a1a] leading-tight mb-2">
                   {contactForm.titleStart || 'Send Us a'} <span className="text-[#ea580c]">{contactForm.titleHighlight || 'Message'}</span>
                 </h2>
                 <div className="w-10 h-[3px] bg-[#ea580c]"></div>
@@ -170,18 +170,46 @@ export default function ContactPage() {
               </RedirectForm>
             </div>
 
-            {/* Right: Map (fills height cleanly) */}
+            {/* Map */}
             <div className="w-full lg:w-1/2 flex flex-col">
-              <div className="w-full h-full min-h-[280px] sm:min-h-[320px] lg:min-h-0 rounded-[10px] overflow-hidden bg-gray-100 border border-gray-100 shadow-[0_4px_20px_rgba(0,0,0,0.05)]">
+              <div className="relative w-full h-full min-h-[320px] rounded-[12px] overflow-hidden bg-[#111111] border-2 border-[#ea580c]/50 hover:border-[#ea580c] shadow-[0_10px_30px_rgba(234,88,12,0.18)] transition-all duration-300 group">
+                
+                {/* Top Brand Accent Bar */}
+                <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#ea580c] via-[#f05a22] to-[#ea580c] z-10 shadow-sm" />
+
+                {/* Floating Brand Location Badge */}
+                <div className="absolute top-4 left-4 z-10 bg-[#111111]/92 backdrop-blur-md text-white py-2 px-3.5 rounded-lg border border-[#ea580c]/60 shadow-[0_4px_15px_rgba(0,0,0,0.3)] flex items-center gap-2.5 pointer-events-none">
+                  <div className="w-8 h-8 rounded-full bg-[#ea580c] flex items-center justify-center text-white shrink-0 shadow-[0_0_12px_rgba(234,88,12,0.6)]">
+                    <MapPin className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <p className="text-[12px] font-bold text-white tracking-wide uppercase leading-tight">Vortex Fitness Center</p>
+                    <p className="text-[10.5px] text-orange-200/90 leading-tight mt-0.5">{location}</p>
+                  </div>
+                </div>
+
+                {/* Floating "Get Directions" Theme Button */}
+                <a 
+                  href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(location)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="absolute bottom-4 right-4 z-10 bg-[#ea580c] hover:bg-[#d4501a] text-white text-[12px] font-bold py-2 px-3.5 rounded-lg shadow-md hover:shadow-[0_4px_16px_rgba(234,88,12,0.45)] transition-all duration-300 flex items-center gap-1.5 cursor-pointer active:scale-95 uppercase tracking-wider"
+                >
+                  <MapPin className="w-3.5 h-3.5" />
+                  <span>Get Directions</span>
+                </a>
+
+                {/* Google Map */}
                 <iframe 
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.2528000654!2d-74.1444874459461!3d40.69766374865766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1714467000000!5m2!1sen!2sin" 
                   width="100%" 
                   height="100%" 
-                  style={{ border: 0, minHeight: "280px" }} 
+                   
                   allowFullScreen 
                   loading="lazy" 
                   referrerPolicy="no-referrer-when-downgrade"
                   title="Gym Location"
+                  className="w-full h-full min-h-[320px] border-0 contrast-[1.1] saturate-[1.25] hue-rotate-[-12deg] brightness-[1.02]"
                 ></iframe>
               </div>
             </div>
